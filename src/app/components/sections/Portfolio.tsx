@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Expand, Share } from "lucide-react";
+import { Expand, Share, X } from "lucide-react";
 
 const portfolioItems = [
   {
@@ -10,7 +10,6 @@ const portfolioItems = [
     title: "TPASC",
     category: "website",
     img: "/images/slider_img_03.jpg",
-    largeImg: "/images/slider_img_03.jpg",
     description: "Mockup Design",
   },
   {
@@ -43,7 +42,7 @@ const categories = ["all", "website", "bootstrap"];
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const filteredItems =
     selectedCategory === "all"
@@ -51,46 +50,53 @@ export default function Portfolio() {
       : portfolioItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <section className="py-5 bg-light">
-      <div className="container text-center">
-        <h1 className="mb-3">Our Latest Works</h1>
-        <p className="mb-4">
+    <section className="py-10 bg-gray-100">
+      <div className="container mx-auto text-center">
+        <h1 className="text-2xl font-semibold mb-4">Our Latest Works</h1>
+        <p className="mb-6 text-gray-600">
           We make complex things simple and create solutions that work. See our latest business web design portfolios.
         </p>
 
-        {/* Bootstrap Nav Tabs */}
-        <ul className="nav nav-tabs justify-content-center mb-4">
+        {/* Category Tabs */}
+        <div className="flex justify-center gap-4 mb-6">
           {categories.map((cat) => (
-            <li className="nav-item" key={cat}>
-              <button
-                className={`nav-link ${selectedCategory === cat ? "active" : ""}`}
-                onClick={() => setSelectedCategory(cat)}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            </li>
+            <button
+              key={cat}
+              className={`px-4 py-2 rounded-md transition ${
+                selectedCategory === cat ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+              }`}
+              onClick={() => setSelectedCategory(cat)}
+            >
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </button>
           ))}
-        </ul>
+        </div>
 
         {/* Portfolio Grid */}
-        <div className="row">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.map((item) => (
-            <div key={item.id} className="col-md-6 col-lg-4 mb-4">
-              <div className="card border-0 shadow-sm">
-                <Image src={item.img} alt={item.title} width={400} height={300} className="card-img-top" />
-                <div className="card-body text-center">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text">{item.description}</p>
-                  <div className="d-flex justify-content-center gap-3">
-                    <button className="btn btn-outline-dark" onClick={() => setSelectedImage(item.img)}>
-                      <Expand size={20} /> View
-                    </button>
-                    {item.link && (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
-                        <Share size={20} /> Visit
-                      </a>
-                    )}
-                  </div>
+            <div key={item.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+              <Image src={item.img} alt={item.title} width={400} height={250} className="w-full object-cover" />
+              <div className="p-4 text-center">
+                <h5 className="text-lg font-medium">{item.title}</h5>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+                <div className="flex justify-center gap-3 mt-3">
+                  <button
+                    className="px-3 py-2 bg-gray-200 rounded hover:bg-gray-300 flex items-center gap-2"
+                    onClick={() => setSelectedImage(item.img)}
+                  >
+                    <Expand size={18} /> View
+                  </button>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 flex items-center gap-2"
+                    >
+                      <Share size={18} /> Visit
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -100,12 +106,12 @@ export default function Portfolio() {
 
       {/* Image Modal */}
       {selectedImage && (
-        <div className="modal fade show d-block" tabIndex="-1" onClick={() => setSelectedImage(null)}>
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <button className="btn-close position-absolute top-0 end-0 m-3" onClick={() => setSelectedImage(null)} />
-              <Image src={selectedImage} alt="Selected Work" width={600} height={400} className="rounded" />
-            </div>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-4 rounded-lg relative">
+            <button className="absolute top-2 right-2 text-gray-700 hover:text-black" onClick={() => setSelectedImage(null)}>
+              <X size={24} />
+            </button>
+            <Image src={selectedImage} alt="Selected Work" width={600} height={400} className="rounded-lg" />
           </div>
         </div>
       )}
