@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 import Header from "./components/common/Header";
 import Hero from "./components/sections/Hero";
 import WhoWeAre from "./components/sections/WhoWeAre";

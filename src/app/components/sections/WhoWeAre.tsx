@@ -41,7 +41,7 @@ const WhoWeAre = () => {
           <h1 className="section-title">Who We Are</h1>
           <p>
             We are a team of professional designers, developers, testers, and
-            content writers. Our skills match and exceed our client's
+            content writers. Our skills match and exceed our client&apos;s
             expectations each time. Our team vision drives the efforts of all
             individuals in the organization to create the richest and most
             innovative solutions.
