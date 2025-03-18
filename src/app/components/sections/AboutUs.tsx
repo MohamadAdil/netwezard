@@ -20,12 +20,13 @@ const AboutUs = () => {
           <div className='col-lg-6'>
             <div className='text-wrap'>
               <h6>About us</h6>
-              <h2>Together, we're shaping the future—join us!</h2>
+              <h2>Together, we&apos;re shaping the future—join us!</h2>
               <p>
                 We are constantly evolving, learning, and enhancing our capabilities, and our
                 growth is ongoing. Reaching the milestone of completing 200 projects is a
                 testament to our progress.
               </p>
+
 
               {/* Feature Cards */}
               <div className='fe-card-wrap'>
