@@ -1,0 +1,209 @@
+@media only screen and (max-width: 991px) {
+  .navbar-toggler {
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: none;
+  }
+
+  .navbar-toggler:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(72, 157, 90, 0.5);
+  }
+
+  .navbar-toggler svg {
+    fill: #fff;
+  }
+
+  .site-header .navbar-nav {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .site-header .navbar-nav li a {
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .site-header .btn-wrap {
+    display: none;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 128px;
+    left: -95%;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    transition: left 0.4s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    left: 2.5%;
+  }
+
+  .site-header .navbar .dropdown-menu {
+    border-radius: 0 !important;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+  }
+
+  .site-header .navbar-nav ul.dropdown-menu li a {
+    color: #fff !important;
+    border-radius: 5px !important;
+  }
+
+  .site-header .navbar-nav ul.dropdown-menu li a:hover {
+    color: #000 !important;
+  }
+
+  .HeroBanner {
+    padding: 256px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-brand img,
+  .site-logo img {
+    max-width: 60px !important;
+    max-height: 80px !important;
+  }
+
+  .navbar-collapse {
+    top: 90px;
+  }
+
+  .HeroBanner {
+    padding: 200px 0 50px;
+  }
+
+  .HeroBanner .heading-wrap h1,
+  .OptimizeFormSc h2,
+  .WhyUs .heading-wrap h2,
+  .OurIndustries h2,
+  .OurTestimonials h2,
+  .GrowTogether-wrap h2 {
+    font-size: 34px;
+  }
+
+  .HeroBanner .heading-wrap p,
+  .OptimizeFormSc p,
+  .WhyUs .heading-wrap p,
+  .GrowTogether-wrap p {
+    font-size: 16px;
+  }
+
+  .btn-main {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .HeroBanner .heading-wrap {
+    margin-bottom: 30px;
+  }
+
+  .OptimizeFormSc,
+  .WhyUs,
+  .OurIndustries,
+  .OurTestimonials,
+  .GrowTogether {
+    padding: 60px 0;
+  }
+
+  .whyus-card {
+    margin-bottom: 10px;
+  }
+
+  .whyus-btm-card {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .industries-card-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .industries-card-img img {
+    max-width: 24px !important;
+    max-height: 24px !important;
+  }
+
+  .industries-card-img:before {
+    width: 70px;
+    height: 70px;
+  }
+
+  .industries-card-item h4 {
+    font-size: 18px;
+  }
+
+  .GrowTogether-wrap {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .HeroBanner .heading-wrap h1,
+  .OptimizeFormSc h2,
+  .WhyUs .heading-wrap h2,
+  .OurIndustries h2,
+  .OurTestimonials h2,
+  .GrowTogether-wrap h2 {
+    font-size: 24px;
+  }
+
+  .HeroBanner .heading-wrap p,
+  .OptimizeFormSc p,
+  .WhyUs .heading-wrap p,
+  .GrowTogether-wrap p,
+  .whyus-card-item p,
+  .bottom-ft p {
+    font-size: 14px;
+  }
+
+  .OptimizeForm {
+    padding: 15px !important;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .btn-main {
+    font-size: 12px;
+  }
+
+  .industries-card-item h4,
+  .upper-ft h5 {
+    font-size: 16px;
+  }
+
+  .OurTestimonials .reviews-wrap {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .GrowTogether-wrap {
+    padding: 40px 20px;
+  }
+
+  .upper-ft ul li {
+    margin-bottom: 10px;
+  }
+
+  .site-header .navbar-nav li a {
+    font-size: 14px;
+  }
+}
