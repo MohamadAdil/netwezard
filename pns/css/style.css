@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, select, input, textarea, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+	outline:none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+.clearfix{clear:both;}
+.fl{float:left !important;}
+.fr{float:right !important;}
+.mr0{ margin-right:0 !important;}
+table  {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p{
+    padding-bottom:10px;
+	line-height:22px;
+}
+
+a{
+    text-decoration: none;
+    outline: 0;
+	color:#01a4bc;
+}
+
+a:hover{color:#333;}
+li, a, input[type=button], input[type=text], textarea, .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{transition: all 0.5s ease;-moz-transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-o-transition: all 0.5s ease;}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit;
+}
+
+h1{font-size:24px;margin-bottom:20px; border-bottom:1px dashed #d9d9d9; padding-bottom:10px;}
+h2{font-size:20px;margin-bottom:10px; border-bottom:1px dashed #d9d9d9; padding-bottom:10px;}
+h3{font-size:18px; padding-bottom:10px;}
+
+fieldset{padding-bottom:15px;}
+label{ padding-bottom:5px;display: inline-block;}
+label span{color:#ff0000;}
+input[type=text], textarea{background:#f1f6f7; border:1px solid #cbe1e3;font-family:Arial, Helvetica, sans-serif; color:#555; padding:6px 5px; width:213px; border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;}
+input[type=text]:focus, textarea:focus{border-color:#01a4bc;}
+textarea{height:145px; resize:none; overflow:auto;}
+input[type=submit]{background:#01a4bc; color:#fff; font-size:16px; padding:7px 15px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px; font-weight:bold; cursor:pointer;}
+input[type=submit]:hover{background:#333;}
+
+body{background:#f8f8f8; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#555;}
+header{background:#f0f0f0; padding:15px 0;}
+header .headerinner{width:960px; margin:0 auto;}
+.logo{background:url(../images/logo.png) left top no-repeat; display:block; width:385px; height:94px; float:left;}
+.phone{font-size:24px; color:#01a4bc; font-weight:bold; margin-top:25px;letter-spacing: -1px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.email{ margin-top:5px;font-size:16px; color:#01a4bc; font-weight:bold;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+nav{background:#e8e8e8; border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;}
+nav .navinner{width:960px; margin:0 auto;}
+.navinner ul li{float:left;background:url(../images/linksepbg.png) right top repeat-y;}
+.navinner ul li:last-child{background:none;}
+.navinner ul li a{font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:18px; color:#01a4bc; padding:12px 15px; display:block;}
+.navinner ul li a:hover, .navinner ul li a.selected{background:#01a4bc; color:#fff;}
+.bannerbg{background:url(../images/patterna.jpg) center repeat; padding:20px 0;border-bottom:1px solid #dbdbdb;}
+.innerbannerbg{background:url(../images/patterna.jpg) center repeat; padding:10px 0;border-bottom:1px solid #dbdbdb;}
+.sliderwrapper{background:url(../images/sliderbg.png) center bottom no-repeat; width:960px; margin:0 auto; padding:0 0 20px;}
+.sliderbox{width:940px; height:373px; border:1px #ddd solid; background:#fff; padding:9px; position:relative;}
+.main{padding:30px; margin:0 auto; width:960px;}
+.breadcrumb{width:960px; margin:0 auto 30px; color:#999; font-size:12px;}
+.colleft{width:715px; float:left;}
+.services{margin:10px 0 40px; overflow:hidden; }
+.services li{border:1px solid #cbe1e3; background:url(../images/bluetopline.png) center top repeat-x;float:left; margin-right:20px; padding:15px 5px; width:213px;}
+.services li:hover{border-color:#01a4bc;}
+.services li img{margin:5px 0 10px;}
+.services li p{font-size:12px; line-height:18px; padding:0 5px 10px;}
+.readmore{background:url(../images/arrow.png) right 5px no-repeat; padding-right:13px; margin-left:5px;}
+.readmore:hover{background-position:right -15px;}
+.intro{font-size:16px; font-weight:bold;}
+.colright{float:right; width:225px;}
+.bluehead{background:url(../images/blueheadbg.png) center top no-repeat; width:205px; color:#fff;  padding:9px 10px;}
+.bluehead h2{ margin-bottom:0; border:0; padding:0}
+.formwrapper{overflow:hidden; width:225px; padding:20px 0;}
+
+.innerimgbox{width:180px; height:120px; float:left; padding:5px; background:#fff; border:1px solid #ddd; margin:0 15px 15px 0;}
+
+
+.projects{overflow:hidden; margin:20px 0;}
+.projects li{background:url(../images/bottomshadow.png) center bottom no-repeat; padding-bottom:22px; float:left; margin-right:30px;}
+.projects li .imgbox{border:6px solid #cbe1e3; width:288px; height:133px; display:block;}
+.projects li .imgbox:hover{border-color:#01a4bc;}
+/* Contact Us */
+.col1{width:225px; float:left; margin-right:20px;}
+label.valid { width: 24px; background: url(assets/img/valid.png) center center no-repeat; display: none !important;  text-indent: -9999px;}
+
+label.error {color: #c90000!important;float:left !important;font-size:12px; width:auto !important; padding:0 !important; line-height:16px !important;}
+
+footer{background:#333; padding:20px 0 0; font-size:13px;}
+.footerinner{width:960px; margin:0 auto; padding:7px 0; color:#a9a9a9;}
+.footerinner p{line-height:18px; font-size:13px; padding-bottom:10px;}
+.footercol{width:225px; float:left; margin-right:20px;}
+.col2{width:470px; float:right;}
+.mapwrapper{border:6px solid #555; width:458px; height:120px;}
+.emaillink:hover{color:#a9a9a9;}
+.logofooter{background:url(../images/logo-footer.png) center top no-repeat; width:208px; height:50px; margin-bottom:20px;}
+
+footer h2{color:#a9a9a9; border:0;}
+footer ul{margin-top:20px; overflow:hidden;}
+footer ul li a{color:#a9a9a9; background:url(../images/arrowfooter.png) left 9px no-repeat; padding:7px 10px 7px 15px; display:block;border-bottom:1px dashed #5b5b5b;}
+footer ul li a.last{border:0;}
+footer ul li a:hover{color:#01a4bc; background-position:left -11px; border-color:#01a4bc}
+.footerbottom{background:#222; border-top:1px solid #444; margin-top:10px;}
+.footerbottom p{padding:0;color:#979797; font-size:12px; float:left;}
+.sublimezlink{color:#666;}
+.sublimezlink:hover{color:#01a4bc;}
+
+
+/* FlexSlider Necessary Styles
+
+*********************************/
+
+.flexslider {margin: 0; padding: 0;}
+
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flexslider .slides img {max-width: 100%; display: block;}
+
+.flex-pauseplay span {text-transform: capitalize;}
+
+
+
+/* Clearfix for the .slides element */
+
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+
+html[xmlns] .slides {display: block;}
+
+* html .slides {height: 1%;}
+
+
+
+/* No JavaScript Fallback */
+
+/* If you are not using another script, such as Modernizr, make sure you
+
+ * include js that eliminates this class on page load */
+
+.no-js .slides > li:first-child {display: block;}
+
+
+
+
+
+/* FlexSlider Default Theme
+
+*********************************/
+
+.flexslider {position: relative; zoom: 1;}
+
+.flexslider .slides {zoom: 1;}
+
+.flexslider .slides > li {position: relative;}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+
+.flex-container {zoom: 1; position: relative;}
+
+
+
+/* Caption style */
+
+/* IE rgba() hack */
+
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+
+.flex-caption {width: 96%; padding: 2%; margin: 0; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+
+
+
+/* Direction Nav */
+
+.flex-direction-nav { height: 0; display:block; }
+
+.flex-direction-nav a {width: 32px; height: 62px;display: block; position: absolute; top: 40%; cursor: pointer; text-indent: -999em;}
+
+.flex-direction-nav .flex-next {background:url(../images/sliderarrow.png) right top no-repeat; right:0;}
+.flex-direction-nav .flex-next:hover{background:url(../images/sliderarrow-hover.png) right top;}
+
+.flex-direction-nav .flex-prev {background:url(../images/sliderarrow.png) left top no-repeat; left:0;}
+.flex-direction-nav .flex-prev:hover{background:url(../images/sliderarrow-hover.png) left top;}
+.flex-direction-nav .flex-disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+
+
+/* Control Nav */
+
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; *bottom: -40px; text-align: center; display:block;}
+
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+
+.flex-control-nav li:first-child {margin: 0;}
+
+.flex-control-nav a {width: 15px; height: 15px; display: block; background: url(../images/pagination.png) no-repeat left top; cursor: pointer; text-indent: -999em;}
+
+.flex-control-nav a.flex-active {background-position: left -16px; cursor: default;}
+
+

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,IAAI,CACA,WAAW,CAJD,oCAAqC,CAK/C,KAAK,CAPI,OAAO,CCAlB,MAAE,CACA,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,IAAI,CAElB,MAAE,CACA,OAAO,CAAE,YAAY,CAEvB,KAAC,CACC,OAAO,CAAE,KAAK,CACd,OAAO,CAAE,QAAQ,CACjB,eAAe,CAAE,IAAI",
+"sources": ["../sass/global.sass","../sass/header.sass"],
+"names": [],
+"file": "style.min.css"
+}

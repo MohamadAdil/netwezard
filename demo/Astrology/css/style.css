@@ -1,0 +1,935 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lora:400i');
+body, html
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+    height: 115px;
+    background-color: #fff;
+}
+
+header nav ul li a, #myNavbar .navbar-nav > li > .dropdown-menu li a,
+#myNavbar .navbar-nav > li > .dropdown-menu li a:focus {
+    font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+    color: #302525;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header nav ul li a:hover, #myNavbar .navbar-nav > li > .dropdown-menu li a:hover,
+#myNavbar .navbar-nav > li > .dropdown-menu li a:focus {
+    color: #ed3237;
+    background-color: transparent !important;
+}
+#myNavbar a:focus {
+    color: #ed3237;
+    background-color: transparent;
+    text-decoration: underline;
+}
+header nav ul.nav.navbar-nav {
+    margin-top: 35px;
+}
+header nav .navbar-brand {
+    padding: 20px 15px;
+}
+
+#myCarousel span.glyphicon.glyphicon-chevron-left:before {
+      background-image: url(../img/left-arrow.png);
+    content: "";
+    height: 66px;
+    width: 94px;
+    display: block;
+    opacity: 1;
+    position: relative;
+    left: -20px;
+    background-repeat: no-repeat;
+}
+#myCarousel a.carousel-control
+{
+	z-index: 999;
+	background-image: none;
+	opacity: 1;
+}
+#myCarousel .item img {
+    width: 100%;
+}
+#myCarousel span.glyphicon.glyphicon-chevron-right:before {
+      background-image: url(../img/right-arrow.png);
+    content: "";
+    height: 66px;
+    width: 94px;
+    display: block;
+    opacity: 1;    
+    position: relative;
+    right: 0px;
+    background-repeat: no-repeat;
+}
+
+#myCarousel .carousel-control .glyphicon-chevron-left
+{
+	    left: 20%;
+}
+#myCarousel .carousel-caption h3 {
+    font-size: 28px;
+     margin: 0;
+    color: #ed3237;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#myCarousel .carousel-caption h1, #myCarousel .carousel-caption span {
+	    font-size: 119px;
+    color: #fff;    
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#myCarousel .carousel-caption h2 {
+	    font-size: 64px;
+    color: #ed3237;
+     margin: 0;    
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#myCarousel .carousel-caption p {
+	    font-size: 30px;
+    color: #ed3237;
+     margin: 0;
+    font-weight: 400;
+}
+
+#myCarousel .carousel-caption {
+    right: -14%;
+    left: 20%;
+    padding-bottom: 30px;
+    top: 20%;
+}
+#myCarousel .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    background-color: #ffffff;
+}
+#myCarousel .carousel-indicators .active {
+    border: 3px solid #ed3237;
+}
+
+section.about-us {
+    padding: 90px 0px;
+}
+section.about-us h2, section.Vedic-Poojas span.home-heading, .vedic-astrology span.home-heading {
+    font-size: 36pX;
+    color: #1f1e1e;
+    font-weight: 400;
+    display: block;
+}
+.vedic-astrology h1, .vedic-astrology span.home-heading
+{
+	color: #fff;
+}
+section.about-us strong {
+    font-size: 15px;
+    color: #cf4a46;
+}
+section.about-us p, section.Vedic-Poojas .pooja-box p, section p {
+    font-size: 15px;
+    color: #666461;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+}
+a.btn {
+    color: #fff;
+    background-color: #cf4a46;
+    height: 50px;
+    width: 170px;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+    vertical-align: middle;
+}
+.aboutus-img {
+    position: relative;
+    width: auto;
+}
+.aboutus-img:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 84%;
+    border: 1px solid #ed3237;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+
+section.Vedic-Poojas {
+    padding: 90px 0;
+}
+
+section.Vedic-Poojas p, .vedic-astrology p, section.about-us.daily-scope p 
+{
+	font-size: 18px;
+	color: #666461;
+	    margin-bottom: 44px;
+	font-family: 'Lora', serif;	
+}
+.vedic-astrology p
+{
+	color: #fff;
+}
+section.Vedic-Poojas h1 {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+section.Vedic-Poojas .sub-heading-img.text-center
+{
+	margin-bottom: 70px;
+}
+
+section.Vedic-Poojas .pooja-box h1, section.Vedic-Poojas .pooja-box span {
+    font-size: 60px;
+    color: #cf4a46;
+    font-weight: 600;
+    margin: -34px 0 0 0;
+    padding: 0;
+    position: relative;
+}
+section.Vedic-Poojas .pooja-box h3 {
+    font-size: 22px;
+    color: #1f1e1e;
+    font-weight: 500;
+}
+
+section.Vedic-Poojas .pooja-box P {
+    margin-bottom: 0;
+}
+.pooja-box {
+    margin-bottom: 70px;
+}
+
+section.Vedic-Poojas:before, section.vedic-astrology:before, section.bhagwat_katha:before, section.services:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100px;
+    width: 2px;
+    background-color: #ebe5e0;
+    top: -50px;
+}
+section.vedic-astrology, section.Vedic-Poojas
+{
+	position: relative;
+}
+section.vedic-astrology
+{
+	padding: 90px 0;
+}
+section.vedic-astrology {
+    padding: 90px 0;
+    background-color: #cf4a46;
+    color: #fff;
+}
+.vedic-astrology .text-center.heading-img {
+    width: 100%;
+    float: left;
+}
+.col-5 {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+}
+.col-5-inner {
+    border: 1px solid;
+    min-height: 158px;
+    padding: 25px 0;
+    text-align: center;
+}
+.vedic-astrology img {
+    display: block;
+    margin: auto;
+}
+.vedic-astrology span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 11px;
+    display: block;
+}
+section.bhagwat_katha
+{
+position: relative;
+background-image: url(../img/bg01.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+text-align: center;
+}
+section.bhagwat_katha.vedic-astrology {
+    padding-top: 130px 0 135px;
+}
+
+section.bhagwat_katha p {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+section.bhagwat_katha a
+{
+	padding: 0px 25px;
+
+}
+
+.text-center-btn {
+    text-align: center;
+    display: table;
+    width: auto;
+    margin: auto;
+}
+.servic-box {
+    text-align: center;
+    background-color: #fbf8f4;
+    padding-bottom: 35px;
+}
+.servic-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -19px;
+    min-height: 40px;
+}
+.service-img {
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    vertical-align: middle;
+    display: table-cell;
+    margin: auto;
+}
+.service-img img {
+    object-fit: cover;
+    border: 0px solid;
+    width: auto;
+}
+.service-tbl {
+   margin: 0px auto;
+    width: auto;
+    text-align: center;
+    display: table;
+    position: relative;
+    top: -60px;
+}
+section.services {
+    padding: 90px 0;
+    position: relative;
+}
+.services h1, .services span.home-heading {
+    margin-top: 45px;
+    display: block;
+    font-size: 36px;
+    margin-bottom: 118px;
+}
+section.about-us.daily-scope .aboutus-img:before
+{
+content: "";
+display: none;
+}
+section.about-us.daily-scope {
+    background-image: url(../img/daily-scope.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 40px;
+}
+section.about-us.daily-scope p {
+    width: 67%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer-text {
+    font-size: 18px;
+    color: #cf4a46;
+    font-weight: 400;
+    text-align: center;
+    width: 67%;
+    margin: auto;
+    padding: 20px 0px;
+}
+section.subscribe {
+    background-color: #1e1716;
+    padding: 90px 0px 40px;
+    text-align: center;
+}
+section.subscribe h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+section.subscribe p {
+    color: #9e9998;
+    margin-top: 23px;
+}
+.input-group0 {
+    width: 330px;
+    position: relative;
+    margin: auto;
+}
+.input-group0 input {
+    background-color: #2f2726;
+    height: 55px;
+    border: none;
+    color: #776b69;
+    font-size: 15px;
+}
+.input-group0 .input-group-append {
+    width: 50px;
+    background-color: #cf4a46;
+    height: 54px;
+    line-height: 48px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.aboutus-img img
+{
+width: 90%;
+}
+footer {
+    background-color: #1a1413;
+    padding: 15px 0px;
+}
+footer span {
+    color: #9e9998;
+    font-size: 15px;
+    margin-top: 5px;
+    display: inline-block;
+}
+footer span span {
+    color: #cf4a46;
+}
+
+footer i.fa {
+    color: #cf4a46;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #2f2726;
+    border-radius: 50%;
+    text-align: center;
+    display: table-cell !important;
+    vertical-align: middle;
+        font-size: 18px !important;
+}
+footer li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+ul, ol
+{
+	margin: 0;
+	padding: 0;
+}
+
+section.about-us .slideInLeft
+{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+}
+.pooja-box2
+{	
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+}
+
+.pooja-box3
+{	
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+}
+
+.pooja-box4
+{	
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+}
+
+.pooja-box5
+{	
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+	-moz-animation-delay: 0.9s;
+}
+
+#myNavbar .caret
+{
+	position: relative;
+    top: -2px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent !important;
+    border-color: #428bca;
+}
+#myNavbar .navbar-nav > li > .dropdown-menu li {
+    padding: 9px 0px;
+}
+.navbar
+{
+	z-index: 99;
+}
+.sub-heading-img.text-center img {
+    max-width: 100%;
+}
+
+div#myNavbar.collapse.in {
+    z-index: 9999;
+    width: 100%;
+}
+.navbar-toggle .icon-bar
+{
+	background-color: transparent;
+
+}
+button.navbar-toggle {
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40px;
+    top: 24px;
+    width: 40px;
+}
+button.navbar-toggle:focus {
+    border: none !important;
+    outline: none;
+}
+button.navbar-toggle.cross {
+    background-image: url(../img/multiply.png);
+}
+
+.daily-scope-right {
+    margin-top: 120px;
+}
+section.page-title {
+    height: 200px;
+    background-image: url(../img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -110px;
+    text-align: center;
+}
+.page-title h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+.service-page .servcies-box {
+    padding-bottom: 60px;
+    position: relative;
+    padding-left: 100px;
+}
+.service-page .servcies-box:before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    width: 2px;
+    background-color: #ddd;
+    height: 100%;
+    top: 0;
+}
+.service-page .servcies-box:after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #ddd;
+    left: 20px;
+    border-radius: 50%;
+    top: 0;
+    background-image: url(http://demo.netwezard.com/Astrology/img/logo-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about-us-page:before, .service-page:before {
+    content: "";
+    display: none;
+}
+
+.page-info {
+    position: relative;
+    padding: 20px 0px;
+    background: #ffffff;
+    color: #1f1f1f;
+    border-bottom: 1px solid #f0f0f0;
+}
+.page-info .bread-crumb {
+    position: relative;
+    font-size: 14px;
+}
+.page-info .bread-crumb li {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+    color: #9e9e9e;
+    line-height: 24px;
+}
+.page-info .bread-crumb li a {
+    color: #cf4a46;
+}
+
+.why-choose-us {
+    position: relative;
+    padding: 80px 0px 30px;
+    background: #f9f9f9;
+}
+.sec-title h2 {
+    font-size: 36px;
+    color: #1f1f1f;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.icon-column-default {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+.icon-column-default .inner-box {
+    position: relative;
+    display: block;
+    padding-left: 90px;
+}
+.icon-column-default .inner-box h3 {
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-bottom: 7px;
+    color: #1f1f1f;
+    font-weight: 400;
+}
+.icon-column-default .inner-box .text {
+    line-height: 1.8em;
+}
+
+.icon-column-default .inner-box img {
+    height: 60px;
+}
+
+section.form input, section.form textarea
+{
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    color: #aaa9a9;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 100%;    
+    margin-bottom: 20px;
+    margin-right: 1%;
+    border-radius: 3px;
+}
+section.form form textarea
+{
+    height: 100px;
+}
+
+
+div#comment-input {
+    width: 80%;
+    margin: 60px auto;
+}
+section.form form input[type='submit']
+{
+    background-color: #cf4a46;
+    color: #fff;
+    border: none;
+}
+
+.contact-us .icon-box {
+ display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 75px;
+    font-size: 36px;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    background-color: #cf4a46;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-us .icon-box i{
+    font-size: 36px;
+}
+a.btn:hover {
+    color: #fff;
+}
+a.btn:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+a.btn:hover {
+  padding-right: 25px;
+}
+a.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.horoscope .pooja-box img {
+    width: 130px;
+}
+
+.horoscope-tabs ul.nav li.active a {
+    background-color: #cf4a46;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 40px;
+}
+.horoscope-tabs ul.nav li a {
+    background-color: #f7f7f7;
+    color: #555;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 40px;
+}
+.horoscope-tabs .nav-tabs {
+    border-bottom: 0px solid #dddddd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section.horoscope-tabs {
+    margin-top: 30px;
+}
+.horoscope-tabs .nav-tabs > li {
+    float: none;
+    margin-bottom: -1px;
+    display: inline-block;
+}
+.horoscope-tabs .tab-content {
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.other-services {
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ffffff47;
+    padding-bottom: 30px;
+}
+.pooja-box a {
+    color: #cf4a46;
+    display: block;
+}
+/*============= Responsive css =============*/
+@media screen and (max-width: 991px)
+{
+	header nav .navbar-brand img
+	{
+		width: 100%;
+	}
+	header nav .navbar-brand
+	{
+		padding: 20px 0px;
+		width: 160px;
+	}
+	div#myNavbar .nav > li > a
+	{
+		padding: 10px 11px;
+	}
+	#myCarousel span.glyphicon.glyphicon-chevron-right:before
+	{
+		right: 20px;
+	}
+}
+@media screen and (max-width: 767px)
+{
+
+    section.Vedic-Poojas.horoscope .pooja-box span
+    {
+font-size: 24px;
+    }
+    .aboutus-img:before
+    {
+        display: none;
+    }
+
+    .icon-column-default .inner-box
+    {
+        padding-left: 10px;
+    }
+    .pooja-box img {
+    width: 100%;
+}
+.service-page .servcies-box
+{
+    padding-left: 70px;
+}
+    section.page-title
+    {
+        height: 120px;
+        background-size: initial;
+    }
+    .page-title h1
+    {
+        margin-top: 40px;
+    }
+	div#myNavbar
+{
+	background-color: #fff;
+	z-index: 9999;
+	top: 105px;
+    left: 0;
+    right: 0;	
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 2px 13px -3px #999;
+}
+header nav ul.nav.navbar-nav {
+    margin-top: 0;
+}
+	header nav .navbar-brand {
+    padding: 23px 15px 0 0;
+    width: 190px;
+}
+	div#myNavbar.collapse, div#myNavbar.collapsing 
+{
+    background-color: #fff;
+}
+	.col-5 {
+    width: 33%;
+    margin-bottom: 5%;
+}
+#myCarousel span.glyphicon.glyphicon-chevron-right:before {
+    height: 25px;
+    right: 0;
+    width: 35px;
+    background-size: 100%;
+}
+#myCarousel span.glyphicon.glyphicon-chevron-left:before
+{
+    height: 25px;
+    width: 30px;
+    left: 0;
+    background-size: 100%;
+}
+#myCarousel .carousel-caption h3{
+	font-size: 18px;
+}
+#myCarousel .carousel-caption h1, #myCarousel .carousel-caption span, #myCarousel .carousel-caption span
+{
+	font-size: 39px;
+}
+#myCarousel .carousel-caption h2
+{
+	font-size: 32px;
+}
+#myCarousel .carousel-caption p
+{
+	font-size: 24px;
+}
+#myCarousel .carousel-caption
+{
+	left: 10%;
+	
+}
+.aboutus-img
+{
+	margin-bottom: 60px;
+}
+.footer-text{
+	width: 100%;
+}
+.aboutus-img {
+    width: 100%;
+    text-align: center;
+}
+section.about-us.daily-scope p
+{
+	width: 100%;
+}
+.servic-box {
+    margin-bottom: 80px;
+}
+.pooja-box > img {
+    max-width: 100%;
+}
+.pooja-box {
+    text-align: center;
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 580px)
+{
+    .horoscope-tabs .nav-tabs > li {
+    float: none;
+    margin-bottom: 9px;
+    display: block;
+}
+	.col-5 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+#myCarousel .carousel-caption {
+    left: 0%;
+    right: 0;
+    top: 10%;
+}
+#myCarousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+}
+#myCarousel .carousel-caption h3 {
+    font-size: 16px;
+}
+#myCarousel .carousel-caption h2 {
+    font-size: 21px;
+}
+#myCarousel .carousel-caption p {
+    font-size: 16px;
+}
+#myCarousel .carousel-caption h1, #myCarousel .carousel-caption span {
+    font-size: 24px;
+}
+.input-group0 {
+    width: 270px;
+}
+footer
+{
+	text-align: center;
+}
+footer span
+{
+	margin-bottom: 20px;
+}
+footer ul
+{
+	text-align: center;
+}
+}

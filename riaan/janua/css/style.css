@@ -1,0 +1,19 @@
+ul, li{list-style:none; padding:0; margin:0;}
+h1, h2, h3, h4, h5, h6{margin:0;}
+h4{font-size:15px; line-height:22px;}
+.homebody{background:url(../images/bodybackground.jpg) center top no-repeat; background-size:cover; padding:150px 0;}
+.home-wrapper{padding:70px 90px; background:rgba(255, 255, 255, 0.8); max-width:1170px; margin:0 auto;}
+.homelogo{max-width:225px; display:block; margin:0 auto;}
+.homelogo img{max-width:100%;}
+.home-locations{margin-top:70px;}
+.location-list h4{margin-bottom:20px; font-weight:bold;}
+.location-list ul{ margin-bottom:40px;}
+.location-list ul li{margin-bottom:5px;}
+.location-list ul li:last-child{marign:0;}
+.location-list ul li a{color:#333; text-decoration:underline; font-size:14px;}
+.location-list ul li a:hover{text-decoration:none;}
+
+@media(max-width:1024px){
+.homebody{padding:70px 0;}
+.home-wrapper{width:92%; padding:50px 30px;}	
+}

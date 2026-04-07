@@ -1,0 +1,134 @@
+@media(max-width: 1199px) {
+	a.navbar-brand {
+		max-width: 200px;
+		margin-right: 0;
+	}
+	.site-header .navbar-nav .nav-item {
+		padding: 10px 10px;
+	}
+	.banner-slide-inn {
+		min-height: 620px;
+	}
+	.banner-content {
+		margin-top: 171px;
+	}
+	.vision-content {
+		margin-top: 20px;
+	}
+	.find-soltn-content {
+		margin: 0px 0px;
+	}
+	.find-soltn-content h1 {
+		font-size: 57px;
+		line-height: 66px;
+	}
+	.find-soltn-content h1 small {
+		font-size: 47px;
+	}
+}
+
+@media(max-width: 991px) {
+	#navbarSupportedContent {
+		background: #000;
+	}
+	button.navbar-toggler {
+		background: #ffffff;
+		margin-left: 20px;
+	}
+	.site-header .navbar-nav .nav-item {
+		padding: 10px;
+	}
+	.site-header .navbar-nav .nav-item:after {
+		display: none;
+	}
+	.site-header .navbar-nav .nav-link {
+		display: inline-block;
+	}
+	.site-header .navbar-nav {
+		padding: 20px 10px;
+	}
+	.our-vision-sec {
+		padding: 50px 0px;
+		display: block;
+	}
+	.fint-sol-img {
+		position: static;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		width: 100%;
+		margin-top: 36px;
+	}
+	ul.contact-info li {
+		text-align: left;
+	}
+	.log-reg-btn-wrap {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-ordinal-group: 1;
+		    -ms-flex-order: 0;
+		        order: 0;
+		margin-left: auto;
+	}
+}
+
+@media(max-width: 767px) {
+	.container {
+		max-width: 100%;
+	}
+	.our-services .owl-nav button {
+		left: 0;
+		font-size: 25px !important;
+	}
+	.our-services .owl-nav button.owl-next {
+		right: 0px;
+	}
+	.video-sec,
+	.newsletter-sec {
+		padding: 30px 0px;
+	}
+	.find-soluation-sec,
+	.about-ngo-sec,
+	section.our-services {
+		padding: 40px 0px;
+	}
+	.newsletter-form .cstm-btn {
+		position: static;
+		margin-top: 20px;
+	}
+	.newsletter-form .form-input-icon {
+		position: absolute;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		top: 17px;
+	}
+	.newsletter-sec .form-control {
+		padding-right: 20px;
+	}
+	.newsletter-form {
+		text-align: center;
+	}
+	.find-soltn-content h1 {
+		font-size: 41px;
+		line-height: 45px;
+	}
+	.find-soltn-content h1 small {
+		font-size: 30px;
+	}
+	.banner-content h1 {
+		font-size: 50px;
+		line-height: 45px;
+	}
+	.banner-content h1 small {
+		font-size: 25px;
+	}
+}
+
+@media(max-width: 480px) {
+	a.navbar-brand {
+		max-width: 160px;
+		margin-right: 0;
+	}
+}

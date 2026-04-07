@@ -1,0 +1,14 @@
+
+@media(min-width: 300px) and (max-width: 768px){
+	.mainMenu{display: none; position: absolute; top: 103px; left: 0; border-top: 2px solid #2bc9be; right: 0; background: rgba(0, 0, 0, 0.8);}
+	.container, .contentOuter.step4.mapView{padding: 0 15px;}
+	.showNav{display: block;}
+	.mainMenu.mainMenushow{display: block ;}
+	.mainMenu > ul, .mainMenu > ul li{width: 100%;}
+	.mainMenu.mainMenushow{float: left; width: 100%; background: #000; z-index: 99;}
+	.innerpage .topFixNav .navigation li a{color: #fff;}
+	.topFixNav .navigation li a{line-height: 45px; width: 100%;}
+	.topFixNav .navigation li a:hover{ background: rgba(255,255,255,0.2)}
+	
+}
+

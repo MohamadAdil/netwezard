@@ -1,0 +1,164 @@
+//navbar
+header {
+  border-bottom: 1px solid $borderColor;
+}
+
+.nav_bar {
+  @include flexDisplay();
+  @include flexFlow(row);
+  @include flexAlignItems(center, center);
+  @include flexJustifyContent(space-between, justify);
+  padding: 0px;
+  height: 60px;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: $smallLineHeight;
+  color: $colorGrey;
+  letter-spacing: 0.5px;
+  text-transform:capitalize;
+
+  .logo {
+    padding-top: 6px;
+    img {
+      max-width: 50%;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      width: 52%;       
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+      width: 32%;       
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 22%;       
+    }
+  }
+
+  .nav_links {
+    .mobile_menu {
+      display: inline-block;
+      a {
+        margin-left: 20px;
+        font-weight:bold;
+        color: #939393;
+        @include transition(color, .2s, linear);
+        &:hover,
+        &.current {
+          color: $colorGreen;
+        }
+        &:last-child {
+          margin-right: 10px;   
+        }
+      }
+      i:not(:last-child) {
+        margin-right: 10px;
+      }
+      .lang_btn{display:inline-block;}
+      @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+        position: absolute;
+        display: none;
+        width: 100%;
+        background: $colorWhite;
+        top: 60px;
+        left: 0px;
+        z-index: 500;
+        padding: 20px;
+        a, .lang_btn {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .menu_divider {
+      margin-right: 10px;
+      color: #CECECE;
+    }
+
+    .btn_secondary {
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: 14px;
+      margin-left:5px;
+    }
+
+    .back_btn{
+      margin-left:10px;
+      i{vertical-align: middle;}
+    }
+
+    .mobile_menu_btn {
+      display: none;
+      @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+        display: inline-block;
+        margin-left:15px;
+        cursor: pointer;
+        @include transition(color, .2s, linear);
+        &:hover {
+          color: $colorGreen;
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+//footer
+.main_footer {
+  @extend .section_type1;
+  @include gradientBackground();
+  @include innerShadow();
+  font-size: 14px;
+  line-height: 18px;
+  color: $colorWhite;
+
+  h4 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: $smallFontSize;
+    line-height: $smallLineHeight;
+    margin: 0px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-weight: 300;
+    color: $colorWhite;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    i {
+      color: $colorWhite;
+      margin-right: 10px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .text_copyright {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    text-align:center;
+    .col-xs-12:not(:last-child){
+      margin-bottom:30px;
+    }
+  }
+
+  &.checkout_footer .text_copyright{
+    text-align:center;
+  }
+}

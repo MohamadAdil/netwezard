@@ -1,0 +1,81 @@
+.choose-studio{
+    padding-bottom: 50px;
+    h2{
+        margin-bottom: 20px;
+    }
+    .container{
+        max-width: 1000px;
+        .studio-box{
+            border-radius: 20px;
+            background: #f4f4f4;
+            overflow: hidden;
+            position: relative;
+            margin-top: 25px;
+            cursor: pointer;
+            label{
+                border-radius: 42px;
+                padding: 6px 12px;
+                font-size: $fs-12;
+                font-weight: $fw-500;
+                color: $color-black;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+                &.studio{
+                    background: #00D9F5;
+                }
+                &.service-center{
+                    background: $color-blue;
+                    color: $color-white;
+                }
+            }
+            .image-wrapper{
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+            }
+            .content{
+                padding: 20px;
+                background: #f4f4f4;
+                h3{
+                    font-size: $fs-20;
+                    font-weight: $fw-600;
+                }
+                h4{
+                    font-size: $fs-12;
+                    font-weight: $fw-600;
+                    margin-bottom: 0;
+                }
+            }
+            &.active{
+                &:after{
+                    content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        border: 3px solid $color-blue;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .store-btn-lg{
+        margin-top: 80px;
+        width: 100%;
+        max-width: 425px;
+    }
+}

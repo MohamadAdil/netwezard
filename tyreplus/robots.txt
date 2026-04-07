@@ -1,0 +1,4 @@
+User-agent: *
+allow: /
+
+Sitemap: http://www.tyreplusedinburgh.co.uk/sitemap.xml

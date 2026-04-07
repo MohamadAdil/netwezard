@@ -1,0 +1,123 @@
+@media(max-width: 1199px) {
+    .main-banner .container {
+        max-width: 85%;
+    }
+    .banner-heading{
+        font-size: 35px;
+    }
+}
+@media(max-width: 991px) {
+    .banner-form {
+        position: relative;
+        transform: none;
+        margin-top: -160px;
+    }
+    .get-started-form {
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    }
+    .banner-slider .item {
+        min-height: 450px;
+    }
+    .banner-heading{
+        text-align: center;
+    }
+    .sec-heading h1{
+        font-size: 30px;
+    }
+    .adeventure-plan-listing li{
+        flex-wrap: wrap;
+    }
+    figure.image-card {
+        width: 100%;
+        padding: 10px;
+        background: #eeeeee;
+    }
+    .adeventure-content{
+        width: 100%;
+    }
+    .adeventure-content{
+        padding: 20px 0px;
+    }
+    .adeventure-plan-listing li:nth-child(even) .image-card{
+        order: unset;
+    }
+    .adeventure-plan-sec {
+        padding: 40px 0px;
+    }
+    .about-us-sec, .our-features-sec, .why-choose-us-sec, .contact-us-sec, .our-clients, .testimonials-sec {
+        padding: 40px 0px;
+    }
+    figure.about-img{
+        margin-top: 20px;
+    }
+	
+}
+
+
+
+@media(max-width: 767px) {
+	.banner-heading {
+        font-size: 20px;
+    }
+    .main-banner .container {
+        max-width: 100%;
+    }
+    .get-started-form{
+        padding: 20px;
+    }
+    .navbar-brand {
+        max-width: 100px;
+    }
+    .about-img:after{
+        height: 130px;
+        width: 130px;
+    }
+    .contact-links li a strong{
+        display: none;
+    }
+    .top-bar h3{
+        font-size: 15px;
+    }
+    .social ul li i{
+        width: 22px;
+    height: 22px;
+    font-size: 12px;
+    }
+    .social ul li{
+        padding: 5px;
+    }
+    .social ul li a{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .social{
+        transform: translatex(-274px);
+    }
+    .image-card{
+        height: 290px;
+    }
+    .sec-heading h1 {
+        font-size: 24px;
+    }
+    .banner-form{
+        margin-top: -80px;
+    }
+    .banner-slider .item{
+        min-height: 290px;
+    }
+    .banner-slider .owl-nav button{
+        width: 25px;
+        height: 25px;
+        font-size: 15px !important;
+    }
+    .copyright-text p{
+        font-size: 14px;
+    }
+    .testimonials-sec{
+        padding: 40px 0px;
+    }
+}
+
+@media(max-width: 480px) {
+
+}

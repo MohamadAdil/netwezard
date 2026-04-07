@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="scss/style.css" rel="stylesheet"/>
+    <link href="scss/custom-ui.css" rel="stylesheet"/>
+    <title>Lucid | Store</title>
+  </head>
+  <body>
+    <!-- Body -->
+  <div class="payment-done">
+    <div class="top-box text-center">
+      <div class="decoration">
+        <svg class="icon">
+          <use xlink:href="images/svg-sprite.svg#icon-decoration"></use>
+      </svg>
+      <div class="success-check">
+        <svg class="icon">
+          <use xlink:href="images/svg-sprite.svg#icon-check"></use>
+        </svg>
+      </div>
+      </div>
+      <div class="totalpay-amount">
+        $86.60
+      </div>
+      <p>Payment Done</p>
+      <div class="change-money">$13.40 Change out of $100</div>
+    </div>
+    <button class="store-btn-lg btn-blue">Send email & Text message</button>
+    <div class="button-wrapper">
+      <a href="javascript:void(0)" class="store-btn btn-border">Send Text</a>
+      <a href="javascript:void(0)" class="store-btn btn-border">Send email</a>
+      <a href="javascript:void(0)" class="store-btn btn-border">Print Receipt</a>
+    </div>
+  </div>
+
+<!-- Pay Cash Moda -->
+<div class="modal fade lucid-modal pay-cash-modal" id="pay-cash-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Pay via Cash</h2>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            <div class="totalpay-amount">$86.60</div>
+            <div class="form-row">
+                <label class="title">Enter cash amount</label>
+                <input type="text" class="form-control" placeholder="Enter cash amount">
+            </div>
+            <div class="form-row">
+                <button class="store-btn-lg btn-blue">Tender</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <!-- Body End -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="src/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

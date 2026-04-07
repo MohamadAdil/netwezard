@@ -1,0 +1,148 @@
+.text-right{
+	text-align: right;
+}
+/* Heading Styles */
+h2{
+	font-size: 34px;
+	line-height: 51px;
+	font-weight: 700;
+}
+h3{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+/* Margin Classess */
+.mb-10{
+	margin-bottom: 10px;
+}
+.mb-15{
+	margin-bottom: 15px;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.mb-25{
+	margin-bottom: 25px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+
+/* font weight */
+.fw-500{
+	font-weight: 500 !important;
+}
+.fw-600{
+	font-weight: 600 !important;
+}
+.fw-700{
+	font-weight: 700 !important;
+}
+.fw-800{
+	font-weight: 800 !important;
+}
+/* Button Classes */
+.btn-blue{
+    background: #456BD9;
+}
+.btn-blue:hover{
+    background: #3453AE;
+}
+  .c-btn{
+    color: #fff;
+    border-radius: 3px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.c-btn svg{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}                                                                                                         
+.c-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-border{
+	border:1px solid #456BD9;
+	color: #456BD9;
+}
+.btn-border:hover{
+	color: #fff;
+	background: #000;
+	border:1px solid #000;
+}
+.btn-border.white{
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn-border.white:hover{
+	border: 1px solid #fff;
+	background: #fff;
+	color: #456BD9;
+}
+.inactive{
+    pointer-events: none;
+    background: #E9E9E9;
+    color: #7D7D7D;
+    cursor: not-allowed;
+}
+.btn-lg{
+    padding: 20px 40px;
+}
+.btn-md{
+    padding: 15px 30px;
+}
+.btn-sm{
+	padding: 10px 20px;
+}
+.btn-xsm{
+    padding: 9px 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* Button CSS End */
+
+/* Form CSS */
+.form-control{
+	border-radius: 3px;
+	border: 1px solid #CACACA;
+	padding: 11px 12px;
+	font-size: 16px;
+	font-weight: 500;
+	width: 100%;
+	display: inline-block;
+	color: #7D7D7D;
+}
+.form-select{
+	border: 1px solid #cacaca;
+    font-size: 16px;
+    color: #000;
+    border-radius: 3px;
+    padding: 11px 12px;
+    background-image: url(../images/icon-select-nob.svg);
+    background-size: 12px;
+    width: 100%;
+    font-weight: 500;
+}
+.form-select:focus{
+	box-shadow: none;
+	outline: none;
+	border-color: #CACACA;
+}

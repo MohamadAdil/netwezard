@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?do7xsl');
+  src:  url('../fonts/icomoon.eot?do7xsl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?do7xsl') format('truetype'),
+    url('../fonts/icomoon.woff?do7xsl') format('woff'),
+    url('../fonts/icomoon.svg?do7xsl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e922";
+  color: #456bd9;
+}
+
+.icon-edit:before {
+  content: "\e91b";
+}
+.icon-inventory:before {
+  content: "\e91c";
+}
+.icon-inventory-re-count:before {
+  content: "\e91d";
+}
+.icon-lock:before {
+  content: "\e91e";
+}
+.icon-loss:before {
+  content: "\e91f";
+}
+.icon-order-cancelled:before {
+  content: "\e920";
+}
+.icon-stock-received:before {
+  content: "\e921";
+}
+.icon-drag-v-icon:before {
+  content: "\e919";
+  color: #fff;
+}
+.icon-angle-down:before {
+  content: "\e900";
+  color: #7d7d7d;
+}
+.icon-angle-right:before {
+  content: "\e901";
+}
+.icon-arrow-down1:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e903";
+}
+.icon-bookv:before {
+  content: "\e904";
+  color: #5c5c5c;
+}
+.icon-channels:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-dashboard:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-devices .path1:before {
+  content: "\e907";
+  color: rgb(255, 255, 255);
+}
+.icon-devices .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-devices .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-devices .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-devices .path5:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-ellipsis-v:before {
+  content: "\e90c";
+  color: #7d7d7d;
+}
+.icon-inventory1:before {
+  content: "\e90d";
+  color: #fff;
+}
+.icon-mailbox:before {
+  content: "\e90e";
+  color: #5c5c5c;
+}
+.icon-permissions:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-pricebook:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-products:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-promotions:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-right-tick:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e914";
+}
+.icon-studios:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-transactions:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-user:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-user2:before {
+  content: "\e918";
+  color: #fff;
+}

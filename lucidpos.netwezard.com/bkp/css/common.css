@@ -1,0 +1,128 @@
+.text-right{
+	text-align: right;
+}
+/* Heading Styles */
+h2{
+	font-size: 34px;
+	line-height: 51px;
+	font-weight: 700;
+}
+h3{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+/* Button Classes */
+.btn-blue{
+    background: #456BD9;
+}
+.btn-blue:hover{
+    background: #3453AE;
+}
+  .c-btn{
+    color: #fff;
+    border-radius: 3px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.c-btn svg{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}                                                                                                         
+.c-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-border{
+	border:1px solid #456BD9;
+	color: #456BD9;
+}
+.btn-border:hover{
+	color: #fff;
+	background: #000;
+	border:1px solid #000;
+}
+.btn-border.white{
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn-border.white:hover{
+	border: 1px solid #fff;
+	background: #fff;
+	color: #456BD9;
+}
+.inactive{
+    pointer-events: none;
+    background: #E9E9E9;
+    color: #7D7D7D;
+    cursor: not-allowed;
+}
+.btn-lg{
+    padding: 20px 40px;
+}
+.btn-md{
+    padding: 15px 30px;
+}
+.btn-sm{
+	padding: 10px 20px;
+}
+.btn-xsm{
+    padding: 9px 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* Button CSS End */
+/* Navigation */
+.navbar-toggler{
+	border: 0;
+	background: none;
+	padding: 0;
+}
+.navbar-toggler:focus{
+	outline: 0;
+	box-shadow: none;
+}
+.navbar-toggler .navbar-toggler-icon{
+	height: 2px;
+	width: 22px;
+	background: #fff;
+	position: relative;
+}
+.navbar-toggler .navbar-toggler-icon:before, .navbar-toggler .navbar-toggler-icon:after{
+	content: "";
+	height: 2px;
+	width: 22px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.navbar-toggler .navbar-toggler-icon:before{
+	top: -7px;
+}
+.navbar-toggler .navbar-toggler-icon:after{
+	bottom: -7px;
+}
+@media(max-width:767px){
+	#site-header #navbarSupportedContent{
+		position: absolute;
+		background: rgba(0, 0, 0, .7);
+		top: 48px;
+		left: 0;
+		width: 100%;
+		padding: 10px 15px;
+	}
+}

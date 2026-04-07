@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery NavSide Plugin Demo</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/jquery.navside.js"></script>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0099AA;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #7b7b7a;
+  font-size: 12px;
+  line-height: 18px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Menu styles
+===========================*/
+
+</style>
+<script>
+$(document).ready(function() {
+					$(function(){
+						$("#navside").navside({
+					            position         : 'right',   // options for Position: 'left' or 'right'. Default is 'right'
+					            scroll           : 'fixed'  // options for Scroll: 'hidden' or 'fixed'. Default is 'hidden'
+					        });
+					});
+				});
+</script>
+<link href="css/navside.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav id="navside">
+  <ul id="sidebar-menu">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

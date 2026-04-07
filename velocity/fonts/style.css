@@ -1,0 +1,502 @@
+/*
+
+Theme Name: Kick Starter
+Theme URI: https://www.kickstarter.com/
+Author: Unique IT Systems (Mukesh Kumar)
+Author URI: http://uniqueitsystems.com 
+Description: Kickstarter is the world's largest funding platform for creative projects. A home for film, music, art, theater, games, comics, design, photography, and more.
+Version: 1.0 
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: kick-starter 
+Tags: film, music, art, theater, games, comics, design, photography, kickstarter
+ 
+This theme, like WordPress, is licensed under the GPL.  
+ 
+
+*/ 
+ @font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('fonts/ProximaNovaRegular.eot');
+    src: url('fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaRegular.woff2') format('woff2'),
+         url('fonts/ProximaNovaRegular.woff') format('woff'),
+         url('fonts/ProximaNovaRegular.ttf') format('truetype'),
+         url('fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('fonts/ProximaNovaBold.eot');
+    src: url('fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaBold.woff2') format('woff2'),
+         url('fonts/ProximaNovaBold.woff') format('woff'),
+         url('fonts/ProximaNovaBold.ttf') format('truetype'),
+         url('fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('fonts/ProximaNovaLight.eot');
+    src: url('fonts/ProximaNovaLight.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaLight.woff2') format('woff2'),
+         url('fonts/ProximaNovaLight.woff') format('woff'),
+         url('fonts/ProximaNovaLight.ttf') format('truetype'),
+         url('fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+}
+
+ a {
+    color: #333;
+    font-size: inherit;
+    outline: none;
+    text-decoration: none
+    }
+
+.clearfix {
+    clear: both
+    }
+
+h1, h2, h3, h4, h5 {
+    font-family: "ProximaNovaBold";
+    font-weight: normal;
+    line-height: normal
+    }
+
+h1 {
+    font-size: 27px
+    }
+
+h2 {
+    font-size: 25px
+    }
+
+h3 {
+    font-size: 21px
+    }
+
+.light {
+    font-family: "ProximaNovaLight"
+    }
+
+b, strong {
+    font-weight: 600;
+    font-family: "ProximaNovaBold"
+    }
+
+a:hover {
+    text-decoration: none;
+    color: #333;
+    outline: none
+    }
+
+img {
+    max-width: 100%;
+    height: auto
+    }
+.site-header {
+margin-top: 50px;
+}
+.btn {
+    padding: 10px 29px;
+    line-height: normal;
+	font-family: "ProximaNovaBold";
+    -moz-border-radius: 49px !important;
+    -webkit-border-radius: 49px !important;
+    border-radius: 49px !important
+    }
+
+.btn-success {
+    background-color: #90d447;
+    border-color: #90d447;
+    font-style: normal;    
+    color: #fcfbf9;
+    font-size: 23px
+    }
+
+.btn-success:hover {
+    -moz-box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    background-color: #90d447;
+    border-color: #90d447
+    }
+
+ul.process li:hover h3 {
+    font-size: 30px
+    }
+
+.btn-primary {
+    color: #7df0b9;
+    background-color: #fff;
+     
+    border-color: #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 21px;
+    }
+
+.btn-primary:hover {
+    color: #7df0b9;
+	 box-shadow: 0 0 10px #fff;
+    background-color: #fff;
+    border-color: #fff
+    }
+
+a, button, .button, span, .icon, .box-icon, h3 {
+    /*transition*/
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
+    }
+
+body {
+    background: #fff;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 17px;
+    line-height: 21px
+    }
+
+.logo {
+    position: absolute;
+    left: 72px;
+    top: 15%
+    }
+.myform_mail {
+text-align: center;
+max-width: 600px;
+margin: auto;
+padding: 10px;
+background: rgba(255,255,255,0.1);
+border-radius: 10px;
+overflow: hidden;
+}
+
+.myform_mail input#mc4wp_email {
+width: 68%;
+float: left;
+border-radius: 0;
+padding: 12px;
+font-size: 27px;
+color: #b1b2b3;
+line-height: normal;
+}
+
+.myform_mail input[type="submit"] {
+background: #9beac5;
+font-family: "ProximaNovaBold";
+color: #fff;
+width: 30%;
+border: none;
+float: right;
+height: 53px;
+font-size: 27px;}
+ 
+.bannerbutton {
+    margin-top: 20px
+    }
+
+.mybanner {
+    position: relative
+    }
+
+.banner-content {
+    position: absolute;
+    top: 40%;
+    font-size: 62px;
+    line-height: normal;
+    left: 72px;
+    color: #fff
+    }
+
+.testimonial {
+    background: rgba(158, 240, 202, 0.8);
+    overflow: hidden
+    }
+
+.section-home {
+    padding: 50px 70px
+    }
+
+.three-block {
+    padding: 0
+    }
+
+.kicklogo {
+    font-style: italic;
+    color: #fff;
+    font-size: 22px
+    }
+
+h1.section-title {
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 65px;
+    text-transform: uppercase;
+	font-size: 30px;
+letter-spacing: 1.6px;
+    }
+
+.bigheading {
+    font-size: 45px;
+    margin-bottom: 29px;
+    margin-top: 50px
+    }
+
+h1.section-title span {
+    display: block;
+    font-size: 12px;
+    font-family: "ProximaNovaRegular"
+    }
+
+.howitwork {
+    background: rgba(255, 255, 255, 0.9)
+    }
+
+.howitwork iframe {
+    max-width: 100%
+    }
+
+ul.process {
+    margin: 0;
+    padding: 0;
+    list-style: none
+    }
+
+ul.process li {
+    padding-bottom: 30px
+    }
+
+ul.process li h3 {
+    text-transform: uppercase;
+    height: 25px
+    }
+
+ul.process li:nth-last-child(0) {
+    padding: 0
+    }
+
+.big-testimonial {
+    border-bottom: 1px solid #94dcbb;
+    padding-top: 0;
+    padding-bottom: 30px;
+    overflow: hidden;
+    font-size: 21px;
+    line-height: 24px
+    }
+
+.client {
+    font-size: 16px
+    }
+
+.sml-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden
+    }
+
+.big-testimonial .col-xs-2 {
+    max-width: 93px;
+    padding-right: 0;
+	 
+    }
+
+.boxes {
+    margin: 0;
+    list-style: none;
+    padding: 0
+    }
+
+.boxes li {
+    float: left;
+    width: 33.3%;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-size: 90% !important;
+    background-size: 90% !important;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
+    }
+
+.boxes li:hover {
+    -webkit-background-size: 100% !important;
+    background-size: 100% !important
+    }
+
+.boxheading {
+    text-align: center;
+    color: #fff;
+    padding: 80px 20px
+    }
+
+.box-description {
+    background: rgba(64, 98, 162, 0.8);
+    padding: 25px;
+    color: #fff;
+    min-height: 160px
+    }
+
+.footer-section {
+    background: #2d3135;
+    color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 20px 5px;
+    font-size: 14px
+    }
+
+.madein {
+    text-align: right
+    }
+@media (min-width:1200px){ 
+.container {
+ 
+ width: 1517px;
+}
+body{font-size:22px; line-height:31px;}
+.bigheading{
+font-size: 56px;
+margin-bottom: 50px;
+margin-top: 60px;
+}
+.kicklogo {
+ 
+font-size: 29px;
+}
+.big-testimonial .col-xs-2{
+margin-right:20px;
+}
+ul.process li {
+padding-bottom: 30px;
+font-size: 17px;
+line-height: 21px;
+}
+.big-testimonial {
+ 
+font-size: 30px;
+line-height: 33px;
+}
+
+.client {
+font-size: 18px;
+}
+.btn-success { 
+font-size: 30px;
+}
+h2 {
+font-size: 35px;
+}
+
+.box-description {
+ 
+min-height: 217px;
+}
+.banner-content{
+font-size: 88px;
+line-height: 89px;
+left: 146px;
+}
+.logo{ left:146px;}
+.bannerbutton {
+margin-top: 60px;
+}
+.btn-primary{
+font-size: 28px;
+}
+}
+@media (max-width:1199px){
+.box-description {
+ 
+min-height: 217px;
+}
+}
+@media (max-width:991px){
+.banner-content{ 
+top: 42%;
+font-size: 43px; 
+left: 45px; 
+}
+.logo {
+position: absolute;
+left: 45px;
+top: 15%;
+}
+
+
+.boxes li h2 {
+font-size: 22px;
+}
+.box-description {
+ 
+min-height: 240px;
+}
+.btn-primary{
+font-size:16px;
+}
+ }
+
+
+
+  
+
+ @media (max-width:767px){
+.boxes li {
+float: none;
+width: 100%;
+overflow: hidden;
+position: relative;
+background-size: 90% !important;
+}
+.boxes li h2 {
+font-size: 32px;
+}
+.box-description {
+min-height: initial;
+}
+ }
+@media (max-width:620px){ 
+.section-home {
+padding: 50px 10px;
+}
+.myform_mail input#mc4wp_email {
+width: 100%; float:none; display:inline-block;
+}
+
+.myform_mail input[type="submit"] {
+float:none; display:inline-block;
+width: 70%;  margin:10px 0 0 0;}
+
+
+.madein, .footer-section {
+text-align: center;
+}
+.banner-content { 
+font-size: 24px; 
+left: 17px;
+}
+.banner-content .btn-primary {
+font-size: 15px;
+padding: 6px 20px;
+}
+.bannerbutton {
+margin-top: 10px;
+}
+.logo{
+width: 40%;
+left: 17px;
+}
+}
+
+@media (max-width:370px){ 
+.banner-content{
+font-size: 18px;}
+.banner-content .btn-primary {
+font-size: 12px;
+padding: 6px 9px;
+}
+}

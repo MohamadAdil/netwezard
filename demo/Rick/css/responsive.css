@@ -1,0 +1,47 @@
+
+@media (min-width: 480px)
+{
+.col-xs-15
+{
+	width: 33.33%
+}
+}
+
+@media (min-width: 768px) {
+    .col-xs-15{
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-xs-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-xs-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media screen and (max-width: 1199px)
+{
+  
+
+}
+
+@media screen and (max-width: 991px)
+{
+  
+}
+
+@media screen and (max-width: 767px)
+{
+	header img {
+    width: 90px;
+}
+header.header .navbar-toggle {
+    top: 31px;
+}
+}

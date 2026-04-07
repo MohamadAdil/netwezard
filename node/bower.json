@@ -1,0 +1,26 @@
+{
+  "name": "nodeio",
+  "authors": [
+    "mkarya <contactmukesh01@gmail.com>"
+  ],
+  "description": "Node is the first Account-Based Intelligence platform for market identification and revenue acceleration.",
+  "main": [
+    "app/bower_component/jquery/dist/jquery.min.js"
+  ],
+  "keywords": [
+    "Account",
+    "market"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

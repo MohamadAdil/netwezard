@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Order Booking - Lotus Indian Restaurant & Bar</title>
+<meta name="keywords" content="Online Order, Lunch Order, Dinner Order, Book your lunch and dinner, curry recipes, indian restaurant recipes, chicken curry recipes, curry house cookery, indian cooking, indian food recipes" />
+<meta name="description" content="Book your Dinner/Lunch order online on Lotus Indian Restaurant website and book your table online on our website" />
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Lotus Indian Restaurant & Bare"/>
+<meta name="home_url" content="http://www.lotusindianrestaurant.co.uk"/>
+<link href="css/lotus_css.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="images/favicon.png"/>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+/* Function of HOMEPAGE FLEX SLIDER */
+ $(window).load(function() {
+
+    $('.flexslider').flexslider();
+
+  });
+
+/* Function of HOMEPAGE FLEX SLIDER END */
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40217038-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="mainwrapper">
+	<!-- Header Start Here -->
+    <div id="header">
+    	<a href="http://www.lotusindianrestaurant.co.uk" class="logo">Lotus Indian Restaurant & Bar</a>
+        <div class="fr">
+        	<div class="toprow">
+                <div class="phonewrap">
+                	<div class="phone">Call Us 01316629212</div>
+                    <div class="timing">Open 7 days at week 12pm - 11pm</div>
+                </div>
+                <ul class="socialicon">
+                    <li><a href="#" class="gplus"></a></li>
+                    <li><a href="https://www.facebook.com/pages/LOTUS-Indian-Restaurant-Bar/378776785563498" target="_blank" class="facebook"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                 </ul>
+                <div class="clearfix"></div>
+                <div id="topnav">
+                     <div class="centerbg">
+                        <ul>
+                            <li><a href="http://www.lotusindianrestaurant.co.uk">Home</a></li>
+                            <li class="sept"></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li class="sept"></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                            <li class="sept"></li>
+                            <li><a href="pdf/lotusindianrb_menu.pdf" target="_blank">Menu</a></li>
+                            <li class="sept"></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="online-order-booking.html" class="onlineorder selected">Online order booking</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End here-->
+    <!-- Slider Start Here -->
+    <div class="sliderwrapper">
+    	<div class="sliderbox">
+			<div class="badge"></div>
+        	<div class="flexslider">
+		<ul class="slides">
+				<li><img src="images/slider-1.jpg" alt="" /></li>
+				<li><img src="images/slider-2.jpg" alt="" /></li>
+				<li><img src="images/slider-3.jpg" alt="" /></li>
+                <li><img src="images/slider-4.jpg" alt="" /></li>
+				<li><img src="images/slider-5.jpg" alt="" /></li>
+		</ul>
+
+</div>
+        </div>
+    </div>
+    <!-- Slider end here -->
+    
+    <!-- Content Start here -->
+    <div class="content">
+    	<div class="contentleft">
+        	<h1>Online Order Booking</h1>
+            <p>Please fill the below fields to order online Lunch and Dinner:</p>
+            <div class="onlineorderform">
+           <form method="post" class="form-horizontal" id="orderonline-form" action="thank-you-for-order-online.php" >
+        	<fieldset>
+            	<label for="name" class="control-label">Full Name<span class="redstar">*</span></label>
+                <input type="text" maxlength="30" class="input-xlarge" name="name" id="name">
+            </fieldset>
+            <fieldset>
+            	<label for="email" class="control-label">Email Address<span class="redstar">*</span></label>
+                <input type="text" id="email" name="email" class="input-xlarge">
+            </fieldset>
+            <fieldset>
+            	<label for="address1" class="control-label">Address 1<span class="redstar">*</span></label>
+                <input type="text" id="address1" name="address1" class="input-xlarge">
+            </fieldset>
+            <fieldset>
+            	<label for="address2" class="control-label">Address 2<span class="redstar">*</span></label>
+                <input type="text" id="address2" name="address2" class="input-xlarge">
+            </fieldset>
+			<fieldset>
+            	<label for="phone" class="control-label">Phone Number<span class="redstar">*</span></label>
+                <input type="text" name="phone" id="phone" class="input-xlarge" maxlength="11" />
+            </fieldset>
+            <fieldset>
+            	<label for="lunch/dinner" class="control-label">Order for Lunch/Dinner<span class="redstar">*</span></label>
+                <input type="text" id="lunch" name="lunch" class="input-xlarge">
+            </fieldset>
+            <fieldset class="commentbox">
+            	<label for="message" class="control-label">Your Message<span class="redstar">*</span></label>
+                <textarea rows="5" name="message" id="message" class="input-xlarge" ></textarea>
+            </fieldset>
+            <fieldset class="form-actions">
+		            <input type="submit" value="Submit" class="submit" id="ordersubmit">
+            </fieldset>
+        </form>
+            	
+            </div>
+
+
+        </div>
+        <div class="contentright">
+        	<img src="images/banner-right.jpg" alt="" />
+            <div class="booktableform">
+            	<div class="tablebookhead">Book a Table Online</div>
+                
+                <div class="form_body">
+                        <form action="thank-you.php" id="tablebookform" class="form-horizontal" method="post" onsubmit="javascript: return validate_form(this);" novalidate="novalidate">
+                        <fieldset>
+                            <label class="control-label" for="name">Full Name<span class="redstar">*</span></label>
+					        <input type="text" id="name" name="name" class="input-xlarge" maxlength="30">
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="email">Email<span class="redstar">*</span></label>
+                            <input type="text" class="input-xlarge" name="email" id="email">
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="phone">Phone Number<span class="redstar">*</span></label>
+                            <input type="text" class="input-xlarge" name="phone" id="phone" maxlength="11">
+                        </fieldset>
+                        <fieldset>
+                            <div class="smallwrap"><label class="control-label" for="person">Persons<span class="redstar">*</span></label>
+                            <input type="text" class="input-xlarge" name="person" id="person" maxlength="2">
+                            </div>
+                            <div class="smallwrap"><label class="control-label" for="time">Time<span class="redstar">*</span></label>
+                            <input type="text" class="input-xlarge" name="time" id="time" maxlength="5">
+                            </div>
+                            <div class="smallwrap mr0"><label class="control-label" for="date">Date<span class="redstar">*</span></label>
+                            <input type="text" class="input-xlarge" name="date" id="date" maxlength="10">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="message">Any Special Request /Comment<span class="redstar">*</span></label>
+                            <textarea class="messagebox" name="message" id="message" rows="3"></textarea>
+                        </fieldset>
+                        <div class="form-actions">
+		            <input type="submit" class="submitbtn" value="Submit" />
+        			</div>
+                    </form>
+                    
+                    
+                    
+                        </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Content End here -->
+    
+    <div id="footer">
+    	<div class="footerinner">
+           	<div class="footerlogo"></div>
+            <div class="addressdiv">
+            	79 Buccleuch Street,
+Edinburgh EH8 9LS<br /><br />
+T: 01316629212
+            </div>
+            <div class="fr">
+            	<ul class="footerlink">
+                            <li><a href="http://www.lotusindianrestaurant.co.uk">Home</a></li>
+                            <li>/</li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li>/</li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                            <li>/</li>
+                            <li><a href="pdf/lotusindianrb_menu.pdf" target="_blank">Menu</a></li>
+                            <li>/</li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li>/</li>
+                            <li><a href="online-order-booking.html">Online order booking</a></li>
+                        </ul>
+            	<div class="clearfix"></div>
+                <ul class="footersocial">
+                	<li><a href="#" class="gplus"></a></li>
+                    <li><a href="https://www.facebook.com/pages/LOTUS-Indian-Restaurant-Bar/378776785563498" target="_blank" class="facebook"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="bottomfooter">
+            	<p class="fl">© 2013 Copyright Lotus Indian restaurant & Bar</p>
+                <div class="fr">Site Developed by: <a href="http://sublimezsolutions.com" target="_blank" class="sublimezlink">Sublimez Solutions</a></div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+</body>
+</html>

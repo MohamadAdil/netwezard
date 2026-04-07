@@ -1,0 +1,3549 @@
+@charset "UTF-8";
+/*
+Mixins
+*/
+/* font size PX to EM with base size { default: 16 } */
+/* font size with breakpoints */
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/* mixin for multiline */
+/* _____ VARIABLES _____ */
+/* Breakpooints */
+/* base font */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/*scss/modules/_hero-home.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+.hero-home {
+  position: relative;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.24) 46%, #000000), url("../assets/images/home-bg@2x.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+@media (min-width: 48em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-height: 800px) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home {
+    height: 400px;
+  }
+}
+
+@media (min-width: 40em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home {
+    background-position: left 30%;
+  }
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+.hero-home h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding: 0px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+.hero-home h1 span {
+  display: block;
+}
+
+@media (min-width: 40em) {
+  /* line 48, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home h1 span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 48em) {
+  /* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+/* line 59, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+.hero-home h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  padding: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+@media (min-width: 48em) {
+  /* line 59, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+  .hero-home h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+}
+
+/* line 76, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-home.scss */
+.hero-home .slider-prev, .hero-home .slider-next {
+  background: transparent;
+}
+
+/*scss/modules/_testimonial-home.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_testimonial-home.scss */
+.testimonial-home {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 85px;
+  text-align: center;
+  padding: 0px 20px 15px 20px;
+}
+
+@media (min-width: 48em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_testimonial-home.scss */
+  .testimonial-home {
+    margin-top: 25px;
+  }
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_testimonial-home.scss */
+.testimonial-home .testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  background: url("https://s3.amazonaws.com/uifaces/faces/twitter/esthercrawford/128.jpg");
+  background-size: 100%;
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_testimonial-home.scss */
+.testimonial-home .text-item-title {
+  margin: 0px 0px 12px 0px;
+  color: #ffffff;
+}
+
+/* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_testimonial-home.scss */
+.testimonial-home .text-body-roman {
+  color: #ffffff;
+  padding: 0px 20px;
+}
+
+/*scss/modules/_brand-info.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-info.scss */
+div[role="brand-info"] {
+  overflow: auto;
+  background: #ffffff;
+}
+
+/* line 8, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-info.scss */
+.brand-info {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 45px;
+}
+
+/*scss/modules/_video-box.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+section[role="video-item"] {
+  display: block;
+  overflow: auto;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+/* line 10, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+section[role="video-item"] .last {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 64em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+  section[role="video-item"] {
+    margin-bottom: 0px;
+  }
+}
+
+/* line 18, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+section[role="video-item"] .text-discuss {
+  padding: 10px 15px 15px 15px;
+  height: 79px;
+  overflow: hidden;
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 360px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box:after {
+  content: "";
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.24) 46%, #000000);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* line 53, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box:not(.full-width) {
+  height: 185px;
+}
+
+/* line 57, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box.full-width {
+  height: 215px;
+}
+
+@media (min-width: 48em) {
+  /* line 57, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+  .video-box.full-width {
+    height: 350px;
+  }
+}
+
+@media (min-width: 64em) {
+  /* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+  .video-box {
+    height: 350px;
+    padding: 0px 0px 0px 0px;
+  }
+  /* line 70, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+  .video-box:not(.full-width) {
+    height: 166px;
+  }
+}
+
+/* line 76, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .video-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .video-bg__video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* line 88, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .watching-now {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 0px;
+  height: 25px;
+  width: auto;
+  text-align: right;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 6px 0px 10px;
+  border-top-left-radius: 26px;
+  border-bottom-left-radius: 26px;
+  opacity: 0.75;
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 20;
+}
+
+/* line 119, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .watching-now .person {
+  margin-right: 5px;
+}
+
+/* line 123, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .watching-now span {
+  padding-top: 1px;
+}
+
+/* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .play-small, .video-box .play-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/* line 137, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_video-box.scss */
+.video-box .video-info {
+  margin-bottom: 10px;
+}
+
+/*scss/modules/_video-box-strech.scss*/
+/*scss/modules/_section-info.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+div[role="section-info"] {
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+.section-info {
+  display: block;
+  height: 80px;
+  width: 100%;
+  padding-top: 35px;
+  margin-bottom: 10px;
+}
+
+/* line 16, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+.section-info .cat-selection {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  padding: 9px 0px 0px 0px;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+.section-info .cat-selection .drop-arrow {
+  margin: -10px 0px 0px 3px;
+}
+
+/* line 27, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+.section-info .btn {
+  float: right;
+}
+
+/* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_section-info.scss */
+.cat-videos {
+  padding: 0px 0px 55px 0px;
+}
+
+/*scss/modules/_buttons.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn button {
+  width: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-main, .btn-secondary, .btn-white {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-main button, .btn-secondary button, .btn-white button {
+  padding: 0px 10px;
+  border-radius: 2px;
+}
+
+/* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-primary button {
+  height: 40px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+  border-radius: 1px;
+}
+
+@media (min-width: 48em) {
+  /* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-primary button {
+    height: 46px;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0px 30px;
+  }
+}
+
+/* line 80, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-main button {
+  height: 36px;
+  border: 1px solid #FF5252;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #FF5252;
+}
+
+@media (min-width: 48em) {
+  /* line 80, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-main button {
+    border: 1px solid #FF5252;
+  }
+}
+
+/* line 93, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-main button:hover {
+  border: 1px solid #E54A4A;
+}
+
+/* line 103, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-secondary button {
+  height: 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #14E6B3;
+  border: 1px solid #14E6B3;
+}
+
+@media (min-width: 40em) {
+  /* line 103, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-secondary button {
+    width: 180px;
+  }
+}
+
+/* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-secondary button:hover {
+  background: #14E6B3;
+  color: #ffffff;
+  border: 1px solid #30FFCD;
+}
+
+/* line 125, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-white {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-white button {
+  width: auto;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #333333;
+  border: none;
+  background: #ffffff;
+  padding: 0px 20px;
+}
+
+@media (min-width: 40em) {
+  /* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-white button {
+    width: auto;
+  }
+}
+
+/* line 144, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-white button:hover {
+  background: #eeeeee;
+  color: #333333;
+}
+
+/* line 156, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login button {
+  width: 100%;
+  height: 47px;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+  background: #3B5998;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+@media (min-width: 34em) {
+  /* line 156, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-fb-login button {
+    width: 300px;
+  }
+}
+
+/* line 178, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login button:hover {
+  background: #314A7E;
+  color: #ffffff;
+}
+
+/* line 183, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login button:active {
+  background: #2E4576;
+}
+
+/* line 188, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-primary {
+  padding: 30px 0px;
+}
+
+/* line 191, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-primary button {
+  height: 45px;
+}
+
+/* line 197, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-second {
+  display: block;
+  padding: 24px 0px;
+}
+
+/* line 201, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-second button {
+  height: 35px;
+  background: transparent;
+  border: 1px solid #3B5998;
+  color: #3B5998;
+}
+
+/* line 207, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-second button:hover {
+  background: #314A7E;
+  color: #ffffff;
+}
+
+/* line 212, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-second button:active {
+  background: #2E4576;
+}
+
+/* line 220, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-fb-login.-second.--logged button:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  margin: 0px 20px 0px 0px;
+  background: url("https://s3.amazonaws.com/uifaces/faces/twitter/mds/128.jpg") no-repeat;
+  background-size: 100%;
+}
+
+/* line 241, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-add-to-cart button, .btn-checkout button, .btn-review button, .btn-share-story button {
+  width: 100%;
+  height: 45px;
+  padding: 14px 10px;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+  border-radius: 1px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
+/* line 260, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-add-to-cart {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 265, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-add-to-cart button {
+  background: #888888;
+}
+
+/* line 273, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-checkout button {
+  background-image: linear-gradient(to right, #ff5b00, #ff0063);
+}
+
+/* line 279, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-review {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+/* line 284, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-review button {
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+  border-radius: 1px;
+  margin: initial;
+}
+
+@media (min-width: 48em) {
+  /* line 284, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-review button {
+    width: 220px;
+  }
+}
+
+/* line 296, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+.btn-share-story {
+  height: 40px;
+  margin: 0 auto;
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+  border-radius: 2px;
+}
+
+@media (min-width: 34em) {
+  /* line 296, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_buttons.scss */
+  .btn-share-story {
+    width: 300px;
+  }
+}
+
+/*scss/modules/_tabs.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_tabs.scss */
+.ui-tabs {
+  display: block;
+  height: 38px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background: #ffffff;
+}
+
+/* line 12, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_tabs.scss */
+.ui-tabs .tab-link {
+  width: 33%;
+  height: 38px;
+  float: left;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-bottom: transparent;
+  transition: border-bottom 0.13s ease;
+}
+
+@media (min-width: 64em) {
+  /* line 12, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_tabs.scss */
+  .ui-tabs .tab-link {
+    width: 110px;
+    max-width: 110px;
+  }
+}
+
+/* line 31, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_tabs.scss */
+.ui-tabs .tab-link.ReactTabs__Tab--selected {
+  border-bottom: 2px solid #FF5252;
+}
+
+/*scss/modules/_product-item-list.scss*/
+/* line 4, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 11, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item .product-details, .product-item .product-image {
+  position: relative;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item .product-details .text-product-name {
+  margin-bottom: 3px;
+}
+
+/* line 21, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item .product-details .product-reviews {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item .product-details .product-reviews span.text-sub {
+  padding: 2px 0px 0px 5px;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item .product-image {
+  background: url("../assets/images/product.png") no-repeat;
+  background-size: cover;
+}
+
+/* line 46, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.container[role="list-view"] {
+  padding: 10px 0px 40px 0px;
+}
+
+@media (min-width: 41.25em) {
+  /* line 46, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+  .container[role="list-view"] {
+    padding: 0px 0px 40px 0px;
+  }
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item.list-view {
+  margin-top: 12px;
+  background: #ffffff;
+}
+
+/* line 63, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item.list-view .product-details {
+  width: 70%;
+  min-height: 180px;
+  max-height: 180px;
+  float: left;
+  padding: 15px;
+  background: #ffffff;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 40em) {
+  /* line 63, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+  .product-item.list-view .product-details {
+    padding: 27px;
+  }
+}
+
+@media (min-width: 64em) {
+  /* line 63, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+  .product-item.list-view .product-details {
+    width: 100%;
+    float: none;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+/* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+.product-item.list-view .product-image {
+  width: 30%;
+  float: right;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 64em) {
+  /* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-list.scss */
+  .product-item.list-view .product-image {
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+    float: none;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/*scss/modules/_product-item-image.scss*/
+/* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+section[role="product-item"] > .container, div[role="content"] > .container, div[role="cart"] > .container {
+  padding: 0px;
+}
+
+@media (min-width: 48em) {
+  /* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  section[role="product-item"] > .container, div[role="content"] > .container, div[role="cart"] > .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-image, .product-item.item-view .product-details {
+  width: 100%;
+  float: none;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-image {
+  height: 320px;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 48em) {
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view .product-image {
+    height: 620px;
+  }
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 15px;
+}
+
+@media (min-width: 48em) {
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view .product-details {
+    padding: 0px;
+    margin-top: 6px;
+  }
+  /* line 45, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view .product-details .text-product-name {
+    font-size: 18px;
+  }
+}
+
+/* line 50, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details .product-cat-item {
+  padding-bottom: 24px;
+}
+
+/* line 53, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details .product-cat-item .text-item-title {
+  margin: 14px 0px 14px 0px;
+}
+
+/* line 57, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details .product-cat-item:not(.last) {
+  border-bottom: 2px solid #EDEDED;
+}
+
+/* line 62, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details ul {
+  padding-left: 20px;
+}
+
+/* line 66, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-details li {
+  list-style-type: disc;
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+/* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .product-price {
+  top: 0px;
+  bottom: initial;
+  right: -10px;
+}
+
+@media (min-width: 38.75em) {
+  /* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view .product-price {
+    top: 0px;
+    bottom: initial;
+    right: 0px;
+    padding: 7px 15px;
+    border-radius: 36px;
+  }
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view ul.product-images-list {
+  display: none;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-top: 7px;
+}
+
+@media (min-width: 64em) {
+  /* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view ul.product-images-list {
+    display: block;
+  }
+}
+
+/* line 101, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view ul.product-images-list li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view ul.product-images-list li:not(:last-child) {
+  margin-right: 7px;
+}
+
+/* line 109, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view ul.product-images-list li img {
+  width: 115px;
+  height: 115px;
+  opacity: 0.2;
+}
+
+/* line 114, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view ul.product-images-list li img.active {
+  opacity: 1;
+}
+
+/* line 122, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .slider-prev,
+.product-item.item-view .slider-next {
+  opacity: 0;
+}
+
+@media (min-width: 40em) {
+  /* line 122, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-item.item-view .slider-prev,
+  .product-item.item-view .slider-next {
+    opacity: 1;
+  }
+}
+
+/* line 131, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .slider-dots {
+  position: absolute;
+  bottom: 0px;
+  padding: 0px 0px 15px 0px;
+}
+
+/* line 137, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-item.item-view .slider-dots button:before {
+  botton: 0px;
+  color: #ffffff;
+}
+
+/* line 148, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+section[role="product-item"] .section-info {
+  padding: 0px 20px;
+}
+
+@media (min-width: 42.1875em) {
+  /* line 148, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  section[role="product-item"] .section-info {
+    padding: 0px;
+  }
+}
+
+/* line 156, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+section[role="product-item"] .section-info .btn {
+  padding: 0px;
+  margin: initial;
+}
+
+/* line 160, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+section[role="product-item"] .section-info .btn button {
+  padding: 0px 15px;
+}
+
+/* line 168, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+.product-actions {
+  margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 48em) {
+  /* line 168, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-actions {
+    width: 100%;
+    position: fixed;
+    bottom: 33px;
+    left: 0;
+    right: 0;
+    clear: both;
+    margin: 40px 0px 0px 0px;
+  }
+  /* line 182, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-actions .btn {
+    float: left;
+    width: 50%;
+    margin-top: 0px;
+  }
+  /* line 188, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-image.scss */
+  .product-actions .btn button {
+    opacity: 1;
+  }
+}
+
+/*scss/modules/_product-item-details.scss*/
+/*scss/modules/_discussion-item.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-container {
+  position: relative;
+  height: 100%;
+  max-height: 1500px;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 62em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+  .discussion-container {
+    padding-bottom: 0px;
+  }
+}
+
+/* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+section[role="discussion"] {
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background: #ffffff;
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  padding: 15px 15px 0;
+  background: #ffffff;
+}
+
+/* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item:not(.last) {
+  border-top: 1px solid #EDEDED;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .head {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 44, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .profile-img, .discussion-item .info {
+  float: left;
+}
+
+/* line 48, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .text-discuss {
+  padding: 12px 0px 15px 0px;
+}
+
+/* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .actions {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+@media (min-width: 42.375em) {
+  /* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+  .discussion-item .actions {
+    right: 0;
+  }
+}
+
+/* line 62, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .actions div {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3px;
+}
+
+/* line 69, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .actions div:first-child {
+  margin-right: 10px;
+}
+
+/* line 73, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item .actions div span {
+  padding-left: 5px;
+}
+
+/* line 79, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-item.scss */
+.discussion-item.reply {
+  padding-left: 60px;
+}
+
+/*scss/modules/_cart-item.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+div[role="cart"] .text-item-title {
+  padding: 24px 20px;
+}
+
+@media (min-width: 48em) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+  div[role="cart"] .text-item-title {
+    padding: 24px 0px;
+  }
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #F0F0F0;
+  overflow: auto;
+}
+
+/* line 20, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-product-image, .cart-item .cart-product-details {
+  display: inline-block;
+  float: left;
+  height: 110px;
+}
+
+/* line 25, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-product-image {
+  width: 110px;
+  margin-right: 10px;
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-product-details {
+  position: relative;
+  width: auto;
+  padding-top: 10px;
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-product-details .cart-product-qty {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-product-details .cart-product-qty .text-product-description {
+  padding: 0px 10px;
+}
+
+/* line 49, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .cart-close {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+/* line 55, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-item.scss */
+.cart-item .product-price {
+  bottom: 20px;
+  right: 10px;
+  border-radius: 36px;
+}
+
+/*scss/modules/_cart-order-summary.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-order-summary.scss */
+.cart-order-summery .order-summary-item {
+  position: relative;
+  overflow: auto;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-order-summary.scss */
+.cart-order-summery .order-summary-item p {
+  float: left;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-order-summary.scss */
+.cart-order-summery .order-summary-item span {
+  float: right;
+}
+
+/*scss/modules/_discussion-input.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  background: #ffffff;
+  padding: 15px;
+  border-top: 1px solid #EDEDED;
+}
+
+@media (max-width: 64em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+  .discussion-input {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 35;
+  }
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input p {
+  display: inline-block;
+  float: left;
+}
+
+/* line 31, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input .profile-img {
+  float: right;
+  margin: 0px 0px 15px 0px;
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input .input {
+  padding: 0px 0px 11px 0px;
+  border-bottom: 2px solid #dddddd;
+}
+
+/* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input .btn {
+  margin-top: 20px;
+  float: left;
+}
+
+/* line 46, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discussion-input.scss */
+.discussion-input .commentTextArea {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #EDEDED !important;
+  outline: none !important;
+  padding: 5px !important;
+}
+
+/*scss/modules/_checkout-field.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-field.scss */
+div[role="checkout"] {
+  padding-top: 24px;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-field.scss */
+div[role="checkout"] .text-item-title {
+  margin-bottom: 10px;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-field.scss */
+.grid-row .input {
+  margin-top: 10px;
+}
+
+/*scss/modules/_brand-about-header.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-header.scss */
+.brand-about {
+  background: #ffffff;
+}
+
+/* line 8, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-header.scss */
+.brand-about-header {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, #ff5b00, #ff0063);
+  padding: 20px 0px 24px 0px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 21, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-header.scss */
+.brand-about-header .profile-img {
+  width: 80px;
+  height: 80px;
+  margin: 0px auto 10px auto;
+}
+
+/* line 27, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-header.scss */
+.brand-about-header .text-item-title, .brand-about-header .text-body {
+  color: #ffffff;
+}
+
+/* line 31, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-header.scss */
+.brand-about-header .text-item-title {
+  margin-bottom: 6px;
+}
+
+/*scss/modules/_brand-about-info.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-info.scss */
+.brand-about-info {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 25px 0px;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-info.scss */
+.brand-about-info .text-caption {
+  margin-bottom: 3px;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-info.scss */
+.brand-about-info .text-body {
+  margin-bottom: 18px;
+}
+
+/*scss/modules/_brand-about-blurbs.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs {
+  width: 100%;
+  position: relative;
+  padding: 25px 0px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 12, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .text-item-title {
+  padding-bottom: 16px;
+}
+
+/* line 16, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .blurb-box {
+  width: 300px;
+  height: 131px;
+  border-radius: 1px;
+  background-image: linear-gradient(to bottom, #fcfcfc, #f7f7f7);
+  border: solid 1px #dddddd;
+  padding: 20px 0px 16px 0px;
+  text-align: center;
+  margin: 0px auto 24px auto;
+}
+
+@media (min-width: 48em) {
+  /* line 16, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+  .brand-about-blurbs .blurb-box {
+    width: 242px;
+  }
+}
+
+/* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .blurb-box .text-caption {
+  position: relative;
+  padding-bottom: 22px;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .blurb-box .text-caption:after {
+  background: #979797;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  bottom: 12px;
+  width: 10px;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 53, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .blurb-box .text-body {
+  padding-bottom: 9px;
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+.brand-about-blurbs .slider-prev, .brand-about-blurbs .slider-next {
+  background: transparent;
+  display: none;
+}
+
+@media (min-width: 40em) {
+  /* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-blurbs.scss */
+  .brand-about-blurbs .slider-prev, .brand-about-blurbs .slider-next {
+    display: block;
+  }
+}
+
+/*scss/modules/_brand-about-quotes.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-quotes.scss */
+.brand-about-quotes {
+  width: 100%;
+  position: relative;
+  padding: 31px 0px 28px 0px;
+  text-align: center;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-quotes.scss */
+.brand-about-quotes .text-quote {
+  padding-bottom: 22px;
+}
+
+/*scss/modules/_brand-about-videos.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-videos.scss */
+.brand-about-videos {
+  width: 100%;
+  padding: 23px 0px 28px 0px;
+  text-align: center;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 11, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-videos.scss */
+.brand-about-videos .text-item-title {
+  padding-bottom: 18px;
+}
+
+/*scss/modules/_brand-about-instagram.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+.brand-about-instagram {
+  width: 100%;
+  padding: 23px 0px 32px 0px;
+  text-align: center;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 11, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+.brand-about-instagram .instagram-row {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  margin-top: 18px;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+.brand-about-instagram .instagram-row .instagram-img {
+  display: inline-block;
+  width: 50%;
+}
+
+@media (min-width: 48em) {
+  /* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+  .brand-about-instagram .instagram-row .instagram-img {
+    width: 25%;
+  }
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+.brand-about-instagram .instagram-row .instagram-img:not(:last-child) {
+  margin: 0px 10px 0px 0px;
+}
+
+/* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-about-instagram.scss */
+.brand-about-instagram .instagram-row .instagram-img img {
+  width: 100%;
+  background-size: contain;
+}
+
+/*scss/modules/_product-item-review.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item {
+  padding: 11px 20px 35px 20px;
+}
+
+@media (min-width: 42.1875em) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+  .product-item-review .discussion-item {
+    padding: 11px 0px 35px 0px;
+  }
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .left-head {
+  float: left;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .right-head {
+  float: right;
+}
+
+/* line 20, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .right-head .product-reviews {
+  float: right;
+  margin-bottom: 7px;
+}
+
+/* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .right-head .product-reviews .icon:not(:last-child) {
+  padding-right: 3px;
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .right-head .text-sub {
+  display: block;
+  clear: both;
+}
+
+/* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .text-discuss {
+  padding: 4px 0px 6px 0px;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-item-review.scss */
+.product-item-review .discussion-item .actions div {
+  margin-right: 0px;
+}
+
+/*scss/modules/_cart-add.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  right: 0;
+  top: -205px;
+  z-index: 40;
+  padding: 20px 15px 18px 15px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: top 0.4s ease;
+}
+
+@media (min-width: 48em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+  .cart-add-box {
+    width: 320px;
+    right: 63px;
+  }
+}
+
+/* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box.visible {
+  top: 63px;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box .text-item-title {
+  padding-bottom: 13px;
+  text-align: center;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box .text-product-name {
+  margin-bottom: 4px;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box .grid-block {
+  margin-bottom: 24px;
+}
+
+/* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_cart-add.scss */
+.cart-add-box .grid-block.-half:last-child {
+  text-align: right;
+}
+
+/*scss/modules/_product-review-input.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-review-input.scss */
+.product-review-input > div {
+  width: 460px;
+  height: 375px;
+}
+
+/* line 10, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-review-input.scss */
+.product-review-input .text-shop {
+  margin-bottom: 20px;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-review-input.scss */
+.product-review-input .product-image {
+  width: 140px;
+  height: 140px;
+  margin: 0px 20px 30px 0px;
+}
+
+/* line 20, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_product-review-input.scss */
+.product-review-input .input {
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 30px 0px;
+}
+
+/*scss/modules/_checkout-thank-you.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+header[role="checkout-header"] {
+  border-bottom: 10px solid #EDEDED;
+}
+
+@media (min-width: 40em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+  header[role="checkout-header"] {
+    border-bottom: 1px solid #EDEDED;
+  }
+}
+
+/* line 11, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+header[role="checkout-header"] .header-bg {
+  background: url("../assets/images/checkout-header.png") 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 90px;
+}
+
+@media (min-width: 40em) {
+  /* line 11, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+  header[role="checkout-header"] .header-bg {
+    height: 150px;
+  }
+}
+
+/* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+.thank-you-message {
+  text-align: center;
+  padding: 18px 0px 15px 0px;
+}
+
+@media (min-width: 40em) {
+  /* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+  .thank-you-message {
+    padding: 23px 0px 42px 0px;
+  }
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+.thank-you-message h4 {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #333333;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 40em) {
+  /* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+  .thank-you-message h4 {
+    font-size: 24px;
+    line-height: 33px;
+    padding-bottom: 5px;
+  }
+}
+
+/* line 50, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+.thank-you-message .brand-info {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 13px 16px;
+}
+
+@media (min-width: 40em) {
+  /* line 50, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_checkout-thank-you.scss */
+  .thank-you-message .brand-info {
+    padding: 17px 26px;
+  }
+}
+
+/*scss/modules/_size-guide-block.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block {
+  width: 100%;
+  display: block;
+  margin: 15px 0px 25px 0px;
+}
+
+/* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block .sizes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block .sizes li {
+  position: relative;
+  display: inline-block;
+  margin-right: 24px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333333;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block .sizes li.disable {
+  color: #888888;
+  text-decoration: line-through;
+  cursor: initial;
+  pointer-events: none;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block .sizes li.active, .size-guide-block .sizes li:hover {
+  cursor: pointer;
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-block.scss */
+.size-guide-block .sizes li.active:before, .size-guide-block .sizes li:hover:before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #888888;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 10px;
+}
+
+/*scss/modules/_size-guide-list.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list {
+  background: transparent url("../assets/images/size-guide-bg.png");
+  background-size: cover;
+}
+
+/* line 8, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list > div {
+  width: 460px;
+  height: auto;
+  background: transparent;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list.mobile {
+  padding: 20px;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list.mobile .close {
+  display: none;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list .text-item-title {
+  margin-bottom: 12px;
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list .text-discuss {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* line 31, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list .men-sizes {
+  border-bottom: 1px solid #F0F0F0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 38, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list table {
+  width: 100%;
+}
+
+/* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list table td {
+  padding-bottom: 25px;
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #888888;
+  letter-spacing: 0.25px;
+}
+
+/* line 51, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list table td strong {
+  font-weight: 900;
+  color: #333333;
+}
+
+/* line 59, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-guide-list table.women-sizes {
+  width: 200px;
+}
+
+/* line 67, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_size-guide-list.scss */
+.size-active .size-guide-list.modal {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+/*scss/modules/_home-stories.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_home-stories.scss */
+.home-stories {
+  padding: 55px 0px 0px 0px;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_home-stories.scss */
+.home-stories h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_home-stories.scss */
+.home-stories .slider-dots {
+  margin: 25px 0px;
+}
+
+/*scss/modules/_hero-discover.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 60px 0px 60px 0px;
+  background: url("../assets/images/hero-discover-bg@2x.png") no-repeat 50% 50%;
+  background-position: center 80%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover h3, .hero-discover h4 {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+@media (min-width: 48em) {
+  /* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+  .hero-discover h3, .hero-discover h4 {
+    text-align: left;
+  }
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover h3 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 48em) {
+  /* line 47, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+  .hero-discover .btn {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+/* line 53, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover .btn button {
+  text-transform: initial;
+}
+
+/* line 63, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-discover.scss */
+.hero-discover .slider-dots li button:before {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/*scss/modules/_hero-spread.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 150px 0px 150px 0px;
+  text-align: center;
+}
+
+/* line 16, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../assets/images/share-love-bg-d.png) repeat;
+  opacity: 0.04;
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread img {
+  margin-bottom: 45px;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+  margin-bottom: 4px;
+  padding-bottom: 0px;
+}
+
+/* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-spread.scss */
+.hero-spread .btn {
+  margin-top: 45px;
+}
+
+/*scss/modules/_factoid.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_factoid.scss */
+.factoid-item {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background-image: linear-gradient(-270deg, #FF3366 0%, #FF5B00 100%);
+  border-radius: 50px 6.5px 6.5px 50px;
+  min-height: 60px;
+  width: 420px;
+}
+
+/* line 16, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_factoid.scss */
+.factoid-item .factoid-content {
+  position: relative;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15px;
+}
+
+/* line 25, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_factoid.scss */
+.factoid-item .history {
+  width: 50px;
+  position: relative;
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_factoid.scss */
+.factoid-item p {
+  padding: 16px 25px 16px 10px;
+}
+
+/* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_factoid.scss */
+.factoid-item .close-white {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*scss/modules/_hero-brands-of-the-day.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 60px 0px 80px 0px;
+  background: url("../assets/images/brand-of-the-day-bg@2x.png") no-repeat 50% 50%;
+  background-position: center 50%;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 20, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day p {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day h1, .brands-of-the-day h2 {
+  color: #ffffff;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.64px;
+  line-height: 46px;
+  margin-bottom: 5px;
+}
+
+/* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+@media (min-width: 48em) {
+  /* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+  .brands-of-the-day h2 {
+    padding: 0px 100px 0px 0px;
+  }
+}
+
+/* line 55, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day .video-info {
+  margin-bottom: 40px;
+}
+
+/* line 59, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day .video-info .social-share {
+  color: #ffffff;
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+.brands-of-the-day .slider-prev, .brands-of-the-day .slider-next {
+  display: none;
+  background: transparent;
+}
+
+@media (min-width: 48em) {
+  /* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_hero-brands-of-the-day.scss */
+  .brands-of-the-day .slider-prev, .brands-of-the-day .slider-next {
+    display: block;
+  }
+}
+
+/*scss/modules/_discover-filler.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-filler.scss */
+.discover-filler {
+  width: 100%;
+  padding: 55px 0px 70px 0px;
+  text-align: center;
+}
+
+/* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-filler.scss */
+.discover-filler p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+  padding: 0px 20px;
+}
+
+@media (min-width: 48em) {
+  /* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-filler.scss */
+  .discover-filler p {
+    padding: 0px;
+  }
+}
+
+/*scss/modules/_discover-categories.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-90deg, #FF0063 0%, #FF5B00 100%);
+  margin-bottom: 50px;
+  transition: all 0.5s;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories [type="checkbox"], .discover-categories label {
+  display: none;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories .current-cat {
+  display: none;
+}
+
+@media (max-width: 64em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories {
+    margin-bottom: 20px;
+  }
+  /* line 25, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories .container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+  /* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav {
+    height: 60px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 40, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav ul {
+    display: none;
+  }
+  /* line 44, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    z-index: 99999;
+  }
+  /* line 55, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories label:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin: 10px 5px;
+    box-shadow: 0px 8px 0px #fff, 0px 17px 0px #fff;
+  }
+  /* line 65, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories [type="checkbox"]:checked ~ ul {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    right: -10px;
+    left: -10px;
+    top: 55px;
+    background-image: linear-gradient(-90deg, #FF0063 0%, #FF5B00 100%);
+    height: auto;
+    padding-bottom: 20px;
+  }
+  /* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories .current-cat {
+    display: block;
+  }
+  /* line 82, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
+    text-indent: 20px;
+  }
+  /* line 91, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav > ul > li {
+    margin: 0px 0px 5px 0px;
+  }
+  /* line 95, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav > ul li ul li {
+    display: block;
+    float: none;
+  }
+  /* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories nav > ul li ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    float: none;
+  }
+  /* line 108, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+  .discover-categories ul li a.active {
+    display: none;
+  }
+}
+
+/* line 114, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories ul {
+  height: 60px;
+  display: block;
+  text-align: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 123, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 128, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories ul li:last-child {
+  margin-right: 0px;
+}
+
+/* line 134, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories ul li a, .discover-categories .current-cat {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.23px;
+  padding-bottom: 3px;
+}
+
+/* line 143, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-categories.scss */
+.discover-categories ul li a.active, .discover-categories .current-cat.active {
+  font-weight: 800;
+  border-bottom: 1px solid #ffffff;
+}
+
+/*scss/modules/_project-box.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+section[role="discover-videos"] {
+  border-bottom: 1px solid #EBE5E5;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+section[role="discover-videos"] .btn-main {
+  margin: 40px 0px 45px 0px;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box {
+  position: relative;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(rgba(38, 37, 37, 0.5), rgba(38, 37, 37, 0.5)), url("../assets/images/project-box-bg.png") no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box.small {
+  height: 195px;
+  padding: 0px 20px;
+}
+
+/* line 32, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box.small p {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 48em) {
+  /* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+  .project-box {
+    padding: 0px 80px;
+  }
+}
+
+/* line 47, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box:hover:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(rgba(38, 37, 37, 0.6), rgba(38, 37, 37, 0.6));
+  z-index: 30;
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box:hover .btn-primary {
+  display: block;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 40;
+}
+
+/* line 70, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.39px;
+  margin-bottom: 10px;
+}
+
+/* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* line 90, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box .video-info span {
+  color: #ffffff;
+}
+
+/* line 95, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box .btn-primary {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: color 0.25s, -webkit-transform 0.25s;
+  transition: transform 0.25s, color 0.25s;
+  transition: transform 0.25s, color 0.25s, -webkit-transform 0.25s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 113%);
+      -ms-transform: translate(-50%, 113%);
+          transform: translate(-50%, 113%);
+}
+
+/* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_project-box.scss */
+.project-box .btn-primary button {
+  text-transform: capitalize;
+}
+
+/*scss/modules/_discover-brands.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-brands.scss */
+section[role="discover-brands"] {
+  padding: 55px 0px 20px 0px;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-brands.scss */
+section[role="discover-brands"] h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* line 17, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-brands.scss */
+section[role="discover-brands"] .slider-dots {
+  margin: 0px 0px 25px 0px;
+}
+
+/*scss/modules/_brand-box.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box {
+  position: relative;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 195px;
+  padding: 0px 40px;
+  margin-bottom: 20px;
+  background: linear-gradient(rgba(38, 37, 37, 0.6), rgba(38, 37, 37, 0.6)), url("../assets/images/brand-box-bg.png") no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+/* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box:hover:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  z-index: 30;
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box .brand-info {
+  height: auto;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* line 41, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box .brand-info .text-shop {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 5px 0px 0px;
+}
+
+/* line 47, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box .brand-info .text-caption {
+  font-size: 13px;
+  color: #ddd;
+  margin-bottom: 0px;
+  padding-top: 1px;
+}
+
+/* line 55, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.39px;
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_brand-box.scss */
+.brand-box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+/*scss/modules/_discover-search.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px 70px 0px;
+  background: url("../assets/images/discover-search-bg.png") no-repeat 50% 50%;
+  background-position: center 80%;
+  background-size: cover;
+}
+
+/* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search h4 {
+  display: block;
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.38px;
+  margin-bottom: 40px;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search .search-form {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0px 0px 0px 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 300;
+  color: #333333;
+  letter-spacing: 0.22px;
+}
+
+/* line 48, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search input::-webkit-input-placeholder {
+  color: #5C5655;
+}
+
+/* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search input:-moz-placeholder {
+  color: #5C5655;
+}
+
+/* line 56, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #5C5655;
+}
+
+/* line 60, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+.discover-search input:-ms-input-placeholder {
+  color: #5C5655;
+}
+
+@media (min-width: 40em) {
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_discover-search.scss */
+  .discover-search input {
+    width: 350px;
+  }
+}
+
+/*scss/modules/_login-modal.scss*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal > div {
+  width: 350px;
+  height: auto;
+  background: #D8D8D8;
+  box-shadow: 0px 1px 2px 0px rgba(174, 167, 167, 0.5);
+  border-radius: 5px;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top {
+  position: relative;
+  height: 240px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 22, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top .login-content {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 60;
+  padding: 30px 25px 0px 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-1, .login-modal .login-top.slide-2, .login-modal .login-top.slide-3 {
+  background: linear-gradient(-181deg, rgba(255, 148, 0, 0.63) 3%, rgba(255, 0, 99, 0.63) 100%);
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-1:before, .login-modal .login-top.slide-2:before, .login-modal .login-top.slide-3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 240px;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* line 51, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-1 p, .login-modal .login-top.slide-2 p, .login-modal .login-top.slide-3 p {
+  line-height: 31px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.74px;
+}
+
+/* line 60, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-1:before {
+  background-image: url("../assets/images/login-bg-1.png");
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-1 p {
+  font-size: 24px;
+}
+
+/* line 70, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-2:before {
+  background-image: url("../assets/images/login-bg-2.png");
+}
+
+/* line 74, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-2 p {
+  font-size: 21px;
+}
+
+/* line 77, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-2 p span {
+  font-weight: 800;
+}
+
+/* line 84, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-3:before {
+  background-image: url("../assets/images/login-bg-3.png");
+}
+
+/* line 88, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-3 h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* line 95, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top.slide-3 p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* line 103, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-top .logo {
+  display: block;
+  margin-bottom: 50px;
+}
+
+/* line 110, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-bottom {
+  padding: 25px;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #ffffff;
+}
+
+/* line 125, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-bottom p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #726D6D;
+  letter-spacing: 0.37px;
+}
+
+/* line 132, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .login-bottom .btn-fb-login {
+  margin: 10px 0px;
+}
+
+/* line 137, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+/* line 142, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .slider-dots li {
+  width: 10px;
+}
+
+/* line 145, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .slider-dots li.active button:before {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+/* line 150, /Applications/AMPPS/www/inspiredme.com/atomic/scss/modules/_login-modal.scss */
+.login-modal .slider-dots li button:before {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/*scss/globals/_nav-bar.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+header[role="nav-bar"] {
+  border-bottom: 2px solid #DDDDDD;
+}
+
+/* line 7, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+.nav-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 0px;
+  height: 61px;
+  width: 100%;
+  background: #ffffff;
+}
+
+/* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+.nav-bar .nav-bar-icons i:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (min-width: 40em) {
+  /* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+  .nav-bar .nav-bar-icons i:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+/* line 31, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+.nav-bar .nav-bar-icons .profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/48.jpg") no-repeat;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+.nav-bar .shop-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 44, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_nav-bar.scss */
+.nav-bar .shop-info .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  margin: 0px 10px 0px 0px;
+  background: url("https://s3.amazonaws.com/uifaces/faces/twitter/mds/128.jpg") no-repeat;
+  background-size: 100%;
+}
+
+/*scss/globals/_nav-bar-shop.scss*/
+/*scss/globals/_slider-dots.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots {
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+/* line 10, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li.active button:before {
+  color: #FF5252;
+  opacity: 1;
+  font-size: 20px;
+}
+
+/* line 25, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li button:hover, .slider-dots li button:focus {
+  outline: none;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li button:hover:before, .slider-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_slider-dots.scss */
+.slider-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #dddddd;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*scss/globals/_footer.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer {
+  padding: 32px 0px 15px 0px;
+  border-top: 1px solid #bbb;
+  background-image: linear-gradient(-90deg, #FF0063 0%, #FF5B00 100%);
+}
+
+/* line 9, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer.with-social {
+  padding: 32px 0px 55px 0px;
+}
+
+/* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .footer-logo {
+  margin: 20px auto 50px auto;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  /* line 13, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer .footer-logo {
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+/* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer h4, .main-footer a, .main-footer p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  /* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer h4, .main-footer a, .main-footer p {
+    text-align: left;
+  }
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer h4 {
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+/* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer p {
+  padding: 0px 60px;
+}
+
+@media (min-width: 48em) {
+  /* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer p {
+    padding: 0px 15px 0px 0px;
+  }
+}
+
+@media (min-width: 64em) {
+  /* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer p {
+    padding: 0px 45px 0px 0px;
+  }
+}
+
+@media (min-width: 77.5em) {
+  /* line 42, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer p {
+    padding: 0px 115px 0px 0px;
+  }
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer ul {
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  /* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer ul {
+    text-align: left;
+  }
+}
+
+/* line 66, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer ul li {
+  margin-bottom: 2px;
+}
+
+/* line 70, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer ul li a {
+  font-weight: 300;
+}
+
+/* line 73, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer ul li a:hover {
+  color: #EAE9E9;
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .footer-social {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (min-width: 48em) {
+  /* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+  .main-footer .footer-social {
+    margin-top: 0px;
+    text-align: left;
+  }
+}
+
+/* line 104, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .footer-social .social-icons {
+  margin-top: 15px;
+}
+
+/* line 108, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .footer-social .social-icons a {
+  margin-right: 14px;
+}
+
+/* line 111, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .footer-social .social-icons a:last-child {
+  margin-right: 0px;
+}
+
+/* line 121, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_footer.scss */
+.main-footer .text-copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*scss/globals/_social-footer.scss*/
+/* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+footer[role="social-footer"] {
+  background: #ffffff;
+  border-top: 1px solid #EDEDED;
+}
+
+@media (max-width: 48em) {
+  /* line 3, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+  footer[role="social-footer"] {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+footer[role="social-footer"] .container {
+  padding: 0px;
+}
+
+/* line 19, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer {
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 42px;
+  padding: 10px 7px;
+}
+
+/* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  /* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+  .social-footer ul {
+    display: inherit;
+  }
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  width: 20%;
+}
+
+@media (min-width: 48em) {
+  /* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+  .social-footer ul li {
+    width: auto;
+    margin-right: 20px;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  /* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+  .social-footer ul li:last-child, .social-footer ul li:nth-child(4) {
+    float: right;
+  }
+}
+
+/* line 65, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li:last-child {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* line 69, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li:nth-child(4) {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+/* line 73, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li i {
+  margin-right: 6px;
+}
+
+/* line 77, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li span {
+  font-family: Avenir-Medium;
+  font-size: 13px;
+  color: #333333;
+}
+
+/* line 82, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_social-footer.scss */
+.social-footer ul li span.active {
+  color: #FF5252;
+}
+
+/*scss/globals/_account-menu.scss*/
+/* line 4, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+#account-menu {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  padding: 28px 20px 20px 20px;
+  background: #ffffff;
+  opacity: 0;
+}
+
+/* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+#account-menu.active {
+  opacity: 1;
+}
+
+@media (min-width: 40em) {
+  /* line 4, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+  #account-menu {
+    display: inherit;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    box-sizing: content-box;
+    top: 63px;
+    right: 0px;
+    left: initial;
+    bottom: initial;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  /* line 44, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+  #account-menu .close {
+    display: none;
+  }
+}
+
+/* line 50, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu {
+  min-width: 320px;
+}
+
+@media (min-width: 40em) {
+  /* line 50, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+  .account-menu {
+    min-width: 220px;
+  }
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-header {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .profile-img, .account-menu .info {
+  float: left;
+}
+
+/* line 68, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .account-name {
+  display: block;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+/* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input,
+.account-menu .info p {
+  float: left;
+  color: #333333;
+  font-size: 13px;
+}
+
+/* line 85, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input::-webkit-input-placeholder,
+.account-menu .info p::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #333333;
+}
+
+/* line 88, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input:-moz-placeholder,
+.account-menu .info p:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #333333;
+  opacity: 1;
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input::-moz-placeholder,
+.account-menu .info p::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #333333;
+  opacity: 1;
+}
+
+/* line 96, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input:-ms-input-placeholder,
+.account-menu .info p:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #333333;
+}
+
+/* line 101, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info {
+  width: 70%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@media (min-width: 40em) {
+  /* line 101, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+  .account-menu .info {
+    width: 67%;
+  }
+}
+
+/* line 111, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .input {
+  width: 100%;
+  margin: 4px 0px 0px 0px;
+}
+
+/* line 116, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .edit {
+  float: left;
+  margin: 3px 0px 0px 12px;
+}
+
+/* line 121, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info > div {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 126, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .info .clear-input {
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+}
+
+/* line 139, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-links ul:first-child {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 24px;
+}
+
+/* line 147, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-links ul:last-child li:last-child {
+  margin: 0px;
+}
+
+/* line 152, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-links ul li {
+  width: 100%;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0px 0px 15px 0px;
+}
+
+/* line 162, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-links ul li:last-child {
+  margin: 0px 0px 24px 0px;
+}
+
+/* line 166, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .menu-links ul li .notification {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+/* line 186, /Applications/AMPPS/www/inspiredme.com/atomic/scss/globals/_account-menu.scss */
+.account-menu .close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+/*scss/pages/_home-0.01.scss*/
+/*scss/pages/_home-1.0.0.scss*/

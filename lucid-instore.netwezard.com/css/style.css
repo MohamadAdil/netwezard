@@ -1,0 +1,15 @@
+.block, body h1, body .h2 { border: 1px solid #fff; }
+
+body .h3, body .h4 { font-weight: bold; }
+
+body { background-color: red; padding: "10px"; }
+
+body .demo { font-size: 100px; background-color: "yellow"; margin: "20px"; }
+
+body .demo .test { font-size: 50px; background-color: "white"; top: "30px"; }
+
+body .demo .test a { color: #fff; background-color: "green"; left: "40px"; }
+
+body h1 { color: #fcfcfc; }
+
+body .h3 { color: #fff; }

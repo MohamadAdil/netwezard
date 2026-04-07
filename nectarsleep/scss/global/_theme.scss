@@ -1,0 +1,151 @@
+//theme specific colors
+$colorBlack: #000000;
+$colorBlue: #06137b;
+$colorGreen: #06137b;
+$colorYellow:#f9ac08;
+$colorGrey:#4f4f50;
+$colorLightGrey:#f4f6f7;
+$colorDarkGrey:#4f4f50;
+$colorGreyv1:#b2b2b2;
+$colorWhite:#ffffff;
+$colorRed:#ff0000;
+$borderColor:#dddddd;
+$colorBlueDarken: darken($colorBlue, 10);
+$colorGreenDarken: darken($colorGreen, 10);
+$colorYellowDarken: darken($colorYellow, 10);
+$font_size_13 : 13px;
+$font_size_12 : 12px;
+$darkBule:#06137b;
+$assetPath: "../assets/fonts/";
+//font
+@font-face {
+    font-family: 'AvenirLTStdBook';
+    src: url('#{$assetPath}AvenirLTStdBook.eot');
+    src: url('#{$assetPath}AvenirLTStdBook.eot') format('embedded-opentype'),
+         url('#{$assetPath}AvenirLTStdBook.woff2') format('woff2'),
+         url('#{$assetPath}AvenirLTStdBook.woff') format('woff'),
+         url('#{$assetPath}AvenirLTStdBook.ttf') format('truetype'),
+         url('#{$assetPath}AvenirLTStdBook.svg#AvenirLTStdBook') format('svg');
+}
+
+
+@font-face {
+    font-family: 'AvenirLTStdHeavy';
+    src: url('#{$assetPath}AvenirLTStdHeavy.eot');
+    src: url('#{$assetPath}AvenirLTStdHeavy.eot') format('embedded-opentype'),
+         url('#{$assetPath}AvenirLTStdHeavy.woff2') format('woff2'),
+         url('#{$assetPath}AvenirLTStdHeavy.woff') format('woff'),
+         url('#{$assetPath}AvenirLTStdHeavy.ttf') format('truetype'),
+         url('#{$assetPath}AvenirLTStdHeavy.svg#AvenirLTStdHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStdMedium';
+    src: url('#{$assetPath}AvenirLTStdMedium.eot');
+    src: url('#{$assetPath}AvenirLTStdMedium.eot') format('embedded-opentype'),
+         url('#{$assetPath}AvenirLTStdMedium.woff2') format('woff2'),
+         url('#{$assetPath}AvenirLTStdMedium.woff') format('woff'),
+         url('#{$assetPath}AvenirLTStdMedium.ttf') format('truetype'),
+         url('#{$assetPath}AvenirLTStdMedium.svg#AvenirLTStdMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStdRoman';
+    src: url('#{$assetPath}AvenirLTStdRoman.eot');
+    src: url('#{$assetPath}AvenirLTStdRoman.eot') format('embedded-opentype'),
+         url('#{$assetPath}AvenirLTStdRoman.woff2') format('woff2'),
+         url('#{$assetPath}AvenirLTStdRoman.woff') format('woff'),
+         url('#{$assetPath}AvenirLTStdRoman.ttf') format('truetype'),
+         url('#{$assetPath}AvenirLTStdRoman.svg#AvenirLTStdRoman') format('svg');
+}
+
+
+
+//other variables
+$font-avenir: "AvenirLTStdBook";
+$fontColor: $colorGrey;
+$fontSize: 24px;
+$lineHeight: 36px;
+$smallFontSize: 16px;
+$middleFontSize: 18px;
+$smallLineHeight: 24px;
+$light: 300;
+$normal: 500;
+$bold: 800;
+$black: 900;
+
+//responsive variables
+$screen-xs-min: 0px;
+$screen-xs-max: 543px;
+$screen-sm-min: 544px;
+$screen-sm-max: 767px;
+$screen-md-min: 768px;
+$screen-md-max: 1023px;
+$screen-lg-min: 1024px;
+$screen-lg-max: 1239px;
+$screen-xl-min: 1240px;
+
+//mixins
+@mixin gradientBackground() {
+    background: #06137B; /* Old browsers */
+  
+	}
+
+@mixin innerShadow() {
+    -webkit-box-shadow: inset 0px 7px 17px -7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 7px 17px -7px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 7px 17px -7px rgba(0, 0, 0, 0.3);
+}
+
+@mixin dropShadow() {
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition-property,
+$transition-time,
+$method) {
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin backgroundImgBanner() {
+    @include innerShadow();
+    @extend .section_type2;
+   /* background-size: cover;*/
+    text-align: center;
+    color: $colorWhite;
+}
+
+@mixin flexDisplay() {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexFlow($flow) {
+    -webkit-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+
+@mixin flexAlignItems($alignItems,
+$alignItemsIE) {
+    -webkit-align-items: $alignItems;
+    -ms-flex-align: $alignItemsIE;
+    align-items: $alignItems;
+}
+
+@mixin flexJustifyContent($justifyContent,
+$justifyContentIE) {
+    -webkit-justify-content: $justifyContent;
+    -ms-flex-pack: $justifyContentIE;
+    justify-content: $justifyContent;
+}
+

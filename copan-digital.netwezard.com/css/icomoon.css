@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?2t3aok");
+  src: url("../fonts/icomoon.eot?2t3aok#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?2t3aok") format("truetype"),
+    url("../fonts/icomoon.woff?2t3aok") format("woff"),
+    url("../fonts/icomoon.svg?2t3aok#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brand-purpose:before {
+  content: "\e900";
+}
+.icon-buy-in:before {
+  content: "\e901";
+}
+.icon-circle-tick:before {
+  content: "\e902";
+  color: #ff3c3c;
+}
+.icon-communication:before {
+  content: "\e903";
+}
+.icon-cx:before {
+  content: "\e904";
+}
+.icon-data:before {
+  content: "\e905";
+}
+.icon-data-dashboard:before {
+  content: "\e906";
+}
+.icon-data-visualization:before {
+  content: "\e907";
+}
+.icon-design-audit:before {
+  content: "\e908";
+}
+.icon-digital:before {
+  content: "\e909";
+}
+.icon-dribbble:before {
+  content: "\e90a";
+  color: #545454;
+}
+.icon-end-to-end:before {
+  content: "\e90b";
+}
+.icon-facebook:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-growth:before {
+  content: "\e90d";
+}
+.icon-innovate:before {
+  content: "\e90e";
+}
+.icon-instagram:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-linkedIn:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-medium:before {
+  content: "\e911";
+  color: #545454;
+}
+.icon-plan:before {
+  content: "\e912";
+}
+.icon-product:before {
+  content: "\e913";
+}
+.icon-product-development:before {
+  content: "\e914";
+}
+.icon-report:before {
+  content: "\e915";
+}
+.icon-research:before {
+  content: "\e916";
+}
+.icon-scale:before {
+  content: "\e917";
+}
+.icon-service:before {
+  content: "\e918";
+}
+.icon-set-up:before {
+  content: "\e919";
+}
+.icon-story:before {
+  content: "\e91a";
+}
+.icon-strategy:before {
+  content: "\e91b";
+}
+.icon-system:before {
+  content: "\e91c";
+}
+.icon-tick:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-twitter:before {
+  content: "\e91e";
+  color: #fff;
+}
+.icon-user-research:before {
+  content: "\e91f";
+}

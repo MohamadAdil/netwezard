@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+						   
+ $(window).resize(function(){
+
+  $('.className').css({
+   position:'absolute',
+   left: ($(window).width() 
+     - $('.className').outerWidth())/2,
+   top: ($(window).height() 
+     - $('.className').outerHeight())/2
+  });
+		
+ });
+ 
+ // To initially run the function:
+ $(window).resize();
+
+});
+</script>
+<style>.className{width:200px;}</style>
+</head>
+
+<body>
+<div class="className">ioning the element absolutely, we can detach it from its surroundings and specify its position in relation to the browser window. Offsetting the div by 50% from the left and the top part of the window, you have its upper-left corner precisely at the center of the page. The only thing we are left to do is to move the div to the left and to the top with half its width and height with a negative margi</div>
+</body>
+</html>

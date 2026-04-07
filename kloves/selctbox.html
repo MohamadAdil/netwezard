@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kloves Inc</title>
+    <style type="text/css">
+      /* Custom Selectobx */
+
+.custom-select-wrapper {
+    position: relative;
+    display: block;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #000;
+}
+
+.custom-select-wrapper select {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.custom-select-wrapper .custom-select{
+    border: 0;
+    padding: 0;
+    height: auto;
+}
+.custom-select-wrapper .custom-select-trigger {
+    position: relative;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+    color: #000;
+    cursor: pointer;
+}
+
+.custom-select-wrapper .custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: '';
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    margin-top: -20px;
+    border-bottom: 0;
+    right: 0;
+}
+
+
+.custom-select-wrapper .custom-select-trigger-text {
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    opacity: .7;
+}
+
+.custom-select-wrapper .custom-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: 0;
+    display: none;
+    min-width: 100%;    
+    background: #f0f0f0;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px 0;
+    -webkit-transition: all .4s ease-in-out;    
+    opacity: 0;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+}
+.custom-select-wrapper .option-hover:before {
+    background: #f9f9f9;
+}
+
+.custom-select-wrapper .custom-option {
+    position: relative;
+    display: block;
+    padding: 8px 30px;
+    white-space: normal;
+    border-bottom: 1px solid #ececec;
+    font-size: 1em;
+    color: #000;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.custom-select-wrapper .custom-option:hover:after, .custom-select-wrapper .custom-option.selection:after{
+    content: "";
+    width: 18px;
+    height: 12px;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transform: rotate(310deg);
+}
+.custom-select-wrapper .custom-option.selection:hover,
+.custom-select-wrapper .custom-option:hover, .custom-select-wrapper .custom-option.selection {
+    background: #d1232b;
+    color: #fff;
+}
+/***CUSTOM SELECT STYLE (END)***/
+    </style>
+  </head>
+  <body>
+                    <select name="sources" id="sources" class="custom-select sources" data-placeholder="Select dropdown">
+                      <option value="schedule a demo">Schedule a demo</option><option value="speak with an account representative">Speak with an account representative</option><option value="learn more about a specific application">Learn more about a specific application</option><option value="other">Other</option>
+                    </select>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Lucid Admin Console</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="css/font-icon-style.css" rel="stylesheet" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/vendor/simplebar/simplebar.css" rel="stylesheet" />
+<link href="css/vendor/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div id="layoutSidenav">
+
+  <!-----Sidenav Start----->
+  <div id="layoutSidenav_nav" class="lu-sidenav-dark">
+           <!-----Sidebar Brand Start----->
+          <div class="sidebar-brand d-flex align-items-center justify-content-center" >
+          <a class="admin-logo" href="#"> <img src="images/logo.svg" alt="Lucid"></a> 
+          <span class="site-tagline d-block w-100 pt-2">Admin Console</span> 
+          </div>
+          <!-----Sidebar Brand End----->
+
+  
+    <nav class="lu-sidenav accordion lu-sidenav-dark" id="sidenavAccordion">
+    
+    
+      <div class="lu-sidenav-menu" id="lu-sidenav-menu">
+        <div class="nav">
+          
+          <a class="nav-link" href="index.html"><i class="menuicon icon-dashboard"></i>Dashboard </a> 
+          <a class="nav-link" href="pricebook.html"><i class="menuicon icon-pricebook"></i>Pricebook </a> 
+          
+          <!-----Collapsed Dropdown Start----->
+          <a class="nav-link show active" href="master-catalog.html" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+          <i class="menuicon icon-products"></i>Products <span class="lu-sidenav-collapse-arrow"><i class="icon-arrow-down"></i></span> 
+          </a>
+          <div class="show" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+            <nav class="lu-sidenav-menu-nested nav"> 
+            <a class="nav-link" href="master-catalog.html">Master Catalog <i class="icon-right-tick ml-auto"></i></a> 
+            <a class="nav-link" href="#">Price Catalog</a> 
+            </nav>
+          </div>
+          <!-----Collapsed Dropdown End----->
+          <a class="nav-link" href="#"><i class="menuicon icon-dashboard"></i>Category </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-channels"></i>Channels </a>
+          <hr class="m-0">
+          <a class="nav-link" href="studios.html"><i class="menuicon icon-studios"></i>Studios </a>
+          
+          <!-----Collapsed Dropdown Start-----> 
+          <a class="nav-link collapsed" href="manage-inventory.html" data-bs-toggle="collapse" data-bs-target="#collapseInventory" aria-expanded="false" aria-controls="collapseLayouts">
+          <i class="menuicon icon-inventory"></i>Inventory <span class="lu-sidenav-collapse-arrow"><i class="icon-arrow-down"></i></span> 
+          </a>
+          <div class="collapse" id="collapseInventory" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+            <nav class="lu-sidenav-menu-nested nav"> 
+            <a class="nav-link active" href="manage-inventory.html">Item <i class="icon-right-tick ml-auto"></i></a> 
+            <a class="nav-link" href="#">History</a> 
+            <a class="nav-link" href="#">Order Purchase</a> 
+            </nav>
+          </div>
+          <!-----Collapsed Dropdown End----->
+          
+          <a class="nav-link" href="#"><i class="menuicon icon-devices"><img src="icons/icon-devices.svg" alt=""></i>Devices </a> 
+          <a class="nav-link" href="employees.html"><i class="menuicon icon-user2"></i>Employees </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-user"></i>Teams </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-permissions"></i>Permissions </a>
+          <hr class="m-0">
+          <a class="nav-link" href="#"><i class="menuicon icon-promotions"></i>Promotions </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-transactions"></i>Transactions </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-user"></i>Customers </a> </div>
+      </div>
+    </nav>
+  </div>
+  <!-----Sidenav End----->
+  
+  <!-----Right Content Start----->
+  <div id="layoutSidenav_content">
+    <main>
+    
+      <!-----Top Profile Nav Start----->
+      <nav class="navbar navbar-expand  static-top px-4 pb-0 bg-grey"> 
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm   order-1 order-lg-0  sidebar-toggle " id="sidebarToggle" href="#!"><i class="hamburger align-self-center"></i></button>
+        <!-- Nav Item - User Information -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown user-profile "> <a class="nav-link dropdown-toggle no-arrow " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <img class="img-profile rounded-circle" src="images/profile-pic.png"><span class="ml-2 d-none d-lg-inline text-dark ">George Walker</span> 
+           </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!">Profile</a></li>
+              <li><a class="dropdown-item" href="#!">Settings</a></li>
+              <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#!">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Nav Item - User Information End-->
+      </nav>
+      <!-----Top Profile Nav End----->
+      
+      <!-- Page Header Start -->
+      <div class="page-header bg-grey px-4 pb-3  pt-5 ">
+        
+        <div class="entry-header">
+          <h1>Product Master Catalog</h1>
+          <div class="card-toolbar d-flex flex-row-fluid  align-items-center gap-3">
+            
+            <a href="javascript:void(0)" class="btn btn-primary btn-create-prd" data-bs-toggle="modal" data-bs-target="#create-product-modal" >Create New Product</a> </div>
+        </div>
+      </div>
+      <!-- Page Header End -->
+      
+      <!-- Main Container Start -->
+      <div class="container-fluid site-main px-4 p-4">
+        <div class="inventory-section">
+          <div class="table-filter-top">
+            <div class="row ">
+              <div class="col-6">
+                <div class="row table-filter-selection g-2">
+                  <div class="col-4"> <!-- Build your select: -->
+                    <select class="dataFilter" >
+                      <option >All Categories</option>
+                      <option value="bagfee">Bag Fee</option>
+                      <option value="drinkware">Drinkware</option>
+                      <option value="headwear ">Headwear</option>
+                      <option value="jacket">Jacket</option>
+                      <option value="kids">kids</option>
+                      <option value="long-sleeve-t">Long Sleeve T</option>
+                    </select>
+                  </div>
+                  
+                  <div class="col-4 vendorFilter">
+                    <select class="dataFiltervendor"  multiple="multiple">
+                      <option value="missing-ventors">Missing Ventors</option>
+                      <option value="aramark">Aramark</option>
+                      <option value="blackwing">Blackwing</option>
+                      <option value="camisasca-automotive-manufacturing-inc">Camisasca Automotive Manufacturing, Inc</option>
+                      <option value="delta">Delta</option>
+                      <option value="districk">Districk</option>
+                      <option value="fossa">Fossa</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <div class="filter-search">
+                  <input class="form-control" type="search" value="" id="example-search-input" placeholder="Search by name or SKU no">
+                  <button class="btn" type="button"> <i class="icon-search"></i> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dataTable pt-2">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>Item</th>
+                    <th>Variations</th>
+                    <th>Category</th>
+                    <th>Sub Category</th>
+                    
+                    <th>System List Price</th>
+                    <th>Latest Vendor Price</th>
+                    <th>Vendor</th>
+                    <th class="text-center">Orderable</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <!--item 1-->
+                  <tr>
+                    <td><a class="toggle-arrow opacity-0"><i class="icon-angle-right"></i> </a> Hooded Sweatshirt - Women's </td>
+                    <td>6</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Lucid EMS</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 1-->
+                  
+                  
+                  <!--item 2-->
+                  <tr>
+                    <td ><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-2"  aria-expanded="false" aria-controls="item-2"><i class="icon-angle-right"></i> </a> Cloth Face Mask</td>
+                    <td>5</td>
+                    <td>Headwear</td>
+                    <td>Face Mask</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Lucid EMS</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 2-->
+                  <!--collapse item 2-->
+                  <tr class="collapse" id="item-2">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-2">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-2">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-2">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-2">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-2">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 2-->
+                  
+                  
+                 <!--item 3-->
+                  <tr>
+                    <td><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-3"  aria-expanded="false" aria-controls="item-3"><i class="icon-angle-right"></i> </a> Fitted Cap - Black </td>
+                    <td>4</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Delta</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 3-->
+                  <!--collapse item 3-->
+                  <tr class="collapse" id="item-3">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-3">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-3">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-3">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-3">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-3">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 3-->
+                  
+                  
+                  <!--item 4-->
+                  <tr>
+                    <td ><a class="toggle-arrow opacity-0"><i class="icon-angle-right"></i> </a> Fitted Cap - Charcole</td>
+                    <td>4</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>2 Vendors</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 4-->
+                
+                
+                
+                
+                
+                 <!--item 5-->
+                  <tr>
+                    <td><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-5"  aria-expanded="false" aria-controls="item-5"><i class="icon-angle-right"></i> </a> FItted Cap - White </td>
+                    <td>6</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Lucid EMS</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 5-->
+                  <!--collapse item 5-->
+                  <tr class="collapse" id="item-5">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-5">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-5">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-5">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-5">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-5">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 5-->
+                  
+                  
+                  <!--item 6-->
+                  <tr>
+                    <td ><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-6"  aria-expanded="false" aria-controls="item-6"><i class="icon-angle-right"></i> </a> Infant Onesie</td>
+                    <td>3</td>
+                    <td>Apparel</td>
+                    <td>Kids</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>RAbbit Skins</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 6-->
+                  <!--collapse item 6-->
+                  <tr class="collapse" id="item-6">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-6">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-6">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-6">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-6">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-6">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 6-->
+                
+                
+                
+                 <!--item 7-->
+                  <tr>
+                    <td><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-7"  aria-expanded="false" aria-controls="item-7"><i class="icon-angle-right"></i> </a> Car Cover - Reveal Cloth </td>
+                    <td>7</td>
+                    <td>Vehicle</td>
+                    <td>Car Cover</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shrin DBA Cover King</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 7-->
+                  <!--collapse item 7-->
+                  <tr class="collapse" id="item-7">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-7">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-7">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-7">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-7">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-7">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 7-->
+                  
+                  
+                  <!--item 8-->
+                  <tr>
+                    <td ><a class="toggle-arrow opacity-0"><i class="icon-angle-right"></i> </a> Fitted Cap - Black</td>
+                    <td>3</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Delta</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 8-->
+                 <!--item 9-->
+                  <tr>
+                    <td><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-9"  aria-expanded="false" aria-controls="item-9"><i class="icon-angle-right"></i> </a> Fitted Cap - Charcole </td>
+                    <td>2</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>2 Vendors</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 9-->
+                  <!--collapse item 9-->
+                  <tr class="collapse" id="item-9">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-9">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-9">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-9">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-9">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-9">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 9-->
+                  
+                  
+                  <!--item 10-->
+                  <tr>
+                    <td ><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-10"  aria-expanded="false" aria-controls="item-10"><i class="icon-angle-right"></i> </a> FItted Cap - White</td>
+                    <td>5</td>
+                    <td>Headwear</td>
+                    <td>Cap</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Lucid EMS</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 10-->
+                  <!--collapse item 10-->
+                  <tr class="collapse" id="item-10">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-10">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-10">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-10">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-10">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-10">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 10-->
+                
+                
+                
+                
+                 <!--item 11-->
+                  <tr>
+                    <td><a class="toggle-arrow" data-bs-toggle="collapse" href="#item-11"  aria-expanded="false" aria-controls="item-11"><i class="icon-angle-right"></i> </a> Infant Onesie</td>
+                    <td>4</td>
+                    <td>Apparel</td>
+                    <td>Kids</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>RAbbit Skins</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/item 11-->
+                  <!--collapse item 11-->
+                  <tr class="collapse" id="item-11">
+                    <td > XS</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-11">
+                    <td >S</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-11">
+                    <td >M</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-11">
+                    <td >L</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  
+                  <tr class="collapse" id="item-11">
+                    <td >XL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                   
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <tr class="collapse" id="item-11">
+                    <td >XXL</td>
+                    <td>-</td>
+                    <td>Apparel</td>
+                    <td>Sweatshirt</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shop All</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Update Inventory</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Stock Tracking</a></li>
+                        <li><a class="dropdown-item" href="#">Stock History</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--/collapse item 11-->
+                  
+                  
+                  <!--item 12-->
+                  <tr>
+                    <td ><a class="toggle-arrow opacity-0"><i class="icon-angle-right"></i> </a> Car Cover - Reveal Cloth</td>
+                    <td>5</td>
+                    <td>Vehicle</td>
+                    <td>Car Cover</td>
+                    
+                    <td>$30.00/ea</td>
+                    <td>$20.00/ea</td>
+                    <td>Shrin DBA Cover King</td>
+                    <td class="text-center"><div class="form-group d-flex justify-content-center">
+                        <div class="switch-btn box">
+                          <input type="checkbox" class="toggle-radio" checked>
+                        </div>
+                      </div></td>
+                    <td class="text-center"><a href="#"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order More</a></li>
+                      </ul></td>
+                  </tr>
+                  <!--item 12-->
+                  
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Main Container End -->
+    </main>
+  </div>
+  <!-----Right Content End----->
+</div>
+<!-----Create Proudct Main Popup Modal----->
+<div class="modal create-product-modal fade" id="create-product-modal"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="2" aria-labelledby="create-product-modal" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close prd-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title w-100" id="pricebook-modal">Create New Product</h5>
+        <button type="button" class="btn btn-primary next-step-top-btn" disabled="">Next</button>
+      </div>
+      <div class="modal-body">
+        <div class="product-create-form">
+        <form id="msform" class="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active" id="basic-info">Basic Info</li>
+            <li id="variations">Variations</li>
+            <li id="image-gallery">Image Gallery</li>
+          </ul>
+          <!-- fieldsets -->
+          
+          <div class="crate-prd-step">
+            <div class="form-step-content">
+              <h2 class="fs-title">Add basic info</h2>
+              <div class="row g-3">
+                <div class="col-sm-12">
+                  <label for="product-name" class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="product-name" placeholder="Enter Product Name">
+                </div>
+                <div class="col-sm-7">
+                  <div class="select-dropdown">
+                    <label for="category-name" class="form-label">Category </label>
+                    <input type="text" class="jAuto form-control customdropdown" id="customdropdown"  placeholder="Choose Category" autocomplete="off">
+                    <div class="dropdown-menu">
+                      <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+                      <div class="list-autocomplete">
+                        <button type="button" class="dropdown-item">Apparel</button>
+                        <button type="button" class="dropdown-item">Merchandise</button>
+                        <button type="button" class="dropdown-item">Vehicle</button>
+                        <button type="button" class="dropdown-item">Apparel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="select-dropdown">
+                    <label for="sub-category-name" class="form-label">Sub Category</label>
+                    <input type="text" class="jAuto2 form-control customdropdown" id="customdropdown2" placeholder="Choose Sub Category" autocomplete="off">
+                    <div class="dropdown-menu">
+                      <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+                      <div class="list-autocomplete">
+                        <button type="button" class="dropdown-item">Sweatshirt</button>
+                        <button type="button" class="dropdown-item">Face Mask </button>
+                        <button type="button" class="dropdown-item">Cap</button>
+                        <button type="button" class="dropdown-item">Kids</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <label for="message-text" class="form-label">Desccription</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                <div class="col-sm-7">
+                  <div class="select-dropdown">
+                    <label for="pricebook-name" class="form-label">Pricebook</label>
+                    <input type="text" class="jAuto3 form-control customdropdown" id="customdropdown3" placeholder="Choose Pricebook" autocomplete="off">
+                    <div class="dropdown-menu">
+                      <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+                      <div class="list-autocomplete">
+                        <button type="button" class="dropdown-item">Pricebook 1</button>
+                        <button type="button" class="dropdown-item">Pricebook 2 </button>
+                        <button type="button" class="dropdown-item">Pricebook 3</button>
+                        <button type="button" class="dropdown-item">Pricebook 4</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="button" name="next" class="next btn btn-primary float-end" value="Next "/>
+          </div>
+          <div class="crate-prd-step add-variations">
+            <h2 class="fs-title">Add variations</h2>
+            <div class="variations-intro">
+              <h3>Variation set</h3>
+              Add a custom set of options to an item to create variations. For exmaple, a size option set can create the variations like small, medium and large. You can also combine multiple Master variation sets to create variations like small white and small black. <a href="javascript:void(0)" class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#add-variation-set1">Add variations set</a> </div>
+            <div class="variations-entry-detail d-none">
+              <div class="all-variations-set">
+                <div class="variations-entry-header">
+                  <h3>Variation set</h3>
+                  <a href="javascript:void(0)" class="btn btn-border variation-btn" data-bs-toggle="modal" data-bs-target="#add-variation-set2">Add variation set</a> </div>
+                <div class="dataTable">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead class="table-light">
+                        <tr>
+                          <th width="50">&nbsp;</th>
+                          <th>Variation set</th>
+                          <th>Variations</th>
+                          <th class="text-center" width="105">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center"><a href="javascript:void(0)"><img src="images/drag-icon.svg"></a></td>
+                          <td>Standard Size</td>
+                          <td>S, M, L, XL, XL</td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><a href="javascript:void(0)"><img src="images/drag-icon.svg"></a></td>
+                          <td>Primary Colors</td>
+                          <td>Black, White</td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="all-variations-list">
+                <h4>Variations</h4>
+                <div class="dataTable">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead class="table-light">
+                        <tr>
+                          <th width="50"><div class="custom-checkbox">
+                              <input type="checkbox" id="v0">
+                              <label for="v0"></label>
+                            </div></th>
+                          <th>Variations</th>
+                          <th>SKU</th>
+                          <th class="text-end">System List Price</th>
+                          <th class="text-end">Latest Vendor Price</th>
+                          <th class="text-end">Margin (%)</th>
+                          <th class="text-center">Publish</th>
+                          <th class="text-center">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v1">
+                              <label for="v1"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">S Black</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v2">
+                              <label for="v2"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">M Black</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v3">
+                              <label for="v3"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">M White</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v4">
+                              <label for="v4"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">L Black</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v5">
+                              <label for="v5"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">L White</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v6">
+                              <label for="v6"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">XL Black</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v7">
+                              <label for="v7"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">XL White</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v8">
+                              <label for="v8"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">XXL Black</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                          <td><div class="custom-checkbox">
+                              <input type="checkbox" id="v9">
+                              <label for="v9"></label>
+                            </div></td>
+                          <td ><a href="javascript:void(0)">XXL White</a></td>
+                          <td>981-300200-03</td>
+                          <td class="text-end">$60.00</td>
+                          <td class="text-end">$30.00</td>
+                          <td class="text-end bg-grey">50</td>
+                          <td class="text-center"><div class="form-group d-flex justify-content-center">
+                              <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio" checked="">
+                              </div>
+                            </div></td>
+                          <td class="text-center"><a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                            </ul></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="variation-btn-group d-flex">
+                  <div class="col"> <a href="javascript:void(0)" class="btn btn-secondary  variation-btn disabled ">Edit System List Price</a> <a href="javascript:void(0)" class="btn btn-secondary  variation-btn disabled ml-2">Edit Vendor Price</a> </div>
+                  <div class="col d-flex justify-content-end"> <a href="javascript:void(0)" class="btn btn-border variation-btn ml-auto">Add variation</a> </div>
+                </div>
+              </div>
+            </div>
+            <input type="button" name="next" class="next btn btn-primary float-end d-none" value="Next "/>
+            <input type="button" name="previous" class="previous btn btn-border  float-end me-2 d-none" value="Back"/>
+          </div>
+          <div class="crate-prd-step add-prd-image-gallery">
+            <h2 class="fs-title">Add Images</h2>
+            <div class="row row-cols-1 justify-content-center row-cols-sm-2 row-cols-md-3  row-cols-lg-4 g-4">
+              <div class="col add-prd-image">
+                <div class="prd-img-cover"> <span class="drag-thumb"><i class="icon icon-drag-v-icon"></i> Thumbnail</span> <img src="images/prd-1.png" alt=""> </div>
+                <div class="prd-choose-variations">
+                  <select class="dataFilterVariations"  multiple="multiple">
+                    <option value="s-black">S, Black</option>
+                    <option value="s-white">S, White</option>
+                    <option value="m-black">M, Black</option>
+                    <option value="m-white">M, White</option>
+                    <option value="l-black">L, Black</option>
+                    <option value="l-white">L, White</option>
+                    <option value="xl-black">XL, Black</option>
+                    <option value="xl-white">XL, White</option>
+                    <option value="xxl-black">XXL, Black</option>
+                    <option value="xxl-white">XXL, White</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col add-prd-image">
+                <div class="prd-img-cover"><img src="images/prd-1.png" alt=""></div>
+                <div class="prd-choose-variations">
+                  <select class="dataFilterVariations"  multiple="multiple">
+                    <option value="s-black">S, Black</option>
+                    <option value="s-white">S, White</option>
+                    <option value="m-black">M, Black</option>
+                    <option value="m-white">M, White</option>
+                    <option value="l-black">L, Black</option>
+                    <option value="l-white">L, White</option>
+                    <option value="xl-black">XL, Black</option>
+                    <option value="xl-white">XL, White</option>
+                    <option value="xxl-black">XXL, Black</option>
+                    <option value="xxl-white">XXL, White</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col add-prd-image">
+                <div class="prd-img-cover"><img src="images/prd-2.png" alt=""></div>
+                <div class="prd-choose-variations">
+                  <select class="dataFilterVariations"  multiple="multiple">
+                    <option value="s-black">S, Black</option>
+                    <option value="s-white">S, White</option>
+                    <option value="m-black">M, Black</option>
+                    <option value="m-white">M, White</option>
+                    <option value="l-black">L, Black</option>
+                    <option value="l-white">L, White</option>
+                    <option value="xl-black">XL, Black</option>
+                    <option value="xl-white">XL, White</option>
+                    <option value="xxl-black">XXL, Black</option>
+                    <option value="xxl-white">XXL, White</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col add-prd-image">
+                <div class="img-upload-box"> 
+                  
+                  <!-- Upload  -->
+                  
+                    <div class="drop-zone">
+        <span class="drop-zone__prompt">
+        <span class="text-blue">Upload Photos </span>
+        or drag and drop here...
+        </span>
+        <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+        <input type="file" name="myFile" class="drop-zone__input" />
+        <!-- add multiple attribute to input to support uploading more than one file-->
+      </div> 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="assign-to-all">
+              <div class="assign-to-all-header">
+                <h3>Assign to all</h3>
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+              </div>
+              <p>This enables the whole image gallery to assign to all the variations and all the Master variation sets.</p>
+            </div>
+          </div>
+          </div> 
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-----/Create Proudct Main Popup Modal----->
+
+
+
+<!-----Add Variation set 1 Popup Modal----->
+<div class="modal add-variation set-1-modal modal-overlay fade" id="add-variation-set1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="add-variation-set1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100" id="pricebook-modal">Add Variation set</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="select-dropdown">
+          <label for="variation-set-name" class="form-label">Variation set</label>
+          <input type="text" class="jAuto4 form-control customdropdown" id="customdropdown4" placeholder="Search or Choose Variation set Name" autocomplete="off">
+          <div class="dropdown-menu">
+            <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+            <div class="list-autocomplete">
+              <button type="button" class="dropdown-item">Hat Size</button>
+              <button type="button" class="dropdown-item">Infant Sizes</button>
+              <button type="button" class="dropdown-item">Kid’s Size</button>
+              <button type="button" class="dropdown-item">Toddler Size</button>
+              <button type="button" class="dropdown-item">Women’s Numeric Size</button>
+            </div>
+          </div>
+        </div>
+        <div class="empty-variation">
+          <div class="empty-img"><img src="images/empty-img.svg" alt=""></div>
+          You have not added any options yet. </div>
+        <div class="add-variation-size d-none">
+          <div class="dataTable">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>Variations</th>
+                    <th width="105">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>XL</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>XXL</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="select-dropdown create-new-variation m-0">
+            <input type="text" class="jAuto5 form-control customdropdown"  id="create-new-variation1" placeholder="Create new variation" autocomplete="off">
+            <div class="dropdown-menu">
+              <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer inside-modal-footer">
+        <button type="button" class="btn btn-border cancel-modal-btn" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary click-show-v-list" data-bs-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----/Add Variation set 1 Popup Modal----->
+
+
+
+
+
+<!-----Add Variation set 1 Popup Modal----->
+<div class="modal add-variation set-2-modal modal-overlay fade" id="add-variation-set2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="add-variation-set2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100">Add Variation set</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="select-dropdown">
+          <label for="variation-set-name" class="form-label">Variation set</label>
+          <input type="text" class="jAuto7 form-control customdropdown" value="Primary Colors" id="customdropdown7" placeholder="Search or Choose Variation set Name" autocomplete="off">
+          <div class="dropdown-menu">
+            <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+            <div class="list-autocomplete">
+              <button type="button" class="dropdown-item">Hat Size</button>
+              <button type="button" class="dropdown-item">Infant Sizes</button>
+              <button type="button" class="dropdown-item">Kid’s Size</button>
+              <button type="button" class="dropdown-item">Toddler Size</button>
+              <button type="button"  class="dropdown-item">Primary Colors</button>
+            </div>
+          </div>
+        </div>
+        <div class="empty-variation">
+          <div class="empty-img"><img src="images/empty-img.svg" alt=""></div>
+          You have not added any options yet. </div>
+        <div class="add-variation-size">
+          <div class="dataTable">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>Variations</th>
+                    <th width="105">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Black</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>White</td>
+                    <td><a class="remove-item" href="#">Remove</a></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="select-dropdown create-new-variation m-0">
+            <input type="text" class="jAuto6 form-control customdropdown"  id="create-new-variation2" placeholder="Create new variation" autocomplete="off">
+            <div class="dropdown-menu">
+              <div class="hasNoResults "><span>No matching results</span> <a href="javascript:void(0)" class="btn btn-primary create-dropdown-btn">Create</a></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="add-multiple-variation d-none">
+        <p>The <strong>Hooded Sweath shirt</strong> variations will be created from your option values.</p>
+        <div class="dataTable">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th width="70">Options</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v01" checked>
+                              <label for="v01"></label>
+                            </div></td>
+                    <td>All new Variations</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v02" checked>
+                              <label for="v02"></label>
+                            </div></td>
+                    <td>S White</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v03" checked>
+                              <label for="v03"></label>
+                            </div></td>
+                    <td>M Black</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v04" checked>
+                              <label for="v04"></label>
+                            </div></td>
+                    <td>M White</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v05" checked>
+                              <label for="v05"></label>
+                            </div></td>
+                    <td>L Black</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v06" checked>
+                              <label for="v06"></label>
+                            </div></td>
+                    <td>L White</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v07" checked>
+                              <label for="v07"></label>
+                            </div></td>
+                    <td>XL Black</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v08" checked>
+                              <label for="v08"></label>
+                            </div></td>
+                    <td>XL White</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v09" checked>
+                              <label for="v09"></label>
+                            </div></td>
+                    <td>XXXL Black</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-center"><div class="custom-checkbox">
+                              <input type="checkbox" id="v10" checked>
+                              <label for="v10"></label>
+                            </div></td>
+                    <td>XXL White</td>
+                  </tr>
+                  
+                 
+                  
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        
+        </div>
+        
+        
+      </div>
+      <div class="modal-footer inside-modal-footer ">
+      <div class="row w-100">
+      <div class="col-4"><a href="javascript:void(0)" class="btn btn-border popup-back-btn">Back</a></div>
+      <div class="col-8 d-flex justify-content-end">
+        <button type="button" class="btn btn-border cancel-modal-btn" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary click-show-v-list ml-2 add-multiple-v-btn">Done</button>
+        <button type="button" class="btn btn-primary create-v-btn ml-2 d-none" data-bs-dismiss="modal">Create 10 variations</button>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-----/Add Variation set 1 Popup Modal----->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script> 
+<script src="js/vendor/simplebar/simplebar.js"></script>
+<script src="js/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

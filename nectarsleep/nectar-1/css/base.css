@@ -1,0 +1,3269 @@
+/*
+Main Sass
+*/
+/*
+Mixins
+*/
+/* font size PX to EM with base size { default: 16 } */
+/* font size with breakpoints */
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/* mixin for multiline */
+/* _____ VARIABLES _____ */
+/* Breakpooints */
+/* base font */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/*
+Icons
+*/
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.search {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -101px;
+  width: 16px;
+  height: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.search {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 18, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.cart {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -61px;
+  width: 18px;
+  height: 18px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 18, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.cart {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 21, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.cart.alert {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -22px;
+  width: 19px;
+  height: 18px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 21, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.cart.alert {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.notification {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -87px -66px;
+  width: 14px;
+  height: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.notification {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.notification.alert {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -81px;
+  width: 16px;
+  height: 18px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 29, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.notification.alert {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.person {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -12px -130px;
+  width: 11px;
+  height: 12px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 35, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.person {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.play-big {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px 0px;
+  width: 48px;
+  height: 48px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.play-big {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.play-small {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px -50px;
+  width: 33px;
+  height: 33px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.play-small {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 48, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-view {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -87px 0px;
+  width: 28px;
+  height: 18px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 48, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-view {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-view-small {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -50px -37px;
+  width: 14px;
+  height: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-view-small {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 56, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-share-small {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -12px -148px;
+  width: 10px;
+  height: 13px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 56, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-share-small {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 60, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-like-light-small {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -39px -130px;
+  width: 12px;
+  height: 11px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 60, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-like-light-small {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-views-small-white {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -119px;
+  width: 14px;
+  height: 9px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-views-small-white {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 68, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-share-small-white {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px -148px;
+  width: 10px;
+  height: 13px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 68, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-share-small-white {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 72, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-like-small-white {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -118px -109px;
+  width: 12px;
+  height: 11px;
+  margin-top: -1px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 72, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-like-small-white {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 79, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.star {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -66px -37px;
+  width: 10px;
+  height: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 79, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.star {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.star-half {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -65px -130px;
+  width: 10px;
+  height: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.star-half {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 87, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.star-gray {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -53px -130px;
+  width: 10px;
+  height: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 87, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.star-gray {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.arrow-left {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -103px -66px;
+  width: 10px;
+  height: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.arrow-left {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 96, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.arrow-right {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px -130px;
+  width: 10px;
+  height: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 96, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.arrow-right {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.drop-arrow {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -99px -130px;
+  width: 10px;
+  height: 4px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.drop-arrow {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.cart-minus {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -65px -72px;
+  width: 14px;
+  height: 4px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.cart-minus {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 109, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.cart-plus {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -42px -109px;
+  width: 14px;
+  height: 14px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 109, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.cart-plus {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 113, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.cart-close {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -77px -130px;
+  width: 9px;
+  height: 9px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 113, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.cart-close {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 117, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.close {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 117, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.close {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 122, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.discussion {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -104px -109px;
+  width: 12px;
+  height: 11px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 122, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.discussion {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 126, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.heart {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -25px -130px;
+  width: 12px;
+  height: 11px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 126, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.heart {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.heart.active {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -74px -109px;
+  width: 14px;
+  height: 12px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.heart.active {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 135, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.footer-twitter {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px -109px;
+  width: 24px;
+  height: 19px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 135, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.footer-twitter {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 139, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.footer-facebook {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -96px -85px;
+  width: 12px;
+  height: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 139, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.footer-facebook {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 143, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.footer-instagram {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -65px -50px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 143, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.footer-instagram {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 148, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-twitter {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -72px -85px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 148, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-twitter {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 152, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-fb {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -117px -24px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 152, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-fb {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 156, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-discussion {
+  background-image: url("../assets/images/sprite.png");
+  background-position: 0px -85px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 156, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-discussion {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 160, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-follow-white {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -24px -148px;
+  width: 10px;
+  height: 12px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 160, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-follow-white {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 164, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-follow {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -48px -85px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 164, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-follow {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 167, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-follow.active {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -117px 0px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 167, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-follow.active {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 172, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-like {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -141px -42px;
+  width: 20px;
+  height: 17px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 172, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-like {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 175, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.social-like.active {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -24px -85px;
+  width: 22px;
+  height: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 175, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.social-like.active {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 181, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.edit {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -26px -109px;
+  width: 14px;
+  height: 14px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 181, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.edit {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 185, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.clear-input {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -90px -109px;
+  width: 12px;
+  height: 12px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 185, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.clear-input {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 190, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.history {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -50px 0px;
+  width: 35px;
+  height: 35px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 190, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.history {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 194, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+.icon.close-white {
+  background-image: url("../assets/images/sprite.png");
+  background-position: -88px -130px;
+  width: 9px;
+  height: 9px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 194, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_icons.scss */
+  .icon.close-white {
+    background-image: url("../assets/images/sprite-2x.png");
+    background-size: 161px 161px;
+  }
+}
+
+/* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 2, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_clearfix.scss */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 544px) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (min-width: 1240px) {
+  /* line 5, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* line 26, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 2, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_clearfix.scss */
+.container-fluid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 54, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/_grid.scss */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 2, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_clearfix.scss */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 8, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-1 {
+  width: 8.33333%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-2 {
+  width: 16.66667%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-4 {
+  width: 33.33333%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-5 {
+  width: 41.66667%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-7 {
+  width: 58.33333%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-8 {
+  width: 66.66667%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-10 {
+  width: 83.33333%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-11 {
+  width: 91.66667%;
+}
+
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-1 {
+  right: 8.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-2 {
+  right: 16.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-4 {
+  right: 33.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-5 {
+  right: 41.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-7 {
+  right: 58.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-8 {
+  right: 66.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-10 {
+  right: 83.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-11 {
+  right: 91.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-1 {
+  left: 8.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-2 {
+  left: 16.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-4 {
+  left: 33.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-5 {
+  left: 41.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-7 {
+  left: 58.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-8 {
+  left: 66.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-10 {
+  left: 83.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-11 {
+  left: 91.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 544px) {
+  /* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    width: 8.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    width: 16.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    width: 41.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    width: 58.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    width: 66.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    width: 83.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    width: 91.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-1 {
+    right: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-2 {
+    right: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-4 {
+    right: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-5 {
+    right: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-7 {
+    right: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-8 {
+    right: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-10 {
+    right: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-11 {
+    right: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-1 {
+    left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-2 {
+    left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-4 {
+    left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-5 {
+    left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-7 {
+    left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-8 {
+    left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-10 {
+    left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-11 {
+    left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-1 {
+    width: 8.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-2 {
+    width: 16.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-4 {
+    width: 33.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-5 {
+    width: 41.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-7 {
+    width: 58.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-8 {
+    width: 66.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-10 {
+    width: 83.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-11 {
+    width: 91.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-1 {
+    right: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-2 {
+    right: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-4 {
+    right: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-5 {
+    right: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-7 {
+    right: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-8 {
+    right: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-10 {
+    right: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-11 {
+    right: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-1 {
+    left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-2 {
+    left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-4 {
+    left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-5 {
+    left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-7 {
+    left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-8 {
+    left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-10 {
+    left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-11 {
+    left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    width: 8.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    width: 16.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    width: 41.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    width: 58.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    width: 91.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-1 {
+    right: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-2 {
+    right: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-4 {
+    right: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-5 {
+    right: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-7 {
+    right: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-8 {
+    right: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-10 {
+    right: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-11 {
+    right: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-1 {
+    left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-2 {
+    left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-4 {
+    left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-5 {
+    left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-7 {
+    left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-8 {
+    left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-10 {
+    left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-11 {
+    left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1240px) {
+  /* line 24, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    float: left;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-1 {
+    width: 8.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-2 {
+    width: 16.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-3 {
+    width: 25%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-5 {
+    width: 41.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-6 {
+    width: 50%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-7 {
+    width: 58.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-8 {
+    width: 66.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-9 {
+    width: 75%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-10 {
+    width: 83.33333%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-11 {
+    width: 91.66667%;
+  }
+  /* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-12 {
+    width: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-0 {
+    right: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-1 {
+    right: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-2 {
+    right: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-3 {
+    right: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-4 {
+    right: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-5 {
+    right: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-6 {
+    right: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-7 {
+    right: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-8 {
+    right: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-9 {
+    right: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-10 {
+    right: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-11 {
+    right: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-pull-12 {
+    right: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-0 {
+    left: auto;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-1 {
+    left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-2 {
+    left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-3 {
+    left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-4 {
+    left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-5 {
+    left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-6 {
+    left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-7 {
+    left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-8 {
+    left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-9 {
+    left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-10 {
+    left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-11 {
+    left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-push-12 {
+    left: 100%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 37, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/grid/mixins/_grid-framework.scss */
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+/* line 64, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.grid-row {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  clear: both;
+}
+
+/* line 73, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.grid-row .grid-block {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 77, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.grid-row .grid-block:not(:last-child) {
+  padding: 0px 20px 0px 0px;
+}
+
+/* line 81, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.grid-row .grid-block.-half {
+  width: 50%;
+}
+
+/* line 85, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.grid-row .grid-block.-third {
+  width: 33%;
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.row.is-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 96, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.row.is-flex > [class*='col-'] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  /* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .row-eq-height {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 543px) {
+  /* line 120, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 544px) {
+  /* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 120, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* line 120, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1239px) {
+  /* line 120, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1240px) {
+  /* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+/* line 120, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.hidden-xl-down {
+  display: none !important;
+}
+
+/* line 128, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/bootstrap-grid.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+html, body, div, span, applet, object, iframe,
+pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+html {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 68, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 82, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 103, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+audio,
+canvas,
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 115, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 125, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 137, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 146, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 158, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 166, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 175, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 188, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 197, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 205, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 213, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 217, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 228, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 236, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 247, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 255, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 264, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 272, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 295, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 309, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 320, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 333, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 345, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 354, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 365, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 377, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 389, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 399, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 410, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 419, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 430, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 439, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 448, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 459, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 464, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+/* line 23, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+body {
+  min-height: 100vh;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 30, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.icon {
+  display: inline-block;
+}
+
+/* line 34, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.input {
+  display: block;
+  clear: both;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  padding: 0px 0px 3px 0px;
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+  resize: none;
+}
+
+/* line 52, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.input.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 58, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.atomsWrap body {
+  background: #fff !important;
+}
+
+/* Selections */
+/* line 63, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+
+/* line 68, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+
+/* line 74, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* line 79, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.main-content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+div[role="content"], div[role="content-white"] {
+  overflow: hidden;
+  padding: 0px 0px 50px 0px;
+}
+
+@media (min-width: 41.25em) {
+  /* line 83, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+  div[role="content"], div[role="content-white"] {
+    padding: 24px 0px 50px 0px;
+  }
+}
+
+/* line 92, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+div[role="content"] {
+  background: #eee;
+}
+
+/* line 95, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+div[role="content"].brand-shop {
+  padding-bottom: 0px;
+}
+
+/* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+div[role="content-white"] {
+  background: #ffffff;
+}
+
+/* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.slider-prev,
+.slider-next {
+  position: absolute;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 28px;
+  width: 28px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0;
+  border-radius: 100px;
+  outline: none;
+  background: #ffffff;
+  z-index: 30;
+  cursor: pointer;
+}
+
+/* line 125, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.slider-prev {
+  left: 10px;
+}
+
+/* line 129, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_initial.scss */
+.slider-next {
+  right: 10px;
+}
+
+/* line 1, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.video-info {
+  display: block;
+  width: 100%;
+  z-index: 20;
+}
+
+/* line 6, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.video-info li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* line 10, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.video-info li i {
+  vertical-align: middle;
+}
+
+/* line 15, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.video-info .social-share-small, .video-info .social-share-small-white {
+  vertical-align: inherit;
+}
+
+/* line 21, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  margin: 0px 10px 0px 0px;
+  background: url("https://randomuser.me/api/portraits/women/26.jpg") no-repeat;
+  background-size: 100%;
+}
+
+/* line 33, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.profile-img.-large {
+  width: 60px;
+  height: 60px;
+}
+
+/* line 38, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.profile-img.-small {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 43, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.profile-img.-center {
+  margin: 0px auto 0px auto;
+}
+
+/* line 51, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.product-price {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  padding: 0px 8px 0px 10px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  opacity: 0.75;
+  background: #333333;
+}
+
+/* line 76, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.product-price.special {
+  background-image: linear-gradient(-90deg, #FF5B00 0%, #FF0063 100%);
+}
+
+/* line 82, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  background: rgba(55, 55, 55, 0.9);
+  z-index: 30;
+  opacity: 0;
+  display: none;
+}
+
+/* line 96, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.modal.active {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+/* line 104, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.modal > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0px 20px;
+  background: #ffffff;
+}
+
+@media (min-width: 48em) {
+  /* line 104, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+  .modal > div {
+    padding: 0px;
+  }
+}
+
+/* line 117, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+.modal .close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+@media (min-width: 40em) {
+  /* line 117, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_shared.scss */
+  .modal .close {
+    right: -33px;
+  }
+}
+
+/*
+Typography
+*/
+@font-face {
+  font-family: 'Avenir';
+  src: url("../assets/fonts/Avenir-Light.woff2") format("woff2"), url("../assets/fonts/Avenir-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../assets/fonts/Avenir-Black.woff2") format("woff2"), url("../assets/fonts/Avenir-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url("../assets/fonts/Avenir-Roman.woff2") format("woff2"), url("../assets/fonts/Avenir-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../assets/fonts/Avenir-Heavy.woff2") format("woff2"), url("../assets/fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../assets/fonts/Avenir-Medium.woff2") format("woff2"), url("../assets/fonts/Avenir-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* line 45, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+}
+
+/* line 49, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+}
+
+@media (min-width: 64em) {
+  /* line 49, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+  p {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+}
+
+/* h2 - h3 */
+/* line 71, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-sub {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  color: #888888;
+}
+
+/* line 78, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-sub.-light {
+  font-weight: 300;
+}
+
+/* line 82, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-sub.-normal {
+  font-weight: 500;
+}
+
+/* line 86, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-sub.--black {
+  color: #333333;
+}
+
+/* line 91, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-shop {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 900;
+  color: #333333;
+  letter-spacing: 0.25px;
+  margin-right: 12px;
+}
+
+/* line 100, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-shop.-light {
+  font-weight: 300;
+}
+
+/* line 105, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-caption {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #888888;
+  letter-spacing: 0.25px;
+  padding-top: 3px;
+}
+
+/* line 114, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-caption.-dark {
+  color: #333333;
+}
+
+/* line 119, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.video-title {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 64em) {
+  /* line 119, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+  .video-title {
+    margin-bottom: 0px;
+  }
+}
+
+/* line 134, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-quote {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #333333;
+}
+
+/* line 144, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-body {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+@media (min-width: 40em) {
+  /* line 144, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+  .text-body {
+    font-size: 14px;
+  }
+}
+
+/* line 157, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-discuss {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: #333333;
+  text-align: left;
+}
+
+/* line 165, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-discuss.main {
+  font-size: 16px;
+  padding: 24px 0px 30px 0px;
+}
+
+/* line 171, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-product-name {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+/* line 186, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-description {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+/* line 194, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-description.bold {
+  font-weight: 900;
+}
+
+/* line 199, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.product-price span {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.33;
+  letter-spacing: 0.3px;
+  text-align: right;
+  color: #ffffff;
+}
+
+/* line 209, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-item-title {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+/* line 218, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-form-title {
+  font-family: "Avenir-Roman", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.25px;
+  line-height: 14px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+/* line 227, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-copyright {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+  color: #888888;
+  text-align: right;
+}
+
+/* line 235, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-body-roman {
+  font-family: "Avenir-Roman", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #333333;
+}
+
+/* line 242, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-body-roman.-white {
+  color: #ffffff;
+}
+
+/* line 247, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-link {
+  font-family: "Avenir-Roman", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #FF5252;
+}
+
+/* line 255, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.social-share {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #888888;
+}
+
+/* line 263, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-views {
+  font-family: "Avenir-Roman", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 12px;
+  color: #888888;
+}
+
+/* line 270, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.text-views.-liked {
+  color: #FF5252;
+}
+
+/* line 275, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+.tab-text {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, serif, sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF5252;
+}
+
+/* line 286, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+a {
+  padding: 0;
+  margin: 0;
+  color: #333333;
+  text-decoration: none;
+  transition: background-color .4s linear, color .4s linear;
+}
+
+/* line 293, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 298, /Applications/AMPPS/www/inspiredme.com/atomic/assets/sass/_typography.scss */
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/**
+  * Atoms
+  *
+*/

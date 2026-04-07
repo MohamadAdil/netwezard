@@ -1,0 +1,178 @@
+
+.pooja-box2
+{	
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+}
+
+.pooja-box3
+{	
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+}
+
+.pooja-box4
+{	
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+}
+
+.pooja-box5
+{	
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+	-moz-animation-delay: 0.9s;
+}
+
+.daily-scope-right {
+    margin-top: 120px;
+}
+section.page-title {
+    height: 200px;
+    background-image: url(../img/page-title.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.page-title h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about-us-page:before, .service-page:before {
+    content: "";
+    display: none;
+}
+
+.page-info {
+    position: relative;
+    padding: 20px 0px;
+    background: #ffffff;
+    color: #1f1f1f;
+    border-bottom: 1px solid #f0f0f0;
+}
+.page-info .bread-crumb {
+    position: relative;
+    font-size: 14px;
+}
+.page-info .bread-crumb li {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+    color: #9e9e9e;
+    line-height: 24px;
+}
+.page-info .bread-crumb li a {
+    color: #cf4a46;
+}
+
+.why-choose-us {
+    position: relative;
+    padding: 80px 0px 30px;
+    background: #f9f9f9;
+}
+.sec-title h2 {
+    font-size: 36px;
+    color: #1f1f1f;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.icon-column-default {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+.icon-column-default .inner-box {
+    position: relative;
+    display: block;
+    padding-left: 90px;
+}
+.icon-column-default .inner-box h3 {
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-bottom: 7px;
+    color: #1f1f1f;
+    font-weight: 400;
+}
+.icon-column-default .inner-box .text {
+    line-height: 1.8em;
+}
+
+.icon-column-default .inner-box img {
+    height: 60px;
+}
+
+section.form input, section.form textarea
+{
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    color: #aaa9a9;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 100%;    
+    margin-bottom: 20px;
+    margin-right: 1%;
+    border-radius: 3px;
+}
+section.form form textarea
+{
+    height: 100px;
+}
+
+
+div#comment-input {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.contact-us .icon-box {
+ display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 75px;
+    font-size: 36px;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    background-color: #354350;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-us .icon-box i{
+    font-size: 36px;
+}
+a.btn:hover {
+    color: #fff;
+}
+a.btn:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+a.btn:hover {
+  padding-right: 25px;
+}
+a.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}

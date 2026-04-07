@@ -1,0 +1,109 @@
+.dropdown-menu .floating-img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.mengamenu-category{
+  padding-right: 45px;
+  padding-bottom: 50px;
+}
+.five-col-menu{
+  position: relative;
+  z-index: 11;
+}
+.five-col-menu .col .mengamenu-category{
+  padding-right: 15px;
+}
+.five-col-menu .col:last-child .mengamenu-category{
+  padding-right: 0;
+}
+.mengamenu-category p{
+  margin-bottom: 20px;
+  color: #4A5962;
+}
+.mengamenu-category .megamenu-links{
+  margin-top: 20px;
+}
+.mengamenu-category .megamenu-links li{
+  padding: 8px 0;
+}
+.mengamenu-category .megamenu-links li a{
+  color: #1C2B33;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mengamenu-category .megamenu-links li a:hover{
+  color: #4274cf;
+}
+.mengamenu-category h3 a{
+  color: #1C2B33;
+  position: relative;
+  padding-right: 50px;
+  display: block;
+}
+.mengamenu-category h3 a span{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #F5F7F8;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s ease-in-out;
+}
+.mengamenu-category h3 a span:after{
+  content: "";
+  border-top: 1px solid #4274CF;
+  border-right: 1px solid #4274CF;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  left: 4px;
+}
+.mengamenu-category h3 a:hover span{
+  right: -7px;
+}
+.mengamenu-category .megamenu-icons-links{
+  margin-top: 20px;
+}
+.mengamenu-category .megamenu-icons-links li{
+  padding: 8px 0;
+}
+.mengamenu-category .megamenu-icons-links li a{
+  display: flex;
+  color: #1C2B33;
+  font-weight: 500;
+}
+.mengamenu-category .megamenu-icons-links li a i{
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 5px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.mengamenu-category .megamenu-icons-links li a .right-links{
+  padding-left: 15px;
+}
+.mengamenu-category .megamenu-icons-links li a .right-links .link-text{
+  font-size: 14px;
+  font-weight: 500;
+}
+.mengamenu-category .megamenu-icons-links li a p{
+  font-size: 12px;
+  margin: 0;
+}
+.mengamenu-category .megamenu-icons-links li a:hover .link-text{
+  color: #4274CF;
+}
+.mengamenu-category .eyebrow{
+  font-size: 12px;
+  font-weight: 500;
+  color: #4A5962;
+  margin-bottom: 12px;
+}
+
+

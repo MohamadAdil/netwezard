@@ -1,0 +1,17 @@
+HTTrack3.48-22+htsswf+htsjava launched on Mon, 30 Jan 2017 12:30:29 at http://wordpressboss.com/wb/smoth-demo/index-slider.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://wordpressboss.com/wb/smoth-demo/index-slider.html -O1 "D:\download-template\bootstrap-1\bootstrap template" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:30:31	Warning: 	Note: due to wordpressboss.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+12:33:48	Warning: 	Retry after error -4 (Connect Error) at link wordpressboss.com/wb/smoth-demo/assets/images/testimonial/3.jpg (from wordpressboss.com/wb/smoth-demo/index-slider.html)
+12:33:48	Warning: 	Retry after error -4 (Connect Error) at link wordpressboss.com/wb/smoth-demo/assets/fonts/Linearicons-Free.ttf?w118d (from wordpressboss.com/wb/smoth-demo/assets/fonts/linear-fonts.css)
+12:33:49	Error: 	"Not Found" (404) at link www.wordpressboss.com/wb/smoth-demo/assets/owlcarousel/css/grabbing.png (from wordpressboss.com/wb/smoth-demo/assets/owlcarousel/css/owl.carousel.css)
+12:33:49	Error: 	"Not Found" (404) at link www.wordpressboss.com/wb/smoth-demo/assets/owlcarousel/css/AjaxLoader.gif (from wordpressboss.com/wb/smoth-demo/assets/owlcarousel/css/owl.theme.css)
+12:33:49	Warning: 	Retry after error -4 (Connect Error) at link wordpressboss.com/wb/smoth-demo/index-youtube.html (from wordpressboss.com/wb/smoth-demo/index.html)
+
+HTTrack Website Copier/3.48-22 mirror complete in 3 minutes 29 seconds : 74 links scanned, 68 files written (4236668 bytes overall) [4394915 bytes received at 21028 bytes/sec]
+(2 errors, 4 warnings, 0 messages)

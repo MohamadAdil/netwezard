@@ -1,0 +1,24 @@
+.variety-unavailable label {
+  color: #fff !important;
+}
+
+.variety-unavailable input {
+  display: none;
+}
+
+
+.variety-unavailable label {
+  color: transparent;
+  border: 0 !important;
+}
+
+
+.variety-unavailable label:before,
+.variety-unavailable label:after {
+  display: none;
+}
+
+
+#current-price {
+  min-width: 240px;
+}

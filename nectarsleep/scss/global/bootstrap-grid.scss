@@ -1,0 +1,132 @@
+// Bootstrap Grid only
+//
+// Includes relevant variables and mixins for the regular (non-flexbox) grid
+// system, as well as the generated predefined classes (e.g., `.col-4-sm`).
+
+
+//
+// Variables
+//
+
+
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+        xs: 0,
+  // Small screen / phone
+        sm: 544px,
+  // Medium screen / tablet
+        md: 768px,
+  // Large screen / desktop
+        lg: 1024px,
+  // Extra large screen / wide desktop
+        xl: 1240px
+  //xx: 1440px
+) !default;
+
+
+// Grid containers
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  // xs: 100%,
+        sm: 640px,
+        md: 720px,
+        lg: 980px,
+        xl: 1200px
+  //xx: 1400px
+) !default;
+
+
+// Grid columns
+$grid-columns:               12 !default;
+$grid-gutter-width:          20px !default; //  1.250rem = 30px
+
+
+$enable-flex:               false !default;
+$enable-grid-classes:       true !default;
+
+//
+// Grid mixins
+//
+
+@import "grid/mixins/clearfix";
+@import "grid/mixins/breakpoints";
+@import "grid/mixins/grid-framework";
+@import "grid/mixins/grid";
+@import "grid/grid";
+
+// custom addons
+.grid-row {
+
+  display: block;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  clear: both;
+
+  .grid-block {
+    display: inline-block;
+    width: 100%;
+
+    &:not(:last-child) {
+      padding: 0px 20px 0px 0px;
+    }
+
+    &.-half {
+      width: 50%;
+    }
+
+    &.-third {
+      width: 33%;
+    }
+  }
+
+}
+
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row-eq-height {
+
+  @media (min-width: 992px) {
+    display: flex;
+  }
+
+}
+
+// visibility
+@each $bp in map-keys($grid-breakpoints) {
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
+  .hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
+    }
+  }
+}
+
+// clear
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both
+}

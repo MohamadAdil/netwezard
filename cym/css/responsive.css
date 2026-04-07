@@ -1,0 +1,94 @@
+@media only screen and (max-width: 509px){
+.container{width:90%; padding:0 5%}
+.col-1, .col-2, .col-3, .col-4, #containingDiv{width:100% !important; margin:0}
+.logo{width:150px; height:auto; margin:10px 0;}
+.model-compare{width:96%; margin:0 auto; }
+.model-compare-box{float:none; width:98%; height:auto}
+.thumblisting li{width:96%; float:none; margin:15px auto}
+.vs{margin:20px auto; float:none;}
+.femalesection, .malesection{margin:10px auto}
+.topbar{padding:10px 0 5px;}
+.toploginlink, .topnav{float:none; margin:0 auto; text-align:center;}
+.toploginlink a{display:inline-block; float:none;}
+.topnav{margin:5px 0;}
+.story-left{width:25%;}
+.story-right{width:70%;}
+.footernav{margin:10px auto;}
+.socialicon{float:left;}
+.navbar-toggle{margin-top:20px;}
+.navbar-default .navbar-toggle{border-color:#00768a;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background:#00768a;}
+.navbar-default .navbar-toggle .icon-bar{background:#00768a;}
+.allinone_carousel.sweet .leftNav{background-position:left center!important; left:10px!important;}
+.allinone_carousel.sweet .leftNav:hover{background-positon:left center!important;}
+.allinone_carousel.sweet .rightNav{background-position:right center!important; right:20px!important;}
+.allinone_carousel.sweet .rightNav:hover{background-position:right center !important;}
+}
+/* 4.4 - Mobile Landscape */
+@media only screen and (min-width: 510px) and (max-width: 629px) {
+.container{width:90%; padding:0 5%}
+.col-1, .col-2, .col-3, .col-4, .footer .container{width:70%; margin:0 auto; float:none}
+.footer .col-1{width:100%}
+#containingDiv{width:100% !important}
+.model-compare{width:96%; margin:0 auto; }
+.model-compare-box{float:none; width:98%; height:auto}
+.thumblisting li{width:96%; float:none; margin:15px auto}
+.vs{margin:20px auto; float:none;}
+.femalesection, .malesection{margin:10px auto}
+.story-left{width:25%;}
+.story-right{width:70%;}
+.footernav{margin:10px auto;}
+.socialicon{float:left;}
+.navbar-toggle{margin-top:35px;}
+.navbar-default .navbar-toggle{border-color:#00768a;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background:#00768a;}
+.navbar-default .navbar-toggle .icon-bar{background:#00768a;}
+}
+/* 4.3 - Tablet Landscape */
+@media only screen and (min-width: 600px) and (max-width: 797px) {
+.container{width:90%; padding:0 5%}
+.col-1, .col-2, .col-3, .col-4{width:100%; margin:0 auto; float:none}
+.footer .col-1{width:100%}
+#containingDiv{width:100% !important}
+.model-compare{width:100%; margin:0 auto;}
+.model-compare-box{float:left; width:40%; height:auto}
+.model-compare-box.rfloat{float:right;}
+.thumblisting li{width:30%; margin:2% 2% 2% 0; float:left;}
+.vs{margin:15% 4%; float:left;}
+.femalesection, .malesection{margin:20px auto}
+.imglink img{width:auto;}
+.story-left{width:13%;}
+.story-right{width:80%;}
+.footernav{margin:10px auto;}
+.socialicon{float:left;}
+.navbar-toggle{margin-top:35px;}
+.navbar-default .navbar-toggle{border-color:#00768a;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background:#00768a;}
+.navbar-default .navbar-toggle .icon-bar{background:#00768a;}
+.footer .container{padding:0; width:90%}
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.container{width:90%; padding:0 5%}
+.col-1, .col-2, .col-3, .col-4{width:100%; margin:0 auto; float:none}
+.footer .col-1{width:48%; margin-right:3%; float:left;}
+.footer-middle .col-1:nth-child(2n+1){clear:both;}
+.footer-middle .col-1:nth-child(2n+2){margin-right:0;}
+#containingDiv{width:100% !important}
+.model-compare{width:100%; margin:0 auto;}
+.model-compare-box{float:left; width:40%; height:auto}
+.model-compare-box.rfloat{float:right;}
+.thumblisting li{width:30%; margin:2% 2% 2% 0; float:left;}
+.vs{margin:15% 4%; float:left;}
+.femalesection, .malesection{margin:20px auto}
+.imglink img{width:auto;}
+.story-left{width:13%;}
+.story-right{width:80%;}
+.footernav{margin:10px auto;}
+.socialicon{float:left;}
+.navbar-right{float:left !important; margin:0 0 20px;}
+.navbar-toggle{margin-top:35px;}
+.navbar-default .navbar-toggle{border-color:#00768a;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background:#00768a;}
+.navbar-default .navbar-toggle .icon-bar{background:#00768a;}
+.footer .container{padding:0; width:90%}	
+}

@@ -1,0 +1,159 @@
+
+@font-face {
+    font-family:'d';
+    src: url('assets/fonts/a-book/d Book.eot');
+	src: url('assets/fonts/a-book/d Book.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/a-book/d Book.woff2') format('woff2'),
+		url('assets/fonts/a-book/d Book.woff') format('woff'),
+		url('assets/fonts/a-book/d Book.svg#d Book') format('svg');
+    font-weight: 350;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+
+.promo {
+  background: #06137b none repeat scroll 0 0;
+  box-shadow: 0 7px 17px -7px rgba(0, 0, 0, 0.3) inset;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.chat_bubble {
+  display: none;
+}
+.nav_bar .nav_links .mobile_menu a {
+  color: #464646;
+  margin-left: 20px;
+  transition: color 0.2s linear 0s;
+}
+.promo .message {
+  font-size: 2.4em;
+  font-weight: 300;
+  width: 47%;
+}
+.promo .time {
+  font-size: 12px;
+}
+.time-in {
+  padding-right: 30px;
+}
+.time-in input {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 5px;
+}
+.cart.alert {
+  background: rgba(0, 0, 0, 0) url("../assets/images/cart.png") no-repeat scroll 0 center;
+  height: 20px;
+  width: 43px;
+}
+.btn_close {
+  height: 14px;
+  position: relative;
+  top: 8px;
+  width: 14px;
+}
+.chat.open {
+  background: rgba(0, 0, 0, 0) url("../assets/images/chat.png") repeat scroll 0 -66px;
+  display: none;
+  height: 56px;
+  width: 56px;
+}
+.message_min .item {
+  background: #06137b none repeat scroll 0 0;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  padding: 4px 5px 4px 15px;
+  text-align: left;
+}
+.btn_main {
+  background: #06137b none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 15px 20px;
+  transition: background 0.2s linear 0s;
+}
+.hp_main_banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) repeat scroll 0 0%, rgba(0, 0, 0, 0) url("../assets/images/new_badroom_2a.jpg") no-repeat scroll 0 98%;
+  box-shadow: 0 7px 17px -7px rgba(0, 0, 0, 0.3) inset;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+.section_type2, .hp_main_banner, .hp_bottom_cta, .mp_how_its_made, .mp_bottom_cta, .home_trial_main_banner, .home_trial_bottom_cta, .our_story_main_banner, .reviews_main_banner, .grey_bg_bottom_cta, .compare_main_banner, .faq_main_banner {
+  padding: 110px 0;
+}
+.main_footer {
+  background: #06137a none repeat scroll 0 0;
+  box-shadow: 0 7px 17px -7px rgba(0, 0, 0, 0.3) inset;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+.long_hed h3 {
+  color: #06137a;
+}
+.btn_secondary {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #06137a;
+  color: #06137a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 15px 20px;
+  transition: all 0.2s linear 0s;
+}
+.grey_bg {
+  background: rgba(0, 0, 0, 0) url("../assets/images/proirty-bg.jpg") repeat scroll 0 0;
+}
+.wert {
+  display: inline-table !important;
+  text-align: right !important;
+}
+.exited ul {
+  list-style: outside none none;
+}
+.exited ul li {
+  background: #000 none repeat scroll 0 0;
+  display: inline-block;
+  height: 160px;
+  position: relative;
+  width: 11.9%;
+}
+
+.exited span {
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  left: 20px;
+  line-height: 15px;
+  position: absolute;
+  text-align: left;
+  top: 20px;
+  z-index: 999;
+}
+.exited ul li:hover span{ display:block; }
+
+.exited ul li:hover img{ opacity:0.7; }
+
+.right-head {
+  float: right;
+}
+.mobile_menu {
+  float: left;
+}
+.nav_links {
+  width: 80%;
+}
+.con_tp { color:#06137a;  }

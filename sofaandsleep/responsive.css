@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width:767px) {
+	.top-row{display:none;}
+	.navbar{margin:15px 0 0; float:left; width:100%}
+	.carousel-caption{display:none;}
+	.three-sec .media{padding-bottom:15px; border-right:0; border-bottom:1px solid #d8d7d4}
+	.three-sec .media:last-child{padding-bottom:0; border-bottom:0;}
+	.three-sec{margin-bottom:30px;}
+	.home-prod-listing a{margin-top:0;}
+	.news-section{padding:0;}
+	.newsletter h3{float:left; width:100%;}
+	.newsletter fieldset, .newsletter p{float:left; width:100%; position:static}
+	.newsletter fieldset{margin-top:0;}
+	.footer-top{padding:30px 0;}
+	.footer-top ul{display:none;}
+	.footer-top .col-xs-12 {margin-bottom:10px;}
+	.footer-top .col-xs-12:last-child{margin-bottom:0;}
+	.social-links ul, .social-links h3{padding-left:0;}
+	.social-links h3::after {content: "Remember this";}
+	.navbar ul{float:left; width:100%;}
+	.main-nav ul li.cart-box{display:none;}
+	.breadcrumb{float:left; width:100%; margin-bottom:20px;}
+	.advertise img{width:100%;}
+	.overview p.our-price span{float:left; width:100%;}
+	.overview{float:left; width:100%;}
+	.desk-desc{display:none;}
+	.mobile-desc{display:block;}	
+	.swatches ul li a{margin-bottom:10px;}
+}
+@media (min-width:100px) and (max-width:1200px) {
+	.discount-coupon img{width:100%;}
+	.discount-coupon{margin-bottom:20px;}
+	.news-section{padding:0}
+	.follow-us{margin-top:20px;}
+	.testimonial .tetstimonial-sec{width:100%; padding:0; margin-left:0; margin-bottom:30px; float:left !important} 
+}

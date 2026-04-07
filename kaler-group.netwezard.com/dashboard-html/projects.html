@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App Title -->
+    <title>Projects | Kaler Group</title>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- App css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/summernote-bs4.css" rel="stylesheet" type="text/css" />
+
+    <!-- third party css -->
+    <link
+      href="css/vendor/dataTables.bootstrap4.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/vendor/switchery.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+
+    <!-- page css -->
+  </head>
+
+  <body>
+    <!-- Begin page -->
+    <div id="wrapper">
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="left-side-menu left-side-menu-dark">
+        <div class="slimscroll-menu">
+          <!-- LOGO -->
+          <a
+            href="projects.html"
+            class="logo text-center mb-4"
+          >
+            <span class="logo-lg">
+              <img src="images/logo.png" alt="logo" height="80" />
+            </span>
+            <span class="logo-sm">
+              <img src="images/logo.png" alt="logo" height="24" />
+            </span>
+          </a>
+
+          <!--- Sidemenu -->
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
+            <ul class="metismenu" id="side-menu">
+              <li class="menu-title">Navigation</li>
+              <li>
+                <a href="javascript: void(0);">
+                  <span class="icon"><i class="far fa-images"></i></span>
+                  <span> Projects </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="projects.html">Project List</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- End Sidebar -->
+          <!-- End Sidebar -->
+
+          <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -left -->
+      </div>
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start Page Content here -->
+      <!-- ============================================================== -->
+
+      <div class="content-page">
+        <div class="content">
+          <!-- Topbar Start -->
+          <div class="navbar-custom">
+            <ul class="list-unstyled topbar-right-menu float-right mb-0">
+              <!-- Authentication Links -->
+
+              <li class="dropdown notification-list">
+                <a
+                  class="nav-link dropdown-toggle nav-user mr-0"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="images/users/user.png"
+                    alt="user-image"
+                    class="rounded-circle"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown"
+                >
+                  <!-- item-->
+                  <div class="dropdown-header noti-title">
+                    <h6 class="text-overflow m-0">
+                      Welcome !
+                      <small class="pro-user-name ml-1"> Super Admin </small>
+                    </h6>
+                  </div>
+
+                  <!-- item-->
+                  <!-- <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a> -->
+
+                  <!-- item-->
+                  <a
+                    href="#"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="fe-settings"></i>
+                    <span>Settings</span>
+                  </a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <!-- item-->
+                  <a
+                    href="javascript:void(0);"
+                    class="dropdown-item"
+                    href="#">
+                    <i class="fe-log-out"></i>
+                    <span>Logout</span>
+                  </a>
+
+                  <form>
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                    />
+                  </form>
+                </div>
+              </li>
+            </ul>
+            <button class="button-menu-mobile open-left disable-btn">
+              <i class="fe-menu"></i>
+            </button>
+            <div class="app-search"></div>
+          </div>
+          <!-- end Topbar -->
+
+          <!-- Start Content-->
+
+          <!-- Start Content-->
+          <div class="container-fluid">
+            <!-- start page title -->
+            <!-- Include page breadcrumb -->
+            <!-- start page title -->
+            <div class="row">
+              <div class="col-12">
+                <div class="page-title-box">
+                  <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                      <li class="breadcrumb-item active">Project</li>
+                    </ol>
+                  </div>
+                  <h4 class="page-title">Project</h4>
+                </div>
+              </div>
+            </div>
+            <!-- end page title -->
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-12">
+                <a href="add-project.html" class="btn btn-primary">Add New</a>
+
+                <a href="javascript:void(0)" class="btn btn-info">Refresh</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="header-title">Project List</h4>
+                  </div>
+                  <div class="card-body">
+                    <!-- Data Table Start -->
+                    <div class="table-responsive">
+                      <table
+                        id="basic-datatable"
+                        class="table table-striped table-hover table-dark nowrap full-width"
+                      >
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Thumbnail</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-8_1612092356.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Choose Your Dream</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Interior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="view-project.html"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="edit-project.html"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-8"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-8"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/8"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-7_1612092209.png"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Creative Spaces</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Interior Design</span
+                              >
+                              <span class="badge badge-primary"
+                                >Exterior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="view-project.html"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="edit-project.html"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-7"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-7"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="view-project.html"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-6_1612092127.png"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Luxury Villa</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Architecture</span
+                              >
+                              <span class="badge badge-primary"
+                                >Interior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/6"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="edit-project.html"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-6"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-6"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/6"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-5_1612092076.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Fantastic interior</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Architecture</span
+                              >
+                              <span class="badge badge-primary"
+                                >Interior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/5"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/5/edit"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-5"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-5"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/5"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-4_1612091963.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Handebr The Villa</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Exterior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/4"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/4/edit"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-4"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-4"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/4"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-3_1612091891.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Seascape Villa</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Interior Design</span
+                              >
+                              <span class="badge badge-primary"
+                                >Exterior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/3"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/3/edit"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-3"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-3"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/3"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-2_1612091824.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>European Lord Station</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Architecture</span
+                              >
+                              <span class="badge badge-primary"
+                                >Exterior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/2"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/2/edit"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-2"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-2"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/2"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>
+                              <img
+                                src="https://www.hitechparks.com/web/apps/archi/uploads/portfolio/port-bg-1_1612091752.jpg"
+                                class="img-fluid"
+                                alt="Portfolio"
+                              />
+                            </td>
+                            <td>Alvar Alto Museum</td>
+                            <td>
+                              <span class="badge badge-primary"
+                                >Architecture</span
+                              >
+                              <span class="badge badge-primary"
+                                >Exterior Design</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <label class="switch">
+                                  <input type="checkbox" />
+                                  <span class="slider"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/1"
+                                class="btn btn-success btn-sm"
+                              >
+                                <i class="fas fa-eye"></i>
+                              </a>
+
+                              <a
+                                href="https://www.hitechparks.com/web/apps/archi/admin/portfolio/1/edit"
+                                class="btn btn-primary btn-sm"
+                              >
+                                <i class="far fa-edit"></i>
+                              </a>
+
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#deleteModal-1"
+                              >
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <!-- Include Delete modal -->
+                              <!-- Delete modal -->
+                              <div
+                                class="modal fade"
+                                id="deleteModal-1"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="mySmallModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-sm">
+                                  <form
+                                    action="https://www.hitechparks.com/web/apps/archi/admin/portfolio/1"
+                                    method="post"
+                                    class="delete-form"
+                                  >
+                                    <input
+                                      type="hidden"
+                                      name="_token"
+                                      value="Zq9j6RIL6cWwmAmr4L2ae9i6cSCMWLKtfvkM0mp4"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="_method"
+                                      value="DELETE"
+                                    />
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+                                        <h3>Are You Sure?</h3>
+                                        <p>
+                                          You will not be able to recover this!
+                                        </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="submit"
+                                          class="btn btn-danger"
+                                        >
+                                          Confirm
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-light"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                  </form>
+                                </div>
+                                <!-- /.modal-dialog -->
+                              </div>
+                              <!-- /.modal -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Data Table End -->
+                  </div>
+                  <!-- end card body-->
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col-->
+            </div>
+            <!-- end row-->
+          </div>
+          <!-- container -->
+          <!-- End Content-->
+
+          <!-- End Content-->
+        </div>
+        <!-- content -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                © 2023 Kaler Group. All rights reserved
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end Footer -->
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- End Page content -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- App js -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/summernote-bs4.js"></script>
+
+    <!-- third party js -->
+    <script src="js/vendor/jquery.dataTables.js"></script>
+    <script src="js/vendor/dataTables.bootstrap4.js"></script>
+    <script src="js/vendor/switchery.min.js"></script>
+    <script src="js/vendor/toastr.min.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Toastr message display -->
+    <script type="text/javascript">
+      toastr.options = {
+        closeButton: true,
+        closeClass: "toast-close-button",
+        closeDuration: 300,
+        closeEasing: "swing",
+        closeHtml: '<button><i class="icon-off"><\/i><\/button>',
+        closeMethod: "fadeOut",
+        closeOnHover: true,
+        containerId: "toast-container",
+        debug: false,
+        escapeHtml: false,
+        extendedTimeOut: 10000,
+        hideDuration: 1000,
+        hideEasing: "linear",
+        hideMethod: "fadeOut",
+        iconClass: "toast-info",
+        iconClasses: {
+          error: "toast-error",
+          info: "toast-info",
+          success: "toast-success",
+          warning: "toast-warning",
+        },
+        messageClass: "toast-message",
+        newestOnTop: false,
+        onHidden: null,
+        onShown: null,
+        positionClass: "toast-top-right",
+        preventDuplicates: true,
+        progressBar: true,
+        progressClass: "toast-progress",
+        rtl: false,
+        showDuration: 300,
+        showEasing: "swing",
+        showMethod: "fadeIn",
+        tapToDismiss: true,
+        target: "body",
+        timeOut: 5000,
+        titleClass: "toast-title",
+        toastClass: "toast",
+      };
+    </script>
+    <script type="text/javascript"></script>
+
+    <script src="js/app.js"></script>
+
+    <!-- page js -->
+
+    <script>
+      jQuery('button[type="submit"]').on("click", function (e) {
+        e.preventDefault();
+        alert("Demo Is Not Editable!!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500,500i,600,700,700i,800" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section style="background:#e8e9e8">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="left-navigation">
+						<li><a href="javascript:void(0);" class="active"><span>1.</span>your details</a></li>
+
+						<li> <a href="javascript:void(0);"> <span>2.</span> Main Listing | 
+							<b>THINGS TO DO</b> </a></li>
+
+							<li><a href="javascript:void(0);"> <span>3.</span>ADDITIONAL LISTING | 
+								<b>FOOD AND DRINK</b></a></li>
+
+								<li><a href="javascript:void(0);"><span>4.</span>ADDITIONAL LISTING | 
+									<b>WEDDINGS</b></a></li>
+
+									<li><a href="javascript:void(0);"><span>5.</span>	ADDITIONAL LISTING | 
+										<b>WHERE TO STAY</b></a></li>
+
+										<li><a href="javascript:void(0);"><span>6.</span>	SUBMIT/declaration </a>
+										</li>
+										<li><a href="javascript:void(0);"><span>7.</span>	Payment </a>
+										</li>
+			                       </ul>
+					<div class="navigation-mobileview">
+                    	<h2 class="nav-heading">YOUR DETAILS</h2>
+                        <div class="numbering">
+                        	<span class="count">1</span> | 6
+                        </div>
+                    </div>
+                    <ul class="tab-progress">
+                    	<li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+			                  <!--      accordion -->
+			                                  <div class="panel panel-default cart-section">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 				<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> YOUR BASKET
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <h3 class="basket-heading">MAIN LISTING:</h3>
+                          <ul>
+                          	<li>
+                          		<p>Things To Do</p><span class="price">£95.00</span>
+                          	</li>
+                          </ul>
+                           <h3 class="basket-heading">ADDITIONAL LISTING(S):</h3>
+
+                                  <ul  class="price-listing">
+                          	<li><p>Food and Drink</p><span class="price">£95.00</span></li>
+                          		<li><p>Weddings</p><span class="price">£95.00</span></li>
+                          		<li><p>Where to stay</p><span class="price">£95.00</span></li>   
+                          		<li><p>VAT</p><span class="price">£95.00</span></li>                          	
+                          </ul>
+                          <p class="total-price">TOTAL <span><b>£240.00</b></span></p>
+                        </div>
+                    </div>
+                </div>
+				</div>
+                <div class="col-md-8">
+                	<div class="custom-radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        <label for="optionsRadios1">PAY ONLINE</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        <label for="optionsRadios2">REQUEST INVOICE</label>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+</body>
+
+  <!--script strat here-->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+		$(".custom-radio input:radio").on('click', function(){
+    		$(this).parent().addClass("active");
+		});	
+		$(".custom-radio input:radio").on('click', function(){
+    		$(".custom-radio.active").parent().removeClass("active");
+		});	
+	})
+  </script>
+
+</body>
+</html>

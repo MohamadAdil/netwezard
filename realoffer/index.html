@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>REALOFFER | A Mobile Platform</title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".top-spy">
+  <!-- Model Popup -->
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title" id="myModalLabel">Please fill the information in form below:</h5>
+      </div>
+      <div class="modal-body download-form">
+        <form data-toggle="validator" role="form">
+  <div class="form-group col-md-12 col-sm-12">
+    <input type="text" required="" placeholder="First Name" id="inputName" class="form-control">
+    </div>
+    <div class="form-group col-md-12 col-sm-12">
+    <input type="text" placeholder="Last Name" id="inputLName" class="form-control">
+    <div class="clearfix"></div>
+  </div>
+  <div class="form-group col-md-12 col-sm-12">
+	<input type="text" required="" placeholder="Restaurant Name" id="inputRestaurant" class="form-control">
+  </div>
+  <div class="form-group col-md-12 col-sm-12">
+    <input type="email" required="" data-error="Email address is invalid" placeholder="Your Email" id="inputEmail" class="form-control">
+  </div>
+  <div class="form-group col-md-12 col-sm-12">
+    <input type="text" required="" class="form-control" id="inputPhone" placeholder="Phone">
+  </div>
+  
+  <div class="col-md-12 col-sm-12"><button type="submit" class="btn btn-black">Submit</button>  <button type="button" class="btn btn-red" data-dismiss="modal" aria-label="Close">Close</button></div>
+</form><div class="clearfix"></div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  <!-- Header -->
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target="#bs-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#hero-banner" class="navbar-brand scroll"><img alt="REAL OFFER" src="images/logo-white.png" class="logo-white"/><img alt="REAL OFFER" src="images/logo-color.png" class="logo-color"/></a></a> </div>
+    <div id="bs-navbar-collapse-1" class="navbar-collapse collapse top-spy" aria-expanded="false" style="height: 0px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#hero-banner" class="scroll">HOME</a></li>
+        <li><a href="#diner" class="scroll">DINER</a></li>
+        <li><a href="#restaurant" class="scroll">RESTAURANT</a></li>
+        <li><a href="#testimonials" class="scroll">TESTIMONIALS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Header End --->
+<!-- Hero Banner -->
+   <section id="hero-banner" class="hero-banner">
+   		<div class="container">
+        	<div class="row banner-top-margin">
+                <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
+                	<div class="hero-message">
+                    	<h2>A PERFECT</h2>
+                        <h1>RESTAURANT <span>APP</span></h1>
+                        <p>A mobile platform that instantly connects diners with restaurants during off-peak hours, in real-time.</p>
+                        <div class="action-btn">
+                        	<a href="javascript:void(0)"><img src="images/download-apple-btn.png" alt="Downaload on the App Store"/></a>
+                            <a href="javascript:void(0)"><img src="images/download-google-btn.png" alt="GET IT ON Google Play"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                	<img src="images/banner-hand-image.png" class="img-responsive" alt="RealOffer"/>
+                </div>
+            </div>
+        </div>
+   </section>
+<!-- Hero Banner End -->
+<!-- Red Section -->
+<section class="red-section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-8 col-sm-8 col-xs-12">
+            	<h2>Always the Restaurant you want</h2>
+                <h3>The best way to get wherever you're going</h3>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+            	<div class="contact-info">
+	                <a href="mailto:info@realoffer.com"><i aria-hidden="true" class="fa fa-envelope"></i>info@realoffer.com</a><br/>
+    	            <a href="tel:0123456789"><i aria-hidden="true" class="fa fa-phone"></i>0123 456 789</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Red Section End -->
+
+<!-- Diner -->
+<section class="section" id="diner">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-6 col-sm-6 col-xs-12">
+            	<h2>DINER</h2>
+                <p>A mobile platform that instantly connects diners with restaurants during off-peak hours, in real-time.</p>
+                <ul>
+                	<li><i aria-hidden="true" class="fa fa-angle-right"></i>  On-Demand</li>
+                    <li><i aria-hidden="true" class="fa fa-angle-right"></i>  Real-Time.</li>
+                    <li><i aria-hidden="true" class="fa fa-angle-right"></i>  Personalized</li>
+                </ul>
+                <div class="action-btn">
+                    <a href="javascript:void(0)"><img src="images/download-apple-btn.png" alt="Downaload on the App Store" class="img-responsive"/></a>
+                    <a href="javascript:void(0)"><img src="images/download-google-btn.png" alt="GET IT ON Google Play" class="img-responsive"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<div class="row">
+                	<div class="col-sm-6 phone-screen-1">
+                    	<img src="images/iphone-screen-1.png" alt="Phone" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-6">
+                    	<div class="dish-images">
+                        	<img src="images/dish-1.jpg" alt="Dish" class="img-responsive"/>
+                        </div>
+                        <div class="dish-images">
+                        	<img src="images/dish-2.jpg" alt="Dish" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Section -->
+<section id="demo-section" class="demo-section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 text-center">
+            	<h2>You can watch REALOFFER demo</h2>
+                <a href="javascript:void(0)"><i class="fa fa-play-circle"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Demo Section End -->
+
+<!-- Diner End -->
+<!-- Restaurant -->
+<section id="restaurant" class="section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<h2>RESTAURANT</h2>
+                <p>Many People around the World are using <strong>REALOFFER</strong> App</p>
+                <ul>
+                	<li><i aria-hidden="true" class="fa fa-angle-right"></i>  On-Demand</li>
+                    <li><i aria-hidden="true" class="fa fa-angle-right"></i>  Real-Time.</li>
+                    <li><i aria-hidden="true" class="fa fa-angle-right"></i>  Personalized</li>
+                </ul>
+                <div class="action-btn">
+                    <button type="button" class="btn btn-red" data-toggle="modal" data-target="#myModal">DOWNLOAD APP</button>
+                    <a href="#how-it-works" class="btn btn-black scroll">HOW IT WORKS</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            	<div class="phone-black-cut">
+                	<img src="images/phone-black-cut.png" alt="RealOffer" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Restaurant End-->
+<!-- How It Works -->
+
+<section class="how-it-works section" id="how-it-works">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            <h3>HOW IT WORKS</h3>
+            </div>
+        	<div class="col-md-12">
+      <div class="carousel slide" data-ride="carousel" id="howitworks-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#howitworks-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#howitworks-carousel" data-slide-to="1"></li>
+          <li data-target="#howitworks-carousel" data-slide-to="2"></li>
+          <li data-target="#howitworks-carousel" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-md-offset-0 col-sm-6 col-md-7 howitworks-left">
+                  <div class="col-sm-2 col-xs-2 location-icon">
+                  	<i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                  	<h4>Around Me</h4>
+                    <p><strong>Restaurant</strong> targets nearby diner during off-peak hours.</p>
+                    <p><strong>Diner</strong> taps to view every offer within 5 mile radius.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-md-5 col-sm-6 howitworks-image">
+                	<img alt="RealOffer" src="images/couple-phone.png" class="img-responsive"/>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-md-offset-0 col-sm-6 col-md-7 howitworks-left">
+                  <div class="col-sm-2 col-xs-2 location-icon">
+                  	<i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                  	<h4>My Wishlist</h4>
+                    <p><strong>Restaurant</strong> responds with tailored-made offer based on request.</p>
+                    <p><strong>Diner</strong> enters ideal location, cuisine choice, and group size.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-md-5 col-sm-6 howitworks-image">
+                	<img alt="RealOffer" src="images/phone-wishlist.png" class="img-responsive"/>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-md-offset-0 col-sm-6 col-md-7 howitworks-left">
+                  <div class="col-sm-2 col-xs-2 location-icon">
+                  	<i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                  	<h4>Surprise Me</h4>
+                    <p><strong>Restaurant</strong> tracks intelligent consumer behavior and pushes offer.</p>
+                    <p><strong>Diner</strong> receives automated push notification with a personalized offer.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-md-5 col-sm-6 howitworks-image">
+                	<img alt="RealOffer" src="images/phone-wishlist.png" class="img-responsive"/>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-md-offset-0 col-sm-6 col-md-7 howitworks-left">
+                  <div class="col-sm-2 col-xs-2 location-icon">
+                  	<i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                  	<h4>Ratings</h4>
+                    <p><strong>Restaurant</strong> rating reset every month, providing opportunity to cure.</p>
+                    <p><strong>Diner</strong> rates experience, visible to friends in social network.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-md-5 col-sm-6 howitworks-image">
+                	<img alt="RealOffer" src="images/phone-wishlist.png" class="img-responsive"/>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#howitworks-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+        <a data-slide="next" href="#howitworks-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
+      </div>                          
+    </div>
+  
+        </div>
+    </div>
+
+</section>
+
+<!-- How It Works End -->
+<!-- Testimonials -->
+<section class="section" id="testimonials">
+	<div class="container">
+    	<div class="row text-center">
+        	<div class="col-md-12 col-sm-12">
+            	<h2>TESTIMONIALS</h2>
+                <h3>What people are saying about the <strong>REALOFFER</strong></h3>
+            </div>
+        </div>
+        <div class="row">
+        	<div class='col-md-offset-2 col-md-8'>
+      <div class="testimonials-carousel carousel slide" data-ride="carousel" id="testimonials-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+          <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+          <li data-target="#testimonials-carousel" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 text-center">
+                  <img class="img-circle" src="images/santhana.png" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9 col-md-10 testimonialstxt">
+                  <p>RealOffer is completely fixing the crowded and somewhat broken supply and demand model. This is entrepreneurship at its finest.</p>
+                  <small><strong>Santhana Krishnan</strong> - CEO at InteQ Corp.</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 text-center">
+                  <img class="img-circle" src="images/bharat.png" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9 col-md-10 testimonialstxt">
+                  <p>RealOffer has figured out how to introduce relevant marketing in people's lives and is forging the path for 21st century mobile apps.
+</p>
+                  <small><strong>Bharat Ramlochan</strong> - Tewarie Chief Marketing Officer at UCB Pharmaceuticals</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 text-center">
+                  <img class="img-circle" src="images/alexander.png" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9 col-md-10 testimonialstxt">
+                  <p>RealOffer is the web 3.0. It's genius.</p>
+                  <small><strong>Alexandre Laurent</strong> - Director at BU Venture Accelerator</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 text-center">
+                  <img class="img-circle" src="images/gotu.png" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9 col-md-10 testimonialstxt">
+                  <p>Simple. Ridiculously effective. The Uber for Restaurants.</p>
+                  <small><strong>Gotu Hule</strong> - Owner at Acitron</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#testimonials-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+        <a data-slide="next" href="#testimonials-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
+      </div>                          
+    </div>
+  
+        </div>
+    </div>
+</section>
+<!-- Testimonials End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+	<div class="container">
+    	<div class="row">
+        	<div class="footer-top">
+            	<div class="col-md-offset-1 col-md-2 col-sm-3 footer-center">
+                	<img src="images/logo-footer.png" alt="REALOFFER"/>
+                </div>
+                <div class="col-md-3 col-sm-3 footer-center">
+                	<div class="footer-links">
+                    	<a href="#diner" class="scroll">Diner</a>
+                        <a href="#restaurant" class="scroll">Restaurant</a>
+                    </div>
+                    <a href="#restaurant" class="btn btn-white scroll">Download App</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 footer-center">
+                	<div class="contact-info-footer">
+	                <a href="mailto:info@realoffer.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@realoffer.com</a><br>
+    	            <a href="tel:0123456789"><i class="fa fa-phone" aria-hidden="true"></i>0123 456 789</a>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-3 socialicons col-xs-6 footer-center">
+                	<p>Connect with Us</p>
+                    <ul>
+                    	<li><a href="http://www.facebook.com" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://www.google.com" target="_blank"><i title="Copy to use google-plus" aria-hidden="true" class="fa fa-fw"></i></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+            	<div class="col-md-6 col-sm-6 col-md-offset-1"><p>&copy; realoffer.com. All Rights Reserved.</p></div>
+                <div class="col-md-5 col-sm-6 text-center"><p>Site Designed by <a href="http://netwezard.com" target="_blank">Netwezard</a></p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js" type="text/javascript" ></script> 
+	<script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('http://netwezard.com/safesky/images/OpenSansRegular.eot');
+    src: url('http://netwezard.com/safesky/images/OpenSansRegular.eot') format('embedded-opentype'),
+         url('http://netwezard.com/safesky/images/OpenSansRegular.woff2') format('woff2'),
+         url('http://netwezard.com/safesky/images/OpenSansRegular.woff') format('woff'),
+         url('http://netwezard.com/safesky/images/OpenSansRegular.ttf') format('truetype'),
+         url('http://netwezard.com/safesky/images/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}

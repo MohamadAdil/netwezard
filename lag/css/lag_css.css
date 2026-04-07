@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'andadaregular';
+    src: url('../fonts/andada-regular.eot');
+    src: url('../fonts/andada-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/andada-regular.woff') format('woff'),
+         url('../fonts/andada-regular.ttf') format('truetype'),
+         url('../fonts/andada-regular.svg#andadaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1, h2, h3, h4, h5, h6{ font-weight:normal; font-family: 'andadaregular';}
+a{text-decoration:none; outline:none;}
+p{padding-bottom:10px;}
+
+.fl{float:left;}
+.fr{float:right;}
+.nomargin{margin:0 !important;}
+h2{font-size:20px; padding-bottom:10px; line-height:22px;}
+.clearfix{clear:both;}
+body{background:url(../images/homebodybg.png) center top repeat-x; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; color:#999; line-height:20px;}
+.header{width:776px; padding:10px 0; margin:0 auto;}
+.logo{background:url(../images/logo.png) left top no-repeat; width:166px; height:132px; display:block; float:left;}
+.welcometxt{font-size:15px; color:#333; clear:both; text-align:right;}
+.contactwrap{float:left; margin-top:40px; text-align:right;}
+.phone{font-size:26px; color:#008105; font-weight:bold;}
+.email{font-size:18px;color:#008105; font-weight:bold;}
+.loginbox{float:right; margin-left:20px; background:url(../images/loginbox.png) left top no-repeat; width:86px; height:63px; margin-top:15px; padding:5px;}
+.loginbox ul li{margin-bottom:1px;}
+.loginbox ul li a{display:block; color:#fff; padding:5px 10px; text-align:center;}
+.loginbox ul li a.login{background:#008105;}
+.loginbox ul li a:hover{color:#000;}
+.navbg{background:url(../images/navbg.png) center top repeat-x; height:51px; padding-top:1px; position:relative; z-index:999999;}
+.common{width:776px; margin:0 auto; position:relative;}
+.navbg ul li{float:left;}
+.navbg ul li a{color:#fff;padding:11px 8px;display:block;font-family: 'andadaregular';}
+.navbg ul li a:hover, .navbg ul li a.selected{background:url(../images/navbghover.png) center top repeat-x;}
+.navbg ul li.sep{background:url(../images/sep.png) center top no-repeat; width:3px; height:30px; display:block;}
+.main{width:776px; margin:0 auto; padding:20px 0;}
+.intro{font-size:18px; line-height:22px;}
+.intro .headingtxt{font-size:22px; color:#008105; text-transform:uppercase; font-weight:bold;}
+ul.bullet{padding:10px 0 10px 50px;}
+ul.bullet li{padding:0 0 10px 20px; background:url(../images/arrowgreen.png) left 5px no-repeat;}
+.promo{padding:10px 0; clear:both;}
+.box{float:left; background:url(../images/greyboxbg.png) left top no-repeat; width:206px; height:319px; color:#fff; padding:25px; margin-right:4px;}
+.box:hover{background-position:-256px top;}
+.box h2{color:#fff; text-align:center;}
+.imgbox{width:200px; height:97px; margin:5px 0;}
+.box p{font-size:13px; line-height:15px; height:125px;}
+.readmorebtn{background:url(../images/readbtn.png) center -20px no-repeat; width:85px; height:19px; display:block; margin:0 auto;}
+.readmorebtn:hover{background-position:left top;}
+.footer{background:#333; padding:20px 0 10px; text-align:center; font-size:12px; color:#fff; line-height:15px;}
+.socialicon{margin:0 auto;}
+.socialicon a{background:url(../images/socialicon.png) left top no-repeat; width:30px; height:30px; display:inline-block; margin:0 3px;}
+.socialicon a.facebook{background-position:left top;}
+.socialicon a.twitter{background-position:-36px top;}
+.socialicon a.in{background-position:-72px top;}
+.socialicon a.facebook:hover{background-position:left -30px;}
+.socialicon a.twitter:hover{background-position:-36px -30px;}
+.socialicon a.in:hover{background-position:-72px -30px;}
+.footersep{background:url(../images/footersep.png) center top no-repeat; width:776px; height:18px;}
+.emaillink{color:#fff;}
+.emaillink:hover{color:#c5c5c5;}
+.copyright{font-size:11px;}
+.adminlink{color:#fff; text-decoration:underline; position:absolute; right:0; bottom:10px;}
+.adminlink:hover{text-decoration:none;}
+
+/* Slider CSS */
+.slider{width:776px; margin:0 auto; position:relative; top:-8px; height:420px;}
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {position: relative;}
+.flex-viewport {height:auto;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {background:url(../images/pagingarrow.png) left top no-repeat; width:26px; height:26px; display: block;position: absolute; top: 94%;cursor: pointer; text-indent:-99999px;}
+.flex-direction-nav .flex-next {right:310px;background-position:-28px top;}
+.flex-direction-nav .flex-prev {left:310px; background-position:left top;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {background:url(../images/pagingbg.png) left top no-repeat; width:83px; height:19px; margin:10px auto; text-align: center; padding-top:6px;}
+.flex-control-nav li {margin: 0; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 14px; height: 14px; display: block; background:url(../images/pagingdot.png) right top no-repeat;cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a:hover, .flex-control-paging li a.flex-active{background:url(../images/pagingdot.png) left top no-repeat;}
+ 
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}

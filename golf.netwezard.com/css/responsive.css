@@ -1,0 +1,162 @@
+@media(max-width: 1199px) {
+    .logo-part {
+        max-width: 55px;
+    }
+}
+@media(max-width: 991px) {
+    .main-logo {
+        display: flex;
+        max-width: 30%;
+        margin-right: 30px;
+    }
+    .logo-part {
+        max-width: 40px;
+    }
+    .about-img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .month-spe-img {
+        text-align: center;
+    }
+    .month-spe-content {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .contsct-list .contact-link{
+        font-size: 15px;
+    }
+    .header-img {
+        display: none;
+    }
+    .top-head {
+        align-items: center;
+    }
+    .navbar-toggler {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        background: #476045;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: #fff;
+    }
+    .navbar-toggler:hover, .navbar-toggler:focus{
+        color: #fff;
+    }
+    #navbarSupportedContent {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 280px;
+        background: #476045;
+        z-index: 111;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+    #navbarSupportedContent.show{
+        transform: translateX(0); 
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:after{
+        display: none;
+    }
+    .navbar-nav.cart-nav {
+        margin-left: 0%;
+    }
+    .filter-body {
+        display: flex;
+    }
+    .filter-inn-block {
+        margin-bottom: 16px;
+        width: 50%;
+    }
+    .aside-filter {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+	.contact-link .icon {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .contsct-list {
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        padding: 0px;
+    }
+    .contsct-list li{
+        padding: 5px 0px;
+    }
+    .sec-heading h2{
+        font-size: 28px;
+    }
+    .about-us-sec, .monthly-spec-sec, .site-footer, .category-sec, .product-category-sec, .category-list-sec{
+        padding: 50px 0px;
+    }
+    .col-list li {
+        flex: 1 1 100%;
+        padding: 0px 0px;
+        margin: 10px 0px;
+        border-right: 0px;
+    }
+    .search-block {
+        margin-top: -120px;
+    }
+    .month-spe-content h4 {
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .month-spe-content h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .sort-by-fltr {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .sort-by-fltr label{
+        margin-bottom: 10px;
+    }
+    .search-cate{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .filter-bottom-row {
+        justify-content: center;
+    }
+    .filter-bottom-row h4{
+        margin-bottom: 10px;
+    }
+    .product-slider-wrap{
+        margin-bottom: 30px;
+    }
+    .flex-direction-nav .flex-next{
+        right: -20px;
+    }
+    .flex-direction-nav .flex-prev{
+        left: -20px;
+    }
+}
+@media(max-width: 575px){
+    .product-detail-sec, .product-des-sec{
+        padding: 40px 0;
+    }
+    .product-detail-sec .card{
+        padding: 25px 25px 35px;
+    }
+}

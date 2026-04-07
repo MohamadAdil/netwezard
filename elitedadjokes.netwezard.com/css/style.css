@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	max-width: 100%;
+}
+body{
+	background: #121428;
+	text-align: center;
+	position: relative;
+	min-height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container{
+	max-width: 1060px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.header{
+	padding: 65px 0;
+}
+.header .logo{
+	color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+}
+.content .heading{
+	border-bottom: 2px solid rgba(226, 226, 226, 0.5);
+    padding-bottom: 16px;
+}
+.content{
+	margin: 0 auto;
+}
+.content h1{
+	font-size: 96px;
+	color: rgb(226, 226, 226);
+	line-height: 1.2;
+	font-weight: 400;
+	word-wrap: break-word;
+	text-align: center;
+}
+.content .quote-section {
+    	margin: 70px auto 80px;
+	}
+.content .quote-section .quote-icon{
+	margin-bottom: 15px;
+}
+.content .quote-section .quote-icon svg{
+	color: rgba(255,255,255,.5);
+	margin: 0 auto;
+	display: block;
+}
+.content .quote-section .quotes{
+	margin: 0;
+	text-align: center;
+}
+.content .quote-section .quotes li h2{
+	font-size: 60px;
+	color: #fff;
+	line-height: 1.25;
+	margin-bottom: 40px;
+	font-family: 'Libre Baskerville', serif;
+}
+.content .quote-section .quotes li hr{
+	width: 56px;
+	border-bottom: 1px solid rgba(226, 226, 226, 0.5);
+}
+.content .quote-section .quotes li p{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 35px;
+}
+.footer{
+	padding: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+}
+.footer img{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	left: 45px;
+}
+.btn{
+	border: 2px solid #fff;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	padding: 15px 30px;
+	min-width: 216px;
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 80px;
+	font-weight: 600;
+	border-radius: 2px;
+	transition: ease 0.3s;
+}
+.btn:hover{
+	background: #fff;
+	color: #121428;
+}
+@media(max-width: 1024px){
+	.content h1{
+		font-size: 64px;
+	}
+}
+@media(max-width: 767px){
+	.header {
+	    padding: 45px 0;
+	}
+	.header .logo{
+		font-size: 24px;
+		letter-spacing: 5px;
+	}
+	.content h1 {
+    	font-size: 42px;
+	}
+	.content .quote-section {
+    	margin: 40px auto 70px;
+	}
+	.content .quote-section .quotes li h2{
+		font-size: 28px;
+	}
+	.footer img {
+	    left: 15px;
+	    max-width: 300px;
+	}
+	.btn{
+		margin-bottom: 50px;
+	}
+}
+

@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size:13px;
+	color:#333;
+	background:url(../images/patter-body.png) center repeat #fff; 
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration:none;color:#ad218e}
+a:hover{color:#351c82}
+a, input, textarea{transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-o-transition: all 0.5s ease;-moz-transition: all 0.5s ease;}
+input[type=text],input[type=password], textarea{padding:7px; border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px; border:0;color:#333; font-size:14px;}
+select{padding:6px; border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;font-size:14px;border:1px solid #9e8bd6;color:#333;font-family:Arial, Helvetica, sans-serif;}
+label{padding-bottom:5px; display:block; font-size:14px;}
+fieldset{padding-bottom:20px;}
+textarea{resize:none;}
+/****** Common Classes *****/
+.clearfix{clear:both;}
+.lfloat{float:left;}
+.rfloat{float:right;}
+h1{font-size:36px; line-height:36px;}
+h2{font-size:24px; line-height:28px;}
+h3{font-size:18px; line-height:22px;}
+h4{font-size:16px; line-height:18px;}
+h5{font-size:14px; line-height:16px;}
+.mr-top10{margin-top:10px;}
+p{line-height:20px; padding-bottom:15px;}
+.container, .fullwidth{width:100%;}
+.container .fieldsetinner{width:31%; float:left; margin-right:3%;}
+
+
+/********* Buttons *********/
+.btn{background:#ad218e; font-size:14px; padding:6px 10px;color:#fff; display:inline-block;border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; border:0;cursor:pointer}
+.btn-blue, .btn:hover{background:#351c82}
+.btn-blue:hover{background:#ad218e}
+.btn:hover{color:#fff;}
+.btn-border{border:1px solid #ad218e;border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;font-size:14px; padding:5px 15px; display:inline-block; color:#fff; background:rgba(173,33,142,0.7); cursor:pointer;font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
+.btn-border:hover{background:#ad218e;}
+.btn-border-secondery{border:1px solid #351c82;border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;font-size:14px; padding:5px 15px; display:inline-block; color:#fff; background:rgba(53,28,130,0.2); cursor:pointer;font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
+.btn-border-secondery:hover{background:#351c82}
+
+/********* Header **********/
+.header{width:100%; border-top:5px solid #333; background:#fff;}
+.row{width:1170px; margin:0 auto;}
+.logo{width:262px; height:50px; float:left; margin:25px 0 20px;}
+.topusercontrol{float:right; padding:5px 15px; background:#333; color:#fff;border-bottom-left-radius:5px;-webkit-border-bottom-left-radius:5px;-o-border-bottom-left-radius:5px;-moz-border-bottom-left-radius:5px;border-bottom-right-radius:5px;-webkit-border-bottom-right-radius:5px;-o-border-bottom-right-radius:5px;-moz-border-bottom-right-radius:5px;}
+.icon-sheet{background:url(../images/icon-sheet.png) left top no-repeat;}
+.icon-setting{background-position:left top; width:16px; height:16px; display:inline-block; text-indent:-99999px;}
+.icon-setting:hover{background-position:0 -17px}
+.seprator{color:#fff; margin:0 10px;}
+/********* Navigation **********/
+#menu, #menu ul { list-style: none; margin: 0; padding: 0 }
+#menu{float:right; margin-top:15px;}
+#menu li {border-right: 1px solid #fff; position: relative; float: left; white-space: nowrap;margin:0 5px; }
+#menu li a{ display: inline; padding:10px 5px 10px; text-decoration: none; color: #333;font-size:16px; font-weight:bold; }
+#menu li a:hover{color:#ad218e;}
+#menu li a.active{color:#ad218e; background:url(../images/arrow-nav-hover.png) center bottom no-repeat;}
+#menu ul li a{padding:10px 40px 10px 10px !important; font-size:14px; display:block; color:#351c82}
+#menu ul { background: #fff; display: none; position: absolute }
+#menu ul li { background: #c6b8e1; border-top: 1px solid #9e8bd6; border-right: 0px solid transparent; float: none; margin:0; }
+#menu > li.hover > a {
+	color:#ad218e;
+}
+
+#menu ul ul { top: -1px; left: 100% }
+
+#menu li.has_child { background-image: url('../images/arrow-nav.png'); background-position: right center; background-repeat: no-repeat; padding-right: 10px }
+#menu li.hover{ background-color: none; }
+#menu ul li.hover { background-color: #ad218e;}
+#menu ul li.hover a{color:#fff;}
+#menu ul li.hover ul li{background:#c6b8e1;}
+#menu ul li.hover ul a{color:#351c82;}
+#menu ul li.hover ul li:hover{background-color: #ad218e;}
+#menu ul li.hover ul li:hover a{color:#fff;}
+.has_child a{padding:10px 10px !important;}
+
+/******* Blue Bar ******/
+.bluebar{width:100%; padding:40px 0 15px; background:#351c82;}
+.bluebar h1{color:#edeaf6; float:left;}
+.breadcrumb{float:right;overflow:hidden; margin-top:15px;}
+.breadcrumb li{display:inline-block;color:#b3abd3;}
+.breadcrumb li a{color:#edeaf6;}
+/******** Main Wrapper ********/
+.main-wrapper{width:100%;padding:30px 0; }
+.leftcol{width:270px; margin-right:30px; float:left;}
+.leftfolder{background:#fff;border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;overflow:hidden;}
+.pink-head{padding:5px 15px; background:#ad218e;}
+.icon-folder{background-position:-17px top; width:24px; height:19px; margin-right:5px; display:inline-block;}
+.pink-head h2{color:#fff; display:inline-block;}
+.folder-link-wrapper{padding:15px;border:1px solid #ddd;}
+.folder-link{overflow:auto; height:250px; margin-bottom:20px;}
+.folder-link ul li{border-bottom:1px dashed #ddd; padding:10px 0; position:relative;}
+.folder-link ul li ul{padding:5px 0 0 25px;}
+.folder-link ul li ul a i{width:8px; height:7px; display:inline-block;margin-right: 10px;margin-bottom:4px;}
+.folder-link ul li ul a:hover i{background-position:-47px -118px}
+.subfoldericon{background-position:-47px -109px;}
+.folder-link ul li ul li:last-child{border-bottom:0; padding-bottom:0;}
+.folder-link ul li a{padding:2px 2px 2px 25px; color:#333}
+.folder-link ul li a:hover{color:#ad218e;}
+.folder-link ul li a i{display: inline-block;height: 15px;margin-right: 10px;vertical-align: sub;width: 15px;position:absolute; left:0;}
+.openfolder{background-position: -47px -84px;}
+.closefolder{background-position: -63px -84px;}
+.rightcol{width:870px; float:left;}
+.page-header{border-bottom:1px dashed #ddd; padding-bottom:5px; margin-bottom:25px;}
+.rightcol h2{color:#351c82; display:inline-block;}
+.arrow-link{background:url(../images/icon-tri-arrow-right.png) right 1px no-repeat; color:#ad218e; padding-right:15px;}
+.arrow-link-open{background:url(../images/icon-arrow-open.png) right 1px no-repeat}
+/************* Vacancies Form *************/
+.vacancies-form{background:#6844da;padding:20px 15px 5px; margin-bottom:20px; display:none; position:relative; top:-25px;}
+fieldset .fieldsetinner{width:49%; float:left;}
+.fieldsetinner:nth-child(2n+2){float:right;}
+.fieldsetinner input[type=text], .fieldsetinner input[type=password], textarea{width:96%;}
+fieldset .fieldsetinner select{width:100%;}
+.vacancies-form .btn-border{border:1px solid #fff; color:#fff; background:rgba(127, 96, 224, 0.7)}
+.vacancies-form .btn-border:hover{background:#ad218e;}
+
+/*********** List View ************/
+.list-control{margin-bottom:15px; color:#351c82;}
+.list-control label, .list-control select, .list-control input{margin-right:5px;}
+.list-wrapper{width:100%}
+.list-control label{display:inline-block;}
+.list-control select{color:#351c82;}
+.list-box{border-top:2px solid #351c82; padding:15px; background:#fff; box-shadow:0 2px 2px 0px #999; margin-bottom:20px;}
+.list-box:hover{background:#fcf5fa; border-color:#ad218e}
+.list-box .checkbox-col{width:4%; float:left;}
+.list-box .detail-wrapper{width:95%; float:left;}
+.detail-head{width:100%; overflow:hidden; margin-bottom:10px;position:relative;}
+.date-calender{width:40px; height:43px; float:left; margin-right:15px; background-position:left -35px}
+.date{color:#fff; text-align:center; font-size:16px; font-weight:bold;display:block; padding:3px 5px 5px;}
+.month{color:#351c82; display:block; padding:0 5px;font-size:14px;text-align:center; font-weight:bold;}
+.jobtitle-wrap{margin-right:20px; float:left;}
+.jobtitle-wrap h5{color:#999;}
+.iconset{position:absolute; top:0; right:0;}
+.iconset a{display:inline-block; margin-left:10px;}
+a.view{background-position:-45px top; width:19px; height:20px;}
+a.view:hover{background-position:-45px -21px;}
+a.delete{background-position:-66px top; width:17px; height:20px;}
+a.delete:hover{background-position:-66px -21px;}
+a.more{background-position:-47px -47px; width:28px; height:14px;}
+a.more:hover{background-position:-47px -65px;}
+
+/************ Paging **************/
+.paging-wrap{background:#c6b8e1; border:1px solid #9e8bd6; border-bottom:3px solid #9e8bd6; padding:10px; overflow:hidden;}
+.pagination{border:1px solid #9e8bd6; float:right;}
+.pagination li{float:left;}
+.pagination li a{padding:5px 5px 4px; display:block; color:#351c82; height:15px; width:15px; background:#fff; text-align:center; border:1px solid #9e8bd6; margin:-1px -1px;}
+.pagination li a.active, .pagination li a.active:hover{background:#ad218e; color:#fff; font-weight:bold; border-color:#ad218e;}
+.pagination li a:hover{background:#eee;}
+.pagination li a.disable{background:#background:#eee; color:#999;}
+.pagination li:first-child a{background:url(../images/icon-arrow-left.png) center center no-repeat #fff;}
+.pagination li:first-child a:hover{background:url(../images/icon-arrow-left-hover.png) center center no-repeat #fff;}
+.pagination li:last-child a{background:url(../images/icon-arrow-right.png) center center no-repeat #fff;}
+.pagination li:last-child a:hover{background:url(../images/icon-arrow-right-hover.png) center center no-repeat #fff;}
+/************ Login Page ****************/
+#login{left: 50%;
+    margin-left: -150px;
+    margin-top: -142px;
+    position: absolute;
+    top:40%;
+    width: 350px;
+	background:#fff;
+	box-shadow:0 0 5px #555;
+	-o-box-shadow:0 0 5px #555;
+	-webkit-box-shadow:0 0 5px #555;
+	-moz-box-shadow:0 0 5px #555;
+	border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;
+	overflow:hidden;	
+	}
+#login .logo{margin:15px; float:none;}
+.logininner{padding:15px; background:#ad218e}
+#login label{display:block; padding-bottom:3px; color:#fff;}
+#login a{color:#f0bfe5; font-size:12px; text-decoration:underline;}
+#login a:hover{color:#fff; text-decoration:none;}
+#login input[type=text], #login input[type=password]{width:96%;}
+#login .btn-border { background:rgba(255,255, 255, 0.7);
+    border: 1px solid #fff;
+    color: #ad218e;}
+#login .btn-border:hover{background:#fff;}
+/********* Form Wrapper ***********/
+.formwrapper{width:100%;}
+.formwrapper input[type=text], .formwrapper input[type=password], .formwrapper select, .formwrapper textarea{border:1px solid #ddd;}
+.fullwidth textarea{width:98%;}
+.formwrapper  textarea, .container .fullwidth  textarea{height:80px;}
+
+/********** Form 1 ***********/
+.form1 .fullwidth input[type=text], .form1 .fullwidth input[type=password]{width:98%;}
+.form1 .fullwidth select{width:100%;}
+/********** Form 2 ***********/
+.form2 .fullwidth input[type=text], .form2 .fullwidth input[type=password]{width:98%;}
+.form2 .fullwidth select{width:100%;}
+.form2 textarea{width:97%;}
+.form2 .fieldsetinner textarea{width:96%;}
+.form2 .fullwidth textarea{width:98%;}
+.form2 .fieldsetinner select{width:99%;}
+.form2 .fullwidth select{width:99.5%;}
+/********** Form 3 ***********/
+.form3 .fieldsetinner{width:31%; margin-right:3%;}
+.form3 .fieldsetinner:nth-child(3n+2){float:left;}
+.form3 .fieldsetinner:nth-child(3n+3){margin-right:0;}
+.form3 .col-2-1 .fieldsetinner{width:65%; float:left; margin-right:3%;}
+.form3 .col-2-1 .fieldsetinner:nth-child(2n+2){margin-right:0; float:left;width:31%;}
+.form3 .col-2-1 .fieldsetinner:nth-child(2n+2) input[type=text]{width:96%;}
+.form3 .col-2-1 .fieldsetinner:nth-child(2n+2) textarea{width:97%;}
+.form3 .col-2-1 .fieldsetinner input[type=text], .form3 .col-2-1 input[type=password], .form3 .col-2-1 .fieldsetinner textarea{width:98%;}
+.form3 .col-1-2 .fieldsetinner{width:65%; float:left; margin-right:3%;}
+.form3 .col-1-2 .fieldsetinner:nth-child(2n+2){margin-right:0; float:left;width:65%;}
+.form3 .col-1-2 .fieldsetinner:nth-child(2n+2) input[type=text]{width:98%;}
+.form3 .col-1-2 .fieldsetinner input[type=text], .form3 .col-2-1 input[type=password]{width:96%;}
+.form3 .col-1-2 .fieldsetinner{float:left;width:31%;}
+.form3 .fullwidth input[type=password], .form3 .fullwidth input[type=text]{width:98%;}
+.form3 .col-1-2 .fieldsetinner:nth-child(2n+2) textarea{width:98%;}
+.form3 .col-1-2 .fieldsetinner textarea{width:96%;}
+/**************** Grid ********************/
+.gridcontainer{width:99%; display:table;border: 1px solid #ddd; border-top:0; line-height:20px;}
+.gridheadingrow{display:table-row;  border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin-top:-1px;}
+.gridheadingrow div{background:#ddd;border: 1px solid #ccc; border-left:0; border-bottom:0;color: #333333;display: table-cell;font-weight: bold;padding: 5px;text-align: left;white-space: normal !important;vertical-align:top;}
+.gridheadingrow div:last-child, .gridrow div:last-child{border-right:0;}
+.gridrow{display:table-row; border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin-top:-1px; cursor: grab;cursor: -moz-grab;cursor: -webkit-grab;}
+.gridrow:active{cursor: grabbing;cursor: -moz-grabbing;cursor: -webkit-grabbing;}
+.gridrow div{background:#fff;border: 1px solid #ddd; border-left:0; border-bottom:0;color: #333333;display: table-cell;bold;padding: 5px;text-align: left;white-space: normal !important; vertical-align:top;}
+.gridrow:hover div{background:#f1f1f1;}
+.fullwidth select{width:99%;}
+
+
+
+/**************** Footer *****************/
+.footer{border-top:1px solid #c8c8c8;border-bottom:1px solid #c8c8c8; background:#fff; padding:1px 0; margin-bottom:20px;}
+.footer .footerinner{background:#eee; padding:8px 0;}
+
+/********** Icons ***********/
+.bin{background-position:left -79px; width:40px; height:44px; display:inline-block}
+.bin:hover{background-position:left -124px;}
+
+
+
+
+
+
+
+
+
+
+

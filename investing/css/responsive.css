@@ -1,0 +1,221 @@
+@media(max-width: 1600px){
+  a.contact_btn{
+  	width:200px;
+  	height: 200px;
+  }
+  a.contact_btn p{
+  	font-size: 22px;
+  }
+  .investment_detail h3{
+  	margin-left: 107px;
+  }
+}
+@media(max-width: 1400px){
+	.investment_detail h3 {
+    font-size: 21px;
+    line-height: 38px;
+    max-width: 360px;
+    margin-left: 128px;
+}
+.compare_img img {
+    max-width: 100%;
+}
+a.contact_btn {
+    left: -50px;
+}
+}
+@media(max-width: 1366px){
+	.road_dir.where_dir {
+    top: 37%;
+    right: 3%;
+}
+.road_dir.when_dir {
+    top: 26%;
+    right: 38%;
+}
+.road_dir.how_dir {
+    bottom: 24%;
+    right: 34%;
+}
+.road_dir.why_dir {
+    left: 20%;
+}
+figure.map-board {
+    left: 23px;
+    max-width: 292px;
+}
+section.steps_sec {
+    padding: 100px 0px;
+}
+.inner_cnt h2 {
+    font-size: 76px;
+}
+.inner_cnt h3{
+	font-size: 24px;
+}
+}
+@media(max-width: 1199px){
+  a.contact_btn {
+    width: 173px;
+    height: 173px;
+    border-width: 5px;
+}
+a.contact_btn p {
+    font-size: 20px;
+}
+.investment_detail, .contact_detail{
+	padding: 60px 0px;
+}
+a.contact_btn {
+    width: 150px;
+    height: 150px;
+    left: auto;
+    right: 44px;
+}
+.investment_detail h3 {
+    font-size: 17px;
+    line-height: 33px;
+    max-width: 289px;
+}
+.container {
+    max-width: 100%;
+}
+.hexagon{
+	width: 320px;
+	height: 320px;
+}
+.hexa_wrap.mr_top {
+    margin-top: 110px;
+    position: relative;
+}
+.left_hexa {
+    left: 100px;
+}
+.right_hexa {
+    right: 101px;
+}
+.hexa_wrap {
+    margin: -34px 0px;
+}
+
+/* 07-01-2019 */
+.main_banner{height:auto; padding: 150px 15px;}
+.banner_content h1{font-size: 60px;}
+.banner_content:after, .banner_content:before{display:none;}
+ul.dir_steps li:nth-child(even) figure.step-icon{margin-top:110px;}
+.road_dir.what_dir{right:15px;}
+.road_dir.when_dir{right:35%;}
+.road_dir.where_dir{top:42%;}
+.road_dir.how_dir{ bottom: 25%; right: 31%;}
+.road_dir.why_dir{left: 12%;}
+}
+@media(max-width: 991px){
+section.steps_sec {padding: 50px 0px;}
+ul.dir_steps{flex-wrap: wrap;}
+ul.dir_steps li {width: 32.5%; margin-bottom: 50px;}
+ul.dir_steps li:nth-child(even) figure.step-icon:after, ul.dir_steps li:nth-child(odd) figure.step-icon:after{display: none;}
+ul.dir_steps li:nth-child(even) figure.step-icon {margin-top:0;}
+.road_dir.what_dir{top:19px;}
+.road_dir.where_dir {top:38%;}
+.road_dir.when_dir { right: 29%;}
+.road_dir.how_dir {bottom: 25%; right: 23%;}
+.road_dir.why_dir { left: 0;}
+figure.map-board { left: 23px; max-width: 160px;}
+.contact_detail:after{right:-109px;}
+.contact_detail h2{font-size: 28px;}
+.contact_detail h5 {font-size: 18px; line-height: 28px;}
+.investment_detail h3{    margin-left: 50px;    font-size: 16px;line-height: 28px;}
+a.contact_btn {width: 110px; height: 110px; right: 30px;}
+a.contact_btn p { font-size: 15px;}
+.inner_cnt h3 {
+    font-size: 18px;
+}
+}
+@media(max-width:767px){
+  .header-links .nav li a{
+    font-size: 25px;
+    line-height: 20px;
+  }
+	.main_banner {padding-bottom: 100px;}
+  .banner_content h1{font-size: 38px; line-height: 50px;}
+  .contact_detail:after {
+    right: -38px;
+}
+section.steps_sec{padding:0;}
+section.stock_market_sec{padding:50px 0 0;}
+section.gallery_sec{padding-top:0;}
+.inner_cnt h2 {font-size: 50px;}
+.inner_cnt h3 {
+    font-size: 16px;
+}
+.investment_detail:after {left:-340px;}
+a.contact_btn {
+    right: 75px;
+    top: -110px;
+}
+.contact_detail:after, .investment_detail:after {
+    left: -15px !important;
+    background-size: cover;
+    background-position: right center;
+    width: 100% !important;
+}
+.contact_sec{background:#2e526f;}
+.contact_detail h5, .investment_detail h3{font-size: 15px;}
+.investment_detail, .contact_detail{padding:60px 25px;}
+.investment_detail h3{margin-left: 0}
+.hexa_wrap.mr_top:after{background: none;}
+.hexa_wrap.mr_top {margin-top:0;}
+.left_hexa, .hexagon{left: auto;}
+.hexa_wrap{justify-content: center; margin: 0 auto;}
+h3.hexa-inn_text{    transform: translateY(-50%); left:0; right: 0; margin:0 auto;}
+
+.right_hexa{right:auto;}
+.road_dir.what_dir{top:15px;}
+.road_dir.when_dir {
+    right: 26%;
+}
+.road_dir.where_dir {
+    top: 38%;
+    width: 300px;
+}
+.road_dir.how_dir {
+    bottom: 26%;}
+    section.help_sec h2.main_heading {margin-bottom: 30px;}
+    section.help_sec{padding:0; overflow: hidden;}
+
+}
+@media(max-width:667px){
+	.map-sec{background: url(../images/road-map-mobile.png) repeat-y 90% center #f6f6f6 !important; padding: 30px 135px 30px 0; display: block;}
+	.map-inner_content{display: block; max-width:240px; float: right;}
+	.road_dir.what_dir, .road_dir.where_dir, .road_dir.when_dir, .road_dir.how_dir, .road_dir.why_dir{ position: relative; top: auto; right: 0; width:100%; margin-bottom: 30px; bottom: auto; display: block;}
+
+
+}
+
+@media(max-width:640px){
+ul.dir_steps li {width: 100%; display: flex;}
+.steps_count{order:2;}
+ul.dir_steps li{margin-bottom: 40px;}
+
+.investment_detail, .contact_detail{padding:30px 50px 30px 0;}
+
+
+.investment_detail h3{margin-left: 0;}
+a.contact_btn {top:-4px; right: 30px;}
+ul.gallery_wrap li{width:100%;}
+ul.gallery_wrap li figure{margin:0;}
+.investment_detail:after {
+    left: -148px;
+}
+
+.map-sec{background: url(../images/road-map-mobile.png) repeat-y 94% center #f6f6f6 !important; padding: 30px 85px 30px 0; display: block; min-height: 1024px;}
+	.map-inner_content{display: block; max-width:240px; float: right;}
+	.road_dir.what_dir, .road_dir.where_dir, .road_dir.when_dir, .road_dir.how_dir, .road_dir.why_dir{ position: relative; top: auto; right: 0; width:100%; margin-bottom: 30px; bottom: auto; display: block;}
+
+}
+@media(max-width:480px){
+	h2.main_heading {font-size: 30px;}
+	.hexagon{width:260px; height: 260px;}
+	h3.hexa-inn_text{font-size:15px;}
+	a.contact_btn {top:-4px; right: 27px;}
+}

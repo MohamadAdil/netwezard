@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Lucid Admin Console</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="css/font-icon-style.css" rel="stylesheet" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/vendor/simplebar/simplebar.css" rel="stylesheet" />
+<link href="css/vendor/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" />
+<link href="css/vendor/intlTelInput/intlTelInput.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div id="layoutSidenav"> 
+  
+  <!-----Sidenav Start----->
+  <div id="layoutSidenav_nav" class="lu-sidenav-dark"> 
+    <!-----Sidebar Brand Start----->
+    <div class="sidebar-brand d-flex align-items-center justify-content-center" > <a class="admin-logo" href="#"> <img src="images/logo.svg" alt="Lucid"></a> <span class="site-tagline d-block w-100 pt-2">Admin Console</span> </div>
+    <!-----Sidebar Brand End----->
+    
+    <nav class="lu-sidenav accordion lu-sidenav-dark" id="sidenavAccordion">
+      <div class="lu-sidenav-menu" id="lu-sidenav-menu">
+        <div class="nav"> 
+        <a class="nav-link" href="index.html"><i class="menuicon icon-dashboard"></i>Dashboard </a> 
+        <a class="nav-link " href="pricebook.html"><i class="menuicon icon-pricebook"></i>Pricebook </a> 
+          
+          <!-----Collapsed Dropdown Start-----> 
+          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+           <i class="menuicon icon-products"></i>Products <span class="lu-sidenav-collapse-arrow"><i class="icon-arrow-down"></i></span> </a>
+          <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+            <nav class="lu-sidenav-menu-nested nav"> 
+            <a class="nav-link" href="master-catalog.html">Master Catalog </a> 
+            <a class="nav-link" href="#">Price Catalog</a> </nav>
+          </div>
+          <!-----Collapsed Dropdown End-----> 
+          <a class="nav-link" href="#"><i class="menuicon icon-dashboard"></i>Category </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-channels"></i>Channels </a>
+          <hr class="m-0">
+          <a class="nav-link active" href="studios.html"><i class="menuicon icon-studios"></i>Studios </a> 
+          
+          <!-----Collapsed Dropdown Start-----> 
+          <a class="nav-link collapsed" href="manage-inventory.html" data-bs-toggle="collapse" data-bs-target="#collapseInventory" aria-expanded="false" aria-controls="collapseLayouts">
+           <i class="menuicon icon-inventory"></i>Inventory <span class="lu-sidenav-collapse-arrow"><i class="icon-arrow-down"></i></span> </a>
+          <div class="collapse" id="collapseInventory" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+            <nav class="lu-sidenav-menu-nested nav"> 
+            <a class="nav-link active" href="manage-inventory.html">Item <i class="icon-right-tick ml-auto"></i></a> 
+            <a class="nav-link" href="#">History</a> <a class="nav-link" href="#">Order Purchase</a> 
+            </nav>
+          </div>
+          <!-----Collapsed Dropdown End-----> 
+          
+          <a class="nav-link" href="#"><i class="menuicon icon-devices"><img src="icons/icon-devices.svg" alt=""></i>Devices </a> 
+          <a class="nav-link" href="employees.html"><i class="menuicon icon-user2"></i>Employees </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-user"></i>Teams </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-permissions"></i>Permissions </a>
+          <hr class="m-0">
+          <a class="nav-link" href="#"><i class="menuicon icon-promotions"></i>Promotions </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-transactions"></i>Transactions </a> 
+          <a class="nav-link" href="#"><i class="menuicon icon-user"></i>Customers </a> 
+          </div>
+      </div>
+    </nav>
+  </div>
+  <!-----Sidenav End-----> 
+  
+  <!-----Right Content Start----->
+  <div id="layoutSidenav_content">
+    <main> 
+      
+      <!-----Top Profile Nav Start----->
+      <nav class="navbar navbar-expand  static-top px-4 pb-0 bg-grey"> 
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm   order-1 order-lg-0  sidebar-toggle " id="sidebarToggle" href="#!"><i class="hamburger align-self-center"></i></button>
+        <!-- Nav Item - User Information -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown user-profile "> <a class="nav-link dropdown-toggle no-arrow " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="img-profile rounded-circle" src="images/profile-pic.png"><span class="ml-2 d-none d-lg-inline text-dark ">George Walker</span> </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!">Profile</a></li>
+              <li><a class="dropdown-item" href="#!">Settings</a></li>
+              <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#!">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Nav Item - User Information End--> 
+      </nav>
+      <!-----Top Profile Nav End-----> 
+      
+      <!-- Page Header Start -->
+      <div class="page-header bg-grey px-4 pb-3  pt-5 ">
+        <div class="entry-header">
+          <h1>Studios</h1>
+          <div class="card-toolbar d-flex flex-row-fluid  align-items-center gap-3"> <a href="#" class="btn btn-primary right-sidebar-toggle">Create New Studio</a> </div>
+        </div>
+      </div>
+      <!-- Page Header End --> 
+      
+      <!-- Main Container Start -->
+      <div class="container-fluid site-main px-4 p-4">
+        <div class="studios-section">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"> 
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box recently-added"> <span class="studio-bedge studio">Studio</span> <span class="studio-bedge recentlyAdded">Recently Added</span>
+                <div class="image-wrapper"> <img src="images/s1.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Seattle, WA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Seattle</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>3412 Airport Way S<br>
+                      Seattle, WA 98134<br>
+                      +1 (206) 312-1040</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge service-center">Service Center</span>
+                <div class="image-wrapper"> <img src="images/s2.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Beverly Hills, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Beverly Hills</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>9022 Wilshire Blvd <br>
+                      Beverly Hills, CA 90211<br>
+                      +1 (480) 690-6778</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge service-center">Service Center</span>
+                <div class="image-wrapper"> <img src="images/s3.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Costa Mesa, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Costa Mesa</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i> 3050 Pullman Street<br>
+                      Costa Mesa, CA 92626<br>
+                      +1 (480) 690-6778 </li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge studio">Studio</span>
+                <div class="image-wrapper"> <img src="images/s4.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Los Angeles, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Westfield Century City</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>10250 Santa Monica Blvd Ste. #1505<br>
+                      Los Angeles, CA 90067<br>
+                      +1 (480) 690-6778</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge studio">Studio</span>
+                <div class="image-wrapper"> <img src="images/s5.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Millbrae, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Millbrae</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>355 Adrian Rd<br>
+                      Millbrae, CA 94030<br>
+                      +1 (480) 690-6778</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge studio">Studio</span>
+                <div class="image-wrapper"> <img src="images/s6.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> Los Angeles, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Westfield Century City</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>10250 Santa Monica Blvd Ste. #1505<br>
+                      Los Angeles, CA 90067<br>
+                      +1 (480) 690-6778</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            <!-- Studios Start -->
+            <div class="col">
+              <div class="studio-box"> <span class="studio-bedge studio">Studio</span>
+                <div class="image-wrapper"> <img src="images/s7.png" alt=""> </div>
+                <div class="content">
+                  <div class="studios-heading"> San Diego, CA
+                    <div class="menu-ellipsis-v"> <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-ellipsis-v"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="inventory.html">Manage Inventory</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cityname">Westfield UTC</div>
+                  <ul class="studios-address">
+                    <li><i class="icon icon-mailbox"></i>4305 La Jolla Village Dr Ste. #2435<br>
+                      San Diego, CA 92122 <br>
+                      +1 (858) 727-3050</li>
+                    <li class="studios-pricebook"><i class="icon icon-bookv"></i>United States - Price Book v1</li>
+                  </ul>
+                  <div class="studios-publish"> Publish Studio
+                    <div class="switch-btn box">
+                      <input type="checkbox" class="toggle-radio" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Studios End --> 
+            
+          </div>
+        </div>
+      </div>
+      <!-- Main Container End --> 
+    </main>
+  </div>
+  <!-----Right Content End-----> 
+</div>
+<!-----Add Studio Sidebar----->
+<div id="studios-right-sidebar" class="studios-right-sidebar">
+  <div class="sidebar-header">
+    <h2>Add Studio</h2>
+    <a href="#" class="btn-close btn-close-sidebar"></a></div>
+  <form id="msform" class="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active" id="basic-info">Basic Info</li>
+      <li id="image-gallery">Image Gallery</li>
+      <li id="time-slots">Time slots</li>
+      <li id="pricebook">Pricebook</li>
+    </ul>
+    <!-- /progressbar -->
+    <!--Add basic Studio details-->
+    <div class="crate-prd-step">
+      <div class="form-step-content">
+        <h2 class="fs-title">Add basic Studio details</h2>
+        <div class="form-wrapper">
+          <div class="row g-3">
+            <div class="col-sm-10">
+              <label for="studio-name" class="form-label">Studio Name</label>
+              <input type="text" class="form-control" id="studio-name" placeholder="Studio Name">
+            </div>
+            <div class="col-sm-4">
+              <div class="select-dropdown">
+                <label for="country-name" class="form-label">Country</label>
+                <select class="simpledropdown form-select">
+                  <option>Choose Country</option>
+                  <option value="aramark">Aramark</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="Indonesia">Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <label for="address-name" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address-name" placeholder="Enter address">
+              <span class="help-text">Enter address manually</span> </div>
+            <div class="col-sm-4">
+              <label for="phone-no" class="form-label">Phone</label>
+              <input type="text" class="form-control phonecode" id="phone-no" >
+            </div>
+            <div class="col-sm-4">
+              <label for="email-name" class="form-label">Email ID</label>
+              <input type="text" class="form-control" id="email-name" placeholder="Email ID">
+            </div>
+            <div class="col-sm-12">
+              <label for="email-name" class="form-label">Studio Type</label>
+              <div class="custom-radio">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Studio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Service Center</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <input type="button" name="next" class="next btn btn-primary float-end" value="Continue"/>
+      </div>
+      <!--/Add basic Studio details-->
+      
+      <!--Add studio images-->
+      <div class="crate-prd-step add-prd-image-gallery">
+        <h2 class="fs-title">Add studio images</h2>
+        <div class="form-wrapper">
+          <div class="drop-zone"> <span class="drop-zone__prompt"> <span class="text-blue">Upload Photos </span> or drag and drop here... </span> 
+            <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+            <input type="file" name="myFile" class="drop-zone__input" />
+            <!-- add multiple attribute to input to support uploading more than one file--> 
+          </div>
+          <div class="row row-cols-1 justify-content-center row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col add-prd-image">
+              <div class="prd-img-cover"> <span class="drag-thumb"><i class="icon icon-drag-v-icon"></i> Thumbnail</span> <img src="images/add-s1.png" alt=""> </div>
+            </div>
+            <div class="col add-prd-image">
+              <div class="prd-img-cover"><img src="images/add-s2.png" alt=""></div>
+            </div>
+            <div class="col add-prd-image">
+              <div class="prd-img-cover"><img src="images/add-s3.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <input type="button" name="next" class="next btn btn-primary float-end" value="Continue"/>
+        <input type="button" name="previous" class="previous btn btn-border  float-end me-2 " value="Back"/>
+      </div>
+      <!--/Add studio images-->
+      
+      <!--Set up Studio time slot-->
+      <div class="crate-prd-step studio-time-slot">
+        <h2 class="fs-title">Set up Studio time slot</h2>
+        <div class="form-wrapper">
+        
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+              <div class="col-12 copy-time-slots">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1"> Copy time slots to all days of the week. </label>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+         <!--time-slot-row-->
+          <div class="time-slot-row">
+            <div class="row ">
+              <div class="col dayname">Monday</div>
+              <div class="col-4 open">
+                <div class="switch-btn box">
+                  <input type="checkbox" class="toggle-radio" checked="">
+                </div>
+                Open </div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="09:00 am">
+              </div>
+              <div class="col-2 text-center divider"><span ></span></div>
+              <div class="col time-input">
+                <input type="text" class="form-control" value="04:00 pm">
+              </div>
+            </div>
+          </div>
+         <!--/time-slot-row-->
+        </div>
+        <input type="button" name="next" class="next btn btn-primary float-end" value="Continue"/>
+        <input type="button" name="previous" class="previous btn btn-border  float-end me-2 " value="Back"/>
+      </div>
+       <!--/Set up Studio time slot-->
+       
+      <!--Add pricebook--> 
+      <div class="crate-prd-step add-pricebook-step">
+        <h2 class="fs-title">Add pricebook</h2>
+        <div class="form-wrapper">
+          <div class="row">
+          <div class="col-sm-6">
+              <div class="select-dropdown">
+                <label for="pricebook-name" class="form-label">Pricebook</label>
+                <select class="simpledropdown form-select">
+                  <option>Choose Pricebook</option>
+                  <option>United States - Price Book v1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="button" name="submit" class=" btn btn-primary float-end submit" value="Submit"/>
+        <input type="button" name="previous" class="previous btn btn-border  float-end me-2 " value="Back"/>
+      </div>
+      <!--/Add pricebook--> 
+  </form>
+</div>
+<!-----/Add Studio Sidebar----->
+
+<div class="sidebar-overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js" ></script> 
+<script src="js/vendor/simplebar/simplebar.js"></script> 
+<script src="js/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script> 
+<script src="js/vendor/intlTelInput/intlTelInput.js"></script>
+<script src="js/scripts.js"></script> 
+<script>
+var myElement = document.getElementById('studios-right-sidebar');
+new SimpleBar(myElement, { autoHide: true });
+</script>
+
+<script>
+    var input = document.querySelector(".phonecode");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+       separateDialCode: true,
+     utilsScript: "js/vendor/intlTelInput/utils.js",
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+#outer-header{
+    padding: 30px 0 35px;
+    .brand{
+        .lucid-logo{
+            width: 138px;
+            height: 10px;
+            fill: #000;
+        }
+    } 
+}
+.outer-screen{
+    h2{
+        font-size: $fs-24;
+        font-weight: $fw-600;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .container{
+        max-width: 735px;
+        .user-row{
+            margin-top: 35px;
+            margin-bottom: 60px;
+            .user-box{
+                border-radius: 20px;
+                width: 100%;
+                max-width: 155px;
+                margin: 15px 0;
+                overflow: hidden;
+                position: relative;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                &.active{
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        border: 3px solid #456BD9;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+                }
+                .user-img{
+                    overflow: hidden;
+                }
+                .content{
+                    padding: 15px 15px 10px;
+                    background: linear-gradient(360deg, #000000 -21.4%, rgba(0, 0, 0, 0) 100%);
+                    position: absolute;
+                    bottom:0;
+                    left: 0;
+                    width: 100%;
+                    h3{
+                        font-size: $fs-14;
+                        font-weight: $fw-600;
+                        color: $color-white;
+                        margin-bottom: 5px;
+                    }
+                }
+                &:hover{
+                    box-shadow: 0px 4px 64px rgba(189, 193, 200, 0.4); 
+                }
+            }
+            .password-wrapper{
+                margin-top: 5px;
+                width: 100%;
+                max-width: 204px;
+                input{
+                    margin: 0 12px;
+                    
+                    background: none;
+                    width: 34px;
+                    background-image: none;
+                    border:0;
+                    text-align: center;
+                    border-bottom: 1px solid #7d7d7d;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .finger-print{
+            margin-top: 45px;
+            svg{
+                fill: #7d7d7d;
+                width: 42px;
+                height: 47px;
+            }
+        }
+        .cant-find-section{
+            h6{
+                font-size: $fs-16;
+                font-weight: $fw-400;
+                color: #7D7D7D;
+                position: relative;
+                margin-bottom: 55px;
+                &:after{
+                    content: "";
+                    background: #cacaca;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    
+                }
+                span{
+                    display: inline-block;
+                    width: 50px;
+                    background: $color-white;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            h2{
+                font-size: $fs-20;
+                font-weight: $fw-600;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: $fs-14;
+                font-weight: $fw-400;
+                margin-bottom: 15px;
+            }
+            .store-btn-lg{
+                min-width: 282px;
+            }
+        }
+    }
+}

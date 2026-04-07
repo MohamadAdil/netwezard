@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BUMBLE</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="css/owl.carousel.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   </head>
+   <body>
+      <!-- header starts here -->
+      <header class="site-header">
+         <div class="top-head">
+            <div class="container">
+               <div class="top-bar">
+                  <p>Final Hours! 25% off All Towels <i>+ Free Shipping (Auto-Applied at Checkout)</i></p>
+                  <ul class="sale-countdownTimer">
+                     <li><span id="days"> </span> d<i>ays</i></li>
+                     <li><span id="hours"></span> h<i>ours</i></li>
+                     <li><span id="minutes"></span> m<i>inutes</i></li>
+                     <li><span id="seconds"></span> s<i>econds</i></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="head-navigation">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg p-0">
+                  <a class="navbar-brand" href="index.html">
+                     <!-- <h1>BUMBLE</h1> --><!-- <img src="images/logo.svg"> -->
+                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="204.058px" height="26.4px" viewBox="0 0 204.058 26.4" enable-background="new 0 0 204.058 26.4" xml:space="preserve">
+<path id="logo-path" fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M125.515,1.055h-1.872v11.648h2.37c2.448,0,5.054-0.675,5.054-6.073
+   C131.067,1.507,127.91,1.07,125.515,1.055z M8.758,1.055H6.885v11.648h2.37c2.448,0,5.054-0.675,5.054-6.073
+   C14.309,1.507,11.152,1.07,8.758,1.055z M126.167,13.165l-2.524-0.001v11.968h2.305c3.574-0.009,6.817-0.234,6.817-6.037
+   C132.765,13.443,129.068,13.172,126.167,13.165z M9.409,13.165l-2.524-0.001v11.968H9.19c3.574-0.009,6.817-0.234,6.817-6.037
+   C16.007,13.443,12.31,13.172,9.409,13.165z M203.014,0.593v6.392h-0.516c-0.459-5.667-6.877-5.919-10.197-5.93h-2.463v11.683
+   l2.731-0.001c1.272-0.006,5.111-0.159,5.3-3.586h0.514v7.635h-0.514c-0.193-3.47-4.279-3.583-5.388-3.586h-2.644v11.932h2.689
+   c3.693-0.016,9.719-0.369,10.486-6.925h0.514v7.386h-19.902v-0.461c1.662,0,2.137-1.279,2.137-3.693V4.392
+   c0-2.201-0.396-3.337-2.137-3.337V0.593H203.014z M161.125,0.593v0.462c-1.688,0-2.904,0.604-2.904,3.16v20.917h1.414
+   c4.199,0.035,10.872,0,11.54-7.244h0.511v7.705h-19.588v-0.461c1.688,0,2.159-1.35,2.159-3.765V4.038
+   c0-2.166-0.785-2.983-2.474-2.983V0.593H161.125z M135.333,6.666c0,5.441-5.601,6.086-6.548,6.107l-0.047,0.001
+   c2.566,0,8.45,0.461,8.45,6.463c0,6.18-5.174,6.355-12.004,6.355h-7.898v-0.318c1.698,0,2.29-1.527,2.29-3.942V4.783
+   c0-2.201-0.552-3.87-2.29-3.87v-0.32h7.898C130.672,0.593,135.333,0.877,135.333,6.666z M79.908,0.593l10.285,19.846l7.873-19.846
+   h7.002v0.456c-1.701,0-3.046,0.701-3.046,3.085v17.041c0,2.84,1.622,3.646,3.323,3.646v0.456H95.217v-0.456
+   c1.662,0,2.848-0.807,2.848-3.646V1.926l-9.574,23.667h-0.474L76.98,4.134v12.414c0,4.066,0.672,8.273,5.064,8.273v0.456H70.848
+   v-0.456c4.905,0,5.617-4.313,5.617-8.273V3.363c-1.503-2.279-3.481-2.244-4.43-2.314V0.593H79.908z M43.501,0.593v0.456
+   c-1.693,0-3.11,0.316-3.11,3.085v13.044c0,4.348,2.913,6.836,7.165,6.836c4.016,0,7.126-2.488,7.126-7.012V7.465
+   c0-3.296-0.078-6.416-4.685-6.416V0.593h10.237v0.456c-4.877,0-5.037,2.789-5.04,5.879v10.075c0,6.276-4.724,8.59-9.566,8.59
+   c-5.119,0-9.134-3.015-9.134-8.73V4.1c0-2.385-1.063-3.051-2.795-3.051V0.593H43.501z M18.574,6.666c0,5.441-5.6,6.086-6.548,6.107
+   l-0.047,0.001c2.567,0,8.451,0.461,8.451,6.463c0,6.18-5.172,6.355-12.004,6.355H0.528v-0.318c1.698,0,2.29-1.527,2.29-3.942V4.783
+   c0-2.201-0.553-3.87-2.29-3.87v-0.32h7.898C13.915,0.593,18.574,0.877,18.574,6.666z"/>
+</svg>
+
+                  </a>
+                  <ul class="head-icon-link">
+                     <li><a href="javascript:void(0);" id="SearchInput"><span class="icon-search"></span></a></li>
+                     <li class="mobhide"><a href="javascript:void(0);" id="LoginUser"><span class="icon-user"></span></a></li>
+                     <li><a href="javascript:void(0);" id="CartItems"><span class="icon-cart"></span></a></li>
+                  </ul>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fas fa-bars"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto padding-left">
+                        <li class="nav-item active">                                                               
+                           <a class="nav-link" href="#">BATH</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">KITCHEN</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">BEDDING </a>
+                        </li>
+                     </ul>
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">REVIEWS</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!-- banner section starts here here -->
+      <section class="main-banner">
+         <div class="owl-carousel owl-theme banner-slider">
+            <div class="item">
+               <figure class="banner-slider-img" style="background: url('images/banner-img.jpg');"></figure>
+               <figcaption class="banner-content-wrap">
+                  <div class="container">
+                     <div class="banner-content wow bounceInRight" data-wow-delay=".25s">
+                        <h1>Home for <br>the holidays</h1>
+                        <p>Explore the seasonal favourites</p>
+                        <div class="btn-wrap w-100 mt-5">
+                           <a href="javascript:void(0);" class="cstm-btn secondry-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </figcaption>
+            </div>
+            <div class="item">
+               <figure class="banner-slider-img" style="background: url('images/banner-img.jpg');"></figure>
+               <figcaption class="banner-content-wrap">
+                  <div class="container">
+                     <div class="banner-content wow bounceOutRight" data-wow-delay=".25s">
+                        <h1>Home for the holidays</h1>
+                        <p>Explore the seasonal favourites</p>
+                        <div class="btn-wrap w-100 mt-5">
+                           <a href="javascript:void(0);" class="cstm-btn secondry-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </figcaption>
+            </div>
+         </div>
+      </section>
+      <!-- banner section starts Ends here -->
+      <section class="featureimg-sec">
+         <div class="featuring-content">
+            <div class="container">
+               <div class="banner-bottom-bar">
+                  <span class="left-bg-dots"><img src="images/hero-dotted-img.png"></span>
+                  <span class="right-bg-dots"><img src="images/hero-dotted-img.png"></span>
+                  <figure><img src="images/towels-bundle.png"></figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  About us section starts here -->
+      <section class="aboutUs-sec">
+         <div class="container">
+            <div class="sec-heading text-center mb-5 cstm-heading">
+               <h2 class="wow fadeInUp" data-wow-delay=".25s">Hi, we're <br> Bumble</h2>
+               <figure class="side-stemp wow bounceInRight" data-wow-delay=".25s"> <img src="images/bumble-towels-stamp.png"></figure>
+            </div>
+            <div class="sec-description text-center">
+               <div class="row">
+                  <div class="col-lg-8 offset-lg-2 wow fadeInUp" data-wow-delay=".25s">
+                     <p>We aren’t old textile industry experts, we were people just like you looking for something super simple: a place to buy beautiful and ridiculously comfortable sheets that didn’t cost an arm and a leg. Our approach is simple: Quality is the most important thing.</p>
+                     <div class="btn-wrap text-center mt-4">
+                        <a href="javascript:void(0);" class="cstm-btn secondry-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="product-category-wrap">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="product-wrap">
+                        <h2 class="product-head">Bath</h2>
+                        <figure class="product-img">
+                           <img src="images/bath-image.jpg">
+                        </figure>
+                        <div class="btn-wrap text-center mt-4">
+                           <a href="javascript:void(0);" class="cstm-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="product-wrap">
+                        <h2 class="product-head">Kitchen</h2>
+                        <figure class="product-img">
+                           <img src="images/kitchen-image.jpg">
+                        </figure>
+                        <div class="btn-wrap text-center mt-4">
+                           <a href="javascript:void(0);" class="cstm-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="product-wrap">
+                        <h2 class="product-head">Bedding</h2>
+                        <figure class="product-img">
+                           <img src="images/bedding-image.jpg">
+                        </figure>
+                        <div class="btn-wrap text-center mt-4">
+                           <a href="javascript:void(0);" class="cstm-btn">VIEW MORE <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  About us section Ends here -->
+      <!-- Testimonial section starts here -->
+      <section class="testimonial-sec">
+         <div class="cstm-container">
+            <div class="sec-heading text-center">
+               <h2>What customers are <br> saying about us</h2>
+               <div class="btn-wrap w-100 mt-5 text-center">
+                  <a href="javascript:void(0);" class="cstm-btn normal-link">READ ALL REVIEWS <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+               </div>
+            </div>
+            <div class="owl-carousel owl-theme testimonial-slider">
+               <div class="item">
+                  <div class="row no-gutters">
+                     <div class="col-md-6 cstm-order-2">
+                        <figure class="testimonial-img">
+                           <img src="images/testimonial-img-01.jpg">
+                        </figure>
+                     </div>
+                     <div class="col-md-6 cstm-order-1">
+                        <div class="testi-content-wrap">
+                           <div class="row">
+                              <div class="col-lg-8">
+                                 <div class="testi-content">
+                                    <div class="testi-heading mb-4">
+                                       <h3>SMELLS HEAVENLY FRESH </h3>
+                                    </div>
+                                    <div class="testi-text mb-4">
+                                       <p>The scent is heavenly fresh and lasts quite a while on folded
+                                          laundry. Only using it with my best sets of bed sheets and
+                                          towels though, hiding it from husband ;)
+                                       </p>
+                                    </div>
+                                    <label class="client-name">LAURA C</label>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 res-hide">
+                                 <ul class="testi-cstmr-imgs">
+                                    <li class="active-img">
+                                       <figure><img src="images/testimonial-small-01.jpg"></figure>
+                                    </li>
+                                    <li class="second-img mb-5">
+                                       <figure><img src="images/testimonial-small-02.jpg"></figure>
+                                    </li>
+                                    <li class="third-img">
+                                       <figure><img src="images/testimonial-small-03.jpg"></figure>
+                                    </li>
+                                    <li class="fourth-img">
+                                       <figure><img src="images/testimonial-small-04.jpg"></figure>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Second item -->
+               <div class="item">
+                  <div class="row no-gutters">
+                     <div class="col-md-6 cstm-order-2">
+                        <figure class="testimonial-img">
+                           <img src="images/testimonial-img-01.jpg">
+                        </figure>
+                     </div>
+                     <div class="col-md-6 cstm-order-1">
+                        <div class="testi-content-wrap">
+                           <div class="row">
+                              <div class="col-lg-8">
+                                 <div class="testi-content">
+                                    <div class="testi-heading mb-4">
+                                       <h3>SMELLS HEAVENLY FRESH </h3>
+                                    </div>
+                                    <div class="testi-text mb-4">
+                                       <p>The scent is heavenly fresh and lasts quite a while on folded
+                                          laundry. Only using it with my best sets of bed sheets and
+                                          towels though, hiding it from husband ;)
+                                       </p>
+                                    </div>
+                                    <label class="client-name">LAURA C</label>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 res-hide">
+                                 <ul class="testi-cstmr-imgs">
+                                    <li class="active-img">
+                                       <figure><img src="images/testimonial-small-01.jpg"></figure>
+                                    </li>
+                                    <li class="second-img mb-5">
+                                       <figure><img src="images/testimonial-small-02.jpg"></figure>
+                                    </li>
+                                    <li class="third-img">
+                                       <figure><img src="images/testimonial-small-03.jpg"></figure>
+                                    </li>
+                                    <li class="fourth-img">
+                                       <figure><img src="images/testimonial-small-04.jpg"></figure>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  Testimonial section ends here -->
+      <!--  Key Brand feature sec starts here -->
+      <section class="keybrand-feature-sec">
+         <div class="container">
+            <div class="sec-heading text-center mb-5">
+               <small>KEY BRAND FEATURES</small>
+               <h2>Crafted Without <br> Compromise </h2>
+            </div>
+            <div class="owl-carousel owl-theme key-feature-slider wt-bg-slider">
+               <div class="item">
+                  <figure class="key-feature-img">
+                     <img src="images/key-brand-image.png">
+                     <figcaption class="brand-logo" style="background: url('images/green-leaf-bg.jpg');">
+                        <span>
+                           <h2>Bumble</h2>
+                        </span>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="item">
+                  <figure class="key-feature-img">
+                     <img src="images/key-brand-image.png">
+                     <figcaption class="brand-logo" style="background: url('images/green-leaf-bg.jpg');">
+                        <span>
+                           <h2>Bumble</h2>
+                        </span>
+                     </figcaption>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--    Feature Collection sec starts here -->
+      <section class="feature-collection-sec">
+         <div class="container">
+            <div class="sec-heading text-center mb-5">
+               <h2>Featured Collection </h2>
+            </div>
+            <div class="tab-container mb-5">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">BESTSELLERS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">NEW COLLECTION</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">TRENDING NOW</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="feature-product-wrap">
+            <!-- <figure class="side-leaf-img"><img src="images/plant-image.png"></figure> -->
+            <div class="container">
+               <div class="tab-content">
+                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                     <ul class="row" id="productCollection">
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/classic-supreme-towel-bundle.png">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Classic Supreme Towel
+                                    Bundle
+                                 </h2>
+                                 <span class="product-price">From: $455 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="radio" value="1" id="radio1" type="radio" checked>
+                                       <label for="radio1"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-light-gray">
+                                       <input name="radio" value="2" id="radio2" type="radio">
+                                       <label for="radio2"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/plush-bath-towel-set.jpg">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Plush Bath Towel Set</h2>
+                                 <span class="product-price">From: $120 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="product-2" value="1" id="radio3" type="radio" checked>
+                                       <label for="radio3"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-dark-red">
+                                       <input name="product-2" value="2" id="radio4" type="radio">
+                                       <label for="radio4"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/ultralight-bath-sheet.png">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Ultralight Bath Sheet Bundle </h2>
+                                 <span class="product-price">From: $99 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="product-3" value="1" id="radio5" type="radio" checked>
+                                       <label for="radio5"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-light-gray">
+                                       <input name="product-3" value="2" id="radio6" type="radio">
+                                       <label for="radio6"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-brown">
+                                       <input name="product-3" value="2" id="radio7" type="radio">
+                                       <label for="radio7"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/melange-color-block-hand-towel.png">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Melange Color-block Hand Towels </h2>
+                                 <span class="product-price">From: $40 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="product-4" value="1" id="radio8" type="radio" checked>
+                                       <label for="radio8"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-light-gray">
+                                       <input name="product-4" value="2" id="radio9" type="radio">
+                                       <label for="radio9"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/plush-bath-towel-set.jpg">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Plush Bath Towel Set</h2>
+                                 <span class="product-price">From: $120 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="product-5" value="1" id="radio11" type="radio" checked>
+                                       <label for="radio11"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-dark-red">
+                                       <input name="product-5" value="2" id="radio10" type="radio">
+                                       <label for="radio10"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="col-lg-4 item">
+                           <div class="product-card">
+                              <figure>
+                                 <img src="images/ultralight-bath-sheet.png">
+                              </figure>
+                              <div class="product-info">
+                                 <h2>Ultralight Bath Sheet Bundle </h2>
+                                 <span class="product-price">From: $99 USD</span>
+                                 <div class="radiobuttons select-color d-f">
+                                    <div class="rdio rdio-primary radio-inline p-dark-blue"> <input name="product-6" value="1" id="radio5" type="radio" checked>
+                                       <label for="radio5"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-light-gray">
+                                       <input name="product-6" value="2" id="radio12" type="radio">
+                                       <label for="radio12"></label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline p-brown">
+                                       <input name="product-6" value="2" id="radio13" type="radio">
+                                       <label for="radio13"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                     <p>Second Panel</p>
+                  </div>
+                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                     <p>Third Panel</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- follow us on intagram sec starts here -->
+      <section class="follow-insta-sec">
+         <div class="container">
+         <div class="sec-heading text-left mb-5">
+            <h2>Follow us <br>on Instagram</h2>
+            <div class="insta-blog">
+               <span class="icon"><i class="fab fa-instagram"></i></span>
+               <h4>#BUMBLE</h4>
+            </div>
+         </div>
+         <div class="insta-post">
+            <div class="owl-carousel owl-theme insta-post-slider wt-bg-slider">
+               <div class="item">
+                  <a href="javascript:void(0);" class="insta-post-img">
+                  <img src="images/instagram-img-01.jpg">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="javascript:void(0);" class="insta-post-img">
+                  <img src="images/instagram-img-02.jpg">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="javascript:void(0);" class="insta-post-img">
+                  <img src="images/instagram-img-03.jpg">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="javascript:void(0);" class="insta-post-img">
+                  <img src="images/instagram-img-04.jpg">
+                  </a>
+               </div>
+             
+   
+              
+            </div>
+         </div>
+      </section>
+      <!-- follow us on intagram sec ends here -->
+      <!--   footer starts here -->
+      <footer class="site-footer">
+         <div class="top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 col-md-4">
+                     <div class="join">
+                        <h1><span>Join Our </span>Mailing Listing</h1>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8">
+                     <div class="d-f a-i-f-e h-100">
+                        <div class="row w-100">
+                           <div class="col-lg-8 col-md-7 col-9">
+                              <form class="ftr-form">
+                                 <div class="form-group">
+                                    <i class="icon-mail"></i>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ENTER YOUR EMAIL ADDRESS">
+                                 </div>
+                              </form>
+                           </div>
+                           <div class="col-lg-4 col-md-5 col-3">
+                              <div class="btn-wrap d-f j-c-f-e">
+                                 <a href="javascript:void(0);" class="cstm-btn secondry-btn subscribe-btn"><span class="mobhide">SUBSCRIBE </span> <span class="btn-arrow"><i class="icon-arrow"></i></span></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="middle">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-5">
+                     <div class="navbar-header">
+                        <a class="footer-brand" href="index.html"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="204.058px" height="26.4px" viewBox="0 0 204.058 26.4" enable-background="new 0 0 204.058 26.4" xml:space="preserve">
+<path id="logo-path" fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M125.515,1.055h-1.872v11.648h2.37c2.448,0,5.054-0.675,5.054-6.073
+   C131.067,1.507,127.91,1.07,125.515,1.055z M8.758,1.055H6.885v11.648h2.37c2.448,0,5.054-0.675,5.054-6.073
+   C14.309,1.507,11.152,1.07,8.758,1.055z M126.167,13.165l-2.524-0.001v11.968h2.305c3.574-0.009,6.817-0.234,6.817-6.037
+   C132.765,13.443,129.068,13.172,126.167,13.165z M9.409,13.165l-2.524-0.001v11.968H9.19c3.574-0.009,6.817-0.234,6.817-6.037
+   C16.007,13.443,12.31,13.172,9.409,13.165z M203.014,0.593v6.392h-0.516c-0.459-5.667-6.877-5.919-10.197-5.93h-2.463v11.683
+   l2.731-0.001c1.272-0.006,5.111-0.159,5.3-3.586h0.514v7.635h-0.514c-0.193-3.47-4.279-3.583-5.388-3.586h-2.644v11.932h2.689
+   c3.693-0.016,9.719-0.369,10.486-6.925h0.514v7.386h-19.902v-0.461c1.662,0,2.137-1.279,2.137-3.693V4.392
+   c0-2.201-0.396-3.337-2.137-3.337V0.593H203.014z M161.125,0.593v0.462c-1.688,0-2.904,0.604-2.904,3.16v20.917h1.414
+   c4.199,0.035,10.872,0,11.54-7.244h0.511v7.705h-19.588v-0.461c1.688,0,2.159-1.35,2.159-3.765V4.038
+   c0-2.166-0.785-2.983-2.474-2.983V0.593H161.125z M135.333,6.666c0,5.441-5.601,6.086-6.548,6.107l-0.047,0.001
+   c2.566,0,8.45,0.461,8.45,6.463c0,6.18-5.174,6.355-12.004,6.355h-7.898v-0.318c1.698,0,2.29-1.527,2.29-3.942V4.783
+   c0-2.201-0.552-3.87-2.29-3.87v-0.32h7.898C130.672,0.593,135.333,0.877,135.333,6.666z M79.908,0.593l10.285,19.846l7.873-19.846
+   h7.002v0.456c-1.701,0-3.046,0.701-3.046,3.085v17.041c0,2.84,1.622,3.646,3.323,3.646v0.456H95.217v-0.456
+   c1.662,0,2.848-0.807,2.848-3.646V1.926l-9.574,23.667h-0.474L76.98,4.134v12.414c0,4.066,0.672,8.273,5.064,8.273v0.456H70.848
+   v-0.456c4.905,0,5.617-4.313,5.617-8.273V3.363c-1.503-2.279-3.481-2.244-4.43-2.314V0.593H79.908z M43.501,0.593v0.456
+   c-1.693,0-3.11,0.316-3.11,3.085v13.044c0,4.348,2.913,6.836,7.165,6.836c4.016,0,7.126-2.488,7.126-7.012V7.465
+   c0-3.296-0.078-6.416-4.685-6.416V0.593h10.237v0.456c-4.877,0-5.037,2.789-5.04,5.879v10.075c0,6.276-4.724,8.59-9.566,8.59
+   c-5.119,0-9.134-3.015-9.134-8.73V4.1c0-2.385-1.063-3.051-2.795-3.051V0.593H43.501z M18.574,6.666c0,5.441-5.6,6.086-6.548,6.107
+   l-0.047,0.001c2.567,0,8.451,0.461,8.451,6.463c0,6.18-5.172,6.355-12.004,6.355H0.528v-0.318c1.698,0,2.29-1.527,2.29-3.942V4.783
+   c0-2.201-0.553-3.87-2.29-3.87v-0.32h7.898C13.915,0.593,18.574,0.877,18.574,6.666z"/>
+</svg></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-7">
+                     <div class="links-wrap">
+                        <ul class="ftr-links">
+                           <li>
+                              <a href="javascript:void(0);">BATH</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0);">KITCHEN</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0);">BEDDING</a>
+                           </li>
+                        </ul>
+                        <ul class="ftr-links">
+                           <li>
+                              <a href="javascript:void(0);">ABOUT US</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0);">REVIEWS</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="email-link">
+                        <a href="javascript:void(0);"><span class="contact-icon"><i class="icon-mail"></i></span>info@bumble.com</a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="phone-link">
+                        <a href="javascript:void(0);"><span class="contact-icon"><i class="icon-phone"></i></span>030 275 90 40</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottom">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-3">
+                     <div class="copyright">
+                        <p>@ Bumble 2019</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                     <ul class="rules">
+                        <li>
+                           <a href="javascript:void(0);">Privacy Policy</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0);">Terms of Use</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--   footer ends here -->
+      <!-- Scripting starts here -->
+      <script src="js/jquery-3.1.0.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+      <script src="js/animation.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script>
+         new WOW().init();
+         
+         
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         
+         if (scroll >= 50) {
+         $(".site-header").addClass("fixed-head");
+         } else {
+         $(".site-header").removeClass("fixed-head");
+         }
+         });
+      </script>
+   </body>
+</html>

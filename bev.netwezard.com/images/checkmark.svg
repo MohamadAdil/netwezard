@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 15 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-8.4%" y="-30.9%" width="116.9%" height="161.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.482352941   0 0 0 0 0.301960784   0 0 0 0 0.301960784  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="in-progress" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-687.000000, -136.000000)">
+            <g id="Group-9-Copy" filter="url(#filter-1)" transform="translate(448.000000, 127.000000)">
+                <g id="Group-15-Copy" transform="translate(254.000000, 24.000000)">
+                    <circle id="Oval-Copy-6" fill="#6FCFEB" cx="18.5" cy="18.5" r="18.5"></circle>
+                    <g id="002-correct-symbol" transform="translate(7.708333, 12.333333)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M18.9736074,1.91070993 L17.2782308,0.326184926 C17.045765,0.108755515 16.7630421,0 16.4307172,0 C16.0980867,0 15.8153638,0.108755515 15.582898,0.326184926 L7.40493736,7.98098162 L3.73984486,4.54385846 C3.50711701,4.32634743 3.22456881,4.21771434 2.89224392,4.21771434 C2.55970071,4.21771434 2.27715251,4.32634743 2.04442466,4.54385846 L0.349048112,6.12842426 C0.116320261,6.34589449 0,6.61005 0,6.92080919 C0,7.23132353 0.116320261,7.4957239 0.349048112,7.71315331 L4.86174156,11.9307044 L6.55724909,13.5152294 C6.78984595,13.7328221 7.07248148,13.8414551 7.40493736,13.8414551 C7.73726225,13.8414551 8.01989779,13.7325364 8.25262564,13.5152294 L9.94808951,11.9307044 L18.9736074,3.49535735 C19.2061169,3.27784632 19.3226557,3.01373162 19.3226557,2.70297243 C19.3226557,2.39237647 19.2061169,2.12822096 18.9736074,1.91070993 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

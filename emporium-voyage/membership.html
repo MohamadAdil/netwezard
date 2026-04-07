@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Emporium Voyage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/font-stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="css/daterangepicker.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/membership-css.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<div class="restaurantrightnav sidefixednav">
+	<ul>
+    	<li class="hamburguricon">
+        	<div class="block-content togglenav content">
+            <span></span>
+            <span> </span>
+            <span></span>
+            </div>
+        </li>
+    	<li class="loginSignPopupButton">
+        	<a href="javascript:void(0)" class="clicktologin"><i class="fa fa-lock"></i></a>
+            <a href="javascript:void(0)" class="login-user" style="display:none;"><i class="fa fa-user"></i></a>
+            <ul class="user-setting">
+            	<li><a href="javascript:void(0)">Profile</a></li>
+                <li><a href="javascript:void(0)">Change Possword</a></li>
+                <li><a href="javascript:void(0)">Logout</a></li>
+            </ul>
+        </li>
+        <li class="calander"><a href="javascript:void(0)"><i class="fa fa-calendar"></i></a></li>
+        <li><a href="javascript:void(0)" class="showprevnextimage">
+        		<img src="images/editorial-left-arrow.png" alt=""/>
+                <span class="nextprevshow" style="display:none;"><img src="images/nextprev-image.jpg" alt=""/></span>
+            </a></li>
+        <li>
+        	<a href="javascript:void(0)" class="showprevnextimage">
+            	<img src="images/editorial-right-arrow.png" alt=""/>
+                <span class="nextprevshow" style="display:none;"><img src="images/nextprev-image.jpg" alt=""/></span>
+            </a></li>
+    </ul>
+</div>
+<div class="restaurantrightnav contactfixed">
+    <ul>
+        <li><a href="tel:+19344511317"><i class="fa fa-phone"></i> +1 934 451 1317</a></li>
+        <li><a href="mailto: reservations@emporium-voyage.com"><i class="fa fa-envelope"></i> reservations@emporium-voyage.com</a></li>
+    </ul>
+</div>
+<div class="restaurantrightnav backcontrol">
+	<ul>
+	    <li><a href="hotel-pdp.html">BACK</a></li>
+    	<li><a href="javascript:void(0)" id="back-to-top">TOP</a></li>
+    </ul>
+</div>
+<div class="mobilemenu">
+	<div class="block-content togglenav content active mobilenavclosebtn">
+        <span></span>
+        <span> </span>
+        <span></span>
+    </div>
+    <div class="mobilemenu-inner">
+    	<div class="mobilemainnav openmobilemenu">
+	    	<div class="mobilenavheader">
+            	<a href="index.html"><img src="images/design-location-logo.png" alt="Emporium Voyage" class="img-responsive"/></a>
+            </div>
+            <ul class="mobilemenulist">
+            	<li>
+                	<div class="mobile-leftsearch">
+                    	<input type="text" class="form-control" id="search"/>
+                        <button type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div id="filtersearchpopup" style="display:none;">
+                    	<ul>
+                        	<li>
+                            	<a class="searchresultdata" href="javascript:void(0)"><i class="iconsheet icon-destinations"></i> Destinations <span>(3)</span></a>
+                            </li>
+                            <li>
+                            	<a class="searchresultdata" href="javascript:void(0)"><i class="iconsheet icon-collections"></i> Collections <span>(11)</span></a>
+                            </li>
+                            <li>
+                            	<a class="searchresultdata" href="javascript:void(0)"><i class="iconsheet icon-restaurant"></i> Restaurant <span>(5)</span></a>
+                            </li>
+                            <li>
+                            	<a class="searchresultdata" href="javascript:void(0)"><i class="iconsheet icon-bar"></i> Bar <span>(2)</span></a>
+                            </li>
+                            <li>
+                            	<a class="searchresultdata" href="javascript:void(0)"><i class="iconsheet icon-spa"></i> Spa <span>(2)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+               </li>
+				<li><a href="javascript:void(0);">Become a Member Hotel</a></li>
+    	        <li><a href="javascript:void(0);" id="companynav">Terms and Conditions</a></li>
+                <li><a href="javascript:void(0);">Imprint</a></li>
+            </ul>
+            <div class="left-carousal">
+            	<div id="owl-carousel" class="owl-carousel">
+                
+                <div class="item">
+                	<div class="side-bar-why-book-with-us">
+                    	<div class="book-with-us-tittles">
+                            <h2>Why book with us?</h2>
+                        </div>
+                        <ul class="side-bar-book-with-us-list">
+						<li>
+                        	<h3>Handpicked Selection of Hotels</h3>
+                        	<p>from selected luxury destinations worldwide</p>
+                        </li>
+                        <li>
+                        	<h3>Upgrade and Late Checkout</h3>
+                        	<p>At any Hotel upon Avilability</p>
+                        </li>
+                        <li>
+                        	<h3>Preferred Guest Discounts at New Hotels</h3>
+                        	<p>join our members club</p>
+                        </li>
+                        <li>
+                        	<h3>Free Wifi</h3>
+                        	<p>Guaranteed at all our Partner Hotels</p>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="javascript:void(0)"><img src="images/left-side-banner.png"></a>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <div class="companynav">
+	    	<div class="mobilenavheader">
+            	<h3>TERMS AND CONDITIONS</h3>
+                <a href="javascript:void(0)" class="homelinknav backtohomelink"><i class="fa fa-angle-left"></i> HOME</a>
+            </div>
+            <ul class="mobilemenulist">
+            	<li>
+                	<div class="mobile-leftsearch">
+                    	<input type="text" class="form-control"/>
+                        <button type="button"><i class="fa fa-search"></i></button>
+                    </div>
+               </li>
+                <li><a href="javascript:void(0)">Terms and Conditions 01</a></li>
+                <li><a href="javascript:void(0)">Terms and Conditions 02</a></li>
+            </ul>
+            <div class="left-carousal">
+            	<div id="owl-carousel" class="owl-carousel">
+                
+                <div class="item">
+                	<div class="side-bar-why-book-with-us">
+                    	<div class="book-with-us-tittles">
+                            <h2>Why book with us?</h2>
+                        </div>
+                        <ul class="side-bar-book-with-us-list">
+						<li>
+                        	<h3>Handpicked Selection of Hotels</h3>
+                        	<p>from selected luxury destinations worldwide</p>
+                        </li>
+                        <li>
+                        	<h3>Upgrade and Late Checkout</h3>
+                        	<p>At any Hotel upon Avilability</p>
+                        </li>
+                        <li>
+                        	<h3>Preferred Guest Discounts at New Hotels</h3>
+                        	<p>join our members club</p>
+                        </li>
+                        <li>
+                        	<h3>Free Wifi</h3>
+                        	<p>Guaranteed at all our Partner Hotels</p>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="javascript:void(0)"><img src="images/left-side-banner.png"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="page-container">
+<!-- <div class="breadcrumb">
+    <ul class="breadcrumb-nav">
+        <li><a href="https://www.emporium-voyage.com/luxurytravel/Hotel?ref=oc">Hotels &amp; Resorts</a></li>
+        <li><a href="http://www.emporium-yachts.com">Yachts</a></li>
+    </ul>
+</div> -->
+
+<header id="header">
+<!--<i class="fa fa-bars hamburgMenu" aria-hidden="true"></i>-->
+<div class="logo-wrapper">
+    <a href="index.html"><img src="images/design-location-logo.png" alt="Emporium Voyage"/></a>
+</div>
+
+<div class="header-content">
+
+<div class="col-lg-12 header-search">
+<form id="reservationForm" name="reservationform" class="reservation-form">
+<div class="row">
+<div class="col-sm-3 col-md-4">
+	<div class="form-group">
+	    <input type="text" placeholder="ENTER YOUR HOTEL OR DESTINATION"/>
+    </div>
+</div>
+<div class="col-sm-4 col-md-4 calendarbox">
+	<div class="row">
+    	<div class="col-sm-6">
+        	<div class="form-group">
+	            <input name="reservationdate" id="reservationdate" class="form-control datefield" type="text" placeholder="Arrival" readonly required>
+				<div class="input-group-icon"><i class="fa fa-calander"></i></div>
+            </div>    
+        </div>
+        <div class="col-sm-6">
+        	<div class="form-group">
+	            <input name="reservationdate" id="reservationdate1" class="form-control datefield" type="text" placeholder="Arrival" readonly required>
+				<div class="input-group-icon"><i class="fa fa-calander"></i></div>
+            </div>     
+        </div>
+    </div>
+</div>
+<div class="col-sm-2 col-md-2">
+        	<div class="form-group">
+	        	<input name="arrive" type="number" placeholder="ADULT CHILDREN">
+            </div>    
+        </div>
+<div class="col-md-1">
+	<select name="currencyOption" class="form-control">
+                                                                <option value="EUR">Currency</option>
+                                                                
+                                                                    <option value="AED" title="AED-د.إ">AED-د.إ
+                                                                </option>
+
+                                                                
+                                                                    <option value="AFN" title="AFN-Af">AFN-Af
+                                                                </option>
+
+                                                                
+                                                                    <option value="ALL" title="ALL-Lek">ALL-Lek
+                                                                </option>
+
+                                                                
+                                                                    <option value="AMD" title="AMD-">AMD-
+                                                                </option>
+
+                                                                
+                                                                    <option value="ANG" title="ANG-ƒ">ANG-ƒ
+                                                                </option>
+
+                                                                
+                                                                    <option value="AOA" title="AOA-Kz">AOA-Kz
+                                                                </option>
+
+                                                                
+                                                                    <option value="ARS" title="ARS-$">ARS-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="AUD" title="AUD-$">AUD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="AWG" title="AWG-ƒ">AWG-ƒ
+                                                                </option>
+
+                                                                
+                                                                    <option value="AZN" title="AZN-ман">AZN-ман
+                                                                </option>
+
+                                                                
+                                                                    <option value="BAM" title="BAM-KM">BAM-KM
+                                                                </option>
+
+                                                                
+                                                                    <option value="BBD" title="BBD-$">BBD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="BDT" title="BDT-৳">BDT-৳
+                                                                </option>
+
+                                                                
+                                                                    <option value="BGN" title="BGN-лв">BGN-лв
+                                                                </option>
+
+                                                                
+                                                                    <option value="BHD" title="BHD-.د.ب">BHD-.د.ب
+                                                                </option>
+
+                                                                
+                                                                    <option value="BIF" title="BIF-FBu">BIF-FBu
+                                                                </option>
+
+                                                                
+                                                                    <option value="BMD" title="BMD-$">BMD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="BND" title="BND-$">BND-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="BOB" title="BOB-$b">BOB-$b
+                                                                </option>
+
+                                                                
+                                                                    <option value="BRL" title="BRL-R$">BRL-R$
+                                                                </option>
+
+                                                                
+                                                                    <option value="BSD" title="BSD-$">BSD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="BTC" title="BTC-">BTC-
+                                                                </option>
+
+                                                                
+                                                                    <option value="BTN" title="BTN-Nu.">BTN-Nu.
+                                                                </option>
+
+                                                                
+                                                                    <option value="BWP" title="BWP-P">BWP-P
+                                                                </option>
+
+                                                                
+                                                                    <option value="BYN" title="BYN-">BYN-
+                                                                </option>
+
+                                                                
+                                                                    <option value="BZD" title="BZD-BZ$">BZD-BZ$
+                                                                </option>
+
+                                                                
+                                                                    <option value="CAD" title="CAD-$">CAD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="CDF" title="CDF-FC">CDF-FC
+                                                                </option>
+
+                                                                
+                                                                    <option value="CHF" title="CHF-CHF">CHF-CHF
+                                                                </option>
+
+                                                                
+                                                                    <option value="CLF" title="CLF-">CLF-
+                                                                </option>
+
+                                                                
+                                                                    <option value="CLP" title="CLP-$">CLP-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="CNH" title="CNH-">CNH-
+                                                                </option>
+
+                                                                
+                                                                    <option value="CNY" title="CNY-¥">CNY-¥
+                                                                </option>
+
+                                                                
+                                                                    <option value="COP" title="COP-$">COP-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="CRC" title="CRC-₡">CRC-₡
+                                                                </option>
+
+                                                                
+                                                                    <option value="CUC" title="CUC-">CUC-
+                                                                </option>
+
+                                                                
+                                                                    <option value="CUP" title="CUP-⃌">CUP-⃌
+                                                                </option>
+
+                                                                
+                                                                    <option value="CVE" title="CVE-$">CVE-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="CZK" title="CZK-Kč">CZK-Kč
+                                                                </option>
+
+                                                                
+                                                                    <option value="DJF" title="DJF-Fdj">DJF-Fdj
+                                                                </option>
+
+                                                                
+                                                                    <option value="DKK" title="DKK-kr">DKK-kr
+                                                                </option>
+
+                                                                
+                                                                    <option value="DOP" title="DOP-RD$">DOP-RD$
+                                                                </option>
+
+                                                                
+                                                                    <option value="DZD" title="DZD-دج">DZD-دج
+                                                                </option>
+
+                                                                
+                                                                    <option value="EGP" title="EGP-£">EGP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="ERN" title="ERN-">ERN-
+                                                                </option>
+
+                                                                
+                                                                    <option value="ETB" title="ETB-Br">ETB-Br
+                                                                </option>
+
+                                                                
+                                                                    <option value="EUR" title="EUR-€">EUR-€
+                                                                </option>
+
+                                                                
+                                                                    <option value="FJD" title="FJD-$">FJD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="FKP" title="FKP-£">FKP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="GBP" title="GBP-£">GBP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="GEL" title="GEL-ლ">GEL-ლ
+                                                                </option>
+
+                                                                
+                                                                    <option value="GGP" title="GGP-">GGP-
+                                                                </option>
+
+                                                                
+                                                                    <option value="GHS" title="GHS-¢">GHS-¢
+                                                                </option>
+
+                                                                
+                                                                    <option value="GIP" title="GIP-£">GIP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="GMD" title="GMD-D">GMD-D
+                                                                </option>
+
+                                                                
+                                                                    <option value="GNF" title="GNF-FG">GNF-FG
+                                                                </option>
+
+                                                                
+                                                                    <option value="GTQ" title="GTQ-Q">GTQ-Q
+                                                                </option>
+
+                                                                
+                                                                    <option value="GYD" title="GYD-$">GYD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="HKD" title="HKD-$">HKD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="HNL" title="HNL-L">HNL-L
+                                                                </option>
+
+                                                                
+                                                                    <option value="HRK" title="HRK-kn">HRK-kn
+                                                                </option>
+
+                                                                
+                                                                    <option value="HTG" title="HTG-G">HTG-G
+                                                                </option>
+
+                                                                
+                                                                    <option value="HUF" title="HUF-Ft">HUF-Ft
+                                                                </option>
+
+                                                                
+                                                                    <option value="IDR" title="IDR-Rp">IDR-Rp
+                                                                </option>
+
+                                                                
+                                                                    <option value="ILS" title="ILS-₪">ILS-₪
+                                                                </option>
+
+                                                                
+                                                                    <option value="IMP" title="IMP-">IMP-
+                                                                </option>
+
+                                                                
+                                                                    <option value="INR" title="INR-₹">INR-₹
+                                                                </option>
+
+                                                                
+                                                                    <option value="IQD" title="IQD-ع.د">IQD-ع.د
+                                                                </option>
+
+                                                                
+                                                                    <option value="IRR" title="IRR-﷼">IRR-﷼
+                                                                </option>
+
+                                                                
+                                                                    <option value="ISK" title="ISK-kr">ISK-kr
+                                                                </option>
+
+                                                                
+                                                                    <option value="JEP" title="JEP-£">JEP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="JMD" title="JMD-J$">JMD-J$
+                                                                </option>
+
+                                                                
+                                                                    <option value="JOD" title="JOD-JD">JOD-JD
+                                                                </option>
+
+                                                                
+                                                                    <option value="JPY" title="JPY-¥">JPY-¥
+                                                                </option>
+
+                                                                
+                                                                    <option value="KES" title="KES-KSh">KES-KSh
+                                                                </option>
+
+                                                                
+                                                                    <option value="KGS" title="KGS-лв">KGS-лв
+                                                                </option>
+
+                                                                
+                                                                    <option value="KHR" title="KHR-៛">KHR-៛
+                                                                </option>
+
+                                                                
+                                                                    <option value="KMF" title="KMF-CF">KMF-CF
+                                                                </option>
+
+                                                                
+                                                                    <option value="KPW" title="KPW-₩">KPW-₩
+                                                                </option>
+
+                                                                
+                                                                    <option value="KRW" title="KRW-₩">KRW-₩
+                                                                </option>
+
+                                                                
+                                                                    <option value="KWD" title="KWD-د.ك">KWD-د.ك
+                                                                </option>
+
+                                                                
+                                                                    <option value="KYD" title="KYD-$">KYD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="KZT" title="KZT-лв">KZT-лв
+                                                                </option>
+
+                                                                
+                                                                    <option value="LAK" title="LAK-₭">LAK-₭
+                                                                </option>
+
+                                                                
+                                                                    <option value="LBP" title="LBP-£">LBP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="LKR" title="LKR-₨">LKR-₨
+                                                                </option>
+
+                                                                
+                                                                    <option value="LRD" title="LRD-$">LRD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="LSL" title="LSL-L">LSL-L
+                                                                </option>
+
+                                                                
+                                                                    <option value="LYD" title="LYD-ل.د">LYD-ل.د
+                                                                </option>
+
+                                                                
+                                                                    <option value="MAD" title="MAD-د.م.">MAD-د.م.
+                                                                </option>
+
+                                                                
+                                                                    <option value="MDL" title="MDL-L">MDL-L
+                                                                </option>
+
+                                                                
+                                                                    <option value="MGA" title="MGA-Ar">MGA-Ar
+                                                                </option>
+
+                                                                
+                                                                    <option value="MKD" title="MKD-ден">MKD-ден
+                                                                </option>
+
+                                                                
+                                                                    <option value="MMK" title="MMK-K">MMK-K
+                                                                </option>
+
+                                                                
+                                                                    <option value="MNT" title="MNT-₮">MNT-₮
+                                                                </option>
+
+                                                                
+                                                                    <option value="MOP" title="MOP-MOP$">MOP-MOP$
+                                                                </option>
+
+                                                                
+                                                                    <option value="MRO" title="MRO-UM">MRO-UM
+                                                                </option>
+
+                                                                
+                                                                    <option value="MRU" title="MRU-">MRU-
+                                                                </option>
+
+                                                                
+                                                                    <option value="MUR" title="MUR-₨">MUR-₨
+                                                                </option>
+
+                                                                
+                                                                    <option value="MVR" title="MVR-.ރ">MVR-.ރ
+                                                                </option>
+
+                                                                
+                                                                    <option value="MWK" title="MWK-MK">MWK-MK
+                                                                </option>
+
+                                                                
+                                                                    <option value="MXN" title="MXN-$">MXN-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="MYR" title="MYR-RM">MYR-RM
+                                                                </option>
+
+                                                                
+                                                                    <option value="MZN" title="MZN-MT">MZN-MT
+                                                                </option>
+
+                                                                
+                                                                    <option value="NAD" title="NAD-$">NAD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="NGN" title="NGN-₦">NGN-₦
+                                                                </option>
+
+                                                                
+                                                                    <option value="NIO" title="NIO-C$">NIO-C$
+                                                                </option>
+
+                                                                
+                                                                    <option value="NOK" title="NOK-kr">NOK-kr
+                                                                </option>
+
+                                                                
+                                                                    <option value="NPR" title="NPR-₨">NPR-₨
+                                                                </option>
+
+                                                                
+                                                                    <option value="NZD" title="NZD-$">NZD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="OMR" title="OMR-﷼">OMR-﷼
+                                                                </option>
+
+                                                                
+                                                                    <option value="PAB" title="PAB-B/.">PAB-B/.
+                                                                </option>
+
+                                                                
+                                                                    <option value="PEN" title="PEN-S/.">PEN-S/.
+                                                                </option>
+
+                                                                
+                                                                    <option value="PGK" title="PGK-K">PGK-K
+                                                                </option>
+
+                                                                
+                                                                    <option value="PHP" title="PHP-₱">PHP-₱
+                                                                </option>
+
+                                                                
+                                                                    <option value="PKR" title="PKR-₨">PKR-₨
+                                                                </option>
+
+                                                                
+                                                                    <option value="PLN" title="PLN-zł">PLN-zł
+                                                                </option>
+
+                                                                
+                                                                    <option value="PYG" title="PYG-Gs">PYG-Gs
+                                                                </option>
+
+                                                                
+                                                                    <option value="QAR" title="QAR-﷼">QAR-﷼
+                                                                </option>
+
+                                                                
+                                                                    <option value="RON" title="RON-lei">RON-lei
+                                                                </option>
+
+                                                                
+                                                                    <option value="RSD" title="RSD-Дин.">RSD-Дин.
+                                                                </option>
+
+                                                                
+                                                                    <option value="RUB" title="RUB-руб">RUB-руб
+                                                                </option>
+
+                                                                
+                                                                    <option value="RWF" title="RWF-ر.س">RWF-ر.س
+                                                                </option>
+
+                                                                
+                                                                    <option value="SAR" title="SAR-﷼">SAR-﷼
+                                                                </option>
+
+                                                                
+                                                                    <option value="SBD" title="SBD-$">SBD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="SCR" title="SCR-₨">SCR-₨
+                                                                </option>
+
+                                                                
+                                                                    <option value="SDG" title="SDG-£">SDG-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="SEK" title="SEK-kr">SEK-kr
+                                                                </option>
+
+                                                                
+                                                                    <option value="SGD" title="SGD-$">SGD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="SHP" title="SHP-£">SHP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="SLL" title="SLL-Le">SLL-Le
+                                                                </option>
+
+                                                                
+                                                                    <option value="SOS" title="SOS-S">SOS-S
+                                                                </option>
+
+                                                                
+                                                                    <option value="SRD" title="SRD-$">SRD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="SSP" title="SSP-">SSP-
+                                                                </option>
+
+                                                                
+                                                                    <option value="STD" title="STD-Db">STD-Db
+                                                                </option>
+
+                                                                
+                                                                    <option value="STN" title="STN-">STN-
+                                                                </option>
+
+                                                                
+                                                                    <option value="SVC" title="SVC-$">SVC-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="SYP" title="SYP-£">SYP-£
+                                                                </option>
+
+                                                                
+                                                                    <option value="SZL" title="SZL-L">SZL-L
+                                                                </option>
+
+                                                                
+                                                                    <option value="THB" title="THB-฿">THB-฿
+                                                                </option>
+
+                                                                
+                                                                    <option value="TJS" title="TJS-TJS">TJS-TJS
+                                                                </option>
+
+                                                                
+                                                                    <option value="TMT" title="TMT-m">TMT-m
+                                                                </option>
+
+                                                                
+                                                                    <option value="TND" title="TND-د.ت">TND-د.ت
+                                                                </option>
+
+                                                                
+                                                                    <option value="TOP" title="TOP-T$">TOP-T$
+                                                                </option>
+
+                                                                
+                                                                    <option value="TRY" title="TRY-₤">TRY-₤
+                                                                </option>
+
+                                                                
+                                                                    <option value="TTD" title="TTD-$">TTD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="TWD" title="TWD-NT$">TWD-NT$
+                                                                </option>
+
+                                                                
+                                                                    <option value="TZS" title="TZS-">TZS-
+                                                                </option>
+
+                                                                
+                                                                    <option value="UAH" title="UAH-₴">UAH-₴
+                                                                </option>
+
+                                                                
+                                                                    <option value="UGX" title="UGX-USh">UGX-USh
+                                                                </option>
+
+                                                                
+                                                                    <option value="USD" title="USD-$">USD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="UYU" title="UYU-$U">UYU-$U
+                                                                </option>
+
+                                                                
+                                                                    <option value="UZS" title="UZS-лв">UZS-лв
+                                                                </option>
+
+                                                                
+                                                                    <option value="VEF" title="VEF-Bs">VEF-Bs
+                                                                </option>
+
+                                                                
+                                                                    <option value="VND" title="VND-₫">VND-₫
+                                                                </option>
+
+                                                                
+                                                                    <option value="VUV" title="VUV-VT">VUV-VT
+                                                                </option>
+
+                                                                
+                                                                    <option value="WST" title="WST-WS$">WST-WS$
+                                                                </option>
+
+                                                                
+                                                                    <option value="XAF" title="XAF-FCFA">XAF-FCFA
+                                                                </option>
+
+                                                                
+                                                                    <option value="XAG" title="XAG-">XAG-
+                                                                </option>
+
+                                                                
+                                                                    <option value="XAU" title="XAU-">XAU-
+                                                                </option>
+
+                                                                
+                                                                    <option value="XCD" title="XCD-$">XCD-$
+                                                                </option>
+
+                                                                
+                                                                    <option value="XDR" title="XDR-">XDR-
+                                                                </option>
+
+                                                                
+                                                                    <option value="XOF" title="XOF-">XOF-
+                                                                </option>
+
+                                                                
+                                                                    <option value="XPD" title="XPD-">XPD-
+                                                                </option>
+
+                                                                
+                                                                    <option value="XPF" title="XPF-F">XPF-F
+                                                                </option>
+
+                                                                
+                                                                    <option value="XPT" title="XPT-">XPT-
+                                                                </option>
+
+                                                                
+                                                                    <option value="YER" title="YER-﷼">YER-﷼
+                                                                </option>
+
+                                                                
+                                                                    <option value="ZAR" title="ZAR-R">ZAR-R
+                                                                </option>
+
+                                                                
+                                                                    <option value="ZMW" title="ZMW-">ZMW-
+                                                                </option>
+
+                                                                
+                                                                    <option value="ZWL" title="ZWL-Z$">ZWL-Z$
+                                                                </option>
+
+                                                                
+                                                            </select>
+</div>
+<div class="col-sm-1 col-md-1"><button class="btn yellowbtn">SEARCH</button></div>
+</div>
+</form>
+</div>
+<div class="col-lg-1">
+<div class="login-control-head">
+    <ul class="nav navbar-nav setting-nav">
+    <li class="dropdown" style="display:none;">
+        <a class="dropdown-toggle peers" data-toggle="dropdown" href="javascript:void(0)">
+        	<div class="peer mR-10"><img class="img-circle login-user-pic" src="images/login-pic.jpg" alt=""><span class=" fa fa-angle-down"></span></div>
+
+		</a>
+        <ul class="dropdown-menu">
+          <li><a href="javascript:void(0)">John Doe</a></li>
+          <li><a href="javascript:void(0)">Profile</a></li>
+          <li><a href="javascript:void(0)">Setting</a></li>
+          <li><a href="javascript:void(0)">Logout <i class="fa fa-sign-out pull-right"></i></a></li>
+        </ul>
+      </li>
+      <li><!--<i class="fa fa-bars hamburgMenu" aria-hidden="true"></i>-->
+    <div class="block-content togglenav content">
+            <span></span>
+            <span> </span>
+            <span></span>
+            </div></li>
+    </ul>
+
+    
+    </div>
+   </div> 
+</div>
+<div class="menu" id="menu">                       
+                            <a href="javascript:void(0)" id="close" onclick="trigger"></a>
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.emporium-voyage.com/membership_hotel">Become a Member Hotel</a></li>
+                            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                            <li><a href="https://www.emporium-voyage.com/Impressum">Imprint</a></li>
+                        </ul>
+                        
+                        <div class="tilt-container">
+        <img src="images/emporium-voyage-company-menu.jpg" alt="" class="background">
+    </div>
+                        
+                    </div>
+
+</header>
+<!-- Restaurant slider starts here -->
+<section class="sliderSection membershipHotelSlider">
+  <div id="restaurantSlider" class="carousel" data-ride="carousel">
+    <!-- Indicators -->
+<!--     <ol class="carousel-indicators">
+      <li data-target="#restaurantSlider" data-slide-to="0" class="active"></li>
+      <li data-target="#restaurantSlider" data-slide-to="1"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active" style="background:url(images/1515866082-59878295.jpg) center center no-repeat; background-size:cover;">
+        <div class="carousel-caption">
+          <h1>Hotel Membership</h1>
+          <p>From the posh, sun-soaked beaches along the Indian Ocean to the epoch heights of the Himalayas, Emporium-Voyage is your ideal, vogue vacation planner!</p>
+          <button type="button" class="button viewGalleryBtn termAndConditionBtn">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#restaurantSlider" data-slide="prev">
+      <img src="images/editorial-left-arrow.png" alt="Icon">
+    </a>
+    <a class="right carousel-control" href="#restaurantSlider" data-slide="next">
+      <img src="images/editorial-right-arrow.png" alt="Icon">
+    </a>
+  </div>
+  <span class="scrollNextDiv"><a class="scrollpage" href="#membershpipStepSec">Scroll Down</a></span>
+</section>
+<section id="membershpipStepSec" class="membershpipStepSec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="stepNumber active">
+                    <span>1</span>
+                    <p>STEP 1</p>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="stepNumber">
+                    <span>2</span>
+                    <p>STEP 2</p>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="stepNumber">
+                    <span>3</span>
+                    <p>STEP 3</p>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="stepNumber">
+                    <span>4</span>
+                    <p>STEP 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="hotelInfoSection">
+                    <form>
+                        <div class="row">
+                        <h1>Hotel Information</h1>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Hotel Name</label>
+                                    <input type="text" placeholder="Hotel Name*" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Hotel Status</label>
+                                    <select class="form-control">
+                                        <option value="">Select Status</option>
+                                        <option value="Open">Open</option>
+                                        <option value="Construction phase">Construction phase</option>
+                                        <option value="Planning phase">Planning phase</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Hotel Type</label>
+                                    <select class="form-control">
+                                        <option value="">Hotel Type</option>
+                                        <option value="Alternative">Alternative</option>
+                                        <option value="Beach Resort">Beach Resort</option>
+                                        <option value="Resort">Resort</option>
+                                        <option value="City">City</option>
+                                        <option value="Mountain">Mountain</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Hotel Building</label>
+                                    <select class="form-control">
+                                        <option value="">Hotel Building</option>
+                                        <option value="New Construction">New Construction</option>
+                                        <option value="Existing Building">Existing Building</option>
+                                        <option value="Conversion">Conversion</option>
+                                    </select>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 no-padding">
+                                <div class="form-group">
+                                    <label><label>*Hotel Opening Date</label></label>
+                                    <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control" id="data-date">
+                                <div class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Street &amp; Number</label>
+                                    <input class="form-control" type="text" placeholder="Street &amp; Number*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*City</label>
+                                    <input class="form-control" type="text" placeholder="City*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Country</label>
+                                    <input class="form-control" type="text" placeholder="Country*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Postal Code</label>
+                                    <input class="form-control" type="text" placeholder="Postal Code*">
+                                </div>
+                            </div>
+                            <div class="col-md-12 sm-clear-both no-padding">
+                                <div class="form-group">
+                                    <label>*Hotel Website</label>
+                                    <input class="form-control" type="text" placeholder="Hotel Website*">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Days open for business</label>
+                                    <input class="form-control" type="text" placeholder="Days open for business*">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <label>Avg. Daily Rate</label>
+                                    <input class="form-control" type="text" placeholder="Avg. Daily Rate*">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Avg. Occupancy</label>
+                                    <input class="form-control" type="text" placeholder="Avg. Occupancy*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1>Hotel Facilities</h5>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Number of Rooms</label>
+                                    <input class="form-control" type="text" placeholder="Number of Rooms*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Number of Suites</label>
+                                    <input class="form-control" type="text" placeholder="Number of Suites*">
+                                </div>
+                            </div>
+                                <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>F &amp; B Outlets</label>
+                                    <select class="form-control">
+                                        <option value="">-</option>
+                                        <option value="Restaurant">Restaurant</option>
+                                        <option value="Bar">Bar</option>
+                                        <option value="Beach Bar">Beach Bar</option>
+                                        <option value="Club">Club</option>
+                                        <option value="Lobby/Lounge">Lobby/Lounge</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 no-padding-right">
+                                    <div class="form-group">
+                                        <label>Guest Facilities</label>
+                                        <select class="form-control">
+                                            <option value="">-</option>
+                                            <option value="">Gym</option>
+                                            <option value="">Indoor Pool</option>
+                                            <option value="">Outdoor Pool</option>
+                                            <option value="">Spa</option>
+                                            <option value="">Business Center</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Meeting Area</label>
+                                    <input class="form-control" type="text" placeholder="Meeting Area*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Meeting Facilities</label>
+                                    <select class="form-control">
+                                        <option>Please select</option>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 sm-clear-both no-padding">
+                                <div class="form-group">
+                                    <label>Comments/Other Facilities</label>
+                                    <textarea class="form-control" placeholder="Comments/Other Facilities" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1>Hotel Description</h1>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Hotel Concept</label>
+                                    <textarea class="form-control" placeholder="*Hotel Concept" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Architecture &amp; Design</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Architect Name</label>
+                                    <input class="form-control" type="text" placeholder="Architect Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Architect Website</label>
+                                    <input class="form-control" type="text" placeholder="Architect Website">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Interior Designer Name</label>
+                                    <input class="form-control" type="text" placeholder="Interior Designer Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Interior Designer Website</label>
+                                    <input class="form-control" type="text" placeholder="Interior Designer Website">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Local Integration</label>
+                                    <textarea class="form-control" placeholder="Local Integration" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Brand</label>
+                                    <textarea class="form-control" placeholder="Brand" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Brand Agency Name</label>
+                                    <input class="form-control" type="text" placeholder="Brand Agency Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Brand Agency Website</label>
+                                    <input class="form-control" type="text" placeholder="Brand Agency Website">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>Brand Linkedin Profile</label>
+                                    <input class="form-control" type="text" placeholder="Brand Linkedin Profile">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>Brand Instagram Profile</label>
+                                    <input class="form-control" type="text" placeholder="Brand Instagram Profile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1>Contact Information</h1>
+                            <h2>Property Owning Entity:</h2>
+                            
+                            <div class="col-md-12 col-sm-12 no-padding entity">
+                                <div class="form-group">
+                                    <label>*Entity Name</label>
+                                    <input class="form-control" type="text" placeholder="Entity Name*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Street &amp; Number</label>
+                                    <input class="form-control" type="text" placeholder="Street &amp; Number*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*City</label>
+                                    <input class="form-control" type="text" placeholder="City*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Country</label>
+                                    <input class="form-control" type="text" placeholder="Country*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Postal Code</label>
+                                    <input class="form-control" type="text" placeholder="Postal Code*">
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="headingmimiform">
+                                <h2>Contact Person:</h2>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*First Name</label>
+                                    <input class="form-control" type="text" placeholder="First Name*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Last Name</label>
+                                    <input class="form-control" type="text" placeholder="Last Name*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Company Name</label>
+                                    <input class="form-control" type="text" placeholder="Company Name*">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right">
+                                <div class="form-group">
+                                    <label>*Job Title</label>
+                                    <input class="form-control" type="text" placeholder="Job Title*">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <div class="form-group">
+                                    <label>*Phone</label>
+                                    <input class="form-control" type="text" placeholder="Phone*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fooetr-form">
+                            <div class="col-md-6 col-sm-12 no-padding-left">
+                                <span><input id="termConditionInput" type="checkbox"><label for="termConditionInput">I agree with the</label> <a href="#">Terms and Conditions</a></span>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-padding-right text-align-right">
+                                <input type="submit" class="btn btn-white pull-right" style="width: 200px">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container-fluid">   
+        <div class="row">
+        <div class="col-sm-4">
+            <div class="footer-coloumn">
+                <h2>Preferred Destinations</h2>
+                <ul class="footer-nav-menu">
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Switzerland&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Switzerland </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Italy&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Italy </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=London&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> London </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Germany&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Germany </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Berlin&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Berlin </a> </li>
+                  <li> <a href="https://emporium-voyage.com/search?s=New+York+City&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> New York </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Paris&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Paris </a> </li>
+                  <li> <a href="https://www.emporium-voyage.com/search?s=Portugal&amp;arrive=&amp;destination=&amp;adult=2&amp;childs=0"> Portugal </a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-coloumn">
+                <h2>COMPANY</h2>
+                <ul class="footer-nav-menu">
+                  <li> <a href="https://www.emporium-voyage.com/membership_hotel"> Hotel Membership </a> </li>
+                  <li> <a href="#"> Members Portal </a> </li>
+                  <li> <a href="#"> Reservations/Cancelations </a> </li>
+                  <li> <a href="#"> Our Mission </a> </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-coloumn">
+                <h2>DISCOVER</h2>
+                <ul class="footer-nav-menu">
+                    <li><a href="http://www.emporium-voyage.com/social-stream?sp=gramercy-park-hotel-new-york-city-united-states">Hotel Social Channels</a></li>
+                    <li><a href="https://www.emporium-voyage.com">Destination Video Channels</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-4">
+            <div class="footer-coloumn">
+                <h2>ABOUT EMPORIUM VOYAGE</h2>
+                <p>From the posh, sun-soaked beaches along the Indian Ocean to the epoch heights of the Himalayas, Emporium-Voyageis your ideal, vogue vacation planner! With over 300 posh properties and elite spas huddled in its cocoon, Design Locations ensure the ultimate luxury experience. Our expertise lies in our utmost diligence to provide our beau monde customers with an exotic experience they will relish forever.</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-coloumn newsletter">
+                <h2>NEWSLETTER</h2>
+                <p>Subscribe and get 10% off on your next reservation</p>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-control"/>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <div class="form-group">
+                            <button class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-coloumn">
+                <h2>Follow us</h2>
+                <ul class="social-menu">
+                    <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+</div>
+
+<!-- Page container end -->
+
+<!-- Modal -->
+<div id="mobile-search-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Search Hotel</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+<div class="col-xs-12">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="ENTER YOUR HOTEL OR DESTINATION"/>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <input name="arrive" class="form-control" type="date" placeholder="ARRIVAL">
+            </div>    
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <input name="arrive" class="form-control" type="date" placeholder="DEPARTURE">
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <input name="arrive" class="form-control" type="number" placeholder="ADULT">
+            </div>    
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <input name="arrive" class="form-control" type="number" placeholder="CHILDREN">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 text-right"><button class="btn">SEARCH</button></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- login signup popup starts here -->
+
+<div class="popupMainDiv">
+  <div class="rightSideSec">
+  <div class="popupTopSec"><a href="javascript:void(0);" class="mainPopupClose">×</a></div>
+    <img src="images/Step.jpg" alt="Images">
+    <div class="accountContent">
+      <h2>Your Account With Us</h2>
+    </div>
+    <div class="popupFooterSec">
+      <ul>
+        <li class="col-xs-6"><a class="signInPopupButton" href="javascript:void(0);">Sign Up</a></li>
+        <li class="col-xs-6"><a class="logInPopupButton" href="javascript:void(0);">Log In</a></li>
+        <li class="col-xs-12"><a href="javascript:void(0);">Sign In With LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="logInPopup lognSignPopoUp">
+      <div class="popupTopSec"><span>NEED HELP?</span><a href="javascript:void(0);" class="mainPopupClose">×</a></div>
+      <img src="images/angel-fernandez-alonso-220762.jpg" alt="Images">
+      <div class="loginFormDiv">
+        <h2>LOGIN WITH <br>YOUR ACCOUNT</h2>
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <a class="forgetPassBtn" href="javascript:void(0);">FORGOT?</a>
+            <input class="form-control" type="password" placeholder="Password">
+          </div>
+          <button class="button" type="button">Log In</button>
+        </form>
+      </div>
+    </div>
+    <div class="signInPopup lognSignPopoUp">
+      <div class="popupTopSec"><span>NEED HELP?</span><a href="javascript:void(0);" class="mainPopupClose">×</a></div>
+      <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+      <img src="images/matthew-kane-365718.jpg" alt="Images">
+      <div class="loginFormDiv">
+        <h3>CREATE YOUR ACCOUNT PASSWORD</h3>
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="(201) 555-0123">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" placeholder="Password">
+          </div>
+          <button class="button" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="forgetPassPopup lognSignPopoUp">
+      <div class="popupTopSec"><span>NEED HELP?</span><a href="javascript:void(0);" class="mainPopupClose">×</a></div>
+      <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+      <img src="images/Kootenay Aurora 1-X3.jpg" alt="Images">
+      <div class="loginFormDiv">
+         <h3>FORGOT YOUR <br>PASSWORD</h3>
+        <form>
+           <p>Enter your email and you will get Instructions to reset your password</p>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Email Address">
+          </div>
+          <button class="button" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Search our collection popup -->
+<div class="searchOurCollectonpopup fullWidthPopup">
+      <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+      <!-- <img src="images/angel-fernandez-alonso-220762.jpg" alt="Images"> -->
+      <div class="searchBoxDiv">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+              <div class="searchLeftSec">
+                <h2>Our Collection</h2>
+                <ul>
+                  <li><a href="https://www.emporium-voyage.com/luxurytravel/Hotel">Hotels</a></li>
+                  <li><a href="http://www.emporium-yachts.com/luxurytravel/Yachts">Yachts</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="searchRightSec">
+                <a href="index.html"><img class="img-responsive" src="images/design-location-logo.png" alt="Emporium-Voyage"></a>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Enter Your Hotel or Destination">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>  
+    </div>
+    <!-- Search By Date Popup -->
+<div class="searchByDatePopup fullWidthPopup">
+  <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+  <div class="searchDateInnerContent text-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="popupHeadings">
+              <h2>Emporium Voyage is your ideal, vogue vacation planner!</h2>
+              <p>With over 300 posh properties, elite spas and exquisite yachts huddled in its cocoon, Emporium Voyage ensure the ultimate luxury experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="borderList">
+          <li>
+            <h3>Arrival</h3>
+            <input type="text" name="" value="14.02.2018">
+          </li>
+          <li>
+            <h3>Departure</h3>
+            <input type="text" name="" value="">
+          </li>
+          <li>
+            <h3>Adults</h3>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </li>
+          <li>
+            <h3>Children</h3>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </li>
+        </ul>
+        <div class="text-center"><button class="btn bookNowButton">BOOK NOW</button></div>
+        <div class="cancelBooking text-center">
+          <a href="https://www.emporium-voyage.com/customer/login">View, Modify or Cancel your Booking</a>
+        </div>
+        <ul class="bookingFooter">
+          <li>
+            <a href="javascript:void(0);">
+              <span>Join the worlds leading luxury club</span>
+              <h6>Enjoy exclusive members only benefits</h6>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>View or Modify Reserveration</span>
+              <h6>Login to Hotel PMS</h6>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>Spa Treatment</span>
+              <h6>Book</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Search Your Destination Popup -->
+<div class="yourdestinationpopup fullWidthPopup">
+  <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+  <div class="experiencpopupinner text-center">
+        <div class="experiencepopupheader">
+            <a href="index.html"><img src="images/design-location-logo.png" alt="Emporium Voyage"/></a>
+            <h2>Select Your Destination</h2>
+        </div>
+        <div class="destinationaccordion">
+            <div class="panel-group" id="accordion1">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   <input type="text" placeholder="ENTER YOUR DESTINATION"/>
+                </div>
+             </div>   
+            <div class="panel panel-default">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" class="collapsed">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        INDIAN OCEAN
+                    </h4>
+                </div>
+                </a>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion21">
+                                <div class="panel">
+                                    <a data-toggle="collapse" data-parent="#accordion11" href="#collapseOneOne">MALDIVES</a>
+                                    <div id="collapseOneOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="lastlevel">
+                                                <li><a href="javascript:void(0)">Male Atoll</a></li>
+                                                <li><a href="javascript:void(0)">Dhonakulhi Island</a></li>
+                                                <li><a href="javascript:void(0)">Villingili Island</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="panel">
+                                    <a data-toggle="collapse" href="javascript:void(0)">MAURITUS</a>
+                                </div>
+                                <div class="panel ">
+                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseOneTwo">SEYCHELLES</a>
+                                    <div id="collapseOneTwo" class="panel-collapse collapse">
+                                        <div class="panel-body lastlevel">
+                                            <a href="javascript:void(0)">Mahe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" class="collapsed">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        EUROPE
+                    </h4>
+                </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion2">
+                                <div class="panel">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwoOne">CENTRAL EUROPE</a>
+                                    <div id="collapseTwoOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="panel-group" id="accordion23">
+                                                <div class="panel">
+                                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseTwoOneOne">GERMANY</a>
+                                                    <div id="collapseTwoOneOne" class="panel-collapse collapse">
+                                                        <ul class="lastlevel">
+                                                            <li><a href="javascript:void(0)">Berlin</a></li>
+                                                            <li><a href="javascript:void(0)">Binz Rugen Island</a></li>
+                                                            <li><a href="javascript:void(0)">Bremen</a></li>
+                                                            <li><a href="javascript:void(0)">Cologne</a></li>
+                                                            <li><a href="javascript:void(0)">Duderstadt</a></li>
+                                                            <li><a href="javascript:void(0)">Frankfurt</a></li>
+                                                            <li><a href="javascript:void(0)">Hamburg</a></li>
+                                                            <li><a href="javascript:void(0)">Munich</a></li>
+                                                            <li><a href="javascript:void(0)">Rottach-Egern</a></li>
+                                                            <li><a href="javascript:void(0)">Saarlouis</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseTwoOneTwo">Austria</a>
+                                                    <div id="collapseTwoOneTwo" class="panel-collapse collapse">
+                                                        <ul class="lastlevel">
+                                                            <li><a href="javascript:void(0)">Berlin</a></li>
+                                                            <li><a href="javascript:void(0)">Binz Rugen Island</a></li>
+                                                            <li><a href="javascript:void(0)">Bremen</a></li>
+                                                            <li><a href="javascript:void(0)">Cologne</a></li>
+                                                            <li><a href="javascript:void(0)">Duderstadt</a></li>
+                                                            <li><a href="javascript:void(0)">Frankfurt</a></li>
+                                                            <li><a href="javascript:void(0)">Hamburg</a></li>
+                                                            <li><a href="javascript:void(0)">Munich</a></li>
+                                                            <li><a href="javascript:void(0)">Rottach-Egern</a></li>
+                                                            <li><a href="javascript:void(0)">Saarlouis</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        
+  </div>
+</div>
+
+<!-- Select Your Experience Popup -->
+<div class="yourexperiencepopup fullWidthPopup">
+  <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+  <div class="experiencpopupinner text-center">
+        <div class="experiencepopupheader">
+            <a href="index.html"><img src="images/design-location-logo.png" alt="Emporium Voyage"/></a>
+            <h2>Select Your Experience</h2>
+        </div>
+        <ul class="experiencepopgallery">
+            <li>
+                <div class="gallerybox">
+                    <img src="images/beach-hotel.jpg" alt="Beach Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Beach Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/green-luxury-hotels.jpg" alt="Green Luxury Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Green Luxury Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/city-escapses-hotels.jpg" alt="City Escapes Luxury Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">City Escapes Luxury Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/advanture-hotels.jpg" alt="Unusual Adventure Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Unusual Adventure Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/family-friendly-hotels.jpg" alt="Family Friendly Luxury Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Family Friendly Luxury Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/culaniry-hotels.jpg" alt="Culinary Delights Luxury Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Culinary Delights Luxury Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/yoga-hotels.jpg" alt="Discover Yoga Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Discover Yoga Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/ski-hotels.jpg" alt="Mountain-Ski  Resorts"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Mountain-Ski  Resorts</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/spa-wellness-hotels.jpg" alt="Spa and Wellness Hotels"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Spa and Wellness Hotels</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="gallerybox">
+                    <img src="images/infinity-pool-hotels.jpg" alt="Discover Luxury Hotels with Infinity Pools"/>
+                    <div class="hovercontent"><a href="javascript:void(0)">Discover Luxury Hotels with Infinity Pools</a></div>
+                </div>
+            </li>
+        </ul>
+  </div>
+</div>
+
+<!-- Show More Popup -->
+<div class="showMorePopup fullWidthPopup">
+  <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-4 col-md-6">
+              
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12 noPadding">
+            <div class="showMoreContent">
+              <h1>TERRACE SUITE</h1>
+              <ul>
+                <li>• 145sqm (1560sqft) </li>
+                <li>• Two King Beds </li>
+                <li>• Roof Top View </li>
+                <li>• Top Floor with terrace </li>
+                <li>• Open plan lounge, dining area and kitchen </li>
+                <li>• Individual Design </li>
+                <li>• Complimentary Wifi </li>
+                <li>• Air Conditioning </li>
+                <li>• LCD TV and DVD </li>
+                <li>• Writing desk </li>
+                <li>• Shower and Bathtub </li>
+                <li>• Rik Rak by Kit Kemp Bathroom Amenities </li>
+                <li>• Bluetooth Bose Units </li>
+                <li>• Sleeps 5 with extra bed</li>
+              </ul>
+              <p>A spectacular two bedroom fifth floor suite at 145sqm or 1560sqf. The vast living/dining room has high ceilings with full floor-to-ceiling windows and a terrace with views of the courtyard and London skyline. The spacious living room has a powder room, writing desk and a sleek designed Boffi kitchen. There are two spacious bedrooms each with a king beds and the en-suite bathrooms have a walk-in shower, large central bath and flat screen TV. Each of the bedrooms have a king bed with the en-suite bathroom that is beautifully designed with 2 basins, a bath tub and a separate shower with exclusive Rik Rak bath products designed by Kit Kemp. One rollaway allowed to sleep 5.</p>
+              <div class="shoMoreButtonSection">
+                <h2>€4141</h2>
+                <a href="javascript:void(0);" class="button">BOOK Now</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- term and condition form -->
+<div class="termAndConditionPopUp fullWidthPopup">
+  <a href="javascript:void(0);" class="loginPopupCloseButton">×</a>
+  <div class="searchDateInnerContent text-center">
+    <div class="container-fluid">
+     <div class="row">
+          <div class="col-xs-12 text-center">
+              <div class="gallyPopupHeader">
+                  <a href="index.html"><img src="images/design-location-logo.png" alt="Emporium Voyage" class="img-responsive logo"></a>
+              </div>
+          </div>
+          <div class="col-xs-12">
+              <p>From the posh, sun-soaked beaches along the Indian Ocean to the epoch heights of the Himalayas, emporium-voyage is your ideal, vogue vacation planner! With over 300 posh properties and elite spas huddled in its cocoon, emporium-voyage ensure the ultimate luxury experience. Our expertise lies in our utmost diligence to provide our beau monde customers with an exotic experience they will relish forever.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-8">
+            <form>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-md-3 col-form-label">Department *</label>
+                    <div class="col-sm-8 col-md-9">
+                          <select class="form-control">
+                            <option value="Info">Info</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Reservations/Cancelations">Reservations/Cancelations</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Accounting">Accounting </option>
+                            <option value="Management">Management  </option>
+                          </select>
+                    </div>
+                </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">First Name *</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Lastname *</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Company</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Street</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Postal Code *</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">City *</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Country</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Phone</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Fax</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">E-Mail *</label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="email" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label">Message</label>
+                <div class="col-sm-8 col-md-9">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-md-3 col-form-label"></label>
+                <div class="col-sm-8 col-md-9">
+                    <button type="button" class="btn btn-cstmBtn">Send</button>
+                </div>
+            </div>
+            </form>
+          </div>
+
+          <div class="col-sm-4">
+              <div class="tremPopupContactInfo">
+                  <p>emporium-voyage</p>
+                  <p>Central reservations :</p>
+                  <p>+1 934 451 1317</p>
+                  <br/>
+                  <p>Email :</p>
+                  <a href="mailto:sales@emporium-voyage.com">sales@emporium-voyage.com</a>
+                  <a href="mailto:marketing@emporium-voyage.com">marketing@emporium-voyage.com</a>
+                  <a href="mailto:reservations@emporium-voyage.com">reservations@emporium-voyage.com</a>
+                  <a href="mailto:legal@emporium-voyage.com">legal@emporium-voyage.com</a>
+                  <a href="mailto:accounting@emporium-voyage.com">accounting@emporium-voyage.com</a>
+                  <a href="mailto:management@emporium-voyage.com">management@emporium-voyage.com</a>
+                  <a href="mailto:info@emporium-voyage.com">info@emporium-voyage.com</a>
+                  <ul class="list-inline vegasSocialUl" style="margin-left:0px;">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="whiteoverlay"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+            <!-- Date Picker js -->
+    <script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/single-date.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.674, lng: -73.945},
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Dl3kUzsi3-OIld1S1AOpozuH8sbNHpM&callback=initMap" async defer></script>
+    <style>#map{height:500px}</style>
+
+</body>
+</html>

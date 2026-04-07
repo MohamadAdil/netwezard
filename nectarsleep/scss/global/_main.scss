@@ -1,0 +1,2089 @@
+//promo
+.promo {
+  @include gradientBackground();
+  @include innerShadow();
+  font-size: $smallFontSize;
+  
+
+  .col-xs-12 {
+    @include flexFlow(row);
+    @include flexAlignItems(center, center);
+    @include flexJustifyContent(space-between, justify);
+    padding:20px 0;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      padding: 15px 10px;
+      @include flexFlow(column);
+    }
+  }
+
+
+
+  .time {
+    font-size: 48px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      font-size: 30px;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      font-size: 18px;
+      margin: 10px 0px;
+    }
+  }
+
+  .btn_close {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      align-self: flex-end;
+      top: -95%;
+      right: 5px;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-lg-max) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+//home page
+.hp_main_banner {
+  @include backgroundImgBanner();
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/images/new_bedroom_2_cropped.jpg) no-repeat center center ;
+  position: relative;
+
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-lg-max) {
+ /* background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/images/new_bedroom_2_cropped.jpg) no-repeat  ;
+  
+    background-size: cover;*/
+  }
+}
+
+.forever_warranty {
+  img {
+    max-width: 225px;
+  }
+}
+
+.hp_bottom_cta {
+  @include backgroundImgBanner();
+  background: url(../assets/images/nectar_img3.jpg) no-repeat center center;
+}
+
+
+
+.hp_review_banner {
+  @include innerShadow();
+  background: url(../assets/images/new_bedroom_1_cropped.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+49,ffffff+50&0+49,0.95+50 */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 49.99%, rgba(255,255,255,0.95) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 49.99%,rgba(255,255,255,0.95) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 49.99%,rgba(255,255,255,0.95) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f2ffffff',GradientType=1 ); /* IE6-9 */
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+      background:rgba(255,255,255,0.75);
+    }
+  }
+
+  .col-sm-6 {
+    padding: 90px 30px;
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      padding: 60px 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .secondary_text3 {
+      font-style: italic;
+    }
+
+    .buyer {
+      margin-top: 30px;
+      @include flexAlignItems(center, center);
+      .buyer_name {
+        line-height: 18px;
+        font-weight: $normal;
+      }
+    }
+  }
+}
+
+.press {
+  .section_type1 {
+    padding-bottom: 30px;
+  }
+
+  .col-sm-10 {
+    text-align: center;
+  }
+
+  .tabs {
+    border-top: 1px solid $borderColor;
+    height: 90px;
+
+    .col-xs-12 {
+      @include flexDisplay();
+      @include flexJustifyContent(space-around, distribute);
+
+      .tab {
+        height: 90px;
+        @include flexDisplay();
+        @include flexAlignItems(center, center);
+
+        &.current {
+          position: relative;
+          &:after,
+          &:before {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+          }
+
+          &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: $colorWhite;
+            border-width: 15px;
+            margin-left: -15px;
+          }
+
+          &:before {
+            border-color: rgba(221, 221, 221, 0);
+            border-bottom-color: $borderColor;
+            border-width: 16px;
+            margin-left: -16px;
+          }
+        }
+      }
+
+      .item1 {
+        background: url(../assets/images/cberk.png) no-repeat;
+        background-position: center 0px;
+        width: 99px;
+        height: 23px;
+
+        &:hover, &.current {
+          background: url(../assets/images/cberk.png) no-repeat;
+          background-position: center -33px;
+          width: 99px;
+          height: 23px;
+          cursor: pointer;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          background-size: 80%;
+          &:hover, &.current  {
+            background-size: 80%;
+            background-position: center -27px;
+          }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+          width: 49px;
+          height: 11px;
+          &:hover, &.current  {
+            width: 49px;
+            height: 11px;
+            background-position: center -13px;
+          }
+        }
+      }
+
+      .item2 {
+        background: url(../assets/images/vogue.png) no-repeat;
+        background-position: center 0px;
+        width: 112px;
+        height: 34px;
+
+        &:hover, &.current {
+          background: url(../assets/images/vogue.png) no-repeat;
+          background-position: center -44px;
+          width: 112px;
+          height: 34px;
+          cursor: pointer;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          background-size: 80%;
+          &:hover, &.current {
+            background-size: 80%;
+            background-position: center -35px;
+          }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+          width: 56px;
+          height: 17px;
+          &:hover, &.current  {
+            width: 56px;
+            height: 17px;
+            background-position: center -18px;
+          }
+        }
+      }
+
+      .item3 {
+        background: url(../assets/images/home_choice.png) no-repeat;
+        background-position: center 0px;
+        width: 197px;
+        height: 23px;
+
+        &:hover, &.current  {
+          background: url(../assets/images/home_choice.png) no-repeat;
+          background-position: center -33px;
+          width: 197px;
+          height: 23px;
+          cursor: pointer;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          background-size: 80%;
+          &:hover, &.current  {
+            background-size: 80%;
+            background-position: center -27px;
+          }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+          width: 98px;
+          height: 11px;
+          &:hover, &.current  {
+            width: 98px;
+            height: 11px;
+            background-position: center -13px;
+          }
+        }
+      }
+
+      .item4 {
+        background: url(../assets/images/wsj.png) no-repeat;
+        background-position: center 0px;
+        width: 71px;
+        height: 41px;
+        &:hover, &.current  {
+          background: url(../assets/images/wsj.png) no-repeat;
+          background-position: center -51px;
+          width: 71px;
+          height: 41px;
+          cursor: pointer;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          background-size: 80%;
+          &:hover, &.current  {
+            background-size: 80%;
+            background-position: center -41px;
+          }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+          width: 35px;
+          height: 20px;
+          &:hover, &.current {
+            width: 35px;
+            height: 20px;
+            background-position: center -20px;
+          }
+        }
+      }
+
+      .item5 {
+        background: url(../assets/images/consumer_reports.png) no-repeat;
+        background-position: center 0px;
+        width: 201px;
+        height: 30px;
+
+        &:hover, &.current {
+          background: url(../assets/images/consumer_reports.png) no-repeat;
+          background-position: center -40px;
+          width: 201px;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          background-size: 80%;
+          &:hover, &.current {
+            background-size: 80%;
+            background-position: center -32px;
+          }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+          width: 100px;
+          height: 15px;
+          &:hover, &.current  {
+            width: 100px;
+            height: 15px;
+            background-position: center -16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hp_bottom_logos {
+  .col-xs-12 {
+    h5 {
+      text-align: center;
+    }
+
+    @include flexDisplay();
+    @include flexJustifyContent(space-around, distribute);
+
+    div {
+      text-align: center;
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+      @include flexFlow(column);
+      div:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.img_txt_container .row,
+.img_txt_container .img_container {
+  
+  @include flexAlignItems(center, center);
+  @include flexJustifyContent(center, center);
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @include flexFlow(column);
+    text-align: center;
+
+    img {
+      //margin: 30px;
+    }
+  }
+}
+
+//mattress page
+.mp_product_area {
+  background: $colorLightGrey;
+  position: relative;
+  padding: 60px 0px 60px 0px;
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+    padding: 120px 0px 60px 0px;
+  }
+
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+
+  .chat {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 200;
+  }
+  .boxsize {
+    border:1px solid $borderColor;
+    background: $colorWhite;
+	padding:20px;
+	.pro_fshiping{background: url(../assets/images/icon-convenient-delivery.png) no-repeat left 2px; padding-left:36px; background-size:auto 80%;font-size:$font_size_13;}
+	.pro_htrial{background: url(../assets/images/stars-m.png) no-repeat 8px 0px; padding-left:36px; background-size:auto 100%;font-size:$font_size_13;}
+	.pro_fwarnty{background: url(../assets/images/warranty-bg-m.png) no-repeat 12px 0px; padding-left:36px; background-size:auto 100%;font-size:$font_size_13;}
+  }
+
+  .product_images {
+   	margin-top:60px;
+	.main_img {
+	 height:300px;
+      img {
+        width: 100%;
+		 max-height: 300px;
+      }
+    }
+  
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      width: 95%;
+      margin: 0px auto 30px auto;
+      position: relative;
+	  .main_img{height:200px;
+	  img {
+        max-height: 200px;
+      }
+	  }
+    }
+
+    
+
+    .thumbnails {
+      @include flexDisplay();
+      @include flexAlignItems(center, center);
+      @include flexJustifyContent(space-around, distribute);
+      img {
+        width: 20%;
+        opacity: 0.6;
+        cursor: pointer;
+        &.current {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin: 0;
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+      text-align:center;
+    }
+  }
+
+  .secondary_text3 {
+    margin: 0;
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+      text-align:center;
+    }
+  }
+
+  .rating {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+      text-align:center;
+    }
+  }
+
+  .product_choice {
+    width: 100%;
+    font-size: 18px;
+	border:1px solid $borderColor;
+	border-radius:3px;
+	padding:0;
+	text-transform:uppercase;
+		
+    select{
+	border:0;
+	font-weight:bold;	
+	color:$colorBlue;
+	}
+    td {
+      height: 45px;
+      width: 33.33%;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid $borderColor;
+      cursor: pointer;
+
+      &.current,
+      &:hover {
+        color: $colorGreen;
+        font-weight: $normal;
+      }
+    }
+  }
+
+  .comment {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0px;
+	text-transform: uppercase;
+    color: $colorDarkGrey;
+
+    i {
+      color: $colorBlue;
+      @include transition(color, .2s, linear);
+
+      &:hover {
+        color: $colorBlueDarken;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .payment_options {
+    margin:20px 0 0;
+	border-top:1px solid $borderColor;
+    list-style: none;
+    @include flexDisplay();
+    @include flexAlignItems(center, center);
+    @include flexJustifyContent(space-between, justify);
+
+    .btn_main {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      margin-top: 15px;
+    }
+
+    .btn_secondary {
+      margin-top: 15px;
+    }
+
+    li {
+      font-size: $smallFontSize;
+      line-height: $smallLineHeight;
+	  @media (min-width: $screen-xs-min) and (max-width: $screen-lg-min) {
+         font-size: $middleFontSize;
+      }
+
+      &:nth-child(2) {
+        font-size: 14px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -35px;
+          height: 30px;
+          left: 50%;
+          border-left: 1px solid $borderColor;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -38px;
+          height: 30px;
+          left: 50%;
+          border-left: 1px solid $borderColor;
+        }
+      }
+
+      .price {
+        font-size: 30px;
+        display: inline-block;
+        margin-top: 10px;
+
+        i {
+          font-size: 14px;
+          color: $colorBlue;
+          @include transition(color, .2s, linear);
+
+          &:hover {
+            color: $colorBlueDarken;
+            cursor: pointer;
+          }
+        }
+      }
+
+      text-align:center;
+      
+      .payment_type {
+          display: inline-block;
+          padding-top: 10px;
+      } 
+    }
+  }
+}
+
+.measurments {
+  width: 100%;
+
+  td {
+    padding:15px;
+    width: 33.33%;
+    line-height:22px;
+  }
+}
+
+.mp_bed_types {
+  .col-xs-12 {
+    h4 {
+      text-align: center;
+      margin: 15px 0px 0px 0px;
+    }
+
+    h3 {
+      margin: 0px 0px 40px 0px;
+      text-align:center;
+    }
+	h5 {
+      margin: 40px 0px 0px;
+      
+    }
+	div {
+      text-align: center;
+	  img{width:100%;}
+    }
+    @include flexDisplay();
+    @include flexJustifyContent(space-around, distribute);
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+      @include flexFlow(column);
+
+      .bed_type {
+        width: 100%;
+        margin: 0 auto;
+      }
+	  h5 {
+      margin: 5px 0px 40px;      
+    }
+	div {
+       img{max-width:100%;width:auto;}
+    }
+    }
+
+   
+  }
+}
+
+.mp_how_its_made {
+  @include backgroundImgBanner();
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../assets/images/nectar_img4.jpg) no-repeat center center;
+
+  .midd_dot{
+    display: inline-block;
+    margin: 0px 10px;
+  }
+}
+
+.mattress_details {
+  padding: 0;
+  
+  .container {
+    margin: -36px auto 0 auto;
+
+   
+  }
+}
+
+.mp_mattress_details {
+  text-align: center;
+  .layers_img {
+    margin-top: 50px;
+    @include flexDisplay();
+    @include flexJustifyContent(space-between, justify);
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+      @include flexFlow(column);
+    }
+
+    .img_container {
+      margin: 0px 15px;
+      position: relative;
+      flex: 0 0 50%;
+
+      .layer_num {
+        @include borderRadius(50px);
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 28px;
+        font-weight: $bold;
+        color: $colorWhite;
+        background: $darkBule;
+        border: 4px solid rgba(220, 237, 242, 0.8);
+        position: absolute;
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          display: none;
+        }
+
+        &.num1 {
+          top: 20px;
+          left: 100px;
+        }
+
+        &.num2 {
+          top: 115px;
+          right: 80px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 105px;
+          }
+        }
+
+        &.num3 {
+          top: 165px;
+          left: 210px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 160px;
+          }
+        }
+
+        &.num4 {
+          top: 255px;
+          right: 160px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            right: 80px;
+          }
+        }
+
+        &.num5 {
+          top: 290px;
+          left: 200px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 265px;
+          }
+        }
+
+        &.num6 {
+          top: 380px;
+          right: 200px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 265px;
+          }
+        }
+      }
+
+      .num_line {
+        height: 1px;
+        background: $colorBlue;
+        position: absolute;
+		opacity:0.3;
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          display: none;
+        }
+
+        &.line1 {
+            top: 35px;
+            left: 0px;
+            width: 100px;
+        }
+
+        &.line2 {
+          top: 130px;
+          right: 0px;
+          width: 80px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 120px;
+          }
+        }
+
+        &.line3 {
+          top: 180px;
+          left: 0px;
+          width: 210px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 175px;
+          }
+        }
+
+        &.line4 {
+          top: 272px;
+          right: 0px;
+          width: 160px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            width: 80px;
+          }
+        }
+
+        &.line5 {
+          top: 305px;
+          left: 0px;
+          width: 200px;
+
+          @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+            top: 280px;
+          }
+        }
+      }
+
+      .mattress_layers_labeled {
+        display: none;
+      }
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+        .mattress_layers_unlabeled {
+          display: none;
+        }
+
+        .mattress_layers_labeled {
+          display: block;
+          max-width: 85%;
+          margin: 0 auto;
+        }
+      }
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        .mattress_layers_labeled {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .descriptions {
+      @include flexDisplay();
+      @include flexJustifyContent(space-between, justify);
+      @include flexFlow(column);
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+        display: none;
+      }
+
+      &:first-child {
+        padding-bottom: 60px;
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+          padding-bottom: 30px;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 80px;
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+          padding-top: 30px;
+        }
+      }
+
+      .layer_desc {
+        text-align: left;
+        font-size: 18px;
+        line-height: 24px;
+
+        h5 {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 0px;
+        }
+      }      
+
+      .description_4 {
+        padding-bottom: 73px;
+      }
+
+      &.desc_mobile {
+        display: none;
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-md-max) {
+          display: block;
+        }
+
+        .layer_num {
+          @include borderRadius(50px);
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          font-size: 12px;
+          line-height: 28px;
+          font-weight: $bold;
+          color: $colorWhite;
+          background: $darkBule;
+          border: 4px solid rgba(220, 237, 242, 0.8);
+          text-align: center;
+          margin: 0 10px 15px 0;
+        }
+
+        .layer_desc {
+          margin-bottom:30px;
+        }
+      }
+    }
+  }
+}
+
+.certipur_description {
+  margin-top: 40px;
+
+  img {
+    width: 85px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .certipur_text {  
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    text-align: left;
+
+    h5 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+    text-align: left;
+    margin-top: 10px;
+
+    img {
+      width: 15%;
+    }
+
+    .certipur_text {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    img {
+      width: 30%;
+    }
+
+    .certipur_text {
+      width: 100%;
+      margin: 20px 0 0 0;
+      text-align: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.sleep_cool {
+  img {
+    width: 70%; 
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      width: 70%;
+    }
+  }
+}
+
+.firmness {
+  img {
+    width: 90%;margin-bottom:20px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+  }
+}
+
+.convenient_delivery {
+  width: 80%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    width: 70%;
+  }
+}
+
+.video_btn {
+  cursor:pointer;
+
+  .video_link {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+  }
+}
+
+.mp_rest_easy {
+  text-align: center;
+
+  .img_container {
+    @include flexDisplay();
+    @include flexAlignItems(center, center);
+    @include flexJustifyContent(space-between, justify);
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+      @include flexFlow(column);
+    }
+
+    img {
+      width: 45%;
+      margin-top: 30px;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        width: 80%;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+        width: 49%;
+      }
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        &:not(:last-child){margin-bottom:30px;}
+      }
+    }
+  }
+}
+
+.mp_bottom_cta {
+  @include backgroundImgBanner();
+  background: url(../assets/images/nectar_img5.jpg) no-repeat center center;
+}
+
+.mp_reviews {
+  padding-top: 60px;
+  .w_rbtn{
+     text-align:right;  
+	 @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        text-align:center;
+      }
+   }
+   
+  .item {
+    &:not(:last-child) {
+      border-bottom: 1px solid $borderColor;
+      padding-bottom: 30px;
+    }
+
+    &:not(:first-child) {
+      padding-top: 30px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: $normal;
+	  color:$colorBlue;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+        font-size: 14px;
+        margin:15px 0px 5px 0px;
+      }
+    }
+
+    p {
+      @extend .secondary_text3;
+    }
+
+    .date {
+      padding-left: 80px;
+      font-size: $smallFontSize;
+      line-height: $smallLineHeight;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+        padding-left:8px;
+        font-size:14px;
+        margin-bottom:5px;
+      }
+    }
+
+    .details {
+      font-size: $smallFontSize;
+      line-height: $smallLineHeight;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+        font-size:14px;
+        margin-bottom:5px;
+      }
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+	
+	
+  }
+  .text-center {
+      margin: 50px 0;
+    }
+}
+
+//home trial page
+.home_trial_main_banner {
+  @include backgroundImgBanner();
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../assets/images/nectar_img10.jpg) no-repeat center center;
+  position: relative;
+
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+}
+
+.badge_365_nights,
+.badge_forever_warranty {
+  max-width: 225px;
+}
+
+
+.setup_nectar {
+  .col-xs-12 {
+    h3 {
+      margin: 0px 0px 30px 0px;
+      text-align:center;
+    }
+
+    h5 {
+      text-align: center;
+      margin: 15px 0px;
+      font-weight: $bold;
+      letter-spacing: 0.75px;
+    }
+
+    p {
+      margin: 0 0 30px 0;
+      font-size: $smallFontSize;
+      color: $colorGrey;
+      line-height: 24px;
+    }
+
+    @include flexDisplay();
+    @include flexJustifyContent(space-around, distribute);
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+      @include flexFlow(column);
+      h5 {
+        margin: 10px 0 5px 0;
+      }
+
+      img {
+        width: 35%;
+      }
+    }
+
+    div {
+      text-align: center;
+    }
+
+    .setup_step1, .setup_step2,
+    .setup_step3, .setup_step4 {           
+      width: 50%;
+    }
+
+    .setup_step2 {
+      margin: 28px 0 0 0;
+    }
+
+    .setup_step3 {
+      margin: 12px 0 0 0;
+    } 
+
+    .setup_step4 {
+      margin: 19px 0 0 0;
+    }
+  }
+}
+
+.home_trial_bottom_cta {
+  @include backgroundImgBanner();
+  background: url(../assets/images/nectar_img8.jpg) no-repeat center center;
+  
+  h1 {
+    margin: 0 0 20px 0;
+  }
+}
+
+//our story page
+.our_story_main_banner {
+  @include backgroundImgBanner();
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../assets/images/nectar_img9.jpg) no-repeat center center;
+  position: relative;
+  
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+}
+
+.who_are_we {
+  .learn_more {
+    &:hover {
+      cursor: pointer;
+      color: $colorBlueDarken;
+    }
+  }
+
+  .who_we_are_expanded {
+    display: none;
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+.certipur_foam {
+  img {
+    width: 50%;
+  }
+}
+
+.half_img_banner {
+  &.industry_veterans img {
+    width:100%;
+  }  
+
+  &.employee_owned img {
+   width:100%;
+  }
+ 
+
+  background-size: cover;
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.text_left {
+    &:before {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+51&0.95+50,0+51 */
+      background: -moz-linear-gradient(left,  rgba(255,255,255,0.95) 50%, rgba(255,255,255,0) 51%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 51%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+          background:rgba(255,255,255,0.75);
+      }
+    }
+  }
+
+  &.text_right {  
+    &:before {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+49,ffffff+50&0+49,0.95+50 */
+      background: -moz-linear-gradient(left,  rgba(255,255,255,0) 49.99%, rgba(255,255,255,0.95) 50%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 49.99%,rgba(255,255,255,0.95) 50%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  rgba(255,255,255,0) 49.99%,rgba(255,255,255,0.95) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f2ffffff',GradientType=1 ); /* IE6-9 */
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        background:rgba(255,255,255,0.75);
+      }
+    }
+  }
+}
+
+
+
+.business_model {
+  img {
+    margin-top: 30px;
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+      width: 100%;
+    }
+  }
+}
+
+.we_stand {
+  img {
+    margin: 20px;
+    max-width: 180px;
+  }
+  img:nth-child(2) {
+    position: relative;
+    top: 9px;
+ }
+}
+
+//checkout
+.checkout_form,
+.checkout_summary {
+  margin-top:90px;
+  margin-bottom:90px;
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    margin-top:60px;
+    margin-bottom:0px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    margin-top:30px;
+    margin-bottom:30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.checkout_form {
+  font-size: $smallFontSize;
+  line-height: $smallLineHeight;
+  
+  .item_title {
+    margin-top: 30px;
+    font-weight: $bold;
+  }
+
+  .login_comment {
+    font-size: 14px;
+    line-height: 18px;
+
+    div:last-child {
+      text-align: right;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        text-align: left;
+      }
+    }
+  }
+
+  .input_container {
+    @include flexDisplay();
+    @include flexFlow(column);
+    padding: 0px;
+    position: relative;
+    font-size: 14px;
+
+    input {
+      @include flexDisplay();
+      text-transform: capitalize;
+      flex: 1 1 auto;
+      order: 2;
+      padding-left: 2px;
+      margin-bottom: 0px;
+    }
+
+    label {
+      opacity: .75;
+      order: 1;
+      padding-left: 2px;
+      pointer-events: none;
+      text-transform: uppercase;
+      transform-origin: left top;
+      transform: scale(1) translate3d(0, 33px, 0);
+      @include transition(all, .2s, ease);
+
+      &.filled_example {
+        opacity: 1;
+        transform: scale(.8) translate3d(0, 15px, 0);
+        font-weight: $bold;
+      }
+    }
+  }
+
+  .validation_error {
+    color: $colorRed;
+    font-size: 12px;
+    padding-left: 2px;
+  }
+
+  .comment {
+    font-size: 14px;
+    padding-left: 2px;
+  }
+
+  .paypal_btn {
+    .btn_secondary {
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: 14px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.checkout_summary {
+  background-color: $colorLightGrey;
+  background-position: center bottom 30px;
+  padding: 30px 30px 171px 30px;
+
+  .add_item {
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: $normal;
+
+    i {
+      color: $colorBlue;
+      @include transition(color, .2s, linear);
+
+      &:hover {
+        cursor: pointer;
+        color: $colorBlueDarken;
+      }
+    }
+  }
+  .cart_item {
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    @include flexDisplay();
+
+    .product_image {
+      margin-right: 15px;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        width: 80px;
+      }
+    }
+
+    .product_details {
+      min-height: 109px;
+      width: calc(100% - 124px);
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        min-height: 80px;
+        width: calc(100% - 95px);
+      }
+
+      @include flexDisplay();
+      @include flexFlow(column);
+      @include flexJustifyContent(space-between, justify);
+
+      .btn_close {
+        top: 9px;
+        margin-left: 5px;
+
+        &:before,
+        &:after {
+          background: $colorGrey;
+        }
+
+        &:hover {
+          &:before,
+          &:after {
+            background: $colorDarkGrey;
+          }
+        }
+      }
+
+      .top_details {
+        font-size: 14px;
+        line-height: 18px;
+        @include flexDisplay();
+        @include flexJustifyContent(space-between, justify);
+
+        .product_desc {
+          .name {
+            font-weight: $bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .bottom_details {
+        @include flexDisplay();
+        @include flexJustifyContent(space-between, justify);
+
+        .product_qty {
+          font-size: 14px;
+
+          i {
+            color: $colorBlue;
+            @include transition(color, .2s, linear);
+
+            &:hover {
+              cursor: pointer;
+              color: $colorBlueDarken;
+            }
+          }
+        }
+
+        .price {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .total {
+    @include flexDisplay();
+    @include flexJustifyContent(space-between, justify);
+    font-size: 18px;
+
+    .total_title {
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
+
+    .price {
+      text-align: right;
+      line-height: 22px;
+    }
+  }
+
+  .btn_main {
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 15px 0px;
+  }
+
+  .insert_code {
+    margin-top: 20px;
+    font-size: 16px;
+
+    .code_input {
+      display: none;
+      input[type="text"] {
+        width: 40%;
+        display: inline-block;
+      }
+
+      .btn_secondary {
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .badges {
+    img {
+      max-width: 32%;
+      margin-top: 30px;
+      padding: 15px;
+    }
+  }
+}
+
+//reviews
+.reviews_main_banner {
+  @include backgroundImgBanner();
+
+  padding: 135px 0;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/images/nectar_img3.jpg) no-repeat center center;
+  position: relative;
+  background-size: cover;
+
+  .midd_dot {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+
+  .secondary_text {
+    line-height: 1.3em;
+  }
+}
+
+.grey_bg_bottom_cta {
+  @extend .section_type2;
+  background: url(../assets/images/nectar_img10.jpg) no-repeat center center;
+  text-align: center;
+  background-size:cover;
+  color:$colorWhite;
+  h3 {
+    text-shadow: none;
+    color: $colorWhite;
+    line-height: 40px;
+  }
+}
+.lp_our_story{
+  background: url(../assets/images/nectar_img10.jpg) no-repeat center center;
+  text-align: center;
+  background-size:cover;
+}
+.lp_faq{
+  background: url(../assets/images/nectar_img9.jpg) no-repeat center center;
+  text-align: center;
+  background-size:cover;
+}
+.rating_bars {
+  padding-top:30px;
+
+  dl {
+    @include flexDisplay();
+    @include flexFlow(column);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  dt {
+    align-self: flex-start;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 100px;
+  }
+
+  .text {
+    font-size:14px;
+    margin-top:-5px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    @include flexJustifyContent(flex-end, end);
+  }
+
+  .percentage {
+    line-height: 1;
+    height: 5px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    background: $colorLightGrey;
+
+    &:after {
+      content: "";
+      display: block;
+      @include gradientBackground();
+      width: 50px;
+      height: 100%;
+      position: relative;
+    }
+  }
+
+  @for $i from 1 through 100 {
+    .percentage-#{$i} {
+      &:after {
+        $value: ($i * 1%);
+        width: $value;
+      }
+    }
+  }
+}
+
+.mp_reviews {
+  h3 {
+    .btn_secondary {
+      float: right;
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  h6 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: $colorGrey;
+    text-transform: uppercase;
+  }
+
+  .featured_review_description {
+    border-left: 1px solid $borderColor;
+    margin-top: 10px;
+    padding-left: 30px;
+	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+       border-left: 0px solid $borderColor;
+	   padding-left: 0px;
+    }
+    
+    .rating {
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    h5 {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-style: italic;
+    }
+  }
+}
+
+.reviews_filter {
+  font-size: 16px;
+  margin-bottom: 60px;
+  
+  label {
+    width: 100px;
+    display: inline-block;
+  }
+  
+  select {
+    width: calc(100% - 105px);
+  }
+}
+
+.paging {
+  margin-top: 90px;
+  
+  ul {
+    float: right;
+    list-style: none;
+    
+    li {
+      width: 30px;
+      height: 30px;
+      background: $colorLightGrey;
+      float: left;
+      margin-left: 15px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+      
+      &.current,
+      &:hover {
+        background: $colorGreen;
+        color: $colorWhite;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//general content
+.general_content {
+  p {
+    margin: 30px 0px;
+  }
+}
+
+//comparison
+.compare_main_banner {
+  @include backgroundImgBanner();
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(../assets/images/nectar_img8.jpg) no-repeat 51% 53%;
+  position: relative;
+  
+  .midd_dot {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+}
+
+.comparison {
+  h3 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  font-size:16px;
+  line-height:18px;
+  
+  .table_wrapper {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      overflow-x: auto;
+    }
+  }
+
+  table {
+    width: 100%;
+    min-width: 700px;
+    table-layout: fixed;
+    font-size: 16px;
+    td,
+    th {
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid $borderColor;
+      padding: 15px;
+      
+      .fa-times-circle {
+        color: $borderColor;
+      }
+
+      .fa-check-circle {
+        color: $colorGreen;
+      }
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+
+    th {
+      font-weight: $bold;
+      text: uppercase;
+    }
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      left: calc(20% + 3px);
+      border-left: 3px solid $colorBlue;
+      border-right: 3px solid $colorBlue;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+      -webkit-background-size: 100% 3px;
+      -moz-background-size: 100% 3px;
+      background-size: 100% 3px;
+      background-image: $colorBlue;
+      background-image: -webkit-linear-gradient(left, $colorBlue 0%, $colorBlue 100%), -webkit-linear-gradient(left, $colorBlue 0%, $colorBlue 100%);
+      background-image: -moz-linear-gradient(left, $colorBlue 0%, $colorBlue 100%), -moz-linear-gradient(left, $colorBlue 0%, $colorBlue 100%);
+      background-image: -o-linear-gradient(left, $colorBlue 0%, $colorBlue 100%), -o-linear-gradient(left, $colorBlue 0%, $colorBlue 100%);
+      background-image: linear-gradient(to right, $colorBlue 0%, $colorBlue 100%), linear-gradient(to right, $colorBlue 0%, $colorBlue 100%);
+      
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        width: 140px;
+        left: 150px;
+      }
+    }
+  }
+}
+
+//faq
+.faq_main_banner {
+  @include backgroundImgBanner();
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.75)
+    ),	
+    url(../assets/images/nectar_img8.jpg) no-repeat center center;
+  position: relative;
+  
+  .midd_dot {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  
+  .message_min {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 100;
+    max-width: 350px;
+    text-align: right;
+  }
+
+  h1 {
+    color: $colorWhite;
+  }
+  
+  .secondary_text {
+    color: $colorWhite;
+    line-height: 1.3em;
+  }
+}
+
+.vertical_tabs {
+  margin: 40px 0 5px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: colorGrey;
+  text-align: center;
+  text-transform: uppercase;
+
+  li {
+    display: inline;
+    padding: 15px 20px 15px 0px;
+    cursor: pointer;
+    @include transition(color, .2s, linear);
+
+    &:first-child {
+      padding-top: 0px;
+    }
+
+    &.current,
+    &:hover {
+      color: $colorGreen;
+    }
+  
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      display: inline-block;
+      font-size: 14px;
+      padding: 0px 10px 0px 0px;
+      margin-bottom:10px;
+      
+      &:not(:last-child) {
+        border-right: 1px solid $borderColor;
+        margin-right:5px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    margin-bottom: 60px;
+  }
+}
+
+.small_divider {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.faq { 
+  h3 {
+    margin: 0 0 25px 0;
+    padding: 10px 0;
+    font-size: $fontSize;
+    font-weight: $normal;
+    text-align: center;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  h3:not(:first-child) {
+    margin-top: 60px;
+  }
+
+  .question {
+    margin-bottom: 5px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 20px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &:before {
+      content: "\f105";
+      font-family: FontAwesome;
+      color: $colorBlue;
+      position: absolute;
+      left: 0;
+    }
+    
+    &.active {
+      font-weight: $bold;
+      &:before {
+        content: "\f107";
+        font-family: FontAwesome;
+        color: $colorBlue;
+        position: absolute;
+        left: 0;
+      }
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .answer {
+    display: none;
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 28px;
+      
+    p {
+      margin-bottom: 30px;
+    }
+    
+    &.active {
+      display: block;
+    }
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+/* Custom Drop Down */
+.wrapper-dropdown {
+position: relative; width: 100%; cursor: pointer; outline: none;font-weight: bold;color: $colorBlue;z-index:9;padding:9px 15px;font-size:$smallFontSize;
+&:after{transform: rotate(-45deg);right:8px;}
+&:after, &:before {content: "";position: absolute;width: 10px;height: 2px;background:$colorBlue;transition: background .2s linear;top:42%;}
+&:before{transform: rotate(45deg);right:15px;}
+.placeholder{display:table;
+	.m_price{display:none;}
+}
+span{float:left;}
+.m_size{color:$colorGreyv1; font-size:$font_size_12;padding-left:8px;}
+.m_price{color:$colorGreyv1;float:right;}
+	.dropdown {position: absolute;top: 100%;left: -1px;right: 0;background:$colorWhite;border-radius: inherit;border: 1px solid rgba(0,0,0,0.17); opacity: 0;
+				pointer-events: none;list-style: none;@include transition(all, .2s, linear);
+	    li{ 
+		a {padding: 2px 10px;text-decoration: none;color: #06137b;font-weight:bold;width: 100%;  display:table;}
+		&:hover a{background: #f3f8f8;}
+		 @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+		  padding: 7px 10px;
+		 }
+		}
+	}
+	&.active{
+		.dropdown { opacity: 1; pointer-events: auto;}
+	}
+}
+
+/* End Custom Drop Down */
+

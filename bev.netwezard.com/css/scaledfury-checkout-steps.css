@@ -1,0 +1,129 @@
+
+#add-swag-button {
+  margin-top: 25px;
+}
+
+.cstm_container {
+  position: relative;
+}
+
+.checkout-card {
+  display: none;
+}
+
+/*.variety-unavailable label {
+  color: transparent !important;
+}
+
+.variety-unavailable input {
+  display: none;
+}
+
+
+.variety-unavailable label {
+  border: 0 !important;
+}
+
+
+.variety-unavailable label:before,
+.variety-unavailable label:after {
+  display: none;
+}*/
+
+.checkout-message {
+  position: absolute;
+  justify-content: space-around;
+  display: none;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  margin: -24px auto 0;
+  width: 100%;
+  max-width: 550px;
+  background: #FFF8F7;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0,0,0, 0.04);
+}
+
+.checkout-message .message {
+  font-family: big_noodle_titling;
+  color: rgb(241, 91, 93);
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+
+.checkout-message .submessage {
+  font-family: brandon_reg;
+  color: rgb(29,29,29);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  width: 38px !important;
+  height: 38px !important;
+  background: #6fcfeb;
+  border-radius: 100%;
+}
+
+.checkmark  img {
+  width: 20px;
+  height: 14px;
+}
+
+.close-checkout-message {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-family: brandon_reg;
+  color: rgb(241, 91, 93);
+  text-indent:  -9999px;
+}
+.close-checkout-message:after, .close-checkout-message:before{
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #f15b5d;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.close-checkout-message:after{
+  transform: rotate(45deg);
+}
+.close-checkout-message:before{
+  transform: rotate(-45deg);
+}
+.close-checkout-message:hover {
+  cursor:pointer;
+}
+
+.checkmark div {
+  display: flex;
+}
+.variety-unavailable li:first-child {
+    display: none !important; 
+}
+.variety-unavailable li {
+    width: 50% !important;
+}
+@media(max-width: 767px){
+  .checkout-message {
+    padding: 35px 25px 50px;  
+    margin-top: -12px;  
+    max-width: 345px;
+  }
+  .checkout-message .submessage{
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}

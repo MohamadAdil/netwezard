@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+<title>The Select Menu | Responsive Navigation</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow" />
+<meta name="copyright" content="2014" />
+<meta name="description" content="An example of the the select menu responsive navigation pattern."/>
+
+<link href="../../assets/favicon.ico" rel="shortcut icon">
+<link href="../../assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+<script type="text/javascript">
+  document.documentElement.className = 'js';
+</script>
+
+<link rel="author" href="https://plus.google.com/u/0/106346024917683751854/posts">
+
+<link rel='stylesheet' href='../../assets/css/style.css'>
+
+<script src='../../assets/js/jquery-1.9.1.min.js'></script>
+<script src='../../assets/js/prism.js'></script>
+<script src='../../assets/js/app.js'></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32288724-9', 'responsivenavigation.net');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body class="example nav-collapsed">
+
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<div class="page-frame">
+<div class="page">
+
+<nav class="offcanvas" role="navigation">
+  
+    <ul>
+      
+      <li><a href="../../index.html"><i class="icon-home"></i> Home</a></li>
+      
+      <li>
+        <a class="moveleft" href="#">Examples:</a>
+        <ul>
+          <li><a href="../simple-padding/index.html"><i class="icon-code"></i> Do Nothing Approach</a></li>
+          <li><a href="../footer-list/index.html"><i class="icon-code"></i> Footer Navigation</a></li>
+          <li class='current-parent current'><a class='current-parent current' href="index.html"><i class="icon-code"></i> Select Menu</a></li>
+          <li><a href="../simple-toggle/index.html"><i class="icon-code"></i> Menu Overlay</a></li>
+          <li><a href="../multi-toggle/index.html"><i class="icon-code"></i> Multi Toggle</a></li>
+          <li><a href="../off-canvas-slide/index.html"><i class="icon-code"></i> Off Canvas</a></li>
+          <li><a href="../off-canvas-slide/always-off-canvas.html"><i class="icon-code"></i> Always Off Canvas</a></li>
+          <li><a href="../clean-grid/index.html"><i class="icon-code"></i> Grid Based</a></li>
+          <li><a href="../the-flip/index.html"><i class="icon-code"></i> Backside Menu Flip</a></li>
+        </ul>
+      </li>
+    
+    </ul>
+
+</nav>
+
+<div class="content-frame">
+
+	<header class="header">
+	  
+	  <a class="menu-toggle toggle-me" href="#"><span class="icon-reorder"></span></a>
+		
+		<div class="container">
+			
+			<div class="row">
+			  
+			  <div class="span-12">
+			  
+				  <h1 class="heavy"><span>Adventures in </span>Responsive Navigation</h1>
+	      
+			  </div>
+			  
+			</div>
+		
+		</div>
+
+	</header>
+
+<header class="example-header cf">
+	
+	<nav class="example-nav">
+        <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Things</a>
+                <ul class="sub_menu">
+                    <li><a href="#">Trinkets</a></li>
+                    <li><a href="#">Bobbles</a></li>
+                    <li><a href="#">Stuff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Collection</a>
+                <ul class="sub_menu">
+                    <li><a href="#">How Tos</a></li>
+                    <li><a href="#">Whereabouts</a></li>
+                    <li><a href="#">Therefores</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+		
+	</nav>
+
+</header>
+
+
+<div class="container margin-top">
+
+	<article class="row">
+		
+		<div class="span-5">
+      
+      <h2>The Select Menu</h2>
+      
+      <div class="aligncenter">
+      <div id="carbonads-container">
+  <div class="carbonad">
+    <div id="azcarbon"></div>
+    <script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/48258/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+  </div>
+</div>
+      </div>
+
+      <p>So this method is way easier than I thought it would be. I used a <a href="http://tinynav.viljamis.com/" rel="external">jQuery plugin called TinyNav</a>. It was crazy easy to install. You include the JS file after you load your version of jQuery, then wire it up like this:</p>
+
+<pre>
+&lt;script&gt;
+$(function () {
+  $("#nav").tinyNav();
+});
+&lt;/script&gt;
+</pre>
+
+	<p>Then you simply add a few lines to your CSS. You first hide the tinynav class, then you'll set it to display at whatever breakpoint you want:</p>
+	
+<pre>
+/* styles for desktop */
+.tinynav { display: none }
+
+/* styles for mobile */
+@media screen and (max-width: 600px) {
+	.tinynav { display: block }
+	#nav { display: none }
+}
+</pre>
+
+		</div>
+	
+    <div class="span-7">
+		
+		  <h2>The CSS:</h2>
+
+<pre>
+<code class="language-css">
+nav.example-nav { padding: 1em 0; }
+ul.dropdown { list-style: none; padding: 0px; margin: 0px; font-weight: bold; position: relative; text-align: center; }
+nav > ul.dropdown:after { content: ""; clear: both; display: block; }
+ul.dropdown li { display: inline-block; text-align: left; }
+ul.dropdown li a { display: block; padding: 5px 10px; text-decoration: none; color: #444; }
+ul.dropdown li a:hover { background-color: #ccc; }
+    
+ul.dropdown ul { display: none; position: absolute; top: 100%; background-color: #f4f4f4; margin:0; padding:0; min-width: 250px; }
+ul.dropdown li:hover > ul { display: block;  }
+    
+ul.dropdown ul li { float: none; display: block; position: relative; }
+    
+ul.dropdown ul ul { position: absolute; left: 100%; top:0; }
+    
+.tinynav { display: none; margin: 0px auto; }
+    
+@media screen and (max-width: 768px) {
+  .tinynav { display: block }
+  .dropdown { display: none }
+}
+</code>
+</pre>
+
+<style>
+nav.example-nav { padding: 1em 0; }
+ul.dropdown { list-style: none; padding: 0px; margin: 0px; font-weight: bold; position: relative; text-align: center; }
+nav > ul.dropdown:after { content: ""; clear: both; display: block; }
+ul.dropdown li { display: inline-block; text-align: left; }
+ul.dropdown li a { display: block; padding: 5px 10px; text-decoration: none; color: #444; }
+ul.dropdown li a:hover { background-color: #ccc; }
+	
+ul.dropdown ul { display: none; position: absolute; top: 100%; background-color: #f4f4f4; margin:0; padding:0; min-width: 250px; }
+ul.dropdown li:hover > ul { display: block;  }
+	
+ul.dropdown ul li { float: none; display: block; position: relative; }
+	
+ul.dropdown ul ul { position: absolute; left: 100%; top:0; }
+	
+.tinynav { display: none; margin: 0px auto; }
+	
+@media screen and (max-width: 768px) {
+  .tinynav { display: block }
+  .dropdown { display: none }
+}
+</style>
+    
+    </div>
+    
+	</article>
+
+    <div class="row margin-top">
+        <p style="text-align:center;">
+            <a class="green button" href="../../index.html">&larr; back to all examples</a>
+
+        </p>
+    </div>
+	
+</div><!-- END .container -->
+
+
+
+
+<script src='../../assets/js/tinynav.min.js'></script>
+<script>
+$(document).ready(function() {
+
+    $(".dropdown").tinyNav();
+
+});
+</script>
+	
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+
+			<div class="span-6">
+			
+				<p class="copyright">Copyright &copy; 2014 | <a href="http://erickar.be">Erick Arbe</a> | Site Design Credit: <a href="http://cmagruder.me/">Christopher Magruder</a></p>
+				
+			</div>
+			
+			<div class="span-6 socials">
+			  
+			  <p>
+			  <a href="https://plus.google.com/106346024917683751854?rel=author" title="Find me on Google Plus"><i class="icon-google-plus"></i></a>
+			  <a href="http://twitter.com/erickarbe" title="Find me on Twitter"><i class="icon-twitter2"></i></a>
+			  </p>
+			  
+			</div>
+			
+		</div><!-- END .row -->
+	</div><!-- END .container -->
+</footer>
+
+</div><!-- END .content-frame -->
+</div><!-- END .page -->
+</div><!-- END .page-frame -->
+
+</body>
+</html>

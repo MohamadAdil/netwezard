@@ -1,0 +1,167 @@
+.ad-chtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, select, input, textarea, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+	outline:none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+.clearfix{clear:both;}
+.fl{float:left !important;}
+.fr{float:right !important;}
+.mr0{ margin-right:0 !important;}
+table  {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p{
+    padding-bottom:15px;
+	line-height:22px;
+	color:#333;
+}
+
+a{
+    text-decoration: none;
+    outline: 0;
+	color:#c50000;
+}
+
+a:hover{color:#000;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit;
+}
+
+h1{font-size:36px;padding-bottom:10px; line-height:40px; font-weight:bold;}
+h2{font-size:30px;margin-bottom:10px;padding-bottom:10px; font-weight:bold; line-height:34px;}
+h3{font-size:20px;padding-bottom:10px; font-weight:bold; color:#c50000;}
+h3{font-size:14px;padding-bottom:10px; font-weight:bold; color:#000;}
+.clearfix{clear:both;}
+.introtxt{font-size:22px; line-height:26px;}
+.autowrapper{width:1200px; margin:0 auto;}
+.positonrel{position:relative;}
+.positonabs{position:absolute;}
+.mt10{margin-top:10px !important}
+.mt20{margin-top:20px !important;}
+.mt40{margin-top:40px !important;}
+.mr20{margin-right:20px !important;}
+.boldtxt{font-weight:bold;}
+.aligncenter{text-align:center;}
+.fl{float:left;}
+.fr{float:right;}
+.col300{width:300px; margin-right:15px;}
+
+ul.bullets{padding:0 20px 20px 0;}
+ul.bullets li{background:url(../images/bullet.png) left 4px no-repeat; margin-bottom:5px; padding-left:20px;}
+.green{color:#005f39;}
+.redtxt{color:#c50000;}
+.soil{background:#e4e1d1 !important}
+.blue{background:#b0c4de !important;}
+.lightgray{background:#dcdcdc !important;}
+.lightblue{background:#D8BFD8 !important;}
+.gray-dark{background:#d3d3d3 !important;}
+.orange{background:#FFA07A !important;}
+.hr{background:url(../images/hr.png) center repeat-x; padding:10px 0; margin-bottom:10px;}
+.heightauto{height:auto !important}
+body{background:#aea779 url(../images/bodybg.png) center top repeat-y; font-family: Arial, Helvetica, sans-serif; font-size:17px; color:#000; line-height:20px;}
+.topblackrow{background:#000; padding:10px 0; color:#070707; font-size:13px;}
+#header{width:1200px; margin:0 auto; overflow:hidden; padding:20px 0; background:url(../images/headerbg.png) bottom right no-repeat; height:245px;}
+a.logo{width:300px; height:240px; float:left;}
+.headerright{text-align:center; float:right; width:780px;}
+.headerright h1{color:#fff; text-shadow:#333 3px 2px 3px; -webkit-text-shadow:#333 3px 2px 3px;-o-text-shadow:#333 3px 2px 3px; margin-bottom:10px;}
+.headerright h3{color:#c50000; font-size:22px;}
+.headerright p{font-size:18px;}
+#mainnav{background:#005f39; padding:15px 0 10px;}
+#mainnav .nav{width:1160px; margin:0 auto; padding:0 20px;}
+#mainnav .nav ul li{float:left;}
+#mainnav .nav ul li a{color:#8cc63f; font-size:20px; font-weight:bold; display:block; font-family:Tahoma, Geneva, sans-serif;}
+#mainnav .nav ul li a.advertiselink{color:#e2c609}
+#mainnav .nav ul li a:hover, #mainnav .nav ul li a.active{color:#fff;}
+#mainnav .nav ul li a span{font-size:16px;color:#a7dbc6;}
+#mainnav .nav ul li a:hover span{color:#fff;}
+#mainnav .nav ul li.seprator{background:url(../images/nav-seprator.png) center top repeat-y; width:2px; height:50px; margin:0 35px;}
+.main{width:1160px; margin:0 auto; background:#fff; padding:40px 20px;}
+.secondnav{background:#c50000; padding:10px 20px; text-align:center; width:1160px; margin:0 auto;}
+.secondnav ul li{float:left;}
+.secondnav ul li a{font-size:18px; font-weight:bold; color:#f2bbbb; font-family:Tahoma, Geneva, sans-serif;}
+.secondnav ul li a:hover, .secondnav ul li a.active{color:#fff;}
+.secondnav ul li.seprator{background:url(../images/secondnav-seprator.png) center top repeat-y; width:2px; height:20px; margin:0 13px;}
+.coupleelk{margin:20px 0 20px 250px;}
+.leftsection{float:left; width:862px; margin-right:15px;}
+
+.rightsection{width:300px; padding:20px 5px; float:right; margin-right:-27px; background:#8bc53f; position:relative; text-align:center; min-height:984px;}
+.shadow-right{position:absolute; top:-6px; right:0; background:url(../images/shadow-right.png) top right no-repeat; width:7px; height:6px;}
+.rightadbox{}
+.rightadbox li{background:url(../images/seprator-h.png) center bottom repeat-x; padding-bottom:20px; margin-bottom:20px;}
+.rightadbox p{color:#fff; font-size:15px; line-height:18px;}
+.adwrapper{width:100%; overflow:hidden; margin-bottom:10px;}
+.ad-a{width:399px; height:433px; float:left; margin-right:2px; padding:20px 15px 15px; background:#fff8dc;}
+.ad-a:hover, .ad-b:hover, .ad-c:hover{background:#badfd0 !important;}
+.areatitle{color:#c50000; font-size:22px;}
+.ad-a .height-a{height:200px;}
+.ad-a .imgleft{width:120px; float:left; margin:20px 10px 0 0;}
+.ad-a .textright{font-size:18px; margin-top:20px; float:left; width:268px;}
+.button{display:block; background:url(../images/buttonbg.png) center top repeat-x; font-size:16px; margin:10px auto 0; font-weight:bold; color:#fff; text-align:center; font-family:Tahoma, Geneva, sans-serif; padding:5px 30px}
+.button:hover{background-position:left -33px;}
+.ad-b{width:265px; height:295px; float:left; margin-right:2px; background:#ededed; padding:10px 10px 0;}
+.ad-b:hover{background:#badfd0 !important;}
+.ad-b h2{color:#000; padding-bottom:10px}
+.ad-b h3{padding-bottom:5px;}
+.ad-b .areatitle{color:#c50000; font-size:16px;}
+.ad-b p{font-size:14px; line-height:20px; padding-bottom:10px;}
+.ad-b .imgright{width:90px; float:right; margin:10px 0 0 20px}
+.height-b{height:200px;}
+
+.ad-c{width:198px; height:220px; float:left; margin-right:2px; background:#d3d3d3; padding:10px 5px 0 10px;}
+.height-c{height:146px;}
+.ad-c h3{ padding-bottom:0px; line-height:14px;}
+.ad-c p{padding-bottom:5px; font-size:12px; line-height:16px;}
+.ad-c .areatitle{color:#c50000; font-size:13px; margin-bottom:5px;}
+.ad-c .imgright{width:90px; float:right; margin-left:10px; text-align:right;}
+.ad-c .button{margin-top:5px;}
+.bottombanner{margin-top:20px; display:block;}
+.sponsorbox{background:#005f39; padding:15px 20px; color:#fff; font-size:24px; margin-bottom:20px; font-family:Tahoma, Geneva, sans-serif; font-weight:bold;}
+.height-c img, .height-b img{float:right; margin:0 0 10px 10px;}
+.companyinfo{overflow:hidden; border:1px dashed #aaa; margin-bottom:30px; width:858px; background:#dcdcdc; padding:20px 20px 0;}
+.companylogo{float:left; margin-right:20px;}
+.companyinfo h2{margin-bottom:0;}
+.companydetail{float:left; color:#333}
+.companyaddress{float:left; margin-right:40px;}
+.leftimage{width:281px; height:183px; border:6px solid #aea779; margin:0 15px 10px 0; float:left;}
+
+.imagelist{margin-top:20px; overflow:hidden}
+.imagelist li{width:265px; height:173px; border:6px solid #aea779; float:left; margin-right:10px;}
+
+/*.adwrapper-block{padding:10px; background:#d3cc9d; overflow:hidden;}*/
+
+.footer{background:#056839; padding:15px 0 10px; color:#fff; font-size:12px; margin-top:20px;}
+.footerinner{width:1200px; margin:0 auto;}
+.copyright{color:#fff; font-size:12px; float:left; padding:0;}
+.sociallink{float:right; overflow:hidden}
+.sociallink li{float:left; margin-left:5px;}
+.sociallink li a{display:block; height:34px; width:34px; background:url(../images/icon-social.png) left top no-repeat;}
+.sociallink li a.facebook{background-position:left top;}
+.sociallink li a.facebook:hover{background-position:left -35px;}
+.sociallink li a.twitter{background-position:-43px top;}
+.sociallink li a.twitter:hover{background-position:-43px -35px;}

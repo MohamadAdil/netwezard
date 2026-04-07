@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Comment out the real description / title 
+	<title>FLIP BAND&#0153;: The simplest way to stick to any goal</title>
+	<meta name="Description" CONTENT="FLIP BAND&#0153; is a simple science-backed wristband that you only get to flip after reaching a daily goal. It's motivation on your wrist... and it's 100% Tech-Free, so it'll never run out of batteries like other wearables. Originally developed on Kickstarter. Price:  $19.99">
+	-->
+	<title>Live for Pre-Order: Science-Backed Hack to Stick to Any Goal</title>
+	<meta name="Description" CONTENT="FLIP BAND&#0153; leverages a wealth of learnings from behavioral psychology and operant conditioning to effectively increase your chances of sticking to your goals..." >
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style-longheader.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="image_src" href="images/preview-image-1.jpg" />
+	<link rel="image_src" href="images/preview-image-2.jpg" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+	<script src="//load.sumome.com/" data-sumo-site-id="2d7d4607edc3d139884d07e1e07f414f56113dd9df1192d896fbdd7bbf385a48" async></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-59942574-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	
+	<script>
+	 var popuInit = document.createElement('script');
+	 var popuS = document.getElementsByTagName('script')[0];
+	 popuInit.type = 'text/javascript'; popuInit.src = 'http://www.popu.ps/loader/YNFFFP.js'; popuInit.async = true;
+	 popuS.parentNode.insertBefore(popuInit, popuS);
+	</script>
+
+	<script src="//cdn.optimizely.com/js/1461150022.js"></script>
+	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+
+
+  </head>
+  <body>
+
+    <header id="headpart">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="klogo">As seen on Kickstarter!</div>
+				</div>
+				<div class="col-sm-4 logo text-center"> <img src="images/logo.png" alt="Flip Band" /> </div>
+				<div class="col-sm-4">
+					<nav id="menu-container">
+						<ul class="top-menu">
+							<!-- Comment out Top Nav for now
+							<li><a href="#">SHOP ALL</a></li>
+							<li><a href="#">ABOUT US</a></li>
+							-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section id="banner-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-lg-offset-1 hand">
+
+						<a class="fancybox-media" href="https://www.youtube.com/watch?v=OzW8_NIJX1E?autoplay=1"><img src="images/hand-2.png" /></a>
+					    
+	
+
+					 <!-- <img src="images/hand.gif" /> 
+					<img src="images/animated.gif" /> -->
+				</div>
+				
+				<div class="col-lg-5 col-md-6 col-sm-8 col-md-offset-1">
+				<div class="caption-section">
+					<h1 class="banner-heading">The simplest way to boost performance & team morale</h1>
+					<!-- Commenting out original text
+					><div class="caption">Wear a Flip Band™ as a reminder to exercise, meditate, etc...Flip it after you complete your goal! <Br /> <br />Motivation on your wrist. Science-backed. 100% Tech-Free. </div>
+					-->
+					<div class="caption">Flip Band™ is a simple 100% Tech-Free wristband that you only get to flip after reaching a daily goal. Motivation on your wrist — it's simple but it works.</div>
+					 
+					<div class="row caption-pricing">
+						<!--<div class="col-sm-2 text-center discountedtxt"><del>$26.99</del></div>
+						<div class="col-sm-3 text-center regular">$19.99 <span>(2-PACK)</span></div>-->
+						<div class="col-sm-6 caption-btn text-center">
+							<a href="https://shop.trycelery.com/page/54d9061f8906cc0700678e91" data-celery="54d9061f8906cc0700678e91" data-celery-version="v2" class="btn btn-primary bigone">pre-order now</a> <br />	<small><div class="semi">FREE Shipping to USA!</div></small>
+						</div>
+					</div>
+					
+					<div class="row caption-seen">
+						<div class="col-sm-12 "><small>As seen on:</small>  <img src="images/seen.png" /></div>
+						 
+					</div>
+					</div>
+				</div>
+				 
+			</div>
+		</div>
+		
+	</section>
+	
+	
+	
+	<section id="daily-action">
+	
+		<div class="container">
+			
+			<div class="section-padding">
+			<div class="row">
+			<div class="animatiedimg wow bounceIn animated-band" align="center"><img src="images/animated.gif" /></div>
+			<div class="col-sm-12 text-center  wow fadeInLeft">
+				
+				<h2 class="myhead-padd" ><span class="semi red">First,</span> everyone on your team chooses a simple daily goal that would improve their performance</h2>
+				 
+				 <strong><small>FOR EXAMPLE:</small></strong></div>
+				 
+				 <div class="text-center example-section">
+				 <ul class="action-example">
+					<li class="wow fadeInUp"> <img src="images/icon1.jpg" alt="EXERCISE" style="padding-bottom:10px;"/>EXERCISE</li>
+					<li class="meditate wow fadeInUp" data-wow-delay="0.2s"> <img src="images/icon2b.jpg" alt="MEDITATE" style="padding-bottom:10px;"/>INBOX ZERO</li>
+					<li class="vitamins wow fadeInUp" data-wow-delay="0.4s"> <img src="images/icon3b.jpg" alt="VITAMINS" style="padding-bottom:10px;"/>MEDITATE DAILY</li>
+					<li class="express wow fadeInUp" data-wow-delay="0.6s"> <img src="images/iconb.jpg" alt="EXPRESS GRATITUDE" style="padding-bottom:10px;"/>GENERATE 100 LEADS</li>
+				 </ul>
+				 </div>
+				 <div class="action-content text-center">
+				 <div class="row content-gap  wow fadeInLeft">
+					<div class="col-sm-6  mygap"><h2><span class="semi red">Then,</span> you all wear a Flip Band as a<br /> reminder to stick to your goal!<Br />(time to keep each other motivated)</h2></div>
+					<div class="col-sm-6 "><img src="images/step1.gif" /></div>
+				 </div>
+				 
+				 <div class="row content-gap wow fadeInRight ">
+					
+					<div class="col-sm-6  pull-right  mygap" ><h2><span class="semi red">But here’s the fun part:</span>  once you do your daily action, you each get to flip your Flip Band to the green side...  success!</h2></div>
+					<div class="col-sm-6  pull-left "><img src="images/step2.gif" /></div>
+					
+				 </div>
+				 </div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<section id="good-habit">
+	
+		<div class="container">
+			
+			<div class="habbit-padding">
+			<div class="row">
+			
+			<div class="col-sm-12 text-center">
+				<div class="animatiedimg wow bounceIn"><br/><br/><br/><br/><br/><br/></div>
+				<h1 class="wow bounceInDown habit-haed">It's simple but it just works.</h1> </div>
+			</div>
+				 
+				 <div class="my-boxs ">
+				 <div class="row ">
+					<div class="col-sm-4 text-center  wow fadeIn "  ><img src="images/icon5.png" alt="icon"/><div class="small-camption">Flip Band™ serves as a trigger for your brain, sparking good habits</div></div>
+					
+					<div class="col-sm-4 text-center wow fadeIn " data-wow-delay="0.2s"><img src="images/icon6.png" alt="icon"/> <div class="small-camption">Designed using core principles of behavioral science to boost your chances of long-term success <br /><br />
+						
+					<a class="fancybox fancybox.iframe" href="iframe.html" style="font-weight:bold;">Learn more about the science</a>
+					</div></div>
+					
+					<div class="col-sm-4 text-center wow fadeIn " data-wow-delay="0.4s"><img src="images/icon7.png" alt="icon"/><div class="small-camption">100% Tech-Free, so it’ll never distract you or run out of batteries</div></div> 
+				 </div>
+				 </div>
+					<br/><br/>
+				<!--
+				<div align="center">
+					<h1 class="wow bounceInDown habit-haed">What action would improve your life?<br/><br/></h1>
+					<img src="images/examples.gif">
+					<br/><br/><br/><br/>
+				</div>
+				-->
+				 
+			
+		</div>
+		</div>
+	</section>
+	
+	
+	<section id="story">
+	
+		<div class="container">
+			
+			<div class="story-padding">
+			<div class="row">
+			<div class="col-sm-12 text-center wow fadeIn"><div class="h2 semi red">Teams all over the world love Flip Band™...</div></div>
+				  </div>
+				 
+				 <div class="story-list ">
+				 <div class="row ">
+					
+					<div class="col-md-6  wow fadeIn post" data-wow-delay="0s" >
+
+							<div class="avatar"><img src="images/avatarj.png" alt="icon" style="height:100px; width: 100px;"/></div>
+							<div class="sotry-content"><strong>Lisa O'Farrell - Marketing Director:</strong><p>“It's simple but it just works... Our teams loves using Flip Band”</p> </div>
+
+					</div>
+					
+					<div class="col-md-6  wow fadeIn post" data-wow-delay="0.2s" >
+						 
+							<div class="avatar"><img src="images/avatarb.jpg" alt="icon" style="height:100px; width: 100px;"/></div>
+							<div class="sotry-content"><strong>Eric Wagner - Sales Manager:</strong><p>“We use Flip Band to boost how many sales calls we do every day”</p> </div>
+						 
+					</div>
+					<div class="col-md-6  wow fadeIn post" data-wow-delay="0.4s" >
+						 
+							<div class="avatar"><img src="images/avatar3b.jpg" alt="icon" style="height:100px; width: 100px;"/></div>
+							<div class="sotry-content"><strong>Brandon Williams - Customer Service Manager:</strong><p>“People on our team think Flip Band is fun and it helps us hit our KPIs.”</p></div> 
+					</div>
+					<div class="col-md-6  wow fadeIn post" data-wow-delay="0.6" >
+						 
+							<div class="avatar"><img src="images/avatar1.jpg" alt="icon" style="height:100px; width: 100px;"/></div>
+							<div class="sotry-content"><strong>Katherine Krug - CEO, BetterBack:</strong><p>“So simple you'd be a fool not to try it...”</p></div>
+						 
+					</div>
+
+
+				 
+					
+					 
+					 
+				 </div>
+				 </div>
+				 
+			
+		</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="pricing-table">
+	
+		<div class="container">
+			
+			<div class="pricing-padding">
+			<div class="row">
+			<div class="col-sm-12 text-center"><div class="pressimg"><img src="images/logos.jpg" class="wow fadeIn" /></div><h1 class="wow fadeIn">Get Flip Band™ for your team</h1> <Br /><p class="wow fadeIn" style="color:#000;">Even the smallest boost in team morale can have huge effects.<br />Current ship date: Spring 2015</p></div>
+			   </div>
+			    <ul class="table-list ">
+				 <li class="wow fadeIn" data-wow-delay="0">
+					<div class="tablecontainer">
+					<div class="whitebox">
+						<img src="images/table-image2.jpg" />
+						<div class="tablecontent">
+							<h3 class="light">Flip Band 5-PACK</h3>
+							<p><small>The starter pack <br/>Get Flip Band for your team</small></p>
+							<p class="tbl-pricing">$35.00</p>
+							<a href="https://shop.trycelery.com/page/54d9061f8906cc0700678e91" data-celery="54d9061f8906cc0700678e91" data-celery-version="v2" class="btn btn-primary">pre-order now</a>
+						</div>
+						</div>
+					</div>
+				 </li>
+				 
+				  <li class="wow fadeIn  " data-wow-delay="0.2s">
+				  <h4 class="blue-bg">MOST POPULAR</h4>
+					<div class="tablecolor">
+					<div class="whitebox">	<img src="images/table-image2.jpg" />
+						<div class="tablecontent">
+							<h3 class="light">Flip Band 20-PACK</h3>
+							<p><small>Get Flip Band for your entire team <br/>and get a hefty discount</small></p>
+							<p class="tbl-pricing"> <small><del>$249.5</del> </small>&nbsp; &nbsp; $99.99</p>
+							<a href="https://shop.trycelery.com/page/551993b573a5690700a42b8f" data-celery="551993b573a5690700a42b8f" class="btn btn-primary">pre-order now</a>
+							<p class="semi"><small>+ FREE Shipping to USA!</small></p>
+						</div>
+						</div>
+					</div>
+				 </li>
+
+				 <li class="wow   fadeIn" data-wow-delay="0.4s">
+				  <h4 class="green-bg">BEST VALUE</h4>
+					<div class="tablecontainer">
+					<div class="whitebox">	<img src="images/table-image2.jpg" />
+						<div class="tablecontent">
+							<h3 class="light">Flip Band 100-PACK</h3>
+							<p><small>Get Flip Band for people across your organization and tap in to our bulk discount pricing</small></p>
+							<p class="tbl-pricing"> <small><del>$999</del></small> &nbsp; &nbsp; $399.99</p>
+							<a href="https://shop.trycelery.com/page/551992fef975300a00bb7170" data-celery="551992fef975300a00bb7170" data-celery-version="v2" class="btn btn-primary">pre-order now</a>
+							<p class="semi"><small>+ FREE Shipping to USA!</small></p>
+						</div>
+						</div>
+					</div>
+				 </li>
+				 </ul>
+			   
+			   <div class="row">
+			<div class="col-sm-12 text-center"><h2 style="color:#5c5b5b;"><strong>Looking to place a large or custom order?</strong></h2> 
+<h3>Please contact us at: <a href="#">hello@myflipband.com</a></h3></div>
+			   </div>
+				 
+				
+				  
+			 	 
+			
+		</div>
+		</div>
+	</section>
+	<footer id="site-footer">
+		<div class="container">			
+			<div class="footer-padding">
+			<div class="row">
+			<div class="col-sm-4">
+				<h3 class="widget-title">OUR MISSION</h3>
+				<div class="widget-content">
+					<p>On a mission to help people come alive by bringing motivation and meaning to every day life. </p>
+<p>We want to live in a world where people wake up excited and go to bed feeling fulfilled.<br />—<br/>
+© 2014-2015 MyFlipBand.com <br />
+<a href="http://myflipband.com/privacy-policy.html" target="new"><strong>Privacy Policy</strong></a><p>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<h3 class="widget-title">GET IN TOUCH!</h3>
+				<div class="widget-content midcon">
+					<p> Have a question?  <a href="mailto:hello@myflipband.com" target="new">hello@myflipband.com</a> <br />—<br />
+Retail Inquiries: <a href="mailto:b2b@myflipband.com" target="new">b2b@myflipband.com</a><br />
+Press: <a href="mailto:press@myflipband.com" target="new">press@myflipband.com</a><br />
+</p>
+<ul class="social-media">
+	<li><a href="https://www.facebook.com/deptofmotivation" target="new" class="fa fa-facebook"></a></li>
+	<li><a href="https://twitter.com/DeptMotivation" target="new" class="fa fa-twitter"></a></li>
+	<li><a href="https://instagram.com/deptmotivation/" target="new" class="fa fa-instagram"></a></li>
+</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<h3 class="widget-title"> FREE GOAL-SETTING TOOLKIT</h3>
+				<div class="widget-content">
+					<form class="newsletter" action="http://deptofmotivation.us8.list-manage1.com/subscribe/post?u=d8a540ee9cc2a69e0aba53a7f&amp;id=50938d66ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+					<input type="email" value="" placeholder="Your@EmailAddress.com" name="EMAIL" id="mail" class="email-input" />
+					<input type="submit" value="Yes!" class="submitbtn" name="subscribe" id="subscribe" />
+
+					</form>
+					<p>Sign-up for our newsletter and receive a FREE copy of our Goal-setting Toolkit PDF. <p>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+	</footer>
+	
+	
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"  type="text/javascript"></script>
+	<!--<script src="js/smoothscroll.js" type="text/javascript"></script> -->
+	<script src="js/custom.js"></script>
+	
+	<script type="text/javascript">
+	adroll_adv_id = "4YDBLICKE5DRFCCGLYMANB";
+	adroll_pix_id = "V3H22HXBBFD7VI3O2OJ2R4";
+	(function () {
+	var oldonload = window.onload;
+	window.onload = function(){
+	   __adroll_loaded=true;
+	   var scr = document.createElement("script");
+	   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+	   scr.setAttribute('async', 'true');
+	   scr.type = "text/javascript";
+	   scr.src = host + "/j/roundtrip.js";
+	   ((document.getElementsByTagName('head') || [null])[0] ||
+	    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+	   if(oldonload){oldonload()}};
+	}());
+	</script>
+	
+  </body>
+</html>

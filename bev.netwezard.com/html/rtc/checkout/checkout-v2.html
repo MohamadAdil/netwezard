@@ -1,0 +1,906 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Miracle Brand - Checkout</title>
+
+<script type="text/javascript" src="https://shopmiraclebrand.co/js/cart_loader.js"></script>
+
+<meta content="api.shopmiraclebrand.co"                   name="checkout-api-endpoint">
+<meta content="14441424781356"                                   name="checkout-default-variant-id">
+<meta content="34937177702550"                                   name="checkout-default-addons">
+<meta content="US"                                     name="checkout-default-shipping-zone">
+<meta content="https://api.shopmiraclebrand.co/v1/cart/{sessionId}/miracle_redirect"   name="checkout-next-url">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0"  name="viewport">
+
+<link href="images/checkout/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="images/checkout/webclip.png" rel="apple-touch-icon">
+
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/8603d6f597.js" crossorigin="anonymous"></script>
+  <script src="https://shopmiraclebrand.co/js/cart_bundle.js?cacheBuster=1596210913"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!--  Google Tag Manager  -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-593JFLL');</script>
+  <!--  End Google Tag Manager  -->
+
+
+</head>
+<body>
+
+      <!--  Google Tag Manager (noscript)  -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-593JFLL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!--  End Google Tag Manager (noscript)  -->
+
+  <div class="top-header">
+    <div class="container">
+
+      <div class="row">
+        <div class="column">
+          <img src="../logo.svg" class="mob-logo">
+        </div>
+
+        <div class="column">
+          <img src="images/checkout/secure.svg" class="mob-secure">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="summry-toggle-mob for-mob">        
+    <div class="container" id="summry-toggle-mob">
+        <p class="summry-toggle"><svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+          <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+        </svg>
+        <span class="sm-txt closed"> Review order summary <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path></svg></span>
+        <span class="sm-txt opened" style="display:none"> Hide order summary <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M6.138.876L5.642.438l-.496.438L.504 4.972l.992 1.124L6.138 2l-.496.436 3.862 3.408.992-1.122L6.138.876z"></path></svg></span>
+        </p>
+        <p class="togle-price"><span class="checkout-total-value"></span></p>
+    </div>
+  </div>
+
+
+
+
+	<div class="es_container es_miracle_landing">
+		<div class="es_product es_left">
+			<div class="es_section" id="es_sel-color">
+				<div class="es_section_heading">
+					<h2>Step 1: Select Color</h2>
+				</div>
+				<div class="es_section_content">
+					<div class="es_snippet_row">
+						<div class="es_snippet_item es_one-third style-img es_active mobile-half-fld" data-value="stone">
+							<img src="assets/product-stone.png">
+							<label>Stone</label>
+						</div>
+						<div class="es_snippet_item es_one-third style-img mobile-half-fld" data-value="white">
+							<img src="assets/product-white.png">
+							<label>White</label>							
+            </div>
+            <!--
+						<div class="es_snippet_item es_one-third style-img" data-value="sky">
+							<img src="assets/product-skyblue.png">
+							<label>Sky Blue</label>
+            </div>
+          -->
+					</div>
+				</div>
+			</div>
+			<div class="es_section" id="es_sel-size">
+				<div class="es_section_heading">
+					<h2>Step 2: Select Size</h2>
+          <a class="es_btn-sizechart">
+            <img src="https://cdn.shopify.com/s/files/1/1647/4405/t/36/assets/size-guide-img.png?v=11745742284560163438" width="100px" class="icon-desktop-view">
+          </a>
+				</div>
+				<div class="es_section_content">
+					<div class="es_snippet_row">
+						<div class="es_snippet_item es_one-forth style-text mobile-half-fld es_active" data-value='queen'>
+							<label>Queen</label>
+						</div>
+						<div class="es_snippet_item es_one-forth style-text mobile-half-fld" data-value='twin'>
+							<label>Twin</label>							
+						</div>
+						<div class="es_snippet_item es_one-forth style-text mobile-half-fld" data-value='full'>
+							<label>Full</label>
+						</div>
+						<div class="es_snippet_item es_one-forth style-text mobile-half-fld" data-value='king'>
+							<label>King</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="es_section" id="es_sel-fabric">
+				<div class="es_section_heading">
+					<h2>Step 3: Select Fabric</h2>
+				</div>
+				<div class="es_section_content">
+					<div class="es_snippet_row">
+						<div class="es_snippet_item es_one-second es_best_seller style-detail es_active mobile-half-fld" data-value='luxe'>
+							<label>★ Extra Luxe</label>
+						</div>
+						<div class="es_snippet_item es_one-second style-detail mobile-half-fld" data-value='signature'>
+							<label>Signature</label>
+						</div>
+          </div>
+        
+
+				</div>
+      </div>
+      
+      <div class="es_variant_specific">
+        <div class="es_row es_variant_description">
+          <p class="es_appear-luxe">Luxury 500-thread count sateen weave set is designed for an ultra-luxurious, smooth, and silky feel. Made with USA-grown Supima cotton, <strong>one of the highest quality cottons in the world.</strong></p>
+          <p class="es_appear-signature" style="display: none;">Premium 350-thread-count bed sheets infused with <strong>natural silver that prevents 99.9% of bacterial growth.</strong></p>
+        </div>
+        <div class="es_row es_featured_product">
+          <div class="es_product-img">
+            <img src="assets/sheets/stone-sheets-luxe.png">
+          </div>
+          <div class="es_product-content">
+            <div class="es_row es_reviews">
+              <img src="assets/star_reviews.png">
+              <span><span class="es_product-reviews">231</span> + Trusted Customer Reviews</span>
+            </div>
+            <div class="es_row es_badges">
+              <label class="es_badge-blue es_appear-luxe">★ Extra luxe ★</label>
+              <label class="es_badge-orange">20% off</label>
+            </div>
+            <div class="es_row es_price">
+              <h3 class="es_price-main">$169</h3>
+              <label class="es_price-compare">Reg Price: $189</label>
+            </div>
+            <div class="es_row es_product-comment-quadpay">
+              <span>or 4 interest-free payments with </span>
+              <img src="assets/quadpay.png">
+            </div>
+          </div>
+          <div class="es_row product_information" style="margin-top: 5px; display: inline-block;">
+            <label><span class="es_product-title">White Extra Luxe Sheet Set</span>: 1 Fitted Sheet <strong>+ 1 FREE Flat Sheet</strong> + <strong>  2 FREE Pillowcases </strong></label>
+          </div>
+        </div>
+      </div>
+
+<a class="checkout-formss" href="#checkout-forms">
+      <div class="proceed_checkout_button">
+PROCEED TO CHECKOUT
+
+      </div>
+    </a>
+			<div class="es_section" id="es_sel-gift">
+        
+
+
+
+        <div class="countdown-mob">
+          <span style="font-size:12px;"><strong>⚠️ ORDER IN THE NEXT <span id="countdown" style="font-weight:800; color:#00237e">10:00</span> AND GET FREE SHIPPING!</strong></span>
+        </div>
+
+
+      </div>
+      
+
+    <div class="reviews-desktop">
+      <div class="uco-widget-content">
+
+        <div class="uco-widget-title">
+          <span style="background:#f7fbff;padding:0 15px">Trusted customer reviews</span>
+        </div>
+
+        <div class="uco-widget-row">
+          <div class="uco-widget-img">
+            <img src="images/review-1.png" width="64px">
+          </div>
+          <div class="uco-widget-text">
+           
+            
+          <div class="reviews-s">
+            <img src="images/review-stars.svg" width="70px">
+            <span class="review-name">Andrea M.</span>
+            <span class="review-place">Wake Forest, NC</span>
+            <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:0px">Verified Buyer</span>
+            <span class="review-content">“LOVE! Best sheets ever. So luxurious. So soft. I was skeptical but they do what they say. 1 month in and still no odors.”</span>
+          </div>
+            
+          </div>
+        </div>
+    
+
+        <div class="uco-widget-row">
+          <div class="uco-widget-img">
+            <img src="images/review-3.png" width="64px">
+          </div>
+          <div class="uco-widget-text">
+           
+            
+          <div class="reviews-s">
+            <img src="images/review-stars.svg" width="70px">
+            <span class="review-name">Isa A.</span>
+            <span class="review-place">Denver, CO</span>
+            <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:0px">Verified Buyer</span>
+            <span class="review-content">“So far, I am very happy with the Miracle sheets! It's true, they don't smell, and it's true, I don't have bed smell. I have long believed in silver for combating bacteria, and think the sheets are a perfect idea. They are cool to sleep on and feel soft and "silky". I'm very pleased I purchased the Sateen Luxe sheets.”</span>
+          </div>
+            
+          </div>
+        </div>
+    
+
+        <div class="uco-widget-row">
+          <div class="uco-widget-img">
+            <img src="images/review-4.png" width="64px">
+          </div>
+          <div class="uco-widget-text">
+           
+            
+          <div class="reviews-s">
+            <img src="images/review-stars.svg" width="70px">
+            <span class="review-name">Shari B.</span>
+            <span class="review-place">Derby, NY</span>
+            <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:0px">Verified Buyer</span>
+            <span class="review-content">“Love my new miracle sheets. They do not slip off like my old sheets did. They are comfy and help keep you cool all night.”</span>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="es_variant-btns">
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-queen-stone" data-variant-id="14516028276780"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-queen-white" data-variant-id="14516028309548"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-queen-sky" data-variant-id="14516028473388"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-twin-stone" data-variant-id="14516028506156"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-twin-white" data-variant-id="14516028538924"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-twin-sky" data-variant-id="14516028801068"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-full-stone" data-variant-id="14516028833836"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-full-white" data-variant-id="14516028866604"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-full-sky" data-variant-id="14516028932140"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-king-stone" data-variant-id="14516029095980"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-king-white" data-variant-id="14516029358124"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="luxe-king-sky" data-variant-id="14516029423660"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-queen-stone" data-variant-id="14441424781356"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-queen-white" data-variant-id="14441424814124"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-queen-sky" data-variant-id="14441424879660"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-twin-stone" data-variant-id="14441424945196"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-twin-white" data-variant-id="14441424977964"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-twin-sky" data-variant-id="14441425043500"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-full-stone" data-variant-id="14441425076268"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-full-white" data-variant-id="14441425109036"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-full-sky" data-variant-id="14441425174572"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-king-stone" data-variant-id="14441425207340"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-king-white" data-variant-id="14441425240108"></button>
+      <button class="checkout-select-variant es_hide" data-variant-name="signature-king-sky" data-variant-id="14441425305644"></button>
+    </div>
+		</div>
+		<div class="es_checkout es_right">
+
+
+      <div id="checkout-forms"></div>
+      <div class="custom-upsell">
+        <label class="custom-container">
+        <div style="font-size: 11px; text-align:left; padding-top: 3px;">
+          <input type="checkbox" style="display:inner-block" checked class="checkout-addon-toggle" data-variant-id="34937177702550">  <span class="checkmark"></span>
+
+          Yes, <strong>Add 5-Year Wear & Tear Warranty</strong> For Only $9.00
+      
+
+        </div>
+        </label>
+        </div>
+
+      <div id="toggle-mob-cart" class="isclosed">
+        <div style="width:100%;"> 
+          <h4 class="chk-head">Order Summary</h4>
+          <div class="checkout-cart-display"></div>
+
+        </div>
+      </div>
+
+      <div class="es_section_heading">
+        <h2>Step 4. Complete Order</h2>
+      </div>
+
+
+      
+      <div class="paypal-express-checkout">
+        <div class="payment-method">EXPRESS CHECKOUT</div>
+
+        <form class="checkout-paypal-form">
+          <div class="form-group" style="display: none">
+            <label for="paypal_checkout_country">Country</label>
+            <select id="paypal_checkout_country" type="text" name="paypal_checkout_country"></select>
+            <div class="field__caret"></div>
+          </div>
+          <button class="checkout-submit-paypal paypalbtn overlay">
+            <i class="fas fa-spinner" style="display:none"></i>
+		        <img src="assets/paypal-logo.svg" class="pad">
+		        <img src="assets/paypal-txt.svg">
+          </button>
+        </form>
+        </div>
+
+
+
+
+
+        <div class="cross_border">
+          <label>REGULAR CHECKOUT</label>
+        </div>    
+        
+        
+        
+      <div class="coupon-input-wrapper">
+        <input type="text" class="checkout-coupon-field input-flds" placeholder="Gift card or discount code">
+        <button class="checkout-coupon-button">APPLY</button>
+      </div>
+
+
+
+	        <!---  CREDIT CARD FORM -->
+            <form class="checkout-combo-form">
+              <div class="heading-box">
+                <h4 class="chk-head" style="float: left;">Contact Information</h4>
+                <span class="never-share" style="float: right; margin-top: 7px;">We never share your information</span>
+              </div>
+                <div class="payment-flds-box" style="border-top: none; border-bottom: none;">
+                  <div class="form-group">
+                    <div class="frm-flds">
+                      <label for="email">Email</label>
+                      <input id="email" class="input-flds" type="email" name="email" placeholder="E-Mail">
+                    </div>
+                  </div>
+                </div>
+              <div class="heading-box">
+                <h4 class="chk-head">Shipping Address</h4>
+              </div>
+                <div class="payment-flds-box" style="border-top: none; border-bottom: none;">
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fl">
+                      <label for="shipping_first_name">First Name</label>
+                      <input type="text" class="input-flds" id="shipping_first_name" name="shipping_first_name" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fr">
+                      <label for="shipping_last_name">Last Name</label>
+                      <input id="shipping_last_name" class="input-flds" type="text" name="shipping_last_name" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld fl">
+                      <label for="shipping_address_1">Address</label>
+                      <input id="shipping_address_1" class="input-flds" type="text" name="shipping_address1" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld mobile-fr fl">
+                      <label for="shipping_address_2">Apartment, suite, etc. (optional)</label>
+                      <input id="shipping_address_2" class="input-flds" type="text" name="shipping_address2" placeholder="Apartment, suite, etc. (optional)">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds half-fld fl">
+                      <label for="shipping_city">City</label>
+                      <input id="shipping_city" class="input-flds" type="text" name="shipping_city" placeholder="City">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fr">
+                      <label for="shipping_state">State</label>
+                      <select id="shipping_state" class="input-flds" name="shipping_state" data-country="US">
+                      </select>
+                      <div class="field__caret"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fl">
+                      <label for="shipping_postal_code">ZIP Code</label>
+                      <input type="text" class="input-flds" name="shipping_postal_code" placeholder="Zip Code">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds half-fld fr">
+                      <label for="shipping_country">Country</label>
+                      <select id="shipping_country" class="input-flds" type="text" name="shipping_country">
+                      </select>
+                      <div class="field__caret"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds fl">
+                      <label for="shipping_phone">Phone</label>
+                      <input id="shipping_phone" class="input-flds" type="number" name="shipping_phone" inputmode="numeric" placeholder="Phone">
+                    </div>
+                  </div>
+              </div>              
+              <div class="heading-box">
+                <h4 class="chk-head">Billing Address</h4>
+              </div>
+              <div class="payoptbox">
+                <div class="form-group">
+                  <div class="payment-cards-box fl">
+                    <label for="billing_use_shipping_true" class="paymybtn">
+                      <input type="radio" id="billing_use_shipping_true" class="form-gateway cardPayOpt" name="billing_use_shipping" value="true" checked>Same as shipping address
+                    </label>
+                  </div>
+                  <div class="payment-cards-box fr bit-margin">
+                    <label for="billing_use_shipping_false" class="paymybtn">
+                      <input type="radio" id="billing_use_shipping_false" class="form-gateway cardPayOpt" name="billing_use_shipping" value="false">Use a different billing address
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <!-- To automatically hide billing fields, we wrap them all in a container -->
+              <!-- See CSS above -->
+              <div class="checkout-billing-fields payment-flds-box" style="display: none;">
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fl">
+                    <label for="billing_first_name">First Name</label>
+                    <input type="text" id="billing_first_name" name="billing_first_name" class="input-flds" placeholder="First Name">
+                  </div>                  
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fr">
+                    <label for="billing_last_name">Last Name</label>
+                    <input id="billing_last_name" type="text" name="billing_last_name" class="input-flds" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld fl">
+                    <label for="billing_address_1">Address 1</label>
+                    <input id="billing_address_1" type="text" name="billing_address1" class="input-flds" placeholder="Address 1">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld mobile-fr fl">
+                    <label for="billing_address_2">Address 2</label>
+                    <input id="billing_address_2" type="text" name="billing_address2" class="input-flds" placeholder="Address 2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds half-fld fl">
+                    <label for="billing_city">City</label>
+                    <input id="billing_city" type="text" name="billing_city" class="input-flds" placeholder="City">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fr">
+                    <label for="billing_state">State</label>
+                    <select id="billing_state" name="billing_state" data-country="US" class="input-flds">
+                    </select>
+                    <div class="field__caret"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fl">
+                    <label for="billing_postal_code">ZIP Code</label>
+                    <input type="text" name="billing_postal_code" class="input-flds" placeholder="Zip Code">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds half-fld fr">
+                    <label for="billing_country">Country</label>
+                    <select id="billing_country" type="text" name="billing_country" class="input-flds">
+                    </select>
+                    <div class="field__caret"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds fl">
+                    <label for="billing_phone">Phone</label>
+                    <input id="billing_phone" type="text" name="billing_phone" class="input-flds" inputmode="numeric" placeholder="Phone">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="heading-box">
+                <h4 class="chk-head">Payment Method</h4>
+              </div>
+
+              
+
+              <div class="payoptbox payment_method">
+                <div class="form-group">
+                  <div class="payment-cards-box" id="payment_radio-credit">
+                    <label class="paymybtn" for="combo_mode_credit"><input type="radio" id="combo_mode_credit" name="combo_mode" value="credit" class="form-gateway cardPayOpt" checked="" class="form-gateway cardPayOpt">Credit Card
+                    <img src="assets/ccs.svg" class="etc_and_more" height="20" style="float: right;"></label>
+                  </div>
+
+                  <div class="payment-flds-box" id="payment_field-credit" style="padding: 15px;">
+                    <div class="form-group">
+                      <div class="frm-flds">
+                        <label for="cc_number">Credit Card Number</label>
+                        <input id="cc_number" class="input-flds" type="text" inputmode="numeric" name="cc_number" maxlength="19" placeholder="Credit Card Number">
+                        <a class="locker tooltip" title="All transactions are secure and encrypted."></a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="frm-flds half-fld fl mobile-half-fld mobile-fl">
+                        <label for="cc_exp_month">Exp Month</label>
+                        <select id="cc_exp_month" class="input-flds" type="text" name="cc_exp_month"></select>
+                        <div class="field__caret"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">  
+                      <div class="frm-flds half-fld fr mobile-half-fld mobile-fr">
+                        <label for="cc_exp_year">Exp Year</label>
+                        <select id="cc_exp_year" class="input-flds" type="text" name="cc_exp_year"></select>
+                        <div class="field__caret"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="frm-flds">
+                        <label for="cc_cvv">CVV</label>
+                        <input id="cc_cvv" maxlength="4" class="input-flds" type="text" inputmode="numeric" name="cc_cvv" placeholder="CVV">
+                        <a class="question tooltip" title="3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front."></a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="payment-cards-box" id="payment_radio-paypal">
+                    <label class="paymybtn" for="combo_mode_paypal">
+                      <input type="radio" id="combo_mode_paypal" name="combo_mode" value="paypal" class="form-gateway cardPayOpt">
+                      <img class="quadpay-img" src="assets/paypal.svg" style="position: absolute; margin-top: -2px;">
+                    </label>
+                  </div>
+
+                  <div class="payment-flds-box" id="payment_field-paypal" style="display: none;">
+                      <img src="assets/paypal-box.svg" style="display:inline-block; vertical-align:middle; margin:20px 0;">
+                      <p class="paypal-txt">After clicking "Place Order", you will be redirected to QuadPay to complete your purchase securely.</p>
+                  </div>
+
+                  <div class="payment-cards-box" id="payment_radio-quadpay" style="border-bottom: none;">
+                    <label class="paymybtn" for="combo_mode_quadpay"><input type="radio" id="combo_mode_quadpay" name="combo_mode" value="quadpay" class="form-gateway cardPayOpt"><img class="quadpay-img" src="assets/quadpay.svg" style="position: absolute; margin-top: -2px;"></label>
+                  </div>
+
+                  <div class="payment-flds-box" id="payment_field-quadpay" style="display: none;">
+                      <img src="assets/paypal-box.svg" style="display:inline-block; vertical-align:middle; margin:20px 0;">
+                      <p class="paypal-txt">After clicking "Place Order", you will be redirected to QuadPay to complete your purchase securely.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <input type="hidden" name="combo_mode" value="credit">
+
+
+
+
+              <button class="checkout-submit-combo frm-submit">
+                <div class="complete-purchase"><i data-v-5c54c67c="" class="fas fa-lock"></i>
+                  <i class="fas fa-spinner fa-spin es_hide"></i>
+                  <div class="checkout_text" style="display: inline-block;">COMPLETE PURCHASE</div><br><span class="try-risk" style="font-size:10px;font-weight:400">THIS LIMITED TIME SALE IS VALID THROUGH 
+                  
+                    <script type="text/javascript">
+                      var currentDate = new Date()
+                var day = currentDate.getDate()
+                var month = currentDate.getMonth() + 1
+                var year = currentDate.getFullYear()
+                document.write("" + month + "/" + day + "/" + year + "")
+                  </script>
+                  
+                </span>
+                </div>
+              </button>
+
+              <div class="extra_row">
+                
+
+                <div class="tt-promo-brand">
+
+                  <div class="trustBarContainer" style="display: flex; flex-direction: column; text-align: center; padding: 5px 0px;">
+    
+    
+    <div class="badgesContainer" style="display: block; text-align: center;">
+    <div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+      <img src="../images/seal-mcafee.svg" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+    </div>
+    <div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+      <img src="../images/seal-norton.svg" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+    </div>
+    <div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+      <img src="../images/seal-secure.svg" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    
+      
+      
+    </div>
+
+
+    
+              </div>
+            </form>
+            <!---  END CREDIT CARD FORM -->
+
+		</div>
+	</div>
+
+  <!-- Size Guide Bedding New design -->
+  <div data-section-id="size-guide-bedding" data-section-type="size-guide-modal-section">
+    <div class="size-guide-modal bedding text-center">
+      <div class="size-guide-modal-inner">
+      <a class="btn-close">
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.059 31.059" style="enable-background:new 0 0 31.059 31.059;" xml:space="preserve" width="25px" height="25px">
+      <g>
+        <g>
+          <path d="M30.171,31.059c-0.226,0-0.454-0.087-0.627-0.26L0.26,1.515c-0.347-0.346-0.347-0.908,0-1.255    s0.908-0.347,1.255,0l29.284,29.284c0.347,0.347,0.347,0.908,0,1.255C30.625,30.972,30.399,31.059,30.171,31.059z"/>
+        </g>
+        <g>
+          <path d="M0.888,31.059c-0.228,0-0.454-0.087-0.628-0.26c-0.347-0.347-0.347-0.908,0-1.255L29.544,0.26    c0.347-0.347,0.908-0.347,1.255,0c0.347,0.347,0.347,0.909,0,1.255L1.515,30.799C1.342,30.972,1.115,31.059,0.888,31.059z"/>
+        </g>
+      </g>
+    </svg>
+
+
+      </a>
+      <p class="section-title text-theme space-4">Size Guide</p>
+
+      <a class="size_chart-handle active" name="imperial">Imperial</a>
+      <a class="size_chart-handle" name="metric">Metric</a>
+
+      <div class="size_table" data-handle='imperial'>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Twin
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">39” x 75” x 18"</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">71” x 98”</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">20” x 27”</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Full
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">54” x 75” x 18"</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">86” x 98”</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">20” x 27”</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Queen
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">60” x 80” x 18"</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">94” x 102”</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">20” x 27”</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            King
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">76” x 80” x 18"</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">112” x 104”</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">20” x 37”</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="size_table" data-handle='metric' style="display: none;">
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Twin
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">99cm x 190cm x 46cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">180cm x 249cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">51cm x 69cm</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Full
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">137cm x 190cm x 46cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">129cm x 249cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">51cm x 69cm</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            Queen
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">152cm x 203cm x 46cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">239cm x 259cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">51cm x 69cm</div>
+          </div>
+        </div>
+        <div class="size-guide-container">
+          <div class="size-guide-heading">
+            King
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Fitted Sheet (W x L x D)</div>
+            <div class="size-guide-column">193cm x 203cm x 46cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Flat Sheet (W x L)</div>
+            <div class="size-guide-column">284cm x 264cm</div>
+          </div>
+          <div class="size-guide-row">
+            <div class="size-guide-column">Pillow Cases (W x L)</div>
+            <div class="size-guide-column">51cm x 94cm</div>
+          </div>
+        </div>
+      </div>
+
+      <table class="size-guide-desktop size_table" data-handle='imperial' cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Fitted Sheet (W x L x D)</th>
+            <th>Flat Sheet (W x L)</th>
+            <th>Pillow Cases (W x L)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Twin</td>
+          <td>39” x 75” x 18"</td>
+          <td>71” x 98”</td>
+          <td>20” x 27”</td>
+        </tr>
+        <tr>
+          <td>Full</td>
+          <td>54” x 75” x 18"</td>
+          <td>86” x 98”</td>
+          <td>20” x 27”</td>
+        </tr>
+        <tr>
+          <td>Queen</td>
+          <td>60” x 80” x 18"</td>
+          <td>94” x 102”</td>
+          <td>20” x 27”</td>
+        </tr>
+        <tr>
+          <td>King</td>
+          <td>76” x 80” x 18"</td>
+          <td>112” x 104”</td>
+          <td>20” x 37”</td>
+        </tr>
+      </table>
+      <table class="size-guide-desktop size_table" data-handle='metric' cellpadding="0" cellspacing="0" border="0" style="display: none;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Fitted Sheet (W x L x D)</th>
+            <th>Flat Sheet (W x L)</th>
+            <th>Pillow Cases (W x L)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Twin</td>
+          <td>99cm x 190cm x 46cm</td>
+          <td>180cm x 249cm</td>
+          <td>51cm x 69cm</td>
+        </tr>
+        <tr>
+          <td>Full</td>
+          <td>137cm x 190cm x 46cm</td>
+          <td>129cm x 249cm</td>
+          <td>51cm x 69cm</td>
+        </tr>
+        <tr>
+          <td>Queen</td>
+          <td>152cm x 203cm x 46cm</td>
+          <td>239cm x 259cm</td>
+          <td>51cm x 69cm</td>
+        </tr>
+        <tr>
+          <td>King</td>
+          <td>193cm x 203cm x 46cm</td>
+          <td>284cm x 264cm</td>
+          <td>51cm x 94cm</td>
+        </tr>
+      </table>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="backdrop"></div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".summry-toggle-mob").click(function(e) {
+      if ($("#toggle-mob-cart").hasClass("isopened")) {
+        $("#toggle-mob-cart").removeClass("isopened");
+        $("#toggle-mob-cart").hide();
+        $(this).find(".sm-txt.closed").show();
+        $(this).find(".sm-txt.opened").hide();
+        $(".es_miracle_landing").css("margin-top", 0);
+      }
+      else {
+        $("#toggle-mob-cart").addClass("isopened");
+        $("#toggle-mob-cart").show();
+        $(this).find(".sm-txt.closed").hide();
+        $(this).find(".sm-txt.opened").show();
+        var h = $("#toggle-mob-cart").height();
+        $(".es_miracle_landing").css("margin-top", h);
+      }
+    });
+  });
+</script>

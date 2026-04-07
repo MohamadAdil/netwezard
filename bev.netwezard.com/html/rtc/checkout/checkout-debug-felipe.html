@@ -1,0 +1,985 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Miracle Brand - Checkout</title>
+<meta charset="utf-8">
+
+<script type="text/javascript" src="https://cdn.shopmiraclebrand.co/js/cart_loader.js"></script>
+
+<meta content="api.shopmiraclebrand.co"                   name="checkout-api-endpoint">
+<meta content=""                                   name="checkout-default-variant-id">
+<meta content=""                                   name="checkout-default-addons">
+<meta content="US"                                     name="checkout-default-shipping-zone">
+<meta content="https://shopmiraclebrand.co/c34522fb-cba8-4c7f-b455-948247b1d537/up/10a.html"   name="checkout-next-url">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0"  name="viewport" >
+
+<link href="images/checkout/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="images/checkout/webclip.png" rel="apple-touch-icon">
+<link rel="stylesheet" type="text/css" href="css/checkout-v1.css">
+<link rel="stylesheet" type="text/css" href="css/es_custom.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/8603d6f597.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/mk.js"></script>
+
+
+
+
+
+
+<script>
+
+  /* ACTION (BILLING) */
+  $(document).on('click','[data-action="billing"]',function() {
+    if($(this).data('slide')) $('#payFldToggle').stop().slideDown();
+    else                      $('#payFldToggle').stop().slideUp();
+
+    $(this).find('input').prop('checked',true);
+  });
+
+
+</script>
+
+
+
+<script>
+
+  $(document).ready(function() {
+    $('.summry-toggle-mob').click(function() {
+      $('#toggle-mob-cart').toggleClass('isopened');
+  
+      $('.sm-txt').toggle();
+    });
+  });
+  
+  </script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '162116850988047');
+  
+  
+  fbq('track', 'PageView');
+
+
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=162116850988047&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 769209746 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-769209746"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-769209746');
+</script>
+
+
+
+
+
+<!--  Google Tag Manager  -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-593JFLL');</script>
+  <!--  End Google Tag Manager  -->
+
+
+
+</head>
+<body>
+
+
+  <select class="checkout-variant-quantity-selector" data-variant-id="37064720973974">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW4MNKK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  
+  <div class="ch-preloader white-overlay" id="ch-preloader">
+    <div class="spinner-wrapper">
+        <div class="">
+            <div class="spinner"></div>
+            <div class="spinner-icon">
+                <svg fill="#e2e2e2" class="spinner-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 10v-4c0-3.313-2.687-6-6-6s-6 2.687-6 6v4h-3v14h18v-14h-3zm-5 7.723v2.277h-2v-2.277c-.595-.347-1-.984-1-1.723 0-1.104.896-2 2-2s2 .896 2 2c0 .738-.404 1.376-1 1.723zm-5-7.723v-4c0-2.206 1.794-4 4-4 2.205 0 4 1.794 4 4v4h-8z"/></svg>
+            </div>
+        </div>
+        <div class=""><div class="spinner-text">Loading Secure Checkout...</div></div>
+    </div>
+</div>
+
+  <!--  Google Tag Manager (noscript)  -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-593JFLL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!--  End Google Tag Manager (noscript)  -->
+
+
+
+<div class="top-header for-mob">
+        <div class="container">
+
+      <div class="row">
+        <div class="column">
+          <img src="../logo.svg" class="mob-logo">
+
+          </div>
+
+          <div class="column">
+            <img src="images/checkout/secure.svg" class="mob-secure">
+
+          </div></div>
+    </div>
+</div>
+
+
+<!--
+<div class="countdown-mob">
+  Our sheets have been in high demand. <span style="font-weight:600">Your order is reserved with FREE USA SHIPPING for <span id="countdown" style="font-weight:800; color:yellow">10:00</span></span>
+</div>
+-->
+
+
+<div class="hallloween-bar">
+  <span class="bf-border">
+    <strong>PRE BLACK FRIDAY FLASH SALE!</strong></span><div class="mob-only"><br></div>
+   <span class="additional-text-h">
+     Take An <strong>Extra 10% OFF</strong> With Code <span class="discount-h">EARLY10</span>
+   </span>
+ </div>
+ 
+ 
+ <style>
+   img.us-flag {
+    position: relative;
+    top: 3px;
+    margin-right: 2px;
+}
+
+ .hallloween-bar {
+     background-color: #00237e;
+     text-align: center;
+     font-family: 'Poppins';
+     color: #fff;
+     font-size: 18px;
+     height: auto;
+     padding: 10px 0px;
+     position: relative;
+     top: 0px;
+     width: 100%;
+ }
+   
+ .header-section-2 {
+     margin-top: 40px;
+     border-bottom: 5px solid #ff6000;
+ }
+   
+   span.additional-text-h {
+     font-size: 15px;
+ }
+   
+   span.discount-h {
+     background-color: #FFF;
+     color: #000;
+     padding: 2px 8px;
+     border-radius: 4px;
+ }
+   img.spider-left {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: 999;
+ }
+   
+   img.spider-right {
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     z-index: 999;
+ }
+   
+   .banner-section {
+     display: none!important;
+   }
+   
+   @media only screen and (max-width: 600px) {
+   .spider-right {
+     width: 80px;
+   }
+       .spider-left {
+     width: 80px;
+   }
+     
+     .header-section-2 {
+     margin-top: 60px!important;
+     background-color:#000000!important;
+ }
+       span.additional-text-h {
+         font-size: 13px!important;
+     padding-top: 10px!important;
+     display: block;}
+ }
+     @media only screen and (min-width: 600px) {
+         .mob-only {
+        display: none!important;   
+       }
+ 
+   }
+ 
+   
+   .main-buy-button {
+     border-color: #883300!important;
+     background-color: #ff6000!important;
+ }
+   
+   .mid-button {
+     border-color: #883300!important;
+     background-color: #ff6000!important;
+   }
+   
+   .button-2.full-button {
+     border-color: #883300!important;
+     background-color: #ff6000!important;
+   }
+   
+   .es_variant_container .es_btn-order {
+         border-color: #883300!important;
+     background-color: #ff6000!important;
+   }
+   
+   .text-span-3 {
+     color: #ff6000!important;
+   }
+   
+   
+   .mid-section {
+     background-image: none!important;
+     background-color:#000!important;
+   }
+   .pricing-column.basic-column {
+     background-color:#000!important;
+     background-image:none!important;
+   }
+   
+   .mob-only {
+     margin-top: -20px;
+     font-size: 12px;
+ }
+   
+ </style>
+ 
+
+<div class="summry-toggle-mob for-mob">
+        
+  <div class="container" id="summry-toggle-mob">
+        <p class="summry-toggle"><svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+          <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+        </svg>
+        <span class="sm-txt"> Review order summary <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path></svg></span>
+        <span class="sm-txt" style="display:none"> Hide order summary <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M6.138.876L5.642.438l-.496.438L.504 4.972l.992 1.124L6.138 2l-.496.436 3.862 3.408.992-1.122L6.138.876z"></path></svg></span>
+        </p>
+        <p class="togle-price"><span class="checkout-total-value"></span></p>
+    </div>
+  </div>
+
+
+<div class="chkout-bg" style="overflow:hidden">
+
+
+
+        <div class="container">
+
+          <div class="lft-chk">
+                <div class="logo-box for-desk"> 
+
+
+                  <div class="row">
+                    <div class="column">
+                      <img src="../logo.svg" class="mob-logo">
+            
+                      </div>
+            
+                      <div class="column">
+                        <img src="images/checkout/secure.svg" class="mob-secure">
+            
+                      </div></div>
+                    
+                    </div>
+
+                    <div class="custom-upsell">
+                      <label class="custom-container">
+                      <div style="font-size: 12px; text-align:left; padding-top: 3px;">
+                        <input type="checkbox" style="display:inner-block" checked class="checkout-addon-toggle" data-variant-id="34937177702550">  <span class="checkmark"></span>
+
+                        Yes, <strong>Add 5-Year Wear & Tear Warranty</strong> For Only $9.00
+                    
+
+                      </div>
+                      </label>
+                      </div>
+
+
+                      
+                      <div class="coupon-input-wrapper">
+                        <input type="text" class="checkout-coupon-field input-flds" placeholder="Gift card or discount code">
+                        <button class="checkout-coupon-button">APPLY</button>
+                      </div>
+
+                      <div class="discount-applied es_hide">
+                        <i data-v-5c54c67c="" class="fas fa-percentage" aria-hidden="true"></i>
+                        <strong>Discount Applied!</strong> You're saving $<span class="checkout-discount-value"></span>
+                      </div>
+
+
+
+            <div class="paypal-express-checkout">
+            <div class="payment-method">EXPRESS CHECKOUT</div>
+
+            <form class="checkout-paypal-form">
+              <div class="form-group" style="display: none">
+                <label for="paypal_checkout_country">Country</label>
+                <select id="paypal_checkout_country" type="text" name="paypal_checkout_country"></select>
+                <div class="field__caret"></div>
+              </div>
+              <button class="checkout-submit-paypal paypalbtn overlay">
+                <i class="fas fa-spinner" style="display:none"></i>
+                <img src="images/checkout/paypal-logo.svg" class="pad">
+                <img src="images/checkout/paypal-txt.svg">
+              </button>
+            </form>
+            </div>
+  
+            <div class="credit-card-checkout">
+
+            <div class="payment-method">--- OR CHECKOUT WITH CREDIT CARD ---
+            </div>
+
+         
+            <!---  CREDIT CARD FORM -->
+            <form class="checkout-combo-form">
+              <div class="heading-box">
+                <h4 class="chk-head">Contact Information</h4>
+              </div>
+                <div class="payment-flds-box" style="border-top: none; border-bottom: none;">
+                  <div class="form-group">
+                    <div class="frm-flds">
+                      <label for="email">Email</label>
+                      <input id="email" class="input-flds" type="email" name="email" placeholder="E-Mail">
+                    </div>
+                  </div>
+                </div>
+              <div class="heading-box">
+                <h4 class="chk-head">Shipping Address</h4>
+              </div>
+                <div class="payment-flds-box" style="border-top: none; border-bottom: none;">
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fl">
+                      <label for="shipping_first_name">First Name</label>
+                      <input type="text" class="input-flds" id="shipping_first_name" name="shipping_first_name" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fr">
+                      <label for="shipping_last_name">Last Name</label>
+                      <input id="shipping_last_name" class="input-flds" type="text" name="shipping_last_name" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld fl">
+                      <label for="shipping_address_1">Address</label>
+                      <input id="shipping_address_1" class="input-flds" type="text" name="shipping_address1" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld mobile-fr fl">
+                      <label for="shipping_address_2">Apartment, suite, etc. (optional)</label>
+                      <input id="shipping_address_2" class="input-flds" type="text" name="shipping_address2" placeholder="Apartment, suite, etc. (optional)">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds half-fld fl">
+                      <label for="shipping_city">City</label>
+                      <input id="shipping_city" class="input-flds" type="text" name="shipping_city" placeholder="City">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fr">
+                      <label for="shipping_state">State</label>
+                      <select id="shipping_state" class="input-flds" name="shipping_state" data-country="US">
+                      </select>
+                      <div class="field__caret"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds mobile-half-fld half-fld fl">
+                      <label for="shipping_postal_code">ZIP Code</label>
+                      <input type="text" class="input-flds" name="shipping_postal_code" placeholder="Zip Code">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds half-fld fr">
+                      <label for="shipping_country">Country</label>
+                      <select id="shipping_country" class="input-flds" type="text" name="shipping_country">
+                      </select>
+                      <div class="field__caret"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="frm-flds fl">
+                      <label for="shipping_phone">Phone</label>
+                      <input id="shipping_phone" class="input-flds" type="number" name="shipping_phone" inputmode="numeric" placeholder="Phone">
+                    </div>
+                  </div>
+              </div>              
+              <div class="heading-box">
+                <h4 class="chk-head">Billing Address</h4>
+                <h6 class="chk-sub">Select the address that matches your card or payment method.</h6>
+              </div>
+              <div class="payoptbox">
+                <div class="form-group">
+                  <div class="payment-cards-box">
+                    <label for="billing_use_shipping_true" class="paymybtn">
+                      <input type="radio" id="billing_use_shipping_true" class="form-gateway cardPayOpt" name="billing_use_shipping" value="true" checked>Same as shipping address
+                    </label>
+                  </div>
+                  <div class="payment-cards-box">
+                    <label for="billing_use_shipping_false" class="paymybtn">
+                      <input type="radio" id="billing_use_shipping_false" class="form-gateway cardPayOpt" name="billing_use_shipping" value="false">Use a different billing address
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <!-- To automatically hide billing fields, we wrap them all in a container -->
+              <!-- See CSS above -->
+              <div class="checkout-billing-fields payment-flds-box">
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fl">
+                    <label for="billing_first_name">First Name</label>
+                    <input type="text" id="billing_first_name" name="billing_first_name" class="input-flds" placeholder="First Name">
+                  </div>                  
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fr">
+                    <label for="billing_last_name">Last Name</label>
+                    <input id="billing_last_name" type="text" name="billing_last_name" class="input-flds" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld fl">
+                    <label for="billing_address_1">Address 1</label>
+                    <input id="billing_address_1" type="text" name="billing_address1" class="input-flds" placeholder="Address 1">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld mobile-fr fl">
+                    <label for="billing_address_2">Address 2</label>
+                    <input id="billing_address_2" type="text" name="billing_address2" class="input-flds" placeholder="Address 2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds half-fld fl">
+                    <label for="billing_city">City</label>
+                    <input id="billing_city" type="text" name="billing_city" class="input-flds" placeholder="City">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fr">
+                    <label for="billing_state">State</label>
+                    <select id="billing_state" name="billing_state" data-country="US" class="input-flds">
+                    </select>
+                    <div class="field__caret"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds mobile-half-fld half-fld fl">
+                    <label for="billing_postal_code">ZIP Code</label>
+                    <input type="text" name="billing_postal_code" class="input-flds" placeholder="Zip Code">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds half-fld fr">
+                    <label for="billing_country">Country</label>
+                    <select id="billing_country" type="text" name="billing_country" class="input-flds">
+                    </select>
+                    <div class="field__caret"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="frm-flds fl">
+                    <label for="billing_phone">Phone</label>
+                    <input id="billing_phone" type="text" name="billing_phone" class="input-flds" inputmode="numeric" placeholder="Phone">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="heading-box">
+                <h4 class="chk-head">Payment Method</h4>
+                <h6 class="chk-sub">All transactions are secure and encrypted.                </h6>
+
+              </div>
+
+              
+
+              <div class="payoptbox">
+                <div class="form-group">
+                  <div class="payment-cards-box" id="payment_radio-credit">
+                    <label class="paymybtn" for="combo_mode_credit"><input type="radio" id="combo_mode_credit" name="combo_mode" value="credit" class="form-gateway cardPayOpt" checked="" class="form-gateway cardPayOpt">Credit Card</label>
+                    <img src="images/ccs.svg" class="etc_and_more" height="20" style="cursor:pointer; position:relative; margin-top:-34px; margin-right: 83px;">
+                    <span class="etc_and_more" style="float: right; margin-top: -33px !important; margin-right: 15px; font-size: 12px; color: #919191;">and more...</span>
+                  </div>
+
+                  
+                  <div class="payment-flds-box" id="payment_field-credit" style="padding: 15px;">
+                    <div class="form-group">
+                      <div class="frm-flds">
+                        <label for="cc_number">Credit Card Number</label>
+                        <input id="cc_number" class="input-flds" type="text" inputmode="numeric" name="cc_number" maxlength="19" placeholder="Credit Card Number">
+                        <a class="locker tooltip" title="All transactions are secure and encrypted."></a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="frm-flds half-fld fl mobile-half-fld mobile-fl">
+                        <label for="cc_exp_month">Exp Month</label>
+                        <select id="cc_exp_month" class="input-flds" type="text" name="cc_exp_month"></select>
+                        <div class="field__caret"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">  
+                      <div class="frm-flds half-fld fr mobile-half-fld mobile-fr">
+                        <label for="cc_exp_year">Exp Year</label>
+                        <select id="cc_exp_year" class="input-flds" type="text" name="cc_exp_year"></select>
+                        <div class="field__caret"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="frm-flds">
+                        <label for="cc_cvv">CVV</label>
+                        <input id="cc_cvv" maxlength="4" class="input-flds" type="text" inputmode="numeric" name="cc_cvv" placeholder="CVV">
+                        <a class="question tooltip" title="3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front."></a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+<!--
+  <div class="payment-flds-box" style="padding: 15px;">
+  <div class="form-group">
+    <div class="frm-flds">
+      <label for="cc_number">Credit Card Number</label>
+      <input id="cc_number" class="input-flds" type="text" inputmode="numeric" name="cc_number" maxlength="19" placeholder="Credit Card Number">
+      <a class="locker tooltip" title="All transactions are secure and encrypted."></a>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="frm-flds half-fld fl mobile-half-fld mobile-fl">
+      <label for="cc_exp_month">Exp Month</label>
+      <select id="cc_exp_month" class="input-flds" type="text" name="cc_exp_month"></select>
+      <div class="field__caret"></div>
+    </div>
+  </div>
+  <div class="form-group">  
+    <div class="frm-flds half-fld fr mobile-half-fld mobile-fr">
+      <label for="cc_exp_year">Exp Year</label>
+      <select id="cc_exp_year" class="input-flds" type="text" name="cc_exp_year"></select>
+      <div class="field__caret"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="frm-flds">
+      <label for="cc_cvv">CVV</label>
+      <input id="cc_cvv" maxlength="4" class="input-flds" type="text" inputmode="numeric" name="cc_cvv" placeholder="CVV">
+      <a class="question tooltip" title="3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front."></a>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+
+
+<!--
+                  <div class="payment-cards-box" id="payment_radio-quadpay">
+                    <label class="paymybtn" for="combo_mode_quadpay"><input type="radio" id="combo_mode_quadpay" name="combo_mode" value="quadpay" class="form-gateway cardPayOpt"><img class="quadpay-img" src="images/checkout/quadpay.png"></label>
+                    
+                  </div>
+-->
+                  <div class="payment-flds-box" id="payment_field-quadpay" style="border-top: 1px solid rgb(217, 217, 217); display: none;" id="paypalPayment">
+                    <img src="images/paypal-box.svg" style="display:inline-block; vertical-align:middle; margin:20px 0;">
+                    <p class="paypal-txt">After clicking "Place Order", you will be redirected to QuadPay to complete your purchase securely.</p>
+                </div>
+              </div>
+            </div>
+              
+
+              <button class="checkout-submit-combo frm-submit">
+                <div class="complete-purchase"><i data-v-5c54c67c="" class="fas fa-lock"></i>
+                <i class="fas fa-spinner fa-spin"></i>
+                  COMPLETE PURCHASE<br><span class="try-risk" style="font-size:10px;font-weight:400">TRY IT RISK FREE! - 30 DAY MONEY BACK GUARANTEE!</span>
+                </div>
+              </button>
+            </form>
+            <!---  END CREDIT CARD FORM -->
+          </div>
+            <div class="tt-promo-brand">
+
+              <div class="trustBarContainer" style="display: flex; flex-direction: column; text-align: center; padding: 5px 0px;">
+
+
+<div class="badgesContainer" style="display: block; text-align: center;">
+<div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+  <img src="https://cdn.shopify.com/s/files/1/0265/9368/9679/t/5/assets/seal-mcafee.svg?1668" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+</div>
+<div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+  <img src="https://cdn.shopify.com/s/files/1/0265/9368/9679/t/5/assets/seal-norton.svg?1668" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+</div>
+<div class="badgeContainer" style="height: 50px; width: 90px; display: inline-block; position: relative;">
+  <img src="https://cdn.shopify.com/s/files/1/0265/9368/9679/t/5/assets/seal-secure.svg?1681" class="imageContainer" style="height: 80%; width: 80%; position: absolute; top: 50%; left: 50%; right: -50%; transform: translate(-50%, -50%);">
+</div>
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+</div>
+            
+
+<div class="hide-desk">
+
+  
+  <div class="uco-widget-container">
+    <div class="uco-widget-title">
+      <span style="background:#fafafa;padding:0 15px">Trusted customer reviews</span>
+    </div>
+  
+  <div class="uco-widget-content">
+    <div class="uco-widget-row">
+      <div class="uco-widget-img">
+        <img src="images/review-1.png" width="64px">
+      </div>
+      <div class="uco-widget-text">
+       
+        
+      <div class="reviews">
+        <img src="images/review-stars.svg" width="70px">
+        <span class="review-name">Andrea A</span>
+        <span class="review-place">Dallas, TX</span>
+        <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:5px">Verified Buyer</span>
+        <span class="review-content">“Well first of all I would like to say thank you I absolutely love my sheets you’re so comfortable soft and cool it keeps me cool at night I love them.”</span>
+      </div>
+        
+      </div>
+    </div>
+
+    
+    <div class="uco-widget-row">
+      <div class="uco-widget-img">
+        <img src="images/review-3.png" width="64px">
+      </div>
+      <div class="uco-widget-text">
+       
+        
+      <div class="reviews">
+        <img src="images/review-stars.svg" width="70px">
+        <span class="review-name">Janne C</span>
+        <span class="review-place">Salt Lake City, UT</span>
+        <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:5px">Verified Buyer</span>
+        <span class="review-content">"Very cool to the touch, comfortable. Don’t seem to hold onto smell, which is great. So far so good!"</span>
+      </div>
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  
+
+  
+  <div class="uco-widget-container">
+    <div class="uco-widget-title">
+      <span style="background:#fafafa;padding:0 15px">Why choose us?</span>
+    </div>
+  
+  <div class="uco-widget-content">
+    <div class="uco-widget-row">
+      <div class="uco-widget-img">
+        <img src="https://cdn.shopify.com/s/files/1/1375/5397/t/23/assets/dollar-bw2.png">
+      </div>
+      <div class="uco-widget-text">
+        <span>30-Day Satisfaction Guarantee</span>
+        <p>If you're not satisfied with your product(s), we'll make it right! We promise.</p>
+      </div>
+    </div>
+    <div class="uco-widget-row">
+      <div class="uco-widget-img">
+        <img src="https://cdn.shopify.com/s/files/1/1375/5397/t/23/assets/shipping-bw2.png">
+      </div>
+      <div class="uco-widget-text">
+        <span>Over 1 million successfully shipped orders</span
+          ><p>Happy customers, end to end tracking and reliable customer service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+            <div class="footer">
+                <p>All rights reserved ©</p>
+            </div>
+
+                </div>
+
+        <div class="right-chk">
+           <div id="toggle-mob-cart" class="isopened">
+                        <div style="width:100%; padding:15px 0;"> 
+                          <h4 class="chk-head">Order Summary</h4>
+
+                          <div class="checkout-cart-display"></div>
+
+
+                          <div class="hide-mobo">
+
+
+
+                            <div class="uco-widget-container">
+                              <div class="uco-widget-title">
+                                <span style="background:#fafafa;padding:0 15px">Trusted customer reviews</span>
+                              </div>
+                            
+                            <div class="uco-widget-content">
+                              <div class="uco-widget-row">
+                                <div class="uco-widget-img">
+                                  <img src="images/review-1.png" width="64px">
+                                </div>
+                                <div class="uco-widget-text">
+                                 
+                                  
+                                <div class="reviews">
+                                  <img src="images/review-stars.svg" width="70px">
+                                  <span class="review-name">Andrea A</span>
+                                  <span class="review-place">Dallas, TX</span>
+                                  <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:5px">Verified Buyer</span>
+                                  <span class="review-content">“Well first of all I would like to say thank you I absolutely love my sheets you’re so comfortable soft and cool it keeps me cool at night I love them.”</span>
+                                </div>
+                                  
+                                </div>
+                              </div>
+                          
+                              
+                              <div class="uco-widget-row">
+                                <div class="uco-widget-img">
+                                  <img src="images/review-3.png" width="64px">
+                                </div>
+                                <div class="uco-widget-text">
+                                 
+                                  
+                                <div class="reviews">
+                                  <img src="images/review-stars.svg" width="70px">
+                                  <span class="review-name">Janne C</span>
+                                  <span class="review-place">Salt Lake City, UT</span>
+                                  <span class="review-verified"><img src="images/locker-green.svg" width="12px" style="margin-right:5px; margin-top:5px">Verified Buyer</span>
+                                  <span class="review-content">"Very cool to the touch, comfortable. Don’t seem to hold onto smell, which is great. So far so good!"</span>
+                                </div>
+                                  
+                                </div>
+                              </div>
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                              </div>
+                            </div>
+                            
+                          
+                            
+                            <div class="uco-widget-container">
+                              <div class="uco-widget-title">
+                                <span style="background:#fafafa;padding:0 15px">Why choose us?</span>
+                              </div>
+                            
+                            <div class="uco-widget-content">
+                              <div class="uco-widget-row">
+                                <div class="uco-widget-img">
+                                  <img src="https://cdn.shopify.com/s/files/1/1375/5397/t/23/assets/dollar-bw2.png">
+                                </div>
+                                <div class="uco-widget-text">
+                                  <span>30-Day Satisfaction Guarantee</span>
+                                  <p>If you're not satisfied with your product(s), we'll make it right! We promise.</p>
+                                </div>
+                              </div>
+                              <div class="uco-widget-row">
+                                <div class="uco-widget-img">
+                                  <img src="https://cdn.shopify.com/s/files/1/1375/5397/t/23/assets/shipping-bw2.png">
+                                </div>
+                                <div class="uco-widget-text">
+                                  <span>Over 1 million successfully shipped orders</span
+                                    ><p>Happy customers, end to end tracking and reliable customer service</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+
+
+                                                        
+                            
+
+
+                          
+
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<style type="text/css">
+  .checkout-credit-card-form .frm-flds.filled label {
+    opacity: 1;
+    visibility: visible;
+    top: 3px;
+    left: 12px;
+    z-index: 11;
+  }
+
+  .checkout-credit-card-form .frm-flds.filled input {
+    padding-top: 12px;
+  }
+
+  .checkout-credit-card-form .frm-flds .input-flds.required {
+    border: solid 2px #FF0000;
+  }
+
+  .checkout-combo-form .frm-flds input[type=number]::-webkit-inner-spin-button, 
+  .checkout-combo-form .frm-flds input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+  }
+</style>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+
+    setTimeout(function(){
+      $(".ch-preloader").hide();
+    }, 900);
+
+    $("#billing_use_shipping_false").click(function(e) {
+      $(".checkout-billing-fields").slideDown();
+    });
+
+    $("#billing_use_shipping_true").click(function(e) {
+      $(".checkout-billing-fields").slideUp();
+    });
+
+    $(".checkout-combo-form .frm-flds input").focusin(function(e) {
+      $(this).parent().addClass("filled");
+    });
+
+    $(".checkout-combo-form .frm-flds input").focusout(function(e) {
+      if ($(this).val().trim().length <= 0) {
+        $(this).parent().removeClass("filled");
+      }
+    });
+
+  });
+</script>
+
+
+<script type="text/javascript">
+  $("#payment_radio-quadpay label.paymybtn").click(function(e) {
+    $("#payment_field-credit").slideUp();
+    $("#payment_field-quadpay").slideDown();
+    $(".btn-checkout").removeClass("checkout-submit-credit-card");
+    $(".btn-checkout").addClass("checkout-submit-quadpay");
+    $(".checkout-form").removeClass("checkout-credit-card-form");
+    $(".checkout-form").addClass("checkout-quadpay-form");
+  });
+  $("#payment_radio-credit label.paymybtn").click(function(e) {
+    $("#payment_field-credit").slideDown();
+    $("#payment_field-quadpay").slideUp();
+    $(".btn-checkout").addClass("checkout-submit-credit-card");
+    $(".btn-checkout").removeClass("checkout-submit-quadpay");
+    $(".checkout-form").removeClass("checkout-quadpay-form");
+    $(".checkout-form").addClass("checkout-credit-card-form");
+  });
+
+    $(".checkout-submit-combo").click(function(e) {
+      var btn = $(this);
+      setTimeout(function() {
+        console.log($(".checkout-combo-form .checkout-invalid-field").length);
+        if ($(".checkout-combo-form .checkout-invalid-field").length > 0) {
+          var new_position = $(".checkout-combo-form .checkout-invalid-field").offset();
+          $('html, body').stop().animate({ scrollTop: new_position.top - 15 }, 500);
+        }
+        else {
+          btn.addClass("submitting");
+          setTimeout(function() {
+            btn.removeClass("submitting");
+          }, 6000);
+        }
+      }, 300);
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,89 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, input, checkbox, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure, aside {
+	border:0;
+	margin:0;
+	padding:0
+}
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+	display:block
+}
+a img {
+	border:0
+}
+figure img {
+	width:100%
+}
+
+
+img {
+	border: 0;
+	max-width:100%;
+	height:auto;
+}
+li {
+	list-style: none;
+}
+
+.clearfix{clear:both;}
+body{background:url(../images/loginbodybg.png) center top;font-family:Arial, Helvetica, sans-serif;font-size:12px; color:#666;}
+#mainwrapper{width:100%;}
+#header{background:#eee;width:100%; border-bottom:1px solid #ddd;}
+#header .headerinner{width:955px; margin:0 auto; overflow:hidden; padding-bottom:25px;}
+#header .headerinner a.logo{background:url(../images/logo.png) left top no-repeat; width:117px; height:82px; display:block; margin:25px 20px 0 0; float:left;}
+#header .headerinner .adstext{ font-size:15px; color:#58585a; font-style:italic; font-weight:bold; margin-top:60px; float:left;}
+#header .headerinner ul#headtopnav{float:right; margin-top:35px;}
+#header .headerinner ul#headtopnav li{float:left;}
+#header .headerinner ul#headtopnav li.seprator{background:url(../images/seprator.gif) left 5px no-repeat; margin:0 13px; width:3px; height:23px; display:block;}
+#header .headerinner ul#headtopnav li a{display:block; height:31px;}
+#header .headerinner ul#headtopnav li a.refreshbtn{background:url(../images/refreshbtn.png) left top no-repeat; width:28px;}
+#header .headerinner ul#headtopnav li a.settingbtn{background:url(../images/settingbtn.png) left top no-repeat; width:31px;}
+#header .headerinner ul#headtopnav li a.powerbtn{background:url(../images/powerbtn.png) left top no-repeat; width:29px;}
+.main{width:958px; margin:30px auto;}
+.main h2{font-size:18px; font-weight:bold; line-height:20px; padding-bottom:20px; color:#333;}
+.main .datatable{width:958px; margin:0 auto;}
+.main .datatable .tabletophead{width:915px; padding:15px 18px 0 25px; overflow:hidden;background:url(../images/tabletophead.png) center top no-repeat; height:37px;}
+.main .datatable .tabletophead h3{ font-size:14px; font-weight:bold; padding-top:5px; float:left;}
+.main .datatable .tabletophead a.btn{background:url(../images/btn-right.png) right top no-repeat; padding:0 9px 0 0; display:block; color:#fff; font-weight:bold; text-align:center; float:right; text-decoration:none;}
+.main .datatable .bgright{background:url(../images/tablebg.png) right top repeat-y; padding:20px; width:918px; overflow:hidden;}
+#setting .main .datatable .bgright{background:url(../images/tablebg.png) right top repeat-y; padding:20px 25px 0 26px; width:907px; min-height:300px;}
+.main .datatable .tabletophead a.btn span{background:url(../images/btn-left.png) left top no-repeat; display:block; height:21px; padding:5px 6px 0 15px;}
+.main .datatable #tablecontent{width:950px;}
+
+.main .datatable .tablebotbg{background:url(../images/tablebotbg.png) left top no-repeat; width:958px; height:7px;}
+.main .datatable .tablebotbg-setting{background:url(../images/tablebot-1.png) left top no-repeat; width:958px; height:15px;}
+
+#emailwrapper{width:auto;}
+.main fieldset{padding-bottom:15px;float:left; margin-right:20px;}
+.main .fulllength{width:910px; clear:both;float:left;}
+.main .fulllength .rightpart{float:left; width:445px;}
+.main fieldset.last{margin:0 !important;}
+.main fieldset label{font-size:13px; color:#4e4e4e; padding-bottom:3px; display:block; font-weight:bold;}
+.main .datatable .bgright input, .main .datatable .bgright select, .main .datatable .bgright textarea{background:#f3f3f3; width:200px;border:0; font-size:14px; color:#606060; padding:5px; border:1px solid #d4d3d3; resize:none;}
+.main .datatable .bgright input.thumbupload{width:440px;margin-bottom:5px;	}
+.main .datatable .bgright textarea.description{ width:898px; height:60px; font-family:Arial, Helvetica, sans-serif;}
+.main .datatable .bgright input.title{width:435px;}
+
+.main .datatable .bgright input.imageupload{width:425px;}
+.main a.link{color:#333; text-decoration:none;}
+.main fieldset input:focus, .main .datatable fieldset input:active{background:#e6f3f7; outline:none; border:1px solid #90cedf; color:#047abd;}
+.main fieldset input.inputbg{width:312px;background:#f3f3f3;height:30px; border:0; font-size:20px; font-weight:bold; color:#606060; padding:0 5px 0 10px; border:1px solid #d4d3d3;}
+.main fieldset input.updatebtn{background:url(../images/updatebtn.png) left top no-repeat; width:113px; height:41px; display:block; margin-top:10px; cursor:pointer;}
+.main fieldset input.updatebtn:hover{background-position:left -42px;}
+.main fieldset input.loginbtn, .main fieldset input.submit{background:#333 !important; padding:5px 10px !important; display:block; cursor:pointer; margin:10px 10px 0 0; color:#fff !important; width:auto !important; float:left;}
+.main fieldset input.loginbtn:hover, .main fieldset input.submit:hover{background:#f00607 !important;}
+#loginhome{background:url(../images/loginbodybg.png) center top;}
+#loginhome .main{width:960px; position:absolute; left:50%; margin-left:-480px; top:20%;}
+#loginhome .main #loginwrapper{width:720px;}
+#loginhome .main #loginwrapper .logo{background:url(../images/logo.png) left top no-repeat; width:248px; height:104px; margin:40px 37px 0 0; float:left;}
+#loginhome .main #loginwrapper .loginpanel{background:url(../images/loginpanelbg.png) center top no-repeat; width:352px; height:265px; float:left; padding:30px 30px 0 45px;}
+#footer{background:url(../images/footerbg.png) center top no-repeat; width:930px; padding:8px 10px 5px; height:24px; margin:100px auto 20px; overflow:hidden;}
+#footer .logo-footer{background:url(../images/logo-footer.png) left top no-repeat; width:68px; height:24px; display:block; float:left; margin-right:10px;}
+#footer p{color:#787878;font-weight:bold; float:left; padding-top:4px;}
+
+
+
+
+
+
+
+
+

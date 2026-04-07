@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+	body{font-family:Arial, Helvetica, sans-serif;}
+    .notice-pop{width:550px; position:fixed; left:50%; margin-left:-275px; top:15%; z-index:99999; border-radius:10px;-webkit-border-radius:10px; background:#fff;}
+    .notice-pop .head{background:#3f90d3; padding:7px 20px; border-bottom:3px solid #256fac; position:relative;border-radius:10px 10px 0 0}
+    .notice-pop .head h3{color:#fff;}
+    .notice-pop h4{font-size:18px;}
+    .notice-pop a.getaquotebtn{background:url(images/notice-btn.png) left top no-repeat; width:54px; padding:0; text-align:center;}
+    .notice-pop a.getaquote:hover{background:url(images/notice-btn-hover.png) left top no-repeat; }
+    .notice-inner{background:url(images/icon-lock.png) 430px 35px no-repeat; padding:30px 175px 30px 30px;}
+    .blackoverlay{width:100%; height:100%; background:#000; opacity:0.7; position:fixed; top:0; left:0;z-index:9999;}
+    .close{width:12px; height:12px; position:absolute; top:15px; right:15px;background:url(images/icon-close.png) left top no-repeat; display:block; z-index:99991; opacity:0.7;}
+    .close:hover{opacity:1;}
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            window.setTimeout(function () { $(".notice-pop, .blackoverlay").fadeOut(); }, 9000);
+
+            $(".close, .getaquotebtn, .blackoverlay").click(function () {
+                $(".notice-pop, .blackoverlay").fadeOut();
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <div class="blackoverlay"></div>
+    <div class="notice-pop">
+        <div class="head">
+            <h3>Notice</h3>
+            <a href="javascript:void(0);" class="close"></a>
+        </div>
+        <div class="notice-inner">
+            <h4>Please note that we will be closed on the 12th and 13th March</h4>
+            <a href="javascript:void(0)" class="getaquote getaquotebtn" style="display: inline-block;float: none;margin: 20px auto 0;">Ok</a>
+        </div>
+    </div>
+</body>
+</html>

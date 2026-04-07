@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="scss/icon-moon.css" rel="stylesheet"/>
+    <link href="scss/style.css" rel="stylesheet"/>
+    <link href="scss/custom-ui.css" rel="stylesheet"/>
+    <title>Lucid | Store</title>
+  </head>
+  <body>
+      <!-- Header -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+            <a href="javascript:void(0)">
+                <svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#sidebar-left"></use>
+                </svg>
+            </a>
+            <h2>POS</h2>
+        </div>
+        <ul class="sidebarnav">
+            <li>
+                <a href="index.html">
+                    <span class="icon-pos iconmoon"></span>
+                    <span>POS</span>
+                </a>
+                </li>
+            <li>
+                <a href="transactions.html" class="active">
+                    <span class="icon-transactions iconmoon"></span>
+                    <span>Transactions</span>
+                </a>
+                </li>
+            <li>
+                <a href="saved-bag.html">
+                    <span class="icon-saved-bag iconmoon"></span>
+                    <span>Saved Bag</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <span class="icon-settings iconmoon"></span>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+    <header id="site-header">
+        <div class="brand">
+            <a href="javascript:void(0)">
+                <svg class="sidebar-left">
+                    <use xlink:href="images/svg-sprite.svg#sidebar-left"></use>
+                </svg>
+            </a>
+            <h1>POS</h1>
+        </div>
+            
+        
+        <div class="header-search">
+            <svg class="icon-search">
+                <use xlink:href="images/svg-sprite.svg#icon-search"></use>
+            </svg>
+            <input type="text" class="form-control" placeholder="Search by product name..."/>
+        </div>
+        <div class="profile-action ms-auto">
+            <a href="javascript:void(0)" class="user-profile">
+                <img src="images/profile-img.png" alt=""/>
+                <span>James Gouse</span>
+            </a>
+            <a href="javascript:void(0)" class="store-btn btn-border">Switch</a>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Body -->
+    <div class="site-wrapper d-lg-flex justify-content-md-between flex-wrap">
+        <div class="left-section">
+            <ul class="category-tabs d-md-flex justify-content-between">
+                <li class="active" rel="tab1">
+                     <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-all"></use>
+                      </svg>
+                      <svg class="icon-white">
+                        <use xlink:href="images/svg-sprite.svg#icon-all-white"></use>
+                      </svg>
+                     All Products</li>
+                <li rel="tab2">
+                    <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-apparel"></use>
+                    </svg>
+                    <svg class="icon-white">
+                        <use xlink:href="images/svg-sprite.svg#icon-apparel-white"></use>
+                      </svg>
+                     Apparel</li>
+                <li rel="tab3">
+                    <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-cap"></use>
+                    </svg>
+                    <svg class="icon-white">
+                        <use xlink:href="images/svg-sprite.svg#icon-cap-white"></use>
+                    </svg>
+                     Headwear</li>
+                <li rel="tab4">
+                    <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-bottle"></use>
+                    </svg>
+                    <svg class="icon-white">
+                        <use xlink:href="images/svg-sprite.svg#icon-bottle-white"></use>
+                    </svg>
+                         Merchandise</li>
+              </ul>
+
+              <div class="tab_container">
+                <h3 class="d_active tab_drawer_heading" rel="tab1">
+                  <svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#icon-all"></use>
+                  </svg> All</h3>
+                <div id="tab1" class="tab_content">
+                    <ul class="store-tabs d-flex justify-content-center">
+                        <li class="tab-link current" data-tab="tab-1">Popular</li>
+                        <li class="tab-link" data-tab="tab-2">Recently sold</li>
+                        <li class="tab-link" data-tab="tab-3">New Launch</li>
+                        <li class="tab-link" data-tab="tab-4">Bookmarks</li>
+                    </ul>
+                
+                    <div id="tab-1" class="store-content current">
+                        <div class="store-products d-sm-flex flex-wrap">
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/mens-polo-tshirt.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/fitted-cap.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Fitted Cap - Black</h4>
+                                    <div class="product-health good">Good Stock Health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$38.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Camp Cup - White</h4>
+                                    <div class="product-health good">Good Stock Health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$28.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/blacksaw-blanket.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Blacksaw Blanket - Grey</h4>
+                                    <div class="product-health bad">3 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$299.99</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/air-logo.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Air Logo Microfiber Screen Wipe</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$20.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup-black.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health good">Good Stock health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-polo-white.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Polo Shirt - White</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-zip.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Zip Sweatshirt</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/air-logo.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Air Logo Microfiber Screen Wipe</h4>
+                                    <div class="product-health good">Good Stock health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$20.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup-black.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-polo-white.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Polo Shirt - White</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="store-content">
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="tab-3" class="store-content">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                    <div id="tab-4" class="store-content">
+                        <div class="store-products d-md-flex flex-wrap">
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon active">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/blacksaw-blanket.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Blacksaw Blanket - Grey</h4>
+                                    <div class="product-health bad">3 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$299.99</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon active">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/air-logo.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Air Logo Microfiber Screen Wipe</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$20.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon active">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup-black.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health good">Good Stock health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon active">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-polo-white.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Polo Shirt - White</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon active">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-zip.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Zip Sweatshirt</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- #tab1 -->
+                <h3 class="tab_drawer_heading" rel="tab2"><svg width="0" height="0" class="d-none">
+                    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 40" id="icon-apparel">
+                      <rect x="10.2363" y="28.2831" width="21.4365" height="3.89755" fill="black"></rect>
+                      <path d="M26.4937 3.92292L22.2052 8.37095C21.8797 8.68766 21.4472 8.86433 20.9974 8.86433C20.5477 8.86433 20.1152 8.68766 19.7897 8.37095L15.4487 3.92292C13.8666 3.9113 12.298 4.22121 10.8345 4.8346C9.37095 5.44799 8.0417 6.35259 6.92424 7.49564L1.95312 12.7475L7.83446 18.8747L10.4951 16.1238V36.0774H31.4998V16.1595L34.1429 18.9105L39.9542 12.7475L34.9306 7.53137C33.8281 6.39017 32.5148 5.4836 31.0665 4.86419C29.6183 4.24478 28.064 3.92484 26.4937 3.92292Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </symbol>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="#icon-apparel"></use>
+                  </svg>
+                 Apparel</h3>
+                <div id="tab2" class="tab_content">
+                    <div class="banner">
+                        <div class="content">
+                            <h2>Apparel</h2>
+                            <p>Crafted with simplicity.</p>
+                        </div>
+                        <img src="images/banner-apparel.png" alt="Apparel"/>
+                    </div>
+                    <ul class="store-tabs d-flex justify-content-center">
+                        <li class="tab-link current" data-tab="tab-5">Popular</li>
+                        <li class="tab-link" data-tab="tab-6">Recently sold</li>
+                        <li class="tab-link" data-tab="tab-7">New Launch</li>
+                        <li class="tab-link" data-tab="tab-8">Bookmarks</li>
+                    </ul>
+                
+                    <div id="tab-5" class="store-content current">
+                        <div class="store-products d-md-flex flex-wrap">
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/fitted-cap.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Fitted Cap - Black</h4>
+                                    <div class="product-health good">Good Stock Health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$38.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/mens-polo-tshirt.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Camp Cup - White</h4>
+                                    <div class="product-health good">Good Stock Health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$28.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/blacksaw-blanket.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Blacksaw Blanket - Grey</h4>
+                                    <div class="product-health bad">3 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$299.99</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/air-logo.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Air Logo Microfiber Screen Wipe</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$20.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/camp-cup-black.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Men's - Polo Shirt - Black</h4>
+                                    <div class="product-health good">Good Stock health</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$68.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-polo-white.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Polo Shirt - White</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                                <div class="image-container">
+                                    <img src="images/women-zip.png" alt=""/>
+                                </div>
+                                <div class="content">
+                                    <h4>Women's - Zip Sweatshirt</h4>
+                                    <div class="product-health bad">4 ITEMS RUNNING LOW</div>
+                                    <div class="price d-flex justify-content-between align-items-center">
+                                        <h2>$95.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-6" class="store-content">
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="tab-7" class="store-content">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                    <div id="tab-8" class="store-content">
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <!-- #tab2 -->
+                <h3 class="tab_drawer_heading" rel="tab3"><svg width="0" height="0" class="d-none">
+                    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 40" id="icon-cap">
+                      <path d="M33.1282 27.0263C34.1744 26.7718 35.2488 26.6022 36.3232 26.4891L37.1998 26.4042L37.5391 26.5456H37.5673L37.737 26.6587C38.1328 26.8566 38.4156 27.1111 38.5287 27.3656C38.6983 27.7049 38.6701 28.0442 38.4156 28.4683L38.3873 28.5248C38.048 28.949 37.4825 29.1752 36.8887 29.1752C36.606 29.1752 36.3232 29.1186 36.0405 29.0055L32.082 27.2525L33.1282 27.0263Z" fill="black"></path>
+                      <path d="M13.0241 25.725C16.5585 26.0643 20.1494 25.6967 23.4575 24.6505L29.1408 22.8409L36.4922 26.1208L35.2198 26.2905C32.1944 26.7146 29.3104 27.7325 26.8788 29.2876L25.8326 29.9662C24.6168 30.7579 23.1465 31.1255 21.6762 31.1255C20.0363 31.1255 18.4246 30.6448 17.124 29.6834L11.6387 25.5836L13.0241 25.725Z" fill="black"></path>
+                      <path d="M7.03203 11.9C9.43539 9.94901 12.6587 8.87457 16.08 8.87457C19.5012 8.87457 22.7811 9.94901 25.1844 11.9C27.5878 13.8509 28.9167 17.9791 28.9167 20.75V22.5596L23.2618 24.3692C20.8019 25.1609 18.2006 25.5567 15.5993 25.5567C13.309 25.5567 10.9905 25.2457 8.78507 24.6236L3.27148 23.0968V20.7783C3.29976 17.9791 4.62867 13.8509 7.03203 11.9Z" fill="black"></path>
+                    </symbol>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="#icon-cap"></use>
+                  </svg>
+                 Headwear</h3>
+                <div id="tab3" class="tab_content">
+                <div class="banner" style="background-image: url(images/headwear-bg.png)">
+                    <div class="content">
+                        <h2>Headwear</h2>
+                        <p>Get inspired by the ultimate collection for Headwear.</p>
+                    </div>
+                </div>
+                <div class="store-products d-md-flex flex-wrap">
+                    <div class="product-box">
+                        <a href="javascript:void(0)" class="product-ribbon">
+                            <svg class="icon">
+                                <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                        <div class="image-container">
+                            <img src="images/fitted-cap.png" alt=""/>
+                        </div>
+                        <div class="content">
+                            <h4>Fitted Cap - Black</h4>
+                            <div class="product-health good">Good Stock Health</div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <h2>$38.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                        <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                        <div class="image-container">
+                            <img src="images/fitted-cap-white.png" alt=""/>
+                        </div>
+                        <div class="content">
+                            <h4>Fitted Cap - White</h4>
+                            <div class="product-health good">Good Stock Health</div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <h2>$38.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                        <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                        <div class="image-container">
+                            <img src="images/face-mask.png" alt=""/>
+                        </div>
+                        <div class="content">
+                            <h4>Cloth Face Mask</h4>
+                            <div class="product-health good">Good Stock Health</div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <h2>$10.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                        <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                        <div class="image-container">
+                            <img src="images/fitted-cap-white.png" alt=""/>
+                        </div>
+                        <div class="content">
+                            <h4>Fitted Cap - White</h4>
+                            <div class="product-health good">Good Stock Health</div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <h2>$38.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <a href="javascript:void(0)" class="product-ribbon">
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="images/svg-sprite.svg#icon-ribbon-filled"></use>
+                                    </svg>
+                                </a>
+                        <a href="javascript:void(0)" class="block-link" data-bs-toggle="modal" data-bs-target="#lucid-cart-modal"></a>
+                        <div class="image-container">
+                            <img src="images/face-mask.png" alt=""/>
+                        </div>
+                        <div class="content">
+                            <h4>Cloth Face Mask</h4>
+                            <div class="product-health good">Good Stock Health</div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <h2>$10.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- #tab3 -->
+                <h3 class="tab_drawer_heading" rel="tab4"><svg width="0" height="0" class="d-none">
+                    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 40" id="icon-bottle">
+                      <rect x="12.3633" y="5.04834" width="17.1784" height="32.63" rx="1.5" stroke="black"></rect>
+                      <path d="M13.6816 2.82159C13.6816 2.26931 14.1294 1.82159 14.6816 1.82159H27.2244C27.7766 1.82159 28.2244 2.26931 28.2244 2.82159V4.54835H13.6816V2.82159Z" fill="black"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8875 29.419L25.8875 32.7003C25.8875 32.9941 25.6177 33.1247 25.0384 33.1247L23.7456 33.1247L23.7456 33.6337L25.0384 33.6337C25.8752 33.6337 26.3361 33.2784 26.3361 32.9394L26.3361 29.419L25.8875 29.419ZM23.7456 24.1226L25.8875 24.1226L25.8875 27.1223C25.8875 27.4161 25.6177 27.5467 25.0384 27.5467L23.7456 27.5467L23.7456 28.0559L25.0384 28.0559C25.8752 28.0559 26.3361 27.7006 26.3361 27.3613L26.3361 23.6135L23.7456 23.6135L23.7456 24.1226ZM25.8875 17.8516L25.8875 21.3108C25.8875 21.6046 25.6177 21.7352 25.0384 21.7352C24.4546 21.7352 24.1941 21.6046 24.1941 21.3108L24.1941 17.8516L23.7456 17.8516L23.7456 21.5498C23.7456 21.889 24.2046 22.2444 25.0384 22.2444C25.8752 22.2444 26.3361 21.8891 26.3361 21.5498L26.3361 17.8516L25.8875 17.8516ZM23.7456 10.6963C23.7456 10.3573 24.2046 10.0018 25.0384 10.0018C25.8752 10.0018 26.3361 10.3572 26.3361 10.6963L26.3361 14.4945L23.7456 14.4945L23.7456 10.6963ZM25.0384 10.5109C24.4546 10.5109 24.1941 10.6415 24.1941 10.9353L24.1941 13.9854L25.8873 13.9854L25.8873 10.9353C25.8873 10.6415 25.6177 10.5109 25.0384 10.5109ZM26.4064 16.4212L26.4064 15.9256L23.6797 15.9256L23.6797 16.4212L26.4064 16.4212Z" fill="black"></path>
+                    </symbol>
+                  </svg>
+                  <svg role="img" aria-labelledby="storage-system1">
+                    <title id="storage-system1">Storage System</title>
+                    <use xlink:href="#icon-bottle" xlink:title="Storage System"></use>
+                </svg>
+                     Merchandise</h3>
+                <div id="tab4" class="tab_content">
+                    <div class="banner" style="background-image: url(images/banner-merchandise.png)">
+                        <div class="content">
+                            <h2>Merchandise</h2>
+                            <p>Fits in everyone's lifestyle with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- #tab4 --> 
+              </div>
+              <!-- .tab_container -->
+              <div class="no-product-data">
+                <svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#empty-bag"></use>
+                  </svg>
+                  <p>Awww... we can not load products for you right now</p>
+              </div>
+        </div>
+        <div class="right-section">
+            <div class="order-summary-head d-flex justify-content-between align-items-center">
+                <h3>Order Summary</h3>
+                <div class="order-action d-flex align-items-center">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#promo-modal"><svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#icon-tag"></use>
+                </svg></a>
+                <a href="javascript:void(0)"><svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#icon-bin"></use>
+                </svg></a>
+            </div>
+            </div>
+            <div class="add-customer-box">
+                <a href="javascript:void(0)" class="add-customer">
+                    <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-customer"></use>
+                    </svg>
+                    Look up customer</a>
+                    <a href="javascript:void(0)" class="store-btn btn-border">Create New</a>
+            </div>
+            <div class="customer-created-box">
+                <span class="icon-customer"></span>
+                <span class="customer-name">Anaton Fletcher</span>
+                <span class="created-time">212-226-3126</span>
+                <a href="javascript:void(0)" class="remove"></a>
+            </div>
+                <ul class="cart-product-list">
+                    <li class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="remove-btn"></a>
+                        <div class="product-info d-flex">
+                            <div class="image">
+                                <img src="images/cart-product-thumb.png" alt=""/>
+                            </div>
+                            <div class="product-content">
+                                <h4>Men's - Polo Shirt - White</h4>
+                                <div class="quantity">Quantity <span>1</span></div>
+                            </div>
+                            <div class="price">$68.00</div>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="remove-btn"></a>
+                        <div class="product-info d-flex">
+                            <div class="image">
+                                <img src="images/cart-product-thumb-cup.png" alt=""/>
+                            </div>
+                            <div class="product-content">
+                                <h4>Camp Cup - White</h4>
+                                <div class="quantity">Quantity <span>1</span></div>
+                            </div>
+                            <div class="price">$28.00</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="product-bill-wrapper">
+                    <div class="bill-row d-flex justify-content-between align-items-center">
+                        <div class="subtotal">Sub Total</div>
+                        <div class="sub-amount">$96.00</div>
+                    </div>
+                    <div class="promo-tag d-flex justify-content-between align-items-center">
+                        <div class="tag">
+                            <span class="icon-tag"></span>
+                            <span>Save50</span>
+                            <a href="javascript:void(0)" class="remove"></a>
+                        </div>
+                        <div class="sub-amount">$5.40</div>
+                    </div>
+                    <div class="tax-amount d-flex justify-content-between align-items-center">
+                        <div class="tax">Sales Tax (5.7%)</div>
+                        <div class="sub-amount">$2.70</div>
+                    </div>
+                    <div class="pay-amount d-flex justify-content-between align-items-center">
+                        <div class="tax">Total Charge</div>
+                        <div class="sub-amount">$101.40</div>
+                    </div>
+                </div>
+                <div class="button-wrapper d-sm-flex flex-sm-wrap align-items-center justify-content-sm-between">
+                    <button class="store-btn-lg btn-border">SAVE</button>
+                    <button class="store-btn-lg btn-blue" onclick="location.href = 'pay-now.html'">Pay $101.40</button>
+                </div>
+                 <div class="empty-bag">
+                    <svg class="icon">
+                        <use xlink:href="images/svg-sprite.svg#icon-bear"></use>
+                    </svg>
+                     <p>Your bag is empty.</p>
+                 </div>
+                 
+        </div>
+    </div>
+
+  <!-- Cart Modal -->
+  <div class="modal fade lucid-modal" id="lucid-cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Men's - Polo Shirt - White</h2>
+          <a href="javascript:void(0)" class="store-btn btn-blue" data-bs-dismiss="modal" aria-label="Close">Add to Order</a>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body d-lg-flex justify-content-between">
+            <div class="product-slider">
+                <div class="slider-for">
+                    <div class="large-image">
+                        <img src="images/men-shirt-white-large.png" alt=""/>
+                    </div>
+                    <div class="large-image">
+                        <img src="images/men-shirt-white-large-2.png" alt=""/>
+                    </div>
+                    <div class="large-image">
+                        <img src="images/men-shirt-white-large-3.png" alt=""/>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="thumb-image">
+                        <img src="images/men-shirt-white-thumb-1.png" alt=""/>
+                    </div>
+                    <div class="thumb-image">
+                        <img src="images/men-shirt-white-thumb-2.png" alt=""/>
+                    </div>
+                    <div class="thumb-image">
+                        <img src="images/men-shirt-white-thumb-3.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+          <div class="product-detail">
+            <h4>Choose quantity</h4>
+            <div class="quantity-wrapper">
+              <button class="decrement"><i class="fa fa-chevron-left"></i></button>
+              <input class="counter" type='text'>
+              <button class="increment"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <div class="product-info mb-30">
+              <div class="quantity-available">Quantity available in stock: <span>430</span></div>
+              <div class="product-health good">Good Stock health</div>
+          </div>    
+              <h4>Choose size</h4>
+              <ul class="custom-radio-button d-md-flex flex-wrap">
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="xs" name="size" checked/>
+                        <label for="xs">XS</label>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="s" name="size" />
+                        <label for="s">S</label>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="m" name="size" />
+                        <label for="m">M</label>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="l" name="size" />
+                        <label for="l">L</label>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="xl" name="size" />
+                        <label for="xl">XL</label>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="form-group">
+                        <input type="radio" id="xxl" name="size" />
+                        <label for="xxl">XXL</label>
+                      </div>
+                  </li>
+              </ul>
+              <h4>Choose your color</h4>
+                <ul class="variants">
+                  <li>
+                    <input type="radio" id="color1" name="radio-group" checked>
+                    <label for="color1" class="white">
+                      <span></span>
+                      <h5>White</h5>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="color2" name="radio-group">
+                    <label for="color2" class="blue">
+                      <span></span>
+                      <h5>Blue</h5>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="color3" name="radio-group">
+                    <label for="color3" class="brown">
+                      <span></span>
+                      <h5>Brown</h5>
+                    </label>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Promo Code Modal -->
+<div class="modal fade lucid-modal promocode-modal" id="promo-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="col-2">
+                <a href="javascript:void(0)" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+          <div class="col-7">
+            <h2 class="modal-title text-center" id="exampleModalLabel">Promo Code</h2>
+          </div>
+          <div class="col-3 text-end">
+            <button class="store-btn btn-blue disabled">Add</button>
+          </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-row success">
+                <input type="text" class="form-control" placeholder="Add promotion code">
+                <label class="success"><span class="icon-success"></span> Glad you are back.</label>
+            </div>
+            <div class="form-row error">
+                <input type="text" class="form-control" placeholder="Add promotion code">
+                <label class="errormsg"><span class="icon-error-info"></span> This code has expired.</label>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+  <!-- Bag saved success -->  
+  <div class="bag-saved-success justify-content-between">
+    <div class="left d-flex">
+        <div class="success-check">
+            <svg class="icon">
+                <use xlink:href="images/svg-sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        <p>Bag saved successfully</p>
+    </div>
+    <a href="javascript:void()" class="btn-close"></a>
+  </div>
+  <!-- Bag saved success End -->
+    <!-- Body End -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="src/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="src/slick.min.js"></script>
+    <script src="src/aos.js"></script>
+    <script src="src/main.js"></script>
+    
+  </body>
+</html>

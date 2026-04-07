@@ -1,0 +1,493 @@
+.text-center{text-align:center;}
+.main_footer{ 
+	padding-top:0;
+	font-family: AvenirLTStdBook;
+	input[type="email"].input_white{
+		background:$colorWhite;
+		color:$colorDarkGrey; 
+		padding:4px 8px;
+		margin-top:16px;
+	}
+	.font-13{
+		font-size:$font_size_13;
+	}	 
+	input[type="submit"].btn_white{    
+		width: 100%;    
+		font-weight: 700;    
+		text-transform: uppercase;
+	}
+	p.text-center{
+		text-align:center; 
+		padding-bottom:10px; 
+		padding-top:25px;
+	}
+	.padding_top{
+		padding-top:90px;
+	}
+	h4.text-center{
+		font-size: 15px; 
+		text-align: center;
+	}
+	p.message{text-align: center;}
+}
+.hp_main_banner{ padding:130px 0 192px; .secondary_text{margin-bottom: 30px;}}	
+.lp_mattress{ padding: 117px 0;
+   .container{position:relative; z-index:2}
+	h1{margin-bottom: 30px;}
+	&:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: 0;
+}
+}
+.lp_mattress{ padding: 173px 0;}
+.lp_mattress{ padding: 173px 0;}
+.lp_mattress{ padding: 173px 0;}
+.hp_bottom_logos{ 
+	.section_type1{padding:90px 0;} 
+}
+.free_shipping { 
+	.img_container{ 
+		img{width:80%;}
+	}
+	.description{    
+		padding-left: 75px; 
+		background: url(../assets/images/service.png) no-repeat left 5px;
+	}
+} 
+h3{color:$darkBule;}
+.mp_bed_types{border-bottom:1px solid $borderColor}
+.forever_warranty{background: url(../assets/images/proirty-bg.jpg) no-repeat center center;}	
+.closer_look{background: url(../assets/images/get-closer-bg.jpg) no-repeat center center;background-size:cover;
+h3{margin-bottom:60px;}
+p.video_text{font-size: 16px;width: 80%;margin: 15px auto;line-height: 24px;color:$colorDarkGrey;}
+.expert_pic{position:relative;
+.p_video{background:$colorBlack;display:inline-flex;border-radius:5px;overflow:hidden;cursor:pointer;
+img{@include transition(all, .2s, linear);}
+&:hover img.play_video{opacity:0.8;
+}
+}
+.play_icon{position:absolute;left:50%; margin-left:-30px;top:0; top:33%; cursor:pointer;}
+}
+}
+.sleep_cool{
+    background: url(../assets/images/sleep-cool-bg.jpg) no-repeat center bottom; background-size:cover;position:relative;
+	.section_type1{padding:120px 0;}
+	.sleep_btn{position:relative;top:-24px;}
+	.description h3{    
+		background: url(../assets/images/icon-sleep-cool.png) no-repeat left top;
+		padding:4px 0 5px 60px;
+		background-size:auto 100%;text-align:left;	
+	}
+	
+	
+}
+.conven_delivery{
+    background: url(../assets/images/convenient-delivery-bg.jpg) no-repeat center center;background-size:cover;
+	.section_type1{padding:120px 0;}
+	.description h3{    
+		padding-left: 75px; 
+		background: url(../assets/images/icon-convenient-delivery.png) no-repeat left 3px;
+		text-align:left;
+	}
+}
+.forever_warranty{  
+	.section_type1{padding:119px 0;}
+	.description{    
+		padding-left: 110px; 
+		background: url(../assets/images/warranty-bg.png) no-repeat left top;
+	}
+ }
+ 
+.night_trial { 
+	.description{    
+		padding-left: 75px; 
+		padding-top:16px;
+		background: url(../assets/images/star.png) no-repeat left 6px;
+	}
+}
+.btn_secondary{
+	border-radius:5px;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'AvenirLTStdHeavy'; 
+}
+.btn_secondary:hover{background: $darkBule; color: $colorWhite;}
+
+.hp_review_banner{
+	 .col-sm-6{
+	 		padding-top:30px;
+			.buyer{
+		 		.buyer_name {
+			    	line-height: 22px;
+			    	font-weight: 500;
+			    	margin-left: 10px;
+				}
+			}
+			h3{font-style: normal;}
+			.secondary_text3{font-family:'AvenirLTStdRoman'; font-size:18px;}		
+		}
+}
+.rating{padding-top: 5px;margin-bottom: 30px;}
+.rating .fa-star, .rating .fa-star-o, .rating .fa-star-half-o{font-size: 24px;}
+.exited { 
+		max-width:1454px; margin:0 auto;		
+		ul {
+			  list-style: outside none none;
+
+			li {
+
+				background: #000 none repeat scroll 0 0;
+
+				float:left;
+				position: relative;
+				
+				border-right: 2px solid #fff;
+				span {
+					color: #fff;
+					display: none;
+					font-size: 13px;
+					left:9px;
+					line-height: 15px;
+					position: absolute;
+					text-align: left;
+					top: 15px;
+					z-index: 999;
+					transition: all 0.2s linear 0s;
+					padding-right: 9px;
+
+				}
+				img{ float: left;transition: all 0.2s linear 0s}
+				
+			}
+			li:hover{ 
+				span{ display:block; } 
+				img{ opacity:0.5; } 
+			}
+			li:last-child{border-right:0}
+		}
+	a{    font-weight: bold;    font-family: 'AvenirLTStdHeavy'}	
+		
+}
+.clr{clear: both;}
+.experts{ 
+	padding: 90px 0; 
+	p{
+		 font-size: 18px; line-height: normal;
+		 
+	}
+	p.expert_link{ margin-top: 20px;
+
+		margin-top: 30px;
+    margin-bottom: 30px;
+
+	 }
+	h3{
+		text-align: center;
+		padding-bottom: 70px;
+	} 
+	.text-center{
+		text-align: center;
+	} 
+	a{
+		text-decoration: none;
+    	border-bottom: 1px solid #a4a6c4;
+    	font-size: 14px;
+    	font-weight: bold; 
+    	text-transform: uppercase; 
+    	font-family: 'AvenirLTStdHeavy' 
+    }
+}
+.expert_pic{margin-bottom: 15px;}
+.nav_bar{
+	    font-family: AvenirLTStdHeavy; 
+	    font-weight: bold; 
+	.logo{ 
+		@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+			width: 42%; 
+		}  
+		img { max-width: 100%;} 
+	} 
+}    
+
+.cart.alert{background-position: 0 0; background-repeat: no-repeat; width: 21px;height: 19px;}
+.nav_bar{ 
+	span.phone_number{ 
+		font-weight: 700; 
+		color: $colorBlue;
+		}
+	} 	 
+h5,h3{font-weight: 700; color: $colorBlue;}
+.btn_main{
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 15px 30px; 
+	font-family: AvenirLTStdHeavy;
+	text-shadow: 0px 1px #282933;
+}
+h1,.secondary_text{
+	text-shadow: none;    
+	font-weight: 700;
+}
+.secondary_text{
+	font-weight: 500;
+
+	margin-bottom: 50px;font-size: 28px;
+}
+.hp_main_banner .secondary_text{margin-bottom:20px;}
+.hp_bottom_logos .secondary_text{     font-family: 'AvenirLTStdHeavy'; h5{font-size: 18px;}}
+.secondary_text_2{font-size: 18px;font-weight: 500;text-transform: uppercase; margin-bottom: 30px;font-family: AvenirLTStdHeavy;  text-shadow: 0px 0px 1px #ffffff;}
+.message_min {.item{margin-top: 35px;}}
+.secondary_text2{font-size: $fontSize;}
+.secondary_text2_1{font-weight: bold;color:$colorDarkGrey;}
+.press{ .secondary_text2{font-size: 23px;}}
+h3{font-size: 28px;}
+.nav_links{width:85%;}
+.nav_bar .logo{width: 15%;}
+.navbar-right{float: right;}
+
+.promo { 
+	.message{font-size: 32px;width:40%;float:left;color: $colorWhite;font-family: AvenirLTStdHeavy;} 
+	.claim_block{
+		width:54%; 
+		float:right;
+		.time{width:37%;font-size: 13px;display:inline-block;color: $colorWhite; font-family: AvenirLTStdBook}
+		.cta{
+				width:58%;
+				display:inline-block;
+				input[type="email"]{
+					width: 200px; 
+					height: 30px;
+		    			margin: 0;
+
+		   			padding: 4px 8px;
+		   			background: $colorWhite none repeat scroll 0 0;
+		   			display:inline-block;
+		   			margin-right:30px;
+		   			font-size:14px;
+		   			font-family: AvenirLTStdBook;
+		   			border-radius:3px;
+		   		}
+			.btn_white{font-size:16px; color:$colorWhite;display:inline-block;padding:12px 15px;}
+	}
+
+	
+	} 
+	.btn_close {
+		top: 43px;
+		right: 10px;
+		position: absolute;
+	}
+
+}
+
+
+
+.hp_bottom_logos { 
+	.section_type1{ 
+		.icon{
+			background:#f8f8f8 url(../assets/images/payment_methods.png) no-repeat center 4px;
+			height: 45px;
+			width: 68px;
+			margin-left: 5px;
+			-webkit-box-shadow: 0px 1px 3px 0px #E4E6E8;
+			-moz-box-shadow: 0px 1px 3px 0px #E4E6E8;
+			box-shadow: 0px 1px 3px 0px #E4E6E8;
+			border-radius: 4px;
+
+		}
+		
+
+		.icon.yotpo {
+		  background-position: center 4px;
+		}
+		.icon.amazon {
+		  background-position: center -103px;
+		}
+		.icon.ssl {
+		  background-position: center -222px;
+		}
+		.icon.paypal {
+		  background-position: center -349px;
+		}
+		.icon.master {
+		  background-position: center -476px;
+		}
+		.icon.visa {
+		  background-position: center -615px;
+		}
+		.icon.discover {
+		  background-position: center -731px;
+		}
+		.icon.american {
+		  background-position: center -876px;
+		}
+		.icon.fedex {
+		  background-position: center -1065px;
+		}
+		h5{margin-bottom: 25px;}
+	
+	} 
+}
+h1,h2,h3,h4,h5,h6{letter-spacing: 1px; font-family: 'AvenirLTStdHeavy';}
+.hp_bottom_cta, .hp_main_banner, .forever_warranty  {/*background-size: cover;*/position:relative;}
+.explore_btn {
+    position: absolute;
+    font-size: 16px;
+    line-height: 24px;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    margin: 0 auto;
+    height: 50px;
+        width: 60px;
+    color: $colorWhite;
+    font-family: 'AvenirLTStdHeavy';
+    cursor: pointer;
+    transition: color .2s linear;
+    a{color: $colorWhite;}
+    a:hover{/*color:hsla(0,0%,100%,.5);*/}
+}
+.explore_btn:before {
+    transform: rotate(45deg);
+    margin-left: 12px;
+    bottom: 10px;
+}
+.explore_btn:after, .explore_btn:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: $colorWhite;
+    transition: background .2s linear;
+}
+.explore_btn:after {
+    transform: rotate(-45deg);
+    margin-left: -30px;
+    bottom: 10px;
+}
+.explore_btn:hover {
+    cursor: pointer;
+        color: #fff;
+}
+ .img_txt_container{ 
+    	.img_container{
+	     text-align: center;
+	}
+}
+.mattress_layers{ 
+ position:relative;
+    	img{
+	         position: absolute;z-index: 9;top: -60px;left: -75px;max-width:125%;
+			  @media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
+			  position:relative;
+			  }
+	}
+	@media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
+			  .section_type1{padding:0}
+	 }
+	
+}
+.mobile_phone_number{display:none;}
+body{padding-top:60px;}
+header{    border-bottom: 1px solid #ddd;
+    background: hsla(0,0%,100%,.96);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;}
+.nav_bar .nav_links .mobile_menu_btn{font-size:18px;}
+.nav_bar{background:none;}
+.mobile_menu{display:block;}
+ @media (max-width: $screen-md-max) and (min-width: $screen-md-min){
+     .exited{ ul{ li{}}}
+     .exited{max-width: 728px;} 
+    
+  } 
+@media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
+    .nav_bar{ .logo{width: 50%;} }
+    .main_footer{
+    	.padding_top {
+       		 padding-top: 10px;
+    	}
+	}
+    .col-sm-12{width: 100%;}
+    .img_txt_container{ 
+    	.img_container{
+	        text-align: center;
+	        margin-top: 25px;
+	        margin-bottom: 25px;
+    	}
+    }
+     
+    .night_trial .description, 
+    .free_shipping .description, .forever_warranty .description{padding:72px 10px 0px 10px; background-position: top center; text-align: center;}
+    .forever_warranty .description{padding:100px 10px 0px 10px; background-position: top center;background-size: 70px;}
+    .secondary_text_2, .secondary_text2, .press .secondary_text2, h1,h3{text-align: center;}
+	.sleep_cool .secondary_text2,.conven_delivery .secondary_text2{text-align:left;}
+    .experts{ .text-center{margin: 15px 0; }}
+    .exited{max-width: 546px;}
+    .exited{ ul{ li{margin:0; } li:last-child{border-right: 2px solid #fff;}}}
+}
+
+
+@media (max-width: $screen-sm-min) and (min-width: $screen-xs-min){
+    h1,h3{font-size: 24px;} 
+    .secondary_text {font-size: 20px;} 
+    .secondary_text_2, .secondary_text2, .press .secondary_text2{font-size: 18px;}
+    	 .exited{max-width: 364px;}
+     .exited{ ul{ li{}}}
+    }
+
+  @media (max-width: $screen-lg-max) and (min-width: $screen-xs-min){
+    .promo{
+    	.message, .claim_block{float: none; width: 100%; margin:0 auto; padding: 0 20px; text-align: center; font-size: 22px;}
+   		.claim_block{
+   			.cta{ .btn_white{float: none; margin-top: 10px;} input[type="email"]{float: none; width: 100%;} }
+   			.time, .cta{float: none; width: 100%;}
+   		} 
+   		.btn_close {right: 10px;}
+    } 
+  }  
+
+ 
+@media (max-width: 370px) and (min-width: $screen-xs-min){
+  .exited{max-width: 182px;}
+}
+
+@media (max-width: $screen-md-max) and (min-width: $screen-xs-min){
+ .nav_bar{
+     	.phone_number{
+     		
+	    			display: none;
+	    		
+	    	}	
+	}
+	.mobile_phone_number{display:block;}
+}
+@media (max-width: 1455px) and (min-width: $screen-md-max){
+	 .exited{ ul{ li{ width:12.5%;}}}   
+}  
+
+@media (min-width: 1300px){
+	.hp_main_banner{padding-top:192px;}
+}
+@media (min-width: $screen-md-min){
+		.hp_bottom_cta, .hp_main_banner, .forever_warranty  {background-size: cover;}
+}	
+@media (max-width: $screen-sm-max){
+		.hp_main_banner{padding:90px 0;background-size: cover;}
+}	
+.mp_reviews_bot{padding-bottom:60px;}
+.nopadding{padding:0 !important;}
+.sm-container{max-width: 480px;  width: 100%;}

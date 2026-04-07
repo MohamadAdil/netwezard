@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSansSemibold.eot');
+    src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+         url('../fonts/OpenSansSemibold.woff') format('woff'),
+         url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+         url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSansLight.ttf') format('truetype'),
+         url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+body{font-family: 'OpenSansRegular'; font-size:16px; line-height:24px; color:#333; padding-top:87px;}
+h1{font-size:58px;}
+h2{font-size:30px; margin:0;}
+h3{font-size:22px;}
+h4{font-size:16px;}
+h5{font-size:14px;font-family: 'OpenSansSemibold';}
+h6{font-size:13px;}
+*, a{transition:all .2s ease-in-out}
+a, a:focus, a:hover{text-decoration:none;}
+#header{background:#fff; padding:20px 0 10px;}
+.navbar-default{background:#fff; margin:0; padding:20px 0 10px;}
+.navbar-nav > li{margin:0 15px;font-family: 'OpenSansSemibold';}
+.navbar-nav > li > a{padding:0; position:relative;}
+.navbar-nav > li > a::after{height:2px; width:0;background:#e42893; bottom:-2px; content:""; position:absolute; left:0;transition:all .2s ease-in-out}
+.navbar-nav > li > a:hover::after, .navbar-nav > li.active > a::after{width:100%;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover{color:#e42893; background:none; text-decoration:none;}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{padding:0; margin:0; height:auto;}
+.navbar-nav{margin-top:15px;}
+#banner{background:url(../images/banner-bg.jpg) center top no-repeat; background-size:cover; color:#fff;}
+.badge{background:url(../images/badge.png) center top no-repeat; width:115px; height:80px; position:absolute; top:0; right:0; padding-top:17px; z-index:99;}
+.badge h6{letter-spacing:2.8px; margin:0; text-transform:uppercase}
+.badge h3{margin:0; text-transform:uppercase;}
+#banner .container{position:relative; padding:90px 15px 50px;}
+#banner h1{text-transform:uppercase; margin:0; line-height:56px;font-family: 'OpenSansLight';}
+#banner h2{font-size:38px;text-transform:uppercase; margin:0 0 20px;}
+#banner p{font-size:15px; line-height:21px; padding-bottom:20px;}
+#banner .section-link{color:#fff; margin-top:10px;}
+#banner .section-link::after{background:url(../images/icon-arrow-down-white.png) center bottom no-repeat;}
+
+.btn-pink {
+background:rgba(228, 40, 147, 1);
+border-radius:50px;
+-webkit-border-radius:50px;
+color:#fff!important;
+font-family: 'OpenSansSemibold';
+font-size:15px;
+padding:7px 15px;
+border:0;
+text-transform:uppercase;
+}
+.btn-pink:hover{background:rgba(193, 20, 118, 1); color:#fff; text-decoration:none;}
+.section a{color:#e42893;}
+.section a:hover{text-decoration:none;}
+.section{padding:90px 0 30px;}
+.section p{margin-bottom:15px;}
+.section h2{margin-bottom:20px;}
+.section p span, .info-detail ul li, .section-link, #how-it-works h4, #contact-us label, .contact-info ul li{font-family: 'OpenSansSemibold';}
+#about-us{padding-bottom:50px;}
+#about-us .container{max-width:850px;}
+.info-detail{margin-top:30px;}
+.info-detail h5{border-bottom:1px solid #d5d5d5; color:#666; padding-bottom:7px;}
+.info-detail ul{padding:0;}
+.info-detail ul li{list-style:none; font-size:15px; line-height:30px;}
+.info-detail ul li i{margin-right:15px; font-size:18px;}
+.info-detail ul li:last-child{padding-left:20px;}
+.info-detail h3{margin:0;}
+#about-us  .section-link{margin-top:30px;}
+.section-link{display:inline-block; font-size:13px;}
+.section-link:hover::after{bottom:-24px;}
+.section-link::after{position:absolute; content:""; background:url(../images/icon-arrow-down.png) center bottom no-repeat; bottom:-20px; margin:0 auto; width:17px; height:9px;left:0; right:0;transition:all .2s ease-in-out}
+#how-it-works{background:#ededed; padding-bottom:0;}
+#how-it-works h2{margin-bottom:0;}
+#how-it-works h4{ margin:0 0 6px;}
+.phone-image img{position:relative; bottom:-1px;}
+.phone-content{margin:45px 0 0;}
+.phone-content ul{padding:0; list-style:none; margin-bottom:20px;}
+.phone-content ul li{line-height:26px; padding-left:25px; position:relative}
+.phone-content li i{color:#e42893; margin-right:15px;position: absolute;left: 0;top: 5px;}
+#how-it-works p{line-height:26px; margin-bottom:15px;}
+#contact-us{background:#5b5a5b; padding-bottom:60px}
+#contact-us h2{color:#fff;}
+#contact-us .container{max-width:770px;}
+.contact-form{padding-right:20px;}
+#contact-us label{color:#ccc;}
+#contact-us .form-control{height:40px; background:#999; border:1px solid #afaeaf; color:#fff;}
+#contact-us textarea.form-control{height:110px;resize:none;}
+.btn-submit{padding:10px 30px; border-radius:5px;-webkit-border-radius:5px;}
+.contact-info ul{padding:35px 0 30px 50px; list-style:none; margin-top:30px; border-left:1px solid #706f70;}
+.contact-info ul li{margin-bottom:25px; color:#fff;}
+.contact-info ul li img{margin-right:10px;}
+.contact-info ul li a{color:#fff;}
+.contact-info ul li a:hover{color:#e42893;}
+#footer{background:#4b4b4b; padding:13px 0;}
+#footer p{margin:0; font-size:13px; color:#ccc;}
+#contact-us label.error{color:#ee6f6f; font-size:15px;font-family: 'OpenSansLight';}
+#contact-us label.error.valid{display:none !important;}
+
+
+
+@media (max-width: 767px){
+	.section{padding-top:60px;}
+	#banner h1{font-size:42px;}
+	#banner h2{font-size:28px;}
+	#body{padding-top:70px;}
+	.navbar{min-height:auto;}
+	.navbar > .container .navbar-brand{padding-left:15px;}
+	.navbar-brand > img{max-width:110px;}
+	#banner .section-link{display:none;}
+	.contact-form{padding:0;}
+	.contact-info ul{padding:30px 0 0; border:0;}
+	.navbar-default .navbar-collapse{z-index:9999; background:#fff;position:absolute; width:100%; border-top:0; border-bottom:1px solid #ddd;}
+.navbar-collapse.in .navbar-nav > li{margin-bottom:15px;}
+.navbar-default .navbar-toggle{border:0; margin:0 15px 0 0;}
+.navbar-default .navbar-toggle .icon-bar{background:#e42893;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background:#fff;}
+.phone-image img{bottom:0;}
+#footer p{float:none !important;}
+}
+
+@media(min-width:992px) and (max-width:1024px){
+#how-it-works{padding-bottom:30px;}
+.phone-image img{position:relative; bottom:-107px}
+}

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="scss/icon-moon.css" rel="stylesheet"/>
+    <link href="scss/style.css" rel="stylesheet"/>
+    <link href="scss/custom-ui.css" rel="stylesheet"/>
+    <title>Lucid | Store</title>
+  </head>
+  <body>
+      <!-- Header -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+            <a href="javascript:void(0)" class="close-toggle">
+                <svg class="icon">
+                    <use xlink:href="images/svg-sprite.svg#sidebar-left"></use>
+                </svg>
+            </a>
+            <h2>Transactions</h2>
+        </div>
+        <ul class="sidebarnav">
+            <li>
+                <a href="index.html">
+                    <span class="icon-pos iconmoon"></span>
+                    <span>POS</span>
+                </a>
+                </li>
+            <li>
+                <a href="transactions.html" class="active">
+                    <span class="icon-transactions iconmoon"></span>
+                    <span>Transactions</span>
+                </a>
+                </li>
+            <li>
+                <a href="saved-bag.html">
+                    <span class="icon-saved-bag iconmoon"></span>
+                    <span>Saved Bag</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <span class="icon-settings iconmoon"></span>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+    <header id="site-header">
+        <div class="brand">
+            <a href="javascript:void(0)" class="toggle-menu">
+                <svg class="sidebar-left">
+                    <use xlink:href="images/svg-sprite.svg#sidebar-left"></use>
+                </svg>
+            </a>
+            <h1>Transactions</h1>
+        </div>
+        <div class="profile-action ms-auto">
+            <a href="javascript:void(0)" class="user-profile">
+                <img src="images/profile-img.png" alt=""/>
+                <span>James Gouse</span>
+            </a>
+            <a href="javascript:void(0)" class="store-btn btn-border">Switch</a>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Body -->
+    <div class="site-wrapper d-lg-flex flex-wrap">
+        <div class="left-side">
+            <div class="left-search">
+                <div class="search-form-group">
+                    <span class="icon-search"></span>
+                    <input type="text" class="form-control" placeholder="Search by order no or amount"/>
+                </div>
+            </div>
+            <div class="day-head">
+                Today
+            </div>
+            <ul class="transaction-history-list">
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                            <span class="icon-arrow-back refund"><span class="path1"></span><span class="path2"></span></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="day-head">
+                Yesterday, Apr 28 2022
+            </div>
+            <ul class="transaction-history-list">
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                            <span class="icon-arrow-back refund"><span class="path1"></span><span class="path2"></span></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="history-detail">
+                            <div class="transaction-number">OR968493</div>
+                            <div class="amount">$86.60</div>
+                            <div class="product-item">Men’s Polo shirt, Camp cup</div>
+                        </div>
+                        <div class="time">5.41 PM</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <div class="transction-process">
+                <ul class="process-buttons d-flex flex-sm-wrap">
+                    <li>
+                        <a href="javascript:void()" class="store-btn-lg btn-border" data-bs-toggle="modal" data-bs-target="#refund-modal">Refund</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()" class="store-btn-lg btn-border" data-bs-toggle="modal" data-bs-target="#initiate-exchange-modal">Exchange</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()" class="store-btn-lg btn-border">Send Receipt</a>
+                    </li>
+                </ul>
+                <h2 class="order-sttus">Order placed on Apr 14 , 2022</h2>
+                <div class="cardpayment-wrapper">
+                    <div class="cardpayment-head d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="heading">Card Payment</div>
+                        <div class="payment-date">Apr 14, 2020, 5:41 PM</div>
+                    </div>
+                    <div class="payment-row d-flex align-items-center">
+                        <div class="icon">
+                            <span class="icon-card"></span>
+                        </div>
+                        <div class="text">VisaCard 2007</div>
+                    </div>
+                    <div class="payment-row d-flex align-items-center">
+                        <div class="icon">
+                            <span class="icon-discount"></span>
+                        </div>
+                        <div class="text">Order no: OR968493</div>
+                    </div>
+                    <ul class="product-list">
+                        <li>
+                            <div class="product-info d-flex">
+                                <div class="image">
+                                    <img src="images/cart-product-thumb.png" alt="">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Men's - Polo Shirt - White</h4>
+                                    <div class="quantity">Quantity <span>1</span></div>
+                                </div>
+                                <div class="price">$68.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-info d-flex">
+                                <div class="image">
+                                    <img src="images/cart-product-thumb-cup.png" alt="">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Camp Cup - White</h4>
+                                    <div class="quantity">Quantity <span>1</span></div>
+                                </div>
+                                <div class="price">$68.00</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total-paid-row d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="total-paid">Total Paid</div>
+                        <div class="total-paid-amount">$86.60</div>
+                    </div>
+                    <div class="buyer-detail">
+                        <h3>Anton Fletcher</h3>
+                        <div class="address">103 Prince Street<br/>
+                            New York 10012<br/>
+                            United States
+                        </div>
+                        <div class="contact-info d-flex">
+                            <div class="contact-text">
+                                <label>Phone no</label>
+                                <p>212-226-3126</p>
+                            </div>
+                            <div class="contact-text">
+                                <label>Email ID</label>
+                                <p><a href="mailto:anton.fletcher@gmail.com">anton.fletcher@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-transaction-record">
+                <svg class="icon greenry">
+                    <use xlink:href="images/svg-sprite.svg#icon-green-plant"></use>
+                  </svg>
+                  <svg class="icon card">
+                    <use xlink:href="images/svg-sprite.svg#icon-swipe-card"></use>
+                  </svg>
+                <!-- <span class="icon-debit-card"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> -->
+            </div>
+        </div>
+    </div>  
+<!-- Refund Modal -->
+<div class="modal fade lucid-modal refund-modal" id="refund-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-center" id="exampleModalLabel">Initiate Refund</h2>
+          <p>Item amount includes taxes and discounts where applicable.</p>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            <ul class="refund-tabs">
+                <li class="tab-link current" data-tab="tab-1">Items</li>
+                <li class="tab-link" data-tab="tab-2">Amount</li>
+            </ul>
+            <div id="tab-1" class="refund-tab-content current">
+                <h4>Items you have purchased</h4>
+                <div class="refund-modaltable">
+                    <table class="" style="width: 100%;" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                              <th scope="col">
+                                  <div class="custom-checkbox">
+                                    <input type="checkbox" id="all">
+                                    <label for="all">All Items</label>
+                                  </div>
+                              </th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Quantity Exchange</th>
+                              <th scope="col">Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="shirt">
+                                        <label for="shirt">Men's - Polo Shirt - White</label>
+                                      </div>
+                                  </td>
+                                  <td>2</td>
+                                  <td>
+                                      <input type="text" class="form-control" placeholder="0"/>
+                                  </td>
+                                  <td>$70.60</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="custom-checkbox">
+                                      <input type="checkbox" id="camp-cup">
+                                      <label for="camp-cup">Camp Cup - White</label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="0"/>
+                                </td>
+                                <td>$16.00</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                    <div class="button-wrapper">
+                        <button class="store-btn-lg btn-blue" data-bs-toggle="modal" data-bs-target="#give-reason-modal"  data-bs-dismiss="modal" aria-label="Close">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-2" class="refund-tab-content">
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Give Reason Modal -->
+<div class="modal fade lucid-modal give-reason-modal" id="give-reason-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <a href="javascript:void(0)" class="backlink" data-bs-toggle="modal" data-bs-target="#refund-modal"  data-bs-dismiss="modal" aria-label="Close">Back</a>
+          <h2 class="modal-title text-center" id="exampleModalLabel">Give Reason</h2>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            <div class="reason-block">
+                <h4>Reason for Return</h4>
+                <ul class="reason-list">
+                    <li>
+                        <div class="form-group">
+                            <input type="radio" id="accidental-charge" name="reason" checked/>
+                            <label for="accidental-charge">Accidental Charge</label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="form-group">
+                            <input type="radio" id="cancelled-order" name="reason" />
+                            <label for="cancelled-order">Cancelled Order</label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="form-group">
+                            <input type="radio" id="return-good" name="reason" />
+                            <label for="return-good">Returned Goods</label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="form-group">
+                            <input type="radio" id="damaged-product" name="reason" />
+                            <label for="damaged-product">Damaged Product</label>
+                          </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="reason-block">
+                <h4>Restock</h4>
+                <ul class="reason-list">
+                    <li>
+                        Update Inventory with returned items
+                        <div class="form-group">
+                            <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-wrapper">
+                <button class="store-btn-lg btn-blue" data-bs-toggle="modal" data-bs-target="#initiate-refund-complete-modal" data-bs-dismiss="modal" aria-label="Close">Next</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Initiate Refund Complete Modal -->
+<div class="modal fade lucid-modal complete-payment-msg-modal" id="initiate-refund-complete-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       
+        <div class="modal-body">
+            <div class="payment-done">
+                <div class="text-center">
+                  <div class="decoration">
+                    <svg class="icon">
+                      <use xlink:href="images/svg-sprite.svg#icon-decoration"></use>
+                  </svg>
+                  <div class="success-check">
+                    <svg class="icon">
+                      <use xlink:href="images/svg-sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  </div>
+                  <div class="refund-success-msg">Refund complete</div>
+                  <p>Visa 2007 </p>
+                  </div>
+              </div>
+            <div class="button-wrapper text-center">
+                <button class="store-btn-lg btn-blue" data-bs-dismiss="modal" aria-label="Close">Done</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Initiate Exchange Modal -->
+<div class="modal fade lucid-modal initiate-exchange-modal" id="initiate-exchange-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h2 class="modal-title text-center" id="exampleModalLabel">Initiate Exchange</h2>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            
+            <div  class="refund-tab-content d-block mt-2">
+                <h4>Items you have purchased</h4>
+                <div class="refund-modaltable">
+                    <table class="" style="width: 100%;" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                              <th scope="col">
+                                  <div class="custom-checkbox">
+                                    <input type="checkbox" id="all1">
+                                    <label for="all1">All Items</label>
+                                  </div>
+                              </th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Quantity Exchange</th>
+                              <th scope="col">Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="shirt1">
+                                        <label for="shirt1">Men's - Polo Shirt - White</label>
+                                      </div>
+                                  </td>
+                                  <td>2</td>
+                                  <td>
+                                      <input type="text" class="form-control" placeholder="0">
+                                  </td>
+                                  <td>$70.60</td>
+                              </tr>
+                         
+                          </tbody>
+                    </table>
+                </div>
+                <div class="reason-block">
+                    <h4 class="pt-5">How do you want to exchange</h4>
+                    <ul class="reason-list">
+                        <li>
+                            Exchange with the same item
+                            <div class="form-group">
+                                <div class="switch-btn box">
+                                    <input type="checkbox" class="toggle-radio">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button-wrapper text-center">
+            <button class="store-btn-lg btn-blue w-100 border-0" data-bs-toggle="modal" data-bs-target="#initiate-give-reasion-modal" data-bs-dismiss="modal" aria-label="Close">Next</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Initiate Give Reason -->
+<div class="modal fade lucid-modal give-reason-modal  initiate-give-reasion-modal" id="initiate-give-reasion-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <a href="javascript:void(0)" class="backlink" data-bs-toggle="modal" data-bs-target="#initiate-exchange-modal" data-bs-dismiss="modal" aria-label="Close">Back</a>
+          <h2 class="modal-title text-center" id="exampleModalLabel">Give Reason</h2>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            <div class="reason-block">
+                <h4>Reason for Return</h4>
+                <ul class="reason-list">
+                    <li>
+                        <div class="form-group">
+                            <input type="radio" id="misfit" name="reason" checked="">
+                            <label for="misfit">Misfit</label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="form-group">
+                            <input type="radio" id="size-not-appropriate" name="reason">
+                            <label for="size-not-appropriate">Size not appropriate</label>
+                          </div>
+                      </li>
+                      
+                </ul>
+            </div>
+            <div class="reason-block">
+                <h4>Restock</h4>
+                <ul class="reason-list">
+                    <li>
+                        Update Inventory with returned items
+                        <div class="form-group">
+                            <div class="switch-btn box">
+                                <input type="checkbox" class="toggle-radio">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-wrapper">
+                <button class="store-btn-lg btn-blue" data-bs-toggle="modal" data-bs-target="" data-bs-dismiss="modal" aria-label="Close">Next</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>									   
+  <div class="overlay"></div>
+    <!-- Body End -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="src/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="src/slick.min.js"></script>
+    <script src="src/aos.js"></script>
+    <script src="src/main.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,16 @@
+$(document).ready(function(){
+
+    count = 0;
+    wordsArray = ["total addressable market", "next market of opportunity", "ideal buyer", "next opportunity"];
+   
+    $("#introchange").text(wordsArray[0]);
+
+
+    setInterval(function () {
+       count++; 
+        $("#introchange").fadeOut(400, function () {
+        $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400); 
+        });
+     
+    }, 2000);
+});

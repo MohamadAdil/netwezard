@@ -1,0 +1,194 @@
+.checkout-page{
+	background: #F5F4F4;
+	min-height: 100vh;
+}
+.checkout-page .checkout-left, .checkout-page .checkout-right{
+	flex-basis: 50%;
+}
+.checkout-page .checkout-left{
+	background: #FFFFFF;
+	padding: 120px;
+}
+.checkout-page .checkout-left .brand{
+	margin-bottom: 45px;
+	display: inline-block;
+}
+.checkout-page .checkout-left .brand svg{
+	fill: #000;
+}
+.checkout-page .checkout-left .checkout-head{
+	border-bottom: 1px solid #CACACA;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+}
+.checkout-page .checkout-left .checkout-head h2{
+	font-size: 34px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.checkout-page .checkout-left .checkout-head p{
+	font-size: 14px;
+	margin: 0;
+}
+.checkout-page .checkout-left .accordion-item:first-of-type{
+	border: 0;
+	border-radius: 0;
+	background: none;
+}
+.checkout-page .checkout-left .accordion-item{
+	border: 0;
+	border-top: 1px solid #CACACA;
+}
+.checkout-page .checkout-left .accordion-item:last-child{
+	border-bottom: 1px solid #CACACA;
+}
+.accordion-body{
+	padding:20px 0 0;
+}
+.checkout-page .checkout-left .accordion-item .accordion-body{
+	padding: 0 0 35px;
+}
+.checkout-page .checkout-left .accordion-item .accordion-button{
+	border: 0;
+	padding: 30px 0;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.checkout-page .checkout-left .accordion-item h3{
+	font-size: 20px;
+	font-weight: 600;
+	color: #000;
+	margin: 0;
+}
+.checkout-page .checkout-left .accordion-item h3 span.numbering{
+	background: #1B1B1B;
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+.checkout-page .checkout-left .accordion-button::after{
+	display: none;
+}
+.checkout-page .checkout-left .accordion-item label{
+	font-size: 14px;
+	font-weight: 500;
+	color: #5C5C5C;
+	padding-bottom: 10px;
+}
+.checkout-page .checkout-left .accordion-item .email-wrapper input[type=email]{
+	max-width: 392px;
+	margin-right: 8px;
+}
+.checkout-page .checkout-left .accordion-item .form-control:focus{
+	box-shadow: none;
+}
+.checkout-page .checkout-left .accordion-item button.c-btn{
+	padding: 12px 30px;
+	border: 0;
+}
+.checkout-page .checkout-left .social-plateform ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.checkout-page .checkout-left .social-plateform ul li{
+	min-width: 95px;
+	margin-right: 10px;
+}
+.checkout-page .checkout-left .social-plateform ul li i{
+	width: 100%;
+	max-width: 95px;
+	border-radius: 5px;
+	min-height: 40px;
+	background: #333333;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.checkout-page .checkout-left .social-plateform ul li.gpay i{
+	background: #333;
+}
+.checkout-page .checkout-left .social-plateform ul li.apple-pay i{
+	background: #111;
+}
+.checkout-page .checkout-left .social-plateform ul li.facebook i{
+	background: #1877F2;
+}
+.checkout-page .checkout-left .accordion-item .info-txt{
+	font-size: 12px;
+	font-weight: 500;
+	color: #456BD9;
+	margin-top: 10px;
+	text-decoration: none;
+} 
+.checkout-page .checkout-left label.billing-address{
+	color: #000;
+}
+.checkout-page .checkout-left label.billing-address input[type=checkbox]{
+	margin-right: 5px;
+}
+.checkout-page .checkout-left .shipping-method{
+	border: 1px solid #CACACA;
+	border-radius: 3px;
+}
+.checkout-page .checkout-left .shipping-method ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.checkout-page .checkout-left .shipping-method ul li{
+	padding: 20px 15px;
+	border-bottom: 1px solid #cacaca;
+	flex-grow: 1;
+	display: inline-flex;
+	align-items: center;
+}
+.checkout-page .checkout-left .shipping-method ul li:last-child{
+	border-bottom: 0;
+}
+.checkout-page .checkout-left .shipping-method ul li .left .radio-button{
+	margin-right: 20px;
+}
+.checkout-page .checkout-left .shipping-method ul li h5{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.checkout-page .checkout-left .shipping-method ul li .left p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #5C5C5C;
+	margin-bottom: 0;
+}
+.checkout-page .checkout-left .shipping-method ul li .price{
+	font-weight: 600;
+}
+.checkout-page .checkout-left .form-with-icon{
+	position: relative;
+}
+.checkout-page .checkout-left .form-with-icon .form-control{
+	padding-right: 60px;
+}
+.checkout-page .checkout-left .form-with-icon i{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.checkout-page .checkout-left .accordion-item .other-method label{
+	color: #000;
+	font-weight: 600;
+}
+
+

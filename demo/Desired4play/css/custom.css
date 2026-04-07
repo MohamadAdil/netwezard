@@ -1,0 +1,532 @@
+
+body{
+     -webkit-user-select: none; 
+      -webkit-touch-callout: none; 
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none;    
+}
+
+
+input#timepicker::placeholder {
+ font-family: Times New Roman;   color: #6c757d;
+}
+.no-border
+{
+  border: none !important;
+}
+section p {
+    text-align: left;     font-size: 16px;     line-height: 25px;
+}
+
+footer .ftco-footer-social li a {
+    height: auto;
+    width: auto;
+    padding: 0px 15px;
+}
+
+footer .ftco-footer-social li a span.icon.icon-whatsapp:before {
+    font-size: 24px;
+}
+
+footer .ftco-footer-social li a .icon-envelope:before {
+    content: "\f0e0";
+    font-size: 22px;
+}
+
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav {
+      padding: 10px 0; } }
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 16px;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-left: 15px;
+    padding-right: 0px;     font-family: Times New Roman;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 1 !important; }
+
+.padding-right-0{
+    padding-right: 0px;
+}
+nav a.navbar-brand img {
+    height: 54px;
+}
+i, .color_pink {
+    color: #dca494;
+}
+.bold
+{
+font-weight: 700 !important;
+}
+.font-22
+{
+  font-size: 22px !important;
+}
+.icon-whatsapp:before
+{
+  font-weight: 700;     font-size: 17px;
+}
+.consult-form .form-group .select-wrap .icon span {
+    color: #dca494 !important;
+    right: -10px;
+}
+section.ftco-consult .consult-form select.form-control {
+    color: #dca494 !important;
+    font-weight: 600; font-size: 16px;
+    border: 1px solid !important;
+    background-image: linear-gradient(#c5c2c2 -40%, black 54%, #c5c2c2 151%) !important;
+}
+
+section.ftco-consult .consult-form select option {
+    background-color: #000;
+}
+
+.book_online_form .form-control {
+    height: 52px !important;
+    color: #fff !important;
+    font-size: 16px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #dca494 !important;
+    background-color: transparent !important;
+    width: 100%;
+}
+
+.book_online_form input[type='submit'].form-control {
+    color: #fff !important;
+    border: 1px solid #dca494 !important;
+    background-color: #dca494 !important;
+    width: auto;
+    margin: 40px auto;
+    padding: 10px 30px;
+}
+
+.model.img.d-flex.align-items-end
+{
+  padding: 0px 0px 0px 14px;
+  margin-bottom: 10px;
+  flex-direction: column;    align-items: center !important;
+}
+
+.model.img.d-flex.align-items-end h2 {
+    margin-top: 13px;
+    color: #dca494; margin-bottom: 0px;
+    font-size: 17px; font-weight: 700;
+}
+.out_call {
+    line-height: 16px;
+}
+section.hero-wrap.d-flex.js-fullheight, section.hero-wrap.hero-wrap-2
+{
+      background-image: url(../images/slider-image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px !important;
+}
+ul.navbar-nav li ul li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+.book_online_form .form-control.height_60{
+    height: 100px !important;
+}
+.font-120
+{
+    font-size: 120px;
+}
+
+
+.font_48
+{
+    font-size: 48px !important;
+}
+
+
+
+ul.color_pink, strong.color_pink {
+    font-size: 18px;
+    font-weight: 700;
+}
+div#ftco-nav {
+    margin-right: -30px;
+}
+
+
+.model.img.d-flex img {
+    width: 100%;     border: 3px solid #daa592; 
+    height: 329px;
+    object-fit: cover;
+}
+
+.wrap-about-sec .model.img.d-flex img
+{
+    height: 260px;
+}
+
+ul.navbar-nav li ul
+{
+  margin: 6px 10px 0;
+  padding: 0;
+}
+
+nav#ftco-navbar {
+    padding: 9px 0px;
+}
+.floating_icons {
+     position: fixed;
+     z-index: 999;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    height: 196px;
+    z-index: 999;
+    margin: auto;
+}
+.floating_icons ul li {
+    display: block;
+    padding: 2px 0px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.floating_icons ul li span.icon
+{
+  color: #fff;
+}
+
+
+.block-20
+{
+border: 3px solid #daa592;
+}
+
+span.file_upload input.form-control {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    height: 38px !important;
+    padding: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.gj-datepicker [role=right-icon] {
+    cursor: pointer;
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+form.book_online_form .gj-timepicker-md [role=right-icon] {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    font-size: 24px;
+    opacity: unset;
+}
+
+.gj-picker-bootstrap table tr td div, .gj-picker-bootstrap table tr th div
+{
+  color: #333;
+}
+
+.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div{
+  background-color: #dca494 !important;
+  border-color: #dca494 !important;
+}
+
+span.file_upload a{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+span.file_upload {
+    position: relative;
+    display: inline;
+    margin-left: 7px;
+}
+
+strong.mb-4 {
+    font-weight: 700;
+    color: #dca494;
+    font-size: 18px; text-align: left;
+    display: inline-block;
+    margin-bottom: 0px !important;
+}
+.heading-section h2.font_22
+{
+font-size: 22px;
+color: #dca494;
+font-weight: 600;
+border: none;
+}
+.font_22{
+  font-size: 22px !important;
+}
+
+.heading-section h2 {
+    font-size: 34px;
+    color: #daa592;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px !important;
+    display: inline-block;}
+
+    .small-thumbs {
+    padding: .5rem;
+}
+
+.uppercase
+{
+    text-transform: uppercase !important;
+}
+div#profile-left img.curved{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid #daa592;
+    width: 100%;
+}
+
+#profile-right {
+    padding: 0 15px 0 6%;
+    margin-top: 0;
+    font-family: "Poppins",sans-serif;
+}
+#profile-right h2.profile-heading {
+    margin: 1em 0 0rem 0;
+    border-bottom: 1px solid #404040;
+    padding-bottom: 0.5rem;
+    font-size: 20px; color: #fff;
+}
+
+.table>tbody>tr>td.rate, .next-previous a span {
+    color: #dca494;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 5px 0 1px;
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.list-group-item {
+    margin-bottom: 5px;
+}
+.list-group-item {
+    background: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 0 1px;
+    margin-bottom: 0;
+}
+
+#profile-right .list-group-item span, #profile-right th span, #profile-right td span {
+    font-weight: 700 !important;
+    color: #dca494 !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.margin-top-0
+{
+  margin-top: 0 !important;
+}
+
+div#profile-right i.icon.icon-star{
+      font-size: 27px;
+}
+
+form#reviews-form select, select
+{
+  color: #49505A !important;
+}
+
+form#reviews-form select option, select option {
+    background-color: #000;    
+    color: #dca494 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Hover Button 1 */
+.fb5 {
+    background-color: #db6600;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top:3px;
+    padding-bottom:3px; 
+    color: #ffffff;
+    border:1px solid #db6600;
+    background-image: url(images/button_bg.jpg);
+}
+.fb5:hover {
+    background-color: #000000;  
+    border:1px solid #000000;
+    background-image: url(images/button_bg_over.jpg);
+}
+.padding-left-0
+{
+    padding-left: 0px;
+}
+
+.gallery-quick-search .quick-search {
+    text-align: center;
+}
+
+.quick-search {
+    position: relative;
+}
+
+.quick-search__title, .gallery-nav__row a div {
+    cursor: pointer;
+    color: #dca494;
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    letter-spacing: 1.8px;
+    border: 1px solid grey;
+    padding: 10px 5px;
+    -webkit-transition: .7s all linear;
+    -moz-transition: .7s all linear;
+    -o-transition: .7s all linear;
+    transition: .7s all linear;
+}
+
+.quick-search__title span, .gallery-nav__row a div span {
+    color: white;
+}
+
+.quick-search__dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.quick-search__dropdown li a {
+    display: block;
+    padding: 15px 0;
+    border-radius: 0px;
+    border: 1px solid gray;
+    color: white;
+    font-family: 'Playfair Display';
+        font-size: 17px;
+    text-align: center;
+    background-color: #020202;
+    letter-spacing: 1.8px;
+    -webkit-transition: .7s all linear;
+    -moz-transition: .7s all linear;
+    -o-transition: .7s all linear;
+    transition: .7s all linear;
+}
+
+.quick-search__dropdown li a {
+    display: block;
+    font-weight: 700;
+    color: #daa592;
+}
+
+.consult-form .form-group .icon{
+    z-index: 999;
+}
+
+ .quick-search__title {
+       padding: 14px 0 14px 18px;
+    font-size: 17px;
+    font-weight: 700;
+    background-image: linear-gradient(#c5c2c2 -40%, black 54%, #c5c2c2 151%) !important;
+    border: 1px solid #dca494 !important;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.quick-search__title:hover, .quick-search__dropdown li a:hover  {
+    background-color: #2d2d2d;
+}
+
+.quick-search__dropdown li a:hover{
+    color: #fff;
+}
+
+#profile-right
+{
+   font-family: Times New Roman !important;
+}
+
+@media screen and (max-width: 1199px)
+{
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 13px;
+    padding-left: 11px;
+}
+nav a.navbar-brand img {
+    height: 44px;
+}
+}
+
+
+@media screen and (max-width: 767px)
+{
+    .wrap-about-sec .model.img.d-flex img {
+    height: auto;
+}
+    .ftco-navbar-light .navbar-brand
+    {
+        left: 0px !important;
+    }
+    .wrap-about-sec .img-2
+    {
+        height: auto;
+    }
+    section{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .font-120 {
+    font-size: 41px;
+}
+.floating_icons ul {
+    margin: 0px;
+    padding: 0px;
+}
+.floating_icons
+{
+        width: 26px;    right: 4px;
+}
+nav a.navbar-brand img {
+    height: 40px;
+}
+.ftco-navbar-light.scrolled .navbar-toggler
+{
+    color: rgba(158, 156, 156, 0.82) !important;
+        position: absolute;
+    z-index: 9999;
+        top: 16px;
+    right: 20px;
+}
+div#ftco-nav {
+    margin-right: 0;
+}
+}

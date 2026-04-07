@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+   	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Kloves Inc</title>
+  </head>
+  <body>
+    <div id="kloves-header" class="kloves-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <div class="header-logo">
+              <a class="navbar-brand" href="index.html">
+                <img class="" src="images/logo-white.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <ul class="header-nav float-right d-flex align-items-center">
+              <li class="d-none d-md-block">
+                <a href="javascript:void(0)">Request a demo</a>
+              </li>
+              <li>
+                <button class="navbar-toggler" onclick="openNav()">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar Nav -->
+    <div class="site-nav" id="site-navbar">
+      <a href="javascript:void(0)" class="close" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+      </a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="our-solutions.html"><span>Our Solutions</span> <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu float-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="legal-service-delivery.html"><span>Legal Service Delivery</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-services.html"><span>Our Services</span> <i class="fas fa-arrow-right"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html"><span>Contact us</span> <i class="fas fa-arrow-right"></i></a>
+        </li>
+      </ul>
+      <ul class="nav-social-icons">
+        <li>
+          <a href="https:www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="https:www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="https:www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Banner -->
+    <div class="banner" style="background-image: url(images/banner-bg-rpt.svg)">
+      <div class="breadcrumb">
+        <a href="index.html" class="backlink"><i class="fas fa-arrow-left"></i> <span>Back to main</span></a>
+      </div>
+      <div class="container">
+        <h1 class="text-center">Apply now</h1>
+        <div class="contact-banner">
+          <div class="row align-items-stretch flex-md-row-reverse">
+            <div class="col-lg-8 col-xl-9">
+              <div class="apply-now-form">
+                <form id="applynowform" method="post" action="" >
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label>Name<span class="astrick">*</span></label>
+                      <input type="text" id="name" name="name" class="form-control" onkeypress="formvalidation();"  autocomplete="off" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label>Job Title<span class="astrick">*</span></label>
+                      <input type="text" id="jobtitle" name="jobtitle" autocomplete="off" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label>Email<span class="astrick">*</span></label>
+                      <input type="text" id="email" name="email" autocomplete="off" class="form-control" onkeypress="formvalidation();" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label>Phone</label>
+                      <input type="text" id="phone" name="phone" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label>Upload Resume<span class="astrick">*</span></label>
+                      <input type="file" id="file" name="file" autocomplete="off" class="form-control" placeholder="Upload resume" onkeypress="formvalidation();" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-group">
+                      <button id="btn">
+                        <input type="submit" value="Submit" name="submit" id="submit" class="form-btn filled">
+                      </button>
+                      <button>
+                        <input type="submit" value="Reset" name="reset" id="reset" class="form-btn">
+                      </button>
+                    </div>
+                  </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+              <div class="contact-info">
+                <h2>Job Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p><strong>Position:</strong> Technical Consultant<br/>
+                  <strong>No. of Vacancy:</strong> 2<br/>
+                <strong>Location:</strong> IND<br/>
+
+                  </p>
+              </div>
+            </div>
+        </div>          
+        </div>
+      </div>
+    </div>
+    <footer id="site-footer">
+      <div class="container">
+        <div class="row align-items-start justify-content-center justify-content-md-start text-center text-md-left">
+          <div class="col-lg-3 col-md-12 col-xl-3 d-flex">
+            <div class="klovesinc">
+              <img src="images/logo-white.png" alt="Kloves"/>
+              <p>&copy; 2021 <a href="index.html">Kloves Inc.</a> All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-xl-2">
+            <div class="address">
+              <h4>New buinsess inquiries:</h4>
+              <a href="mailto:sales@klovesinc.com">sales@klovesinc.com</a>
+            </div>
+            <div class="address">
+              <h4>Telephone:</h4>
+              <a href="tele:+1-408-768-5966">+1-408-768-5966</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-xl-5">
+            <div class="contact address">
+              <h4>Address:</h4>
+              <div class="row">
+                <div class="col-md-6 col-xl-4">
+                  <p>5551 Stoney Creek Place<br/>
+                    San Jose CA 95138<br/>
+                    (Headquarters)
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-8">
+                  <p>Kloves Software Pvt. Ltd.<br/>
+                    B-902, 9th Floor, Tower-B, iTHUM, Sec 62<br/>
+                    Noida, Uttar Pradesh, 201301<br/>
+                    (India)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-xl-2">
+            <div class="address">
+              <h4>Connect with us:</h4>
+              <ul class="social-icons justify-content-center justify-content-md-start d-flex align-items-center">
+                <li>
+                  <a href="https:www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="https:www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                  <a href="https:www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="blackoverlay" onclick="closeNav()"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

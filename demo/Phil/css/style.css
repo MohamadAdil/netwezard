@@ -1,0 +1,193 @@
+
+@font-face {
+    font-family: 'Oriya Sangam MN';
+    src: url('../fonts/OriyaSangamMN.woff2') format('woff2'),
+        url('../fonts/OriyaSangamMN.woff') format('woff'),
+        url('../fonts/OriyaSangamMN-01.ttf') format('ttf'),
+        url('../fonts/OriyaSangamMN-Bold-02.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*.topbar span.shipping {
+    float: right;
+    margin-right: 20px;
+}*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oriya Sangam MN';
+    outline: none;
+}
+.topbar {
+    background-color: #000;
+    float: left;
+    width: 100%;
+    padding: 7px 0px 0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+
+.topbar span.shipping {
+    /* margin-left: 110px; */
+}
+.topbar .container
+{
+    position: relative;
+}
+header nav .top-link {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 600;
+}
+.border-px {
+    border-width: 1px 0px 2px 2px;
+    border-color: #000;
+    border-style: solid;
+    min-height: 62px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+img.bag-ico {
+   margin-right: 10px;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+.border-right
+{
+border-right: 2px solid #000;
+}
+header input.top-link {
+    border: none;
+}
+header .logo {
+    padding: 11px 0 10px 0;
+    text-align: center;
+    display: block;
+}
+.border-px.logo-col {
+    padding-top: 0px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  opacity: 1;
+}
+
+.no-padding
+{
+padding-left: 0;
+padding-right: 0;
+}
+
+section.second img{
+    width: 100%;
+}
+section.second .col-sm-6 {
+    position: relative;
+}
+section.second a span
+{
+    background-color: #000;
+}
+
+section.second a {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 95px;
+    height: 26px;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.pages-links {
+    padding: 12px 0px;
+    border: 2px solid #000;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/bg-image.png);
+    background-size: cover;
+}
+.pages-links ul li {
+    display: inline-block;
+    padding: 0px 43px 0px 0px;
+    position: relative;
+    height: 22px;
+
+}
+.pages-links ul li:last-child:before
+{
+    content: none;
+}
+.footer-bottom {
+    width: 100%;
+    float: left;
+    padding: 11px 0;
+    text-align: center;
+    border-bottom: 2px solid #111;
+    border-left: 2px solid #111;
+    border-right: 2px solid #111;
+}
+.footer-bottom {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+.pages-links ul li:before {
+    content: "";
+    position: absolute;
+    right: 17px;
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.pages-links ul li a {
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+span.footer-left {
+    float: left;
+    margin-left: 38px;
+}
+span.footer-right {
+    margin-right: 50px;
+    float: right;
+}

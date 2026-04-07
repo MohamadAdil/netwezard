@@ -1,0 +1,19 @@
+/*
+All of our global styles
+*/
+
+// Vars & mixins
+@import 'global/theme';
+
+// Grid
+@import 'global/bootstrap-grid';
+
+// Clear
+@import 'global/normalize';
+@import 'global/initial';
+
+// General
+@import 'global/base';
+@import 'global/template';
+@import 'global/main';
+@import 'global/custom';  

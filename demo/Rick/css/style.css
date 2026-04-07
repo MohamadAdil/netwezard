@@ -1,0 +1,407 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700');
+
+body
+{
+  margin: 0;
+ font-family: 'Raleway', sans-serif;
+  padding: 0;
+}
+ul, ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+a:focus
+{
+outline: none;
+text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: none;
+}
+
+/*Homepage*/
+.header-banner
+{
+  background-image: url('../img/banner-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 290px;
+  padding-bottom: 10px;
+}
+.header-banner h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+.header-banner p
+{
+font-size: 18px;
+    padding-top: 37px;
+    color: #fff;
+    font-weight: 400;
+    width: 60%;
+    margin: auto;
+}
+
+header.header {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 99;
+    padding: 10px 0; 
+}
+
+header.header .nav>li>a, .payment a
+{
+    border-bottom: 1px solid transparent;
+}
+
+header.header .nav>li>a:hover, header.header .nav>li>a:focus, .payment a:hover,  .payment a:focus{
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 1px solid #094d8b;
+    color: #094d8b;
+}
+
+header nav.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+header ul.nav.navbar-nav.navbar-right {
+    margin-top: 5%;
+}
+header .navbar-nav>li>a {
+    font-size: 18px;
+    color: #2a2a2a;
+}
+span.phone-call {
+    margin: 0px 0 0 80px;
+    color: #2a2a2a;
+    font-size: 17px;
+}
+
+span.phone-call span
+{
+    color: #2a2a2a;
+    font-size: 21px;
+}
+.arrow-img {
+    margin-top: 130px;
+}
+
+.three-box-wrap h5 {
+    font-size: 17px;
+    color: #303133;
+    margin: 0;
+    font-weight: 400;
+}
+
+.three-box-wrap p
+{
+  color: #5b5c5c;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.three-box-con {
+    width: calc(100% - 42px);
+    float: left;
+    padding-left: 20px;
+}
+.thre-box-img {
+    float: left;
+}
+
+.three-section .col-sm-4 {
+    border-right: 1px solid #bababa;
+}
+section.three-section {
+    padding: 60px 0px;
+}
+.three-box-wrap {
+    padding-top: 23px;
+}
+.third-section h5 {
+    font-size: 24px;
+    color: #303133;
+    margin-top: 25%;
+    font-weight: 400;
+}
+section.third-section p {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px; 
+}
+
+section.third-section {
+    padding: 60px 0px;
+    background-color: #ededed;
+}
+section.four {
+    padding: 60px 0px;
+}
+section.four h1, h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section.four p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+section.four strong
+{
+       color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 45px;
+    display: block;
+}
+section.four ul li span
+{
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.four ul li {
+    display: block;
+    padding: 16px 0 0 0;
+}
+.four ul li span {
+    display: inline-block;
+    margin-left: 20px;
+}
+section.four form {
+    margin-top: 50px;
+}
+section.four form input, section.four form textarea {
+    height: 45px;
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: 400;
+}
+section.four .form-group {
+    margin-bottom: 30px;
+}
+section.four form textarea
+{
+  height: 100px
+}
+
+.four form input[type="button"] {
+    font-size: 16px;
+    color: #094d8b;
+    background-color: transparent;
+    border: 2px solid;
+    width: 150px;
+    padding-top: 12px;
+}
+.five-sec p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 45px;
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 100%;
+    float: left;
+}
+
+section.five-sec {
+    background-color: #f7f7f7;
+    padding: 60px 0px;
+}
+.fiv_box img {
+    width: 100%;
+}
+.fiv_box {
+    min-height: 260px;
+}
+.five-sec h1
+{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonial h1
+{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.testimonial
+{
+  padding: 60px 0;
+      background-repeat: no-repeat;
+    background-size: cover;
+  background-image: url(../img/bg02.png);
+}
+.testimonial-box {
+    background-color: #fff;
+    padding: 70px 50px;
+}
+.testimonial-box span.date {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+.testimonial-box h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.testimonial-box p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    border-bottom: 1px solid #c4c3c3;
+    padding-bottom: 38px;
+    margin-bottom: 25px;
+}
+.testimonial-box span.testi_name
+{
+      font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    left: 15px;
+}
+
+.testimonial .owl-carousel .owl-item img
+{
+  display: inline-block;
+  width: auto;
+}
+
+.testimonial .owl-dots{
+    text-align: center;
+    margin-top: 60px;
+}
+.testimonial .owl-dot
+{
+  width: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 8px 0;
+  height: 15px;
+  background-color: #fff; 
+}
+
+.testimonial .owl-dot.active
+{
+  width: 15px;
+  height: 15px;
+  background-color: #094d8b; 
+  border-radius: 50%;
+}
+
+section.caller {
+    background-image: url(../img/call.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: 80px 0px;
+}
+
+.call-logo {
+    text-align: right;
+}
+.call-content span {
+    color: #000;
+    font-size: 18px;
+}
+
+.call-content h1 {
+    margin-top: 8px;
+    padding-top: 0px;
+}
+.call-content {
+    padding-top: 29px;
+}
+
+footer {
+    background-image: url(../img/fooetr-ing.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 0px 80px;
+}
+
+.social i.fa {
+    color: #898989;
+    font-size: 21px;
+    margin: 0px 5px;
+}
+.social {
+    text-align: center;
+    margin-bottom: 40px;
+}
+footer p {
+    font-size: 18px;
+    color: #7b7979;
+    font-weight: 400;
+    text-align: center;
+}
+
+.payment p, .payment a {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.payment img {
+    width: 100%;
+}
+section.payment {
+    padding: 15px 0px;
+}
+
+.payment ul li {
+    display: inline-block;
+    padding: 0 9px;
+    border-right: 1px solid #333;
+}
+.payment ul li:last-child
+{
+  border: none;
+}
+
+.payment ul {
+    margin-top: 28px;
+}
+
+.third-section img {
+    max-width: 100%;
+}
+
+header.header .navbar-toggle
+{
+  background-color: #fff;
+}
+
+header.header .navbar-toggle span
+{
+  background-color: #999;
+}

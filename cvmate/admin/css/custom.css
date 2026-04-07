@@ -1,0 +1,31 @@
+#foldernavbg{position:absolute;left:100px;background:#fff;bottom:0;left:100px;width:200px; height:100%;box-shadow: 0 2px 3px #999;-webkit-box-shadow: 0 2px 3px #999;-moz-box-shadow: 0 2px 3px #999;}
+.foldernav-title{background-color:#666; font-size:16px; color:#fff; padding:5% 5% 5% 10%; width:85%; font-weight:bold;}
+.foldernav-title i{margin-right:5px;}
+#foldernav{position:relative; top:auto; background:#fff;width:200px; float:left;}
+.icon-sheet{background:url(../images/icon-sheet.png) left top no-repeat;}
+#foldernav ul{margin:0 20px;}
+#foldernav ul li{border-bottom:1px dashed #ddd; padding:10px 0; position:relative; list-style:none;}
+#foldernav ul li ul{padding:5px 0 0 5px; margin-right:0;}
+.subfoldericon{background-position:left -17px;}
+#foldernav ul li ul li:last-child{border-bottom:0; padding-bottom:0;}
+#foldernav ul li a{color:#333}
+#foldernav ul li a:hover{color:#01a651; text-decoration:none;}
+#foldernav ul li a i{display:inline-block; margin-right:3px;}
+
+
+
+
+@media (max-width:599px){
+#foldernavbg{display:none;}
+#foldernav{width:100%;}
+.foldernav-title {
+background-color: #666;
+font-size: 16px;
+color: #fff;
+width: 94%;
+font-weight: bold;
+padding: 3%;
+cursor:pointer;
+}
+#foldernav ul{display:none;}
+}

@@ -1,0 +1,231 @@
+@media (min-width: 1200px){
+	.container {
+	    max-width: 1170px;
+	}
+}
+@media(max-width: 1199px) {
+	a.navbar-brand {
+		max-width: 200px;
+		margin-right: 0;
+	}
+	.site-header .navbar-nav .nav-item {
+		padding: 10px 10px;
+	}
+	.banner-slide-inn {
+		min-height: 620px;
+	}
+	.banner-content {
+		margin-top: 171px;
+	}
+	.vision-content {
+		margin-top: 20px;
+	}
+	.find-soltn-content {
+		margin: 0px 0px;
+	}
+	.find-soltn-content h1 {
+		font-size: 57px;
+		line-height: 66px;
+	}
+	.find-soltn-content h1 small {
+		font-size: 47px;
+	}
+}
+
+@media(max-width: 991px) {
+	#navbarSupportedContent {
+		background: #000;
+	}
+	button.navbar-toggler {
+		background: #ffffff;
+		margin-left: 20px;
+	}
+	.site-header .navbar-nav .nav-item {
+		padding: 10px;
+	}
+	.site-header .navbar-nav .nav-item:after {
+		display: none;
+	}
+	.site-header .navbar-nav .nav-link {
+		display: inline-block;
+	}
+	.site-header .navbar-nav {
+		padding: 20px 10px;
+	}
+	.common-section {
+		padding: 50px 0px;
+		display: block;
+	}
+	.fint-sol-img {
+		position: static;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		width: 100%;
+		margin-top: 36px;
+	}
+	ul.contact-info li {
+		text-align: center;
+	}
+	.ftr-left-content{
+		text-align: center;
+	}
+	.contact-info li a{
+		margin-bottom: 10px;
+	}
+	.log-reg-btn-wrap {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-ordinal-group: 1;
+		    -ms-flex-order: 0;
+		        order: 0;
+		margin-left: auto;
+	}
+	.education-sec-2 .image-right{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 767px) {
+	header{
+		top:58px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.banner-content p {
+		color:#fff;
+		font-weight: 500;
+		text-shadow:0 0px 4px #000;
+	}
+	.our-services .owl-nav button {
+		left: 0;
+		font-size: 25px !important;
+	}
+	.our-services .owl-nav button.owl-next {
+		right: 0px;
+	}
+	.video-sec,
+	.newsletter-sec {
+		padding: 30px 0px;
+	}
+	.find-soluation-sec,
+	.about-ngo-sec,
+	section.our-services {
+		padding: 40px 0px;
+	}
+	.newsletter-form .cstm-btn {
+		position: static;
+		margin-top: 20px;
+	}
+	.newsletter-form .form-input-icon {
+		position: absolute;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		top: 17px;
+	}
+	.newsletter-sec .form-control {
+		padding-right: 20px;
+	}
+	.newsletter-form {
+		text-align: center;
+	}
+	.find-soltn-content h1 {
+		font-size: 41px;
+		line-height: 45px;
+	}
+	.find-soltn-content h1 small {
+		font-size: 30px;
+	}
+	.banner-content h1 {
+		font-size: 50px;
+		line-height: 45px;
+	}
+	.banner-content h1 small {
+		font-size: 25px;
+	}
+	.ftr-bottom-bar{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.ftr-bottom-bar p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+.socil-links {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 10px;
+}
+.sec-heading h1 {
+    font-size: 32px;
+}
+.event-project-sec .grid-box{
+	max-width:600px;
+	margin:0 auto 30px;
+}
+.our-team .featured-imagebox-team .featured-content-team{
+	margin:0;
+	transform: translateY(0);
+}
+.site-header .navbar-nav .nav-item .dropdown-menu:before{
+	display: none;
+}
+.topheaderrow .container{
+	text-align: center;
+}
+.topheaderrow .container a.cstm-btn{
+	height: auto;
+	padding:5px 25px;
+}
+/* Scholarship */
+.scholarship, .scholarship-girls-bg, .apllicatoin-form{
+	padding:50px 0;
+}
+.scholarship .left-section{
+	padding:50px 0 0;
+}
+.scholarship .left-section .image-box{
+	margin: 50px 0 30px;
+}
+.scholarship h3, .scholarship-girls-bg.large h3{
+	font-size: 28px;
+}
+.scholarship-girls-bg h2, .apllicatoin-form h2{
+	font-size: 32px;
+}
+.scholarship-3 .mobileview{
+	order:2;
+}
+.scholarship.scholarship-3 .image-box, .scholarship-girls-bg.large .image-box{
+	margin:0 0 30px;
+}
+#scholarship-form .form-control{
+	height: 44px !important
+}
+.event-project-sec .grid-box .grid-content h3{
+	min-height: auto;
+}
+.right-sidebar{
+	margin-top:30px;
+}
+}
+
+@media(max-width: 480px) {
+	button.navbar-toggler{
+		margin-left: 6px;
+	}
+	
+.banner-slide-inn, .inner-banner{
+	background-position: 60% 0;
+}
+}
